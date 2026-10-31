@@ -1,0 +1,9 @@
+/home/zhuxd/aubo_ws/build/aubo_gazebo/CMakeFiles/uninstall.dir
+/home/zhuxd/aubo_ws/build/aubo_gazebo/CMakeFiles/aubo_gazebo_uninstall.dir
+/home/zhuxd/aubo_ws/build/aubo_gazebo/CMakeFiles/test.dir
+/home/zhuxd/aubo_ws/build/aubo_gazebo/CMakeFiles/edit_cache.dir
+/home/zhuxd/aubo_ws/build/aubo_gazebo/CMakeFiles/rebuild_cache.dir
+/home/zhuxd/aubo_ws/build/aubo_gazebo/CMakeFiles/list_install_components.dir
+/home/zhuxd/aubo_ws/build/aubo_gazebo/CMakeFiles/install.dir
+/home/zhuxd/aubo_ws/build/aubo_gazebo/CMakeFiles/install/local.dir
+/home/zhuxd/aubo_ws/build/aubo_gazebo/CMakeFiles/install/strip.dir

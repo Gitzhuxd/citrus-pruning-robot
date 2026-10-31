@@ -1,0 +1,73 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/aubo_dashboard_msgs__rs/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 35,
+				"parent" : 0
+			}
+		]
+	},
+	"id" : "aubo_dashboard_msgs__rs::@a5d32fe558ad0b2b3d7c",
+	"name" : "aubo_dashboard_msgs__rs",
+	"paths" : 
+	{
+		"build" : "aubo_dashboard_msgs__rs",
+		"source" : "/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/aubo_dashboard_msgs__rs"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/aubo_dashboard_msgs__rs/CMakeFiles/aubo_dashboard_msgs__rs",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/aubo_dashboard_msgs__rs/CMakeFiles/aubo_dashboard_msgs__rs.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/rosidl_generator_rs/aubo_dashboard_msgs/rust/src/lib.rs.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

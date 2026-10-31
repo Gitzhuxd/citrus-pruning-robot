@@ -1,0 +1,17 @@
+/home/zhuxd/aubo_ws/install/aubo_gazebo/share/aubo_gazebo/config/aubo_controllers.yaml
+/home/zhuxd/aubo_ws/install/aubo_gazebo/share/aubo_gazebo/launch/aubo_gazebo.launch.py
+/home/zhuxd/aubo_ws/install/aubo_gazebo/share/ament_index/resource_index/package_run_dependencies/aubo_gazebo
+/home/zhuxd/aubo_ws/install/aubo_gazebo/share/ament_index/resource_index/parent_prefix_path/aubo_gazebo
+/home/zhuxd/aubo_ws/install/aubo_gazebo/share/aubo_gazebo/environment/ament_prefix_path.sh
+/home/zhuxd/aubo_ws/install/aubo_gazebo/share/aubo_gazebo/environment/ament_prefix_path.dsv
+/home/zhuxd/aubo_ws/install/aubo_gazebo/share/aubo_gazebo/environment/path.sh
+/home/zhuxd/aubo_ws/install/aubo_gazebo/share/aubo_gazebo/environment/path.dsv
+/home/zhuxd/aubo_ws/install/aubo_gazebo/share/aubo_gazebo/local_setup.bash
+/home/zhuxd/aubo_ws/install/aubo_gazebo/share/aubo_gazebo/local_setup.sh
+/home/zhuxd/aubo_ws/install/aubo_gazebo/share/aubo_gazebo/local_setup.zsh
+/home/zhuxd/aubo_ws/install/aubo_gazebo/share/aubo_gazebo/local_setup.dsv
+/home/zhuxd/aubo_ws/install/aubo_gazebo/share/aubo_gazebo/package.dsv
+/home/zhuxd/aubo_ws/install/aubo_gazebo/share/ament_index/resource_index/packages/aubo_gazebo
+/home/zhuxd/aubo_ws/install/aubo_gazebo/share/aubo_gazebo/cmake/aubo_gazeboConfig.cmake
+/home/zhuxd/aubo_ws/install/aubo_gazebo/share/aubo_gazebo/cmake/aubo_gazeboConfig-version.cmake
+/home/zhuxd/aubo_ws/install/aubo_gazebo/share/aubo_gazebo/package.xml

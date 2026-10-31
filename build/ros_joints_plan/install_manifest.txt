@@ -1,0 +1,17 @@
+/home/zhuxd/aubo_ws/install/ros_joints_plan/lib/ros_joints_plan/joints_plan
+/home/zhuxd/aubo_ws/install/ros_joints_plan/share/ros_joints_plan/launch/joints_plan.launch.py
+/home/zhuxd/aubo_ws/install/ros_joints_plan/share/ament_index/resource_index/package_run_dependencies/ros_joints_plan
+/home/zhuxd/aubo_ws/install/ros_joints_plan/share/ament_index/resource_index/parent_prefix_path/ros_joints_plan
+/home/zhuxd/aubo_ws/install/ros_joints_plan/share/ros_joints_plan/environment/ament_prefix_path.sh
+/home/zhuxd/aubo_ws/install/ros_joints_plan/share/ros_joints_plan/environment/ament_prefix_path.dsv
+/home/zhuxd/aubo_ws/install/ros_joints_plan/share/ros_joints_plan/environment/path.sh
+/home/zhuxd/aubo_ws/install/ros_joints_plan/share/ros_joints_plan/environment/path.dsv
+/home/zhuxd/aubo_ws/install/ros_joints_plan/share/ros_joints_plan/local_setup.bash
+/home/zhuxd/aubo_ws/install/ros_joints_plan/share/ros_joints_plan/local_setup.sh
+/home/zhuxd/aubo_ws/install/ros_joints_plan/share/ros_joints_plan/local_setup.zsh
+/home/zhuxd/aubo_ws/install/ros_joints_plan/share/ros_joints_plan/local_setup.dsv
+/home/zhuxd/aubo_ws/install/ros_joints_plan/share/ros_joints_plan/package.dsv
+/home/zhuxd/aubo_ws/install/ros_joints_plan/share/ament_index/resource_index/packages/ros_joints_plan
+/home/zhuxd/aubo_ws/install/ros_joints_plan/share/ros_joints_plan/cmake/ros_joints_planConfig.cmake
+/home/zhuxd/aubo_ws/install/ros_joints_plan/share/ros_joints_plan/cmake/ros_joints_planConfig-version.cmake
+/home/zhuxd/aubo_ws/install/ros_joints_plan/share/ros_joints_plan/package.xml

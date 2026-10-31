@@ -1,0 +1,39 @@
+[0.529s] Invoking command in '/home/zhuxd/aubo_ws/build/aubo_i5_scissors_description': PYTHONPATH=/home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/build --no-deps symlink_data
+[0.659s] running develop
+[0.727s] running egg_info
+[0.727s] creating aubo_i5_scissors_description.egg-info
+[0.727s] writing aubo_i5_scissors_description.egg-info/PKG-INFO
+[0.727s] writing dependency_links to aubo_i5_scissors_description.egg-info/dependency_links.txt
+[0.727s] writing entry points to aubo_i5_scissors_description.egg-info/entry_points.txt
+[0.727s] writing requirements to aubo_i5_scissors_description.egg-info/requires.txt
+[0.727s] writing top-level names to aubo_i5_scissors_description.egg-info/top_level.txt
+[0.727s] writing manifest file 'aubo_i5_scissors_description.egg-info/SOURCES.txt'
+[0.728s] reading manifest file 'aubo_i5_scissors_description.egg-info/SOURCES.txt'
+[0.729s] writing manifest file 'aubo_i5_scissors_description.egg-info/SOURCES.txt'
+[0.729s] running build_ext
+[0.729s] Creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib/python3.10/site-packages/aubo-i5-scissors-description.egg-link (link to .)
+[0.730s] 
+[0.730s] Installed /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description
+[0.730s] running symlink_data
+[0.730s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/ament_index
+[0.730s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/ament_index/resource_index
+[0.730s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/ament_index/resource_index/packages
+[0.730s] symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/resource/aubo_i5_scissors_description -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/ament_index/resource_index/packages
+[0.730s] symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/package.xml -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description
+[0.730s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/launch
+[0.730s] symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/launch/display_scissors.launch.py -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/launch
+[0.730s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/urdf
+[0.730s] symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/urdf/electric_scissor.urdf -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/urdf
+[0.731s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes
+[0.731s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors
+[0.731s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+[0.731s] symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/meshes/scissors/visual/part_002_solid_002.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+[0.731s] symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/meshes/scissors/visual/part_008_solid_008.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+[0.731s] symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/meshes/scissors/visual/part_003_solid_003.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+[0.731s] symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/meshes/scissors/visual/part_006_solid_006.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+[0.731s] symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/meshes/scissors/visual/part_004_solid_004.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+[0.731s] symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/meshes/scissors/visual/part_001_solid_001.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+[0.731s] symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/meshes/scissors/visual/part_007_solid_007.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+[0.731s] symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/meshes/scissors/visual/part_005_solid_005.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+[0.731s] symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/meshes/scissors/visual/part_009_solid_009.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+[0.746s] Invoked command in '/home/zhuxd/aubo_ws/build/aubo_i5_scissors_description' returned '0': PYTHONPATH=/home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/build --no-deps symlink_data

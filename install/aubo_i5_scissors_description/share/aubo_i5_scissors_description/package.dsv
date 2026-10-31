@@ -1,0 +1,6 @@
+source;share/aubo_i5_scissors_description/hook/pythonpath.ps1
+source;share/aubo_i5_scissors_description/hook/pythonpath.dsv
+source;share/aubo_i5_scissors_description/hook/pythonpath.sh
+source;share/aubo_i5_scissors_description/hook/ament_prefix_path.ps1
+source;share/aubo_i5_scissors_description/hook/ament_prefix_path.dsv
+source;share/aubo_i5_scissors_description/hook/ament_prefix_path.sh

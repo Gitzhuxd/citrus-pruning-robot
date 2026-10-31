@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: aubo_i5_scissors_description
+    relative_path: urdf/robot_core.xacro
+  srdf:
+    relative_path: config/aubo_i5_scissors_robot.srdf
+  package_settings:
+    author_name: Xuedong Zhu
+    author_email: zhuxuedong98@gmail.com
+    generated_timestamp: 1784733239
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

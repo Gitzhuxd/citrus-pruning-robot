@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+
+<robot
+  xmlns:xacro="http://www.ros.org/wiki/xacro"
+  name="aubo_i5_scissors_robot">
+
+    <!-- 转接板对于AUBO末端ee_link的安装位置 -->
+  <xacro:arg name="tranboard_mount_xyz" default="0.10 0 0"/>
+
+  <!-- rpy依次为：绕X、绕Y、绕Z -->
+  <xacro:arg name="tranboard_mount_rpy" default="1.57079632679 0 1.57079632679"/>
+
+
+  <!-- 剪刀相对于转接板的安装位置 -->
+  <xacro:arg name="scissor_mount_xyz" default="0 0 -0.1"/>
+
+  <!-- rpy依次为：绕X、绕Y、绕Z -->
+  <xacro:arg name="scissor_mount_rpy" default="0 -1.57079632679 0"/>
+
+  
+
+  <!-- ====================================================== -->
+  <!-- D435i相对于转接板的安装位姿 -->
+  <!-- ====================================================== -->
+
+  <!-- 单位：米 -->
+  <xacro:arg
+    name="camera_mount_xyz"
+    default="0 0.01 -0.04"/>
+
+  <!-- 单位：弧度，依次绕X、Y、Z -->
+  <xacro:arg
+    name="camera_mount_rpy"
+    default="0 0 1.57079632679"/>
+
+  <!--
+    true：RViz、MoveIt、Gazebo仿真阶段，使用官方标称内部外参
+    false：以后连接真实D435i，由realsense2_camera驱动发布内部TF
+  -->
+  <xacro:arg
+    name="camera_use_nominal_extrinsics"
+    default="true"/>
+
+
+
+  <!-- ====================================================== -->
+  <!-- 导入并创建履带车模型 -->
+  <!-- ====================================================== -->
+
+  <xacro:include
+    filename="$(find aubo_i5_scissors_description)/urdf/aubo_tracked_platform_macro.xacro"/>
+
+  <!--
+    prefix="car_"：
+    给履带车的所有link、joint和material增加car_前缀，
+    避免履带车base_link与AUBO的base_link重名。
+  -->
+  <xacro:aubo_tracked_platform prefix="car_"/>
+
+  <!-- ====================================================== -->
+  <!-- 0. 将AUBO机械臂安装到履带车平台 -->
+  <!-- ====================================================== -->
+
+  <joint name="car_aubo_mount_joint" type="fixed">
+    <!-- 履带车机械臂安装接口 -->
+    <parent link="car_aubo_mount_frame"/>
+
+    <!-- AUBO原模型的根link -->
+    <child link="base_link"/>
+
+    <!-- 两个安装坐标系暂时完全重合 -->
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ====================================================== -->
+  <!-- 1. 导入AUBO机械臂宏 -->
+  <!-- ====================================================== -->
+
+  <xacro:include
+    filename="$(find aubo_description)/urdf/xacro/inc/aubo_macro.xacro"/>
+
+  <!-- 创建AUBO i5六自由度机械臂 -->
+  <xacro:aubo_robot
+    robot_model="aubo_i5"
+    transmission_hw_interface="hardware_interface/PositionJointInterface"/>
+
+
+  
+  <xacro:include
+    filename="$(find aubo_i5_scissors_description)/urdf/transboard.urdf"/>
+
+  <joint name="fix_transboard" type="fixed">
+
+    <!-- AUBO官方模型提供的末端连接坐标系 -->
+    <parent link="ee_link"/>
+
+    <!-- 剪刀URDF的根连杆 -->
+    <child link="zhuanjie_link"/>
+
+    <!-- 根据转接板调整 -->
+    <origin
+      xyz="$(arg tranboard_mount_xyz)"
+      rpy="$(arg tranboard_mount_rpy)"/>
+
+  </joint>
+
+  <!-- ====================================================== -->
+  <!-- 2. 导入电动剪刀URDF -->
+  <!-- ====================================================== -->
+
+  <xacro:include
+    filename="$(find aubo_i5_scissors_description)/urdf/electric_scissor.urdf"/>
+
+  <!-- ====================================================== -->
+  <!-- 3. 将剪刀安装到AUBO末端 -->
+  <!-- ====================================================== -->
+
+  <joint name="scissor_mount_joint" type="fixed">
+
+    <!-- 转接板的连接坐标系 -->
+    <parent link="zhuanjie_link"/>
+
+    <!-- 剪刀URDF的根连杆 -->
+    <child link="scissor_base_link"/>
+
+    <!-- 先用零位姿验证连接，后续根据转接板调整 -->
+    <origin
+      xyz="$(arg scissor_mount_xyz)"
+      rpy="$(arg scissor_mount_rpy)"/>
+
+  </joint>
+
+    <!-- ====================================================== -->
+  <!-- 4. 导入RealSense D435i模型 -->
+  <!-- ====================================================== -->
+
+  <xacro:include
+    filename="$(find realsense2_description)/urdf/_d435i.urdf.xacro"/>
+
+  <!-- ====================================================== -->
+  <!-- 5. 将D435i安装到转接板 -->
+  <!-- ====================================================== -->
+
+  <xacro:sensor_d435i
+    parent="zhuanjie_link"
+    name="camera"
+    use_nominal_extrinsics="$(arg camera_use_nominal_extrinsics)">
+
+    <origin
+      xyz="$(arg camera_mount_xyz)"
+      rpy="$(arg camera_mount_rpy)"/>
+
+  </xacro:sensor_d435i>
+
+</robot>

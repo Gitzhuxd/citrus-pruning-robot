@@ -1,0 +1,25 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_rrt_interfaces/action/detail/dds_fastrtps/plan_rrt__type_support.cpp.o"
+  "CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_rrt_interfaces/action/detail/dds_fastrtps/plan_rrt__type_support.cpp.o.d"
+  "CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_rrt_interfaces/msg/detail/dds_fastrtps/endpoint__type_support.cpp.o"
+  "CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_rrt_interfaces/msg/detail/dds_fastrtps/endpoint__type_support.cpp.o.d"
+  "CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_rrt_interfaces/srv/detail/dds_fastrtps/get_rrt_info__type_support.cpp.o"
+  "CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_rrt_interfaces/srv/detail/dds_fastrtps/get_rrt_info__type_support.cpp.o.d"
+  "CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_rrt_interfaces/srv/detail/dds_fastrtps/preview_rrt__type_support.cpp.o"
+  "CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_rrt_interfaces/srv/detail/dds_fastrtps/preview_rrt__type_support.cpp.o.d"
+  "libaubo_rrt_interfaces__rosidl_typesupport_fastrtps_cpp.pdb"
+  "libaubo_rrt_interfaces__rosidl_typesupport_fastrtps_cpp.so"
+  "rosidl_typesupport_fastrtps_cpp/aubo_rrt_interfaces/action/detail/dds_fastrtps/plan_rrt__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/aubo_rrt_interfaces/action/detail/plan_rrt__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/aubo_rrt_interfaces/msg/detail/dds_fastrtps/endpoint__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/aubo_rrt_interfaces/msg/detail/endpoint__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/aubo_rrt_interfaces/srv/detail/dds_fastrtps/get_rrt_info__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/aubo_rrt_interfaces/srv/detail/dds_fastrtps/preview_rrt__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/aubo_rrt_interfaces/srv/detail/get_rrt_info__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/aubo_rrt_interfaces/srv/detail/preview_rrt__rosidl_typesupport_fastrtps_cpp.hpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_fastrtps_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

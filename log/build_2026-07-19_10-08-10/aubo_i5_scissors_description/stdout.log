@@ -1,0 +1,37 @@
+running develop
+running egg_info
+creating aubo_i5_scissors_description.egg-info
+writing aubo_i5_scissors_description.egg-info/PKG-INFO
+writing dependency_links to aubo_i5_scissors_description.egg-info/dependency_links.txt
+writing entry points to aubo_i5_scissors_description.egg-info/entry_points.txt
+writing requirements to aubo_i5_scissors_description.egg-info/requires.txt
+writing top-level names to aubo_i5_scissors_description.egg-info/top_level.txt
+writing manifest file 'aubo_i5_scissors_description.egg-info/SOURCES.txt'
+reading manifest file 'aubo_i5_scissors_description.egg-info/SOURCES.txt'
+writing manifest file 'aubo_i5_scissors_description.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib/python3.10/site-packages/aubo-i5-scissors-description.egg-link (link to .)
+
+Installed /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description
+running symlink_data
+creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/ament_index
+creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/ament_index/resource_index
+creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/ament_index/resource_index/packages
+symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/resource/aubo_i5_scissors_description -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/ament_index/resource_index/packages
+symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/package.xml -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description
+creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/launch
+symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/launch/display_scissors.launch.py -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/launch
+creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/urdf
+symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/urdf/electric_scissor.urdf -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/urdf
+creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes
+creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors
+creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/meshes/scissors/visual/part_002_solid_002.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/meshes/scissors/visual/part_008_solid_008.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/meshes/scissors/visual/part_003_solid_003.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/meshes/scissors/visual/part_006_solid_006.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/meshes/scissors/visual/part_004_solid_004.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/meshes/scissors/visual/part_001_solid_001.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/meshes/scissors/visual/part_007_solid_007.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/meshes/scissors/visual/part_005_solid_005.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+symbolically linking /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/meshes/scissors/visual/part_009_solid_009.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual

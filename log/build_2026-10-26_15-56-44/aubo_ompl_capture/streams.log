@@ -1,0 +1,43 @@
+[0.008s] Invoking command in '/home/zhuxd/aubo_ws/build/aubo_ompl_capture': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble /usr/bin/cmake /home/zhuxd/aubo_ws/src/aubo_ompl_capture -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhuxd/aubo_ws/install/aubo_ompl_capture
+[0.404s] -- The C compiler identification is unknown
+[0.552s] -- The CXX compiler identification is unknown
+[0.556s] -- Detecting C compiler ABI info
+[0.578s] -- Detecting C compiler ABI info - failed
+[0.579s] -- Check for working C compiler: /usr/bin/cc
+[0.601s] -- Check for working C compiler: /usr/bin/cc - broken
+[0.601s] CMake Error at /usr/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake:69 (message):
+[0.601s]   The C compiler
+[0.601s] 
+[0.601s]     "/usr/bin/cc"
+[0.601s] 
+[0.601s]   is not able to compile a simple test program.
+[0.601s] 
+[0.601s]   It fails with the following output:
+[0.601s] 
+[0.601s]     Change Dir: /home/zhuxd/aubo_ws/build/aubo_ompl_capture/CMakeFiles/CMakeTmp
+[0.601s]     
+[0.601s]     Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_257fe/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_257fe.dir/build.make CMakeFiles/cmTC_257fe.dir/build
+[0.601s]     gmake[1]: 进入目录“/home/zhuxd/aubo_ws/build/aubo_ompl_capture/CMakeFiles/CMakeTmp”
+[0.601s]     Building C object CMakeFiles/cmTC_257fe.dir/testCCompiler.c.o
+[0.601s]     /usr/bin/cc    -o CMakeFiles/cmTC_257fe.dir/testCCompiler.c.o -c /home/zhuxd/aubo_ws/build/aubo_ompl_capture/CMakeFiles/CMakeTmp/testCCompiler.c
+[0.601s]     /home/zhuxd/aubo_ws/build/aubo_ompl_capture/CMakeFiles/CMakeTmp/testCCompiler.c:11:1: fatal error: error closing /tmp/ccJQD9tj.s: 设备上没有空间
+[0.601s]        11 | { (void)argv; return argc-1;}
+[0.602s]           | ^
+[0.602s]     compilation terminated.
+[0.602s]     gmake[1]: *** [CMakeFiles/cmTC_257fe.dir/build.make:78：CMakeFiles/cmTC_257fe.dir/testCCompiler.c.o] 错误 1
+[0.602s]     gmake[1]: 离开目录“/home/zhuxd/aubo_ws/build/aubo_ompl_capture/CMakeFiles/CMakeTmp”
+[0.602s]     gmake: *** [Makefile:127：cmTC_257fe/fast] 错误 2
+[0.602s]     
+[0.602s]     
+[0.602s] 
+[0.602s]   
+[0.602s] 
+[0.602s]   CMake will not be able to correctly generate this project.
+[0.602s] Call Stack (most recent call first):
+[0.602s]   CMakeLists.txt:2 (project)
+[0.602s] 
+[0.602s] 
+[0.602s] -- Configuring incomplete, errors occurred!
+[0.602s] See also "/home/zhuxd/aubo_ws/build/aubo_ompl_capture/CMakeFiles/CMakeOutput.log".
+[0.602s] See also "/home/zhuxd/aubo_ws/build/aubo_ompl_capture/CMakeFiles/CMakeError.log".
+[0.608s] Invoked command in '/home/zhuxd/aubo_ws/build/aubo_ompl_capture' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble /usr/bin/cmake /home/zhuxd/aubo_ws/src/aubo_ompl_capture -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhuxd/aubo_ws/install/aubo_ompl_capture

@@ -1,0 +1,18 @@
+{"test": "services_ready", "success": true}
+[WARN] [1792842987.636407651] [rrt_panel_integration_checks]: New publisher discovered on topic '/display_planned_path', offering incompatible QoS. No messages will be received from it. Last incompatible policy: DURABILITY
+{"test": "info_current_fk", "success": true, "named_states": ["home", "pose1", "pose2"], "joint_count": 8}
+{"test": "preview_current_named_preserves_state", "success": true}
+{"test": "preview_pose_ik", "success": true, "position_error_m": 1.3302692769601344e-08, "orientation_error_rad": 4.2146848510894035e-08}
+{"test": "save_after_preview", "success": true, "task_file": "/home/zhuxd/aubo_ws/rrt_results/python/tasks/20261024_195627_654231.json"}
+{"test": "reject_invalid_frame", "success": true, "reason": "终点：输入位姿必须使用 world 坐标系"}
+{"test": "reject_nan_position", "success": true, "reason": "终点：目标位置必须包含三个有限数值"}
+{"test": "reject_zero_quaternion", "success": true, "reason": "终点：姿态四元数必须归一化，长度应为 1"}
+{"test": "reject_unreachable_pose", "success": true, "reason": "终点：当前 IK 求解未找到无碰撞解（错误码 -31）；请调整位姿"}
+{"test": "reject_nan_planning_parameter", "success": true, "reason": "step_size 必须在 [0.001, 6.3] 范围内且为有限数值"}
+{"test": "first_plan_and_export", "success": true, "tree_nodes": 49, "path_nodes": 15, "feedback_count": 5, "exported_path_rows": 145, "output_directory": "/home/zhuxd/aubo_ws/rrt_results/python/20261024_195629_135325"}
+{"test": "busy_plan_rejected", "success": true}
+{"test": "cancel_clears_old_result", "success": true, "replay_rejected": true}
+{"test": "plan_again_after_cancel", "success": true, "tree_nodes": 49, "path_nodes": 15, "feedback_count": 5, "exported_path_rows": 145, "output_directory": "/home/zhuxd/aubo_ws/rrt_results/python/20261024_195631_435767"}
+{"test": "replay_success", "success": true}
+{"test": "save_after_plan", "success": true, "task_file": "/home/zhuxd/aubo_ws/rrt_results/python/tasks/20261024_195631_457056.json"}
+{"suite": "rrt_panel_backend", "success": true, "passed": 16, "elapsed_seconds": 3.833, "failure": null, "execution_commands_sent": false}

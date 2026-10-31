@@ -1,0 +1,16 @@
+{
+  "run_id": "1793001900386599-456543-2",
+  "previous_run_id": "1793001617087807-456543-1",
+  "plan_only": true,
+  "action_success": true,
+  "solve_calls": 1,
+  "planner": "RRTkConfigDefault",
+  "attempts": 1,
+  "capture_ok": true,
+  "reason": "ok",
+  "final_exactly_matches_action": true,
+  "raw_follows_actual_parent_edges": true,
+  "vertex_count": 10,
+  "raw_waypoints": 2,
+  "final_waypoints": 91
+}

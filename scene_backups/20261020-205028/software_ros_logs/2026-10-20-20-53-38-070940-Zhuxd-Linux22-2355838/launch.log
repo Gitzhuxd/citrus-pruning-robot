@@ -1,0 +1,185 @@
+1792500818.0714042 [INFO] [launch]: All log files can be found below /home/zhuxd/aubo_ws/scene_backups/20261020-205028/software_ros_logs/2026-10-20-20-53-38-070940-Zhuxd-Linux22-2355838
+1792500818.0714738 [INFO] [launch]: Default logging verbosity is set to INFO
+1792500818.7810442 [INFO] [static_transform_publisher-1]: process started with pid [2355857]
+1792500818.7811944 [INFO] [robot_state_publisher-2]: process started with pid [2355859]
+1792500818.7812419 [INFO] [move_group-3]: process started with pid [2355861]
+1792500818.7812757 [INFO] [rviz2-4]: process started with pid [2355863]
+1792500818.7813077 [INFO] [ros2_control_node-5]: process started with pid [2355865]
+1792500818.7813396 [INFO] [spawner-6]: process started with pid [2355867]
+1792500818.7813714 [INFO] [spawner-7]: process started with pid [2355869]
+1792500818.7813988 [INFO] [spawner-8]: process started with pid [2355871]
+1792500818.7976556 [ros2_control_node-5] [33m[WARN] [controller_manager] [Deprecated] Passing the robot description parameter directly to the control_manager node is deprecated. Use '~/robot_description' topic from 'robot_state_publisher' instead.[0m
+1792500818.7979398 [ros2_control_node-5] [0m[INFO] [resource_manager] Loading hardware 'FakeSystem' [0m
+1792500818.7980874 [ros2_control_node-5] [0m[INFO] [resource_manager] Initialize hardware 'FakeSystem' [0m
+1792500818.7981272 [ros2_control_node-5] [0m[INFO] [resource_manager] Successful initialization of hardware 'FakeSystem'[0m
+1792500818.7982459 [ros2_control_node-5] [0m[INFO] [resource_manager] 'configure' hardware 'FakeSystem' [0m
+1792500818.7982802 [ros2_control_node-5] [0m[INFO] [resource_manager] Successful 'configure' of hardware 'FakeSystem'[0m
+1792500818.7983043 [ros2_control_node-5] [0m[INFO] [resource_manager] 'activate' hardware 'FakeSystem' [0m
+1792500818.7983274 [ros2_control_node-5] [0m[INFO] [resource_manager] Successful 'activate' of hardware 'FakeSystem'[0m
+1792500818.7997909 [ros2_control_node-5] [0m[INFO] [controller_manager] update rate is 100 Hz[0m
+1792500818.7998612 [ros2_control_node-5] [0m[INFO] [controller_manager] Spawning controller_manager RT thread with scheduler priority: 50[0m
+1792500818.8000178 [ros2_control_node-5] [33m[WARN] [controller_manager] Could not enable FIFO RT scheduling policy: with error number <1>(Operation not permitted). See [https://control.ros.org/master/doc/ros2_control/controller_manager/doc/userdoc.html] for details on how to enable realtime scheduling.[0m
+1792500818.8001342 [static_transform_publisher-1] [0m[INFO] [static_transform_publisher0] Spinning until stopped - publishing transform
+1792500818.8001812 [static_transform_publisher-1] translation: ('0.000000', '0.000000', '0.000000')
+1792500818.8002157 [static_transform_publisher-1] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+1792500818.8002460 [static_transform_publisher-1] from 'world' to 'car_base_footprint'[0m
+1792500818.9398022 [rviz2-4] [0m[INFO] [rviz2] Stereo is NOT SUPPORTED[0m
+1792500818.9399157 [rviz2-4] [0m[INFO] [rviz2] OpenGl version: 4.5 (GLSL 4.5)[0m
+1792500818.9682872 [ros2_control_node-5] [0m[INFO] [controller_manager] Loading controller 'joint_state_broadcaster'[0m
+1792500818.9698648 [rviz2-4] [0m[INFO] [rviz2] Stereo is NOT SUPPORTED[0m
+1792500818.9808557 [ros2_control_node-5] [0m[INFO] [controller_manager] Loading controller 'scissor_controller'[0m
+1792500818.9865179 [ros2_control_node-5] [33m[WARN] [scissor_controller] [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.[0m
+1792500818.9901502 [ros2_control_node-5] [0m[INFO] [controller_manager] Loading controller 'aubo_arm_controller'[0m
+1792500818.9934616 [ros2_control_node-5] [33m[WARN] [aubo_arm_controller] [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.[0m
+1792500819.0001223 [ros2_control_node-5] [0m[INFO] [controller_manager] Configuring controller 'joint_state_broadcaster'[0m
+1792500819.0002670 [ros2_control_node-5] [0m[INFO] [joint_state_broadcaster] 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published[0m
+1792500819.0100408 [ros2_control_node-5] [0m[INFO] [controller_manager] Configuring controller 'scissor_controller'[0m
+1792500819.0102172 [ros2_control_node-5] [0m[INFO] [scissor_controller] No specific joint names are used for command interfaces. Using 'joints' parameter.[0m
+1792500819.0102530 [ros2_control_node-5] [0m[INFO] [scissor_controller] Command interfaces are [position] and state interfaces are [position velocity].[0m
+1792500819.0102763 [ros2_control_node-5] [0m[INFO] [scissor_controller] Using 'splines' interpolation method.[0m
+1792500819.0106206 [ros2_control_node-5] [0m[INFO] [scissor_controller] Controller state will be published at 50.00 Hz.[0m
+1792500819.0115974 [ros2_control_node-5] [0m[INFO] [scissor_controller] Action status changes will be monitored at 20.00 Hz.[0m
+1792500819.0202491 [ros2_control_node-5] [0m[INFO] [controller_manager] Configuring controller 'aubo_arm_controller'[0m
+1792500819.0204046 [ros2_control_node-5] [0m[INFO] [aubo_arm_controller] No specific joint names are used for command interfaces. Using 'joints' parameter.[0m
+1792500819.0204456 [ros2_control_node-5] [0m[INFO] [aubo_arm_controller] Command interfaces are [position] and state interfaces are [position velocity].[0m
+1792500819.0204668 [ros2_control_node-5] [0m[INFO] [aubo_arm_controller] Using 'splines' interpolation method.[0m
+1792500819.0205805 [ros2_control_node-5] [0m[INFO] [aubo_arm_controller] Controller state will be published at 50.00 Hz.[0m
+1792500819.0211310 [ros2_control_node-5] [0m[INFO] [aubo_arm_controller] Action status changes will be monitored at 20.00 Hz.[0m
+1792500819.1041589 [rviz2-4] Warning: class_loader.impl: SEVERE WARNING!!! A namespace collision has occurred with plugin factory for class rviz_default_plugins::displays::InteractiveMarkerDisplay. New factory will OVERWRITE existing one. This situation occurs when libraries containing plugins are directly linked against an executable (the one running right now generating this message). Please separate plugins out into their own library or just don't link against the library and use either class_loader::ClassLoader/MultiLibraryClassLoader to open.
+1792500819.1042616 [rviz2-4]          at line 253 in /opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp
+1792500819.1116707 [rviz2-4] [33m[WARN] [gsplat_rviz_plugin] CUDA sort requested but this build has no CUDA support — falling back to CPU sort.[0m
+1792500819.1784368 [INFO] [spawner-8]: process has finished cleanly [pid 2355871]
+1792500819.1962292 [INFO] [spawner-7]: process has finished cleanly [pid 2355869]
+1792500819.2127366 [INFO] [spawner-6]: process has finished cleanly [pid 2355867]
+1792500822.8547120 [rviz2-4] [31m[ERROR] [moveit_ros_visualization.motion_planning_frame] Action server: /recognize_objects not available[0m
+1792500822.8614886 [rviz2-4] [0m[INFO] [moveit_ros_visualization.motion_planning_frame] MoveGroup namespace changed: / -> . Reloading params.[0m
+1792500822.8801420 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 0.0  splats: 0  |  sort (cpu): 0.000 ms  render: 0.000 ms  |  TBO: 0.00 MB  SH-TBO: 0.00 MB[0m
+1792500822.9006772 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 20.628 ms[0m
+1792500822.9146793 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.024 ms[0m
+1792500822.9328814 [rviz2-4] [0m[INFO] [moveit_rdf_loader.rdf_loader] Loaded robot model in 0.0536757 seconds[0m
+1792500822.9330020 [rviz2-4] [0m[INFO] [moveit_robot_model.robot_model] Loading robot model 'aubo_i5_scissors_robot'...[0m
+1792500823.1411445 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 0.310 ms[0m
+1792500823.4303808 [rviz2-4] [0m[INFO] [moveit_ros.planning_scene_monitor.planning_scene_monitor] Starting planning scene monitor[0m
+1792500823.4308560 [rviz2-4] [0m[INFO] [moveit_ros.planning_scene_monitor.planning_scene_monitor] Listening to '/monitored_planning_scene'[0m
+1792500823.9213240 [rviz2-4] [0m[INFO] [interactive_marker_display_107651706375760] Connected on namespace: /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic[0m
+1792500823.9325709 [rviz2-4] [0m[INFO] [moveit_ros_visualization.motion_planning_frame] group aubo_arm[0m
+1792500823.9327524 [rviz2-4] [0m[INFO] [moveit_ros_visualization.motion_planning_frame] Constructing new MoveGroup connection for group 'aubo_arm' in namespace ''[0m
+1792500823.9353979 [rviz2-4] [0m[INFO] [move_group_interface] Ready to take commands for planning group aubo_arm.[0m
+1792500823.9358597 [rviz2-4] [0m[INFO] [moveit_ros_visualization.motion_planning_frame] group aubo_arm[0m
+1792500824.3545244 [rviz2-4] [0m[INFO] [interactive_marker_display_107651706375760] Sending request for interactive markers[0m
+1792500824.5307779 [rviz2-4] [0m[INFO] [interactive_marker_display_107651706375760] Service response received for initialization[0m
+1792500824.8877974 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 3.8  splats: 361170  |  sort (cpu): 1.365 ms  render: 0.006 ms  |  TBO: 11.02 MB  SH-TBO: 8.27 MB[0m
+1792500825.0605955 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 1.548 ms[0m
+1792500825.0770841 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.006 ms[0m
+1792500825.2316756 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 0.286 ms[0m
+1792500826.9351356 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 4.9  splats: 361170  |  sort (cpu): 1.405 ms  render: 0.005 ms  |  TBO: 11.02 MB  SH-TBO: 8.27 MB[0m
+1792500827.1124573 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 1.512 ms[0m
+1792500827.1290510 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.006 ms[0m
+1792500827.2831531 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 0.294 ms[0m
+1792500829.0000093 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 5.2  splats: 361170  |  sort (cpu): 1.468 ms  render: 0.005 ms  |  TBO: 11.02 MB  SH-TBO: 8.27 MB[0m
+1792500829.1706510 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 1.528 ms[0m
+1792500829.1865454 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.005 ms[0m
+1792500829.3396168 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 0.277 ms[0m
+1792500831.0470209 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 5.4  splats: 361170  |  sort (cpu): 1.512 ms  render: 0.006 ms  |  TBO: 11.02 MB  SH-TBO: 8.27 MB[0m
+1792500831.2184632 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 1.465 ms[0m
+1792500831.2349756 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.005 ms[0m
+1792500831.3902166 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 0.282 ms[0m
+1792500833.0918663 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 5.5  splats: 361170  |  sort (cpu): 1.448 ms  render: 0.005 ms  |  TBO: 11.02 MB  SH-TBO: 8.27 MB[0m
+1792500833.2623472 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 1.631 ms[0m
+1792500833.2782776 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.006 ms[0m
+1792500833.4309707 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 0.333 ms[0m
+1792500835.1414387 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 5.9  splats: 361170  |  sort (cpu): 1.420 ms  render: 0.005 ms  |  TBO: 11.02 MB  SH-TBO: 8.27 MB[0m
+1792500835.3120046 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 1.510 ms[0m
+1792500835.3283556 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.006 ms[0m
+1792500835.4816089 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 0.335 ms[0m
+1792500837.1842105 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 5.9  splats: 361170  |  sort (cpu): 1.474 ms  render: 0.006 ms  |  TBO: 11.02 MB  SH-TBO: 8.27 MB[0m
+1792500837.3572183 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 1.456 ms[0m
+1792500837.3747506 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.006 ms[0m
+1792500837.5321403 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 0.277 ms[0m
+1792500839.2603230 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 5.8  splats: 361170  |  sort (cpu): 1.677 ms  render: 0.006 ms  |  TBO: 11.02 MB  SH-TBO: 8.27 MB[0m
+1792500839.4315524 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 1.740 ms[0m
+1792500839.4495881 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.005 ms[0m
+1792500839.6050606 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 0.344 ms[0m
+1792500841.3460546 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 5.8  splats: 361170  |  sort (cpu): 1.518 ms  render: 0.005 ms  |  TBO: 11.02 MB  SH-TBO: 8.27 MB[0m
+1792500841.5141506 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 1.390 ms[0m
+1792500841.5308471 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.005 ms[0m
+1792500841.6855979 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 0.335 ms[0m
+1792500843.3935647 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 5.8  splats: 361170  |  sort (cpu): 1.482 ms  render: 0.005 ms  |  TBO: 11.02 MB  SH-TBO: 8.27 MB[0m
+1792500843.5654762 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 1.447 ms[0m
+1792500843.5819416 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.005 ms[0m
+1792500843.7322974 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 0.325 ms[0m
+1792500845.4398575 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 5.8  splats: 361170  |  sort (cpu): 1.679 ms  render: 0.005 ms  |  TBO: 11.02 MB  SH-TBO: 8.27 MB[0m
+1792500845.6117311 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 1.543 ms[0m
+1792500845.6282849 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.005 ms[0m
+1792500845.7799907 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 0.290 ms[0m
+1792500847.5099578 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 5.8  splats: 361170  |  sort (cpu): 1.623 ms  render: 0.005 ms  |  TBO: 11.02 MB  SH-TBO: 8.27 MB[0m
+1792500847.6842587 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 1.554 ms[0m
+1792500847.7003431 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.005 ms[0m
+1792500847.8536558 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 0.299 ms[0m
+1792500849.5762472 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 5.8  splats: 361170  |  sort (cpu): 1.520 ms  render: 0.005 ms  |  TBO: 11.02 MB  SH-TBO: 8.27 MB[0m
+1792500849.7475951 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 1.685 ms[0m
+1792500849.7643671 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.005 ms[0m
+1792500849.9199381 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 0.259 ms[0m
+1792500851.6278217 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 5.8  splats: 361170  |  sort (cpu): 1.426 ms  render: 0.007 ms  |  TBO: 11.02 MB  SH-TBO: 8.27 MB[0m
+1792500851.8039751 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 1.527 ms[0m
+1792500851.8205514 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.006 ms[0m
+1792500851.9753366 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 0.357 ms[0m
+1792500853.6877978 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 5.8  splats: 361170  |  sort (cpu): 1.705 ms  render: 0.005 ms  |  TBO: 11.02 MB  SH-TBO: 8.27 MB[0m
+1792500853.8624015 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 1.722 ms[0m
+1792500853.8796651 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.005 ms[0m
+1792500854.0332553 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 0.315 ms[0m
+1792500855.7439876 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 5.8  splats: 361170  |  sort (cpu): 1.376 ms  render: 0.005 ms  |  TBO: 11.02 MB  SH-TBO: 8.27 MB[0m
+1792500855.9176071 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 1.591 ms[0m
+1792500855.9339082 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.005 ms[0m
+1792500856.0871203 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 0.359 ms[0m
+1792500857.8144457 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 5.8  splats: 361170  |  sort (cpu): 1.569 ms  render: 0.005 ms  |  TBO: 11.02 MB  SH-TBO: 8.27 MB[0m
+1792500857.9836173 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 1.466 ms[0m
+1792500857.9999516 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.005 ms[0m
+1792500858.1536515 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 0.315 ms[0m
+1792500859.8870792 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 5.8  splats: 361170  |  sort (cpu): 1.367 ms  render: 0.005 ms  |  TBO: 11.02 MB  SH-TBO: 8.27 MB[0m
+1792500860.0592494 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 1.555 ms[0m
+1792500860.0762596 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.005 ms[0m
+1792500860.2298918 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 0.286 ms[0m
+1792500860.9324942 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1792500860.9354789 [INFO] [ros2_control_node-5]: sending signal 'SIGINT' to process[ros2_control_node-5]
+1792500860.9361217 [INFO] [rviz2-4]: sending signal 'SIGINT' to process[rviz2-4]
+1792500860.9365706 [INFO] [move_group-3]: sending signal 'SIGINT' to process[move_group-3]
+1792500860.9369538 [INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+1792500860.9373105 [INFO] [static_transform_publisher-1]: sending signal 'SIGINT' to process[static_transform_publisher-1]
+1792500860.9374547 [rviz2-4] [0m[INFO] [rclcpp] signal_handler(SIGINT/SIGTERM)[0m
+1792500860.9377060 [ros2_control_node-5] [0m[INFO] [rclcpp] signal_handler(SIGINT/SIGTERM)[0m
+1792500860.9377365 [ros2_control_node-5] [0m[INFO] [controller_manager] Shutdown request received....[0m
+1792500860.9377577 [ros2_control_node-5] [0m[INFO] [controller_manager] Shutting down all controllers in the controller manager.[0m
+1792500860.9377775 [ros2_control_node-5] [0m[INFO] [controller_manager] Deactivating controller 'joint_state_broadcaster'[0m
+1792500860.9377935 [ros2_control_node-5] [0m[INFO] [controller_manager] Shutting down controller 'joint_state_broadcaster'[0m
+1792500860.9378104 [ros2_control_node-5] [0m[INFO] [controller_manager] Deactivating controller 'scissor_controller'[0m
+1792500860.9378266 [ros2_control_node-5] [0m[INFO] [controller_manager] Shutting down controller 'scissor_controller'[0m
+1792500860.9378426 [ros2_control_node-5] [0m[INFO] [controller_manager] Deactivating controller 'aubo_arm_controller'[0m
+1792500860.9378588 [ros2_control_node-5] [0m[INFO] [controller_manager] Shutting down controller 'aubo_arm_controller'[0m
+1792500860.9378769 [ros2_control_node-5] [0m[INFO] [resource_manager] 'deactivate' hardware 'FakeSystem' [0m
+1792500860.9378929 [ros2_control_node-5] [0m[INFO] [resource_manager] Successful 'deactivate' of hardware 'FakeSystem'[0m
+1792500860.9379082 [ros2_control_node-5] [0m[INFO] [resource_manager] 'shutdown' hardware 'FakeSystem' [0m
+1792500860.9379244 [ros2_control_node-5] [0m[INFO] [resource_manager] Successful 'shutdown' of hardware 'FakeSystem'[0m
+1792500860.9379394 [ros2_control_node-5] [0m[INFO] [controller_manager] Shutting down the controller manager.[0m
+1792500860.9380336 [static_transform_publisher-1] [0m[INFO] [rclcpp] signal_handler(SIGINT/SIGTERM)[0m
+1792500860.9381120 [ros2_control_node-5] [0m[INFO] [rclcpp] signal_handler(SIGINT/SIGTERM)[0m
+1792500860.9381919 [rviz2-4] [0m[INFO] [rclcpp] signal_handler(SIGINT/SIGTERM)[0m
+1792500860.9389439 [ERROR] [static_transform_publisher-1]: process has died [pid 2355857, exit code -2, cmd '/opt/ros/humble/lib/tf2_ros/static_transform_publisher --frame-id world --child-frame-id car_base_footprint --ros-args -r __node:=static_transform_publisher0'].
+1792500860.9390154 [ERROR] [robot_state_publisher-2]: process has died [pid 2355859, exit code -2, cmd '/opt/ros/humble/lib/robot_state_publisher/robot_state_publisher --ros-args --params-file /tmp/launch_params_iho70ko1 --params-file /tmp/launch_params_i6ifjgk0'].
+1792500860.9421377 [ERROR] [move_group-3]: process has died [pid 2355861, exit code -2, cmd '/opt/ros/humble/lib/moveit_ros_move_group/move_group --ros-args --params-file /tmp/launch_params_mxt7qcs2 --params-file /tmp/launch_params_idjqsho7'].
+1792500861.0522537 [INFO] [ros2_control_node-5]: process has finished cleanly [pid 2355865]
+1792500861.0857244 [rviz2-4] [33m[WARN] [interactive_marker_display_107651706375760] Server not available while running, resetting[0m
+1792500861.3581853 [rviz2-4] 
+1792500861.3582928 [rviz2-4] >>> [rcutils|error_handling.c:108] rcutils_set_error_state()
+1792500861.3583188 [rviz2-4] This error state is being overwritten:
+1792500861.3583372 [rviz2-4] 
+1792500861.3583562 [rviz2-4]   'rcl node's context is invalid, at ./src/rcl/node.c:428'
+1792500861.3583808 [rviz2-4] 
+1792500861.3583975 [rviz2-4] with this new error message:
+1792500861.3584139 [rviz2-4] 
+1792500861.3584297 [rviz2-4]   'publisher's context is invalid, at ./src/rcl/publisher.c:389'
+1792500861.3584456 [rviz2-4] 
+1792500861.3584628 [rviz2-4] rcutils_reset_error() should be called after error handling to avoid this.
+1792500861.3584785 [rviz2-4] <<<
+1792500861.3598881 [rviz2-4] [0m[INFO] [moveit_ros.planning_scene_monitor.planning_scene_monitor] Stopping planning scene monitor[0m
+1792500862.4375439 [ERROR] [rviz2-4]: process has died [pid 2355863, exit code -11, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /home/zhuxd/aubo_ws/src/aubo_i5_scissors_moveit_config/config/moveit.rviz --ros-args --params-file /tmp/launch_params_gkfhcuhk --params-file /tmp/launch_params_7lsztgzr --params-file /tmp/launch_params_4u37qzj0'].

@@ -1,0 +1,10 @@
+{
+  "run_id": "1793001617087807-456543-1",
+  "late_subscriber": true,
+  "snapshot_clears_previous": true,
+  "final_cdr_matches_topic": true,
+  "vertices_fk_checked": 6,
+  "max_fk_error_m": 0.0,
+  "tree_edge_interpolated_states_checked": 751,
+  "all_valid": true
+}

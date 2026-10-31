@@ -1,0 +1,24 @@
+[0.634s] Invoking command in '/home/zhuxd/aubo_ws/build/aubo_rrt_python': PYTHONPATH=/home/zhuxd/aubo_ws/build/aubo_rrt_python/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zhuxd/aubo_ws/install/aubo_rrt_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/zhuxd/aubo_ws/build/aubo_rrt_python/build --no-deps symlink_data
+[0.776s] running develop
+[0.855s] running egg_info
+[0.855s] creating aubo_rrt_python.egg-info
+[0.855s] writing aubo_rrt_python.egg-info/PKG-INFO
+[0.855s] writing dependency_links to aubo_rrt_python.egg-info/dependency_links.txt
+[0.855s] writing entry points to aubo_rrt_python.egg-info/entry_points.txt
+[0.855s] writing requirements to aubo_rrt_python.egg-info/requires.txt
+[0.855s] writing top-level names to aubo_rrt_python.egg-info/top_level.txt
+[0.855s] writing manifest file 'aubo_rrt_python.egg-info/SOURCES.txt'
+[0.856s] reading manifest file 'aubo_rrt_python.egg-info/SOURCES.txt'
+[0.856s] writing manifest file 'aubo_rrt_python.egg-info/SOURCES.txt'
+[0.857s] running build_ext
+[0.857s] Creating /home/zhuxd/aubo_ws/install/aubo_rrt_python/lib/python3.10/site-packages/aubo-rrt-python.egg-link (link to .)
+[0.858s] Installing rrt_demo script to /home/zhuxd/aubo_ws/install/aubo_rrt_python/lib/aubo_rrt_python
+[0.858s] 
+[0.858s] Installed /home/zhuxd/aubo_ws/build/aubo_rrt_python
+[0.858s] running symlink_data
+[0.858s] creating /home/zhuxd/aubo_ws/install/aubo_rrt_python/share/ament_index
+[0.858s] creating /home/zhuxd/aubo_ws/install/aubo_rrt_python/share/ament_index/resource_index
+[0.858s] creating /home/zhuxd/aubo_ws/install/aubo_rrt_python/share/ament_index/resource_index/packages
+[0.858s] symbolically linking /home/zhuxd/aubo_ws/build/aubo_rrt_python/resource/aubo_rrt_python -> /home/zhuxd/aubo_ws/install/aubo_rrt_python/share/ament_index/resource_index/packages
+[0.858s] symbolically linking /home/zhuxd/aubo_ws/build/aubo_rrt_python/package.xml -> /home/zhuxd/aubo_ws/install/aubo_rrt_python/share/aubo_rrt_python
+[0.874s] Invoked command in '/home/zhuxd/aubo_ws/build/aubo_rrt_python' returned '0': PYTHONPATH=/home/zhuxd/aubo_ws/build/aubo_rrt_python/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zhuxd/aubo_ws/install/aubo_rrt_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/zhuxd/aubo_ws/build/aubo_rrt_python/build --no-deps symlink_data

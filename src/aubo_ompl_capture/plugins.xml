@@ -1,0 +1,12 @@
+<library path="aubo_ompl_capture">
+  <class name="aubo_ompl_capture/OMPLPlanner"
+         type="capture::PlannerManager"
+         base_class_type="planning_interface::PlannerManager">
+    <description>Delegate OMPL planning and capture its actual exploration tree.</description>
+  </class>
+  <class name="aubo_ompl_capture/CaptureResult"
+         type="capture::CaptureResult"
+         base_class_type="planning_request_adapter::PlanningRequestAdapter">
+    <description>Associate the same planning request with its processed trajectory.</description>
+  </class>
+</library>

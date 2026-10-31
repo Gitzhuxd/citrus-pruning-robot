@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "group": "aubo_arm",
+  "tcp": "scissor_tcp",
+  "frame": "world",
+  "settings": {
+    "step_size": 0.3,
+    "goal_bias": 0.1,
+    "collision_step": 0.04,
+    "planning_time": 60.0,
+    "replay_step": 0.0,
+    "max_iterations": 2500,
+    "seed": 42
+  },
+  "joint_names": [
+    "shoulder_joint",
+    "upperArm_joint",
+    "foreArm_joint",
+    "wrist1_joint",
+    "wrist2_joint",
+    "wrist3_joint"
+  ],
+  "start": {
+    "mode": 0,
+    "name": "",
+    "resolved_joints_rad": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "resolved_pose": {
+      "frame": "world",
+      "position_m": [
+        0.004999999999510161,
+        -0.3654999999995103,
+        1.6084999999992653
+      ],
+      "quaternion_xyzw": [
+        0.4999990816991052,
+        -0.5000009183016569,
+        0.499999081696657,
+        0.5000009182992082
+      ]
+    }
+  },
+  "goal": {
+    "mode": 1,
+    "name": "pose1",
+    "resolved_joints_rad": [
+      -0.0347,
+      1.215,
+      2.2564,
+      0.7984,
+      0.3818,
+      0.5207
+    ],
+    "resolved_pose": {
+      "frame": "world",
+      "position_m": [
+        0.047442667960247896,
+        -0.3481703574997612,
+        1.1330656785419206
+      ],
+      "quaternion_xyzw": [
+        0.5328564492886323,
+        -0.5107741072182113,
+        0.6016152277445035,
+        0.3053406844704453
+      ]
+    }
+  },
+  "full_state_joint_names": [
+    "shoulder_joint",
+    "upperArm_joint",
+    "foreArm_joint",
+    "wrist1_joint",
+    "wrist2_joint",
+    "wrist3_joint",
+    "scissor_drive_joint",
+    "scissor_mimic_joint"
+  ],
+  "full_state_positions_rad": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.3,
+    -0.3
+  ],
+  "joint_lower": [
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586
+  ],
+  "joint_upper": [
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586
+  ],
+  "display_only_no_execution": true,
+  "gaussian_tree_is_visual_only": true
+}

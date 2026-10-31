@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from aubo_rrt_interfaces/srv/GetRRTInfo.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/PoseStamped.idl"
+#include "moveit_msgs/msg/RobotState.idl"
+
+module aubo_rrt_interfaces {
+  module srv {
+    struct GetRRTInfo_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetRRTInfo_Response {
+      boolean ready;
+
+      string message;
+
+      sequence<string> named_states;
+
+      geometry_msgs::msg::PoseStamped current_pose;
+
+      moveit_msgs::msg::RobotState current_state;
+    };
+  };
+};

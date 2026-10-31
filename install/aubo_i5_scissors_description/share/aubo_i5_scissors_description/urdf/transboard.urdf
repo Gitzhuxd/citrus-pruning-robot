@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="generated_robot">
+  <link name="zhuanjie_link">
+    <inertial>
+      <origin xyz="0 -0.004 -0.06875" rpy="0 0 0" />
+      <mass value="0.079097956" />
+      <inertia ixx="0.00012504233" iyy="0.00016169764" izz="3.7499023e-05" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.5707963 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_part_001_solid_001.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray">
+        <color rgba="0.65 0.65 0.65 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.5707963 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_part_001_solid_001.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

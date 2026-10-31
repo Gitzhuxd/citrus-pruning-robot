@@ -1,0 +1,4 @@
+source;share/aubo_rrt_visualizer/local_setup.bash
+source;share/aubo_rrt_visualizer/local_setup.dsv
+source;share/aubo_rrt_visualizer/local_setup.sh
+source;share/aubo_rrt_visualizer/local_setup.zsh

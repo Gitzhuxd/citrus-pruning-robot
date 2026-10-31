@@ -1,0 +1,71 @@
+[0.000000] (-) TimerEvent: {}
+[0.000281] (-) JobUnselected: {'identifier': 'aubo_dashboard_msgs'}
+[0.000464] (-) JobUnselected: {'identifier': 'aubo_description'}
+[0.000482] (-) JobUnselected: {'identifier': 'aubo_gazebo'}
+[0.000497] (-) JobUnselected: {'identifier': 'aubo_i5_scissors_description'}
+[0.000511] (-) JobUnselected: {'identifier': 'aubo_i5_scissors_moveit_config'}
+[0.000525] (-) JobUnselected: {'identifier': 'aubo_moveit_config'}
+[0.000539] (-) JobUnselected: {'identifier': 'aubo_msgs'}
+[0.000553] (-) JobUnselected: {'identifier': 'aubo_ros2_driver'}
+[0.000567] (-) JobUnselected: {'identifier': 'aubo_rrt_interfaces'}
+[0.000582] (-) JobUnselected: {'identifier': 'aubo_rrt_panel'}
+[0.000610] (-) JobUnselected: {'identifier': 'aubo_rrt_python'}
+[0.000626] (-) JobUnselected: {'identifier': 'aubo_rrt_visualizer'}
+[0.000676] (-) JobUnselected: {'identifier': 'realsense2_camera'}
+[0.000690] (-) JobUnselected: {'identifier': 'realsense2_camera_msgs'}
+[0.000703] (-) JobUnselected: {'identifier': 'realsense2_description'}
+[0.000716] (-) JobUnselected: {'identifier': 'ros_joints_plan'}
+[0.000732] (aubo_ompl_capture) JobQueued: {'identifier': 'aubo_ompl_capture', 'dependencies': OrderedDict()}
+[0.000748] (aubo_ompl_capture) JobStarted: {'identifier': 'aubo_ompl_capture'}
+[0.007427] (aubo_ompl_capture) JobProgress: {'identifier': 'aubo_ompl_capture', 'progress': 'cmake'}
+[0.007838] (aubo_ompl_capture) Command: {'cmd': ['/usr/bin/cmake', '/home/zhuxd/aubo_ws/src/aubo_ompl_capture', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/zhuxd/aubo_ws/install/aubo_ompl_capture'], 'cwd': '/home/zhuxd/aubo_ws/build/aubo_ompl_capture', 'env': OrderedDict([('LANGUAGE', 'zh_CN:en'), ('USER', 'zhuxd'), ('SSH_CLIENT', '10.135.44.163 13574 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/lib:/home/zhuxd/aubo_ws/install/aubo_rrt_panel/lib:/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/lib:/home/zhuxd/aubo_ws/install/aubo_ros2_driver/lib:/home/zhuxd/aubo_ws/install/aubo_msgs/lib:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/lib:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_rviz_plugin/lib:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/zhuxd'), ('OLDPWD', '/home/zhuxd'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/zhuxd/aubo_ws/install:/home/zhuxd/rvizsplat_humble_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zhuxd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('XDG_SESSION_ID', '70'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('AMENT_PREFIX_PATH', '/home/zhuxd/aubo_ws/install/ros_joints_plan:/home/zhuxd/aubo_ws/install/aubo_rrt_visualizer:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_moveit_config:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/realsense2_description:/home/zhuxd/aubo_ws/install/realsense2_camera_msgs:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/home/zhuxd/aubo_ws/install/aubo_rrt_panel:/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces:/home/zhuxd/aubo_ws/install/aubo_ros2_driver:/home/zhuxd/aubo_ws/install/aubo_msgs:/home/zhuxd/aubo_ws/install/aubo_gazebo:/home/zhuxd/aubo_ws/install/aubo_moveit_config:/home/zhuxd/aubo_ws/install/aubo_description:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_rviz_plugin:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/zhuxd/aubo_ws/build/aubo_ompl_capture'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.135.44.163 13574 10.134.214.209 22'), ('PYTHONPATH', '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib/python3.10/site-packages:/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/zhuxd/aubo_ws/build/aubo_rrt_python:/home/zhuxd/aubo_ws/install/aubo_rrt_python/lib/python3.10/site-packages:/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages:/home/zhuxd/aubo_ws/install/aubo_ros2_driver/local/lib/python3.10/dist-packages:/home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zhuxd/aubo_ws/install/ros_joints_plan:/home/zhuxd/aubo_ws/install/aubo_rrt_visualizer:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_moveit_config:/home/zhuxd/aubo_ws/install/realsense2_description:/home/zhuxd/aubo_ws/install/realsense2_camera_msgs:/home/zhuxd/aubo_ws/install/aubo_rrt_panel:/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces:/home/zhuxd/aubo_ws/install/aubo_ros2_driver:/home/zhuxd/aubo_ws/install/aubo_msgs:/home/zhuxd/aubo_ws/install/aubo_gazebo:/home/zhuxd/aubo_ws/install/aubo_moveit_config:/home/zhuxd/aubo_ws/install/aubo_description:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_rviz_plugin:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_msgs:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble')]), 'shell': False}
+[0.099917] (-) TimerEvent: {}
+[0.200123] (-) TimerEvent: {}
+[0.300335] (-) TimerEvent: {}
+[0.400530] (-) TimerEvent: {}
+[0.404600] (aubo_ompl_capture) StdoutLine: {'line': b'-- The C compiler identification is unknown\n'}
+[0.500664] (-) TimerEvent: {}
+[0.552716] (aubo_ompl_capture) StdoutLine: {'line': b'-- The CXX compiler identification is unknown\n'}
+[0.556573] (aubo_ompl_capture) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.579145] (aubo_ompl_capture) StdoutLine: {'line': b'-- Detecting C compiler ABI info - failed\n'}
+[0.579246] (aubo_ompl_capture) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.600775] (-) TimerEvent: {}
+[0.601352] (aubo_ompl_capture) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - broken\n'}
+[0.601637] (aubo_ompl_capture) StderrLine: {'line': b'CMake Error at /usr/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake:69 (message):\n'}
+[0.601696] (aubo_ompl_capture) StderrLine: {'line': b'  The C compiler\n'}
+[0.601739] (aubo_ompl_capture) StderrLine: {'line': b'\n'}
+[0.601773] (aubo_ompl_capture) StderrLine: {'line': b'    "/usr/bin/cc"\n'}
+[0.601807] (aubo_ompl_capture) StderrLine: {'line': b'\n'}
+[0.601838] (aubo_ompl_capture) StderrLine: {'line': b'  is not able to compile a simple test program.\n'}
+[0.601870] (aubo_ompl_capture) StderrLine: {'line': b'\n'}
+[0.601901] (aubo_ompl_capture) StderrLine: {'line': b'  It fails with the following output:\n'}
+[0.601931] (aubo_ompl_capture) StderrLine: {'line': b'\n'}
+[0.601959] (aubo_ompl_capture) StderrLine: {'line': b'    Change Dir: /home/zhuxd/aubo_ws/build/aubo_ompl_capture/CMakeFiles/CMakeTmp\n'}
+[0.601992] (aubo_ompl_capture) StderrLine: {'line': b'    \n'}
+[0.602018] (aubo_ompl_capture) StderrLine: {'line': b'    Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_257fe/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_257fe.dir/build.make CMakeFiles/cmTC_257fe.dir/build\n'}
+[0.602046] (aubo_ompl_capture) StderrLine: {'line': b'    gmake[1]: \xe8\xbf\x9b\xe5\x85\xa5\xe7\x9b\xae\xe5\xbd\x95\xe2\x80\x9c/home/zhuxd/aubo_ws/build/aubo_ompl_capture/CMakeFiles/CMakeTmp\xe2\x80\x9d\n'}
+[0.602075] (aubo_ompl_capture) StderrLine: {'line': b'    Building C object CMakeFiles/cmTC_257fe.dir/testCCompiler.c.o\n'}
+[0.602101] (aubo_ompl_capture) StderrLine: {'line': b'    /usr/bin/cc    -o CMakeFiles/cmTC_257fe.dir/testCCompiler.c.o -c /home/zhuxd/aubo_ws/build/aubo_ompl_capture/CMakeFiles/CMakeTmp/testCCompiler.c\n'}
+[0.602128] (aubo_ompl_capture) StderrLine: {'line': b'    /home/zhuxd/aubo_ws/build/aubo_ompl_capture/CMakeFiles/CMakeTmp/testCCompiler.c:11:1: fatal error: error closing /tmp/ccJQD9tj.s: \xe8\xae\xbe\xe5\xa4\x87\xe4\xb8\x8a\xe6\xb2\xa1\xe6\x9c\x89\xe7\xa9\xba\xe9\x97\xb4\n'}
+[0.602176] (aubo_ompl_capture) StderrLine: {'line': b'       11 | { (void)argv; return argc-1;}\n'}
+[0.602260] (aubo_ompl_capture) StderrLine: {'line': b'          | ^\n'}
+[0.602295] (aubo_ompl_capture) StderrLine: {'line': b'    compilation terminated.\n'}
+[0.602324] (aubo_ompl_capture) StderrLine: {'line': b'    gmake[1]: *** [CMakeFiles/cmTC_257fe.dir/build.make:78\xef\xbc\x9aCMakeFiles/cmTC_257fe.dir/testCCompiler.c.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[0.602351] (aubo_ompl_capture) StderrLine: {'line': b'    gmake[1]: \xe7\xa6\xbb\xe5\xbc\x80\xe7\x9b\xae\xe5\xbd\x95\xe2\x80\x9c/home/zhuxd/aubo_ws/build/aubo_ompl_capture/CMakeFiles/CMakeTmp\xe2\x80\x9d\n'}
+[0.602377] (aubo_ompl_capture) StderrLine: {'line': b'    gmake: *** [Makefile:127\xef\xbc\x9acmTC_257fe/fast] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[0.602404] (aubo_ompl_capture) StderrLine: {'line': b'    \n'}
+[0.602430] (aubo_ompl_capture) StderrLine: {'line': b'    \n'}
+[0.602456] (aubo_ompl_capture) StderrLine: {'line': b'\n'}
+[0.602483] (aubo_ompl_capture) StderrLine: {'line': b'  \n'}
+[0.602510] (aubo_ompl_capture) StderrLine: {'line': b'\n'}
+[0.602536] (aubo_ompl_capture) StderrLine: {'line': b'  CMake will not be able to correctly generate this project.\n'}
+[0.602562] (aubo_ompl_capture) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.602587] (aubo_ompl_capture) StderrLine: {'line': b'  CMakeLists.txt:2 (project)\n'}
+[0.602612] (aubo_ompl_capture) StderrLine: {'line': b'\n'}
+[0.602638] (aubo_ompl_capture) StderrLine: {'line': b'\n'}
+[0.602663] (aubo_ompl_capture) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.602692] (aubo_ompl_capture) StdoutLine: {'line': b'See also "/home/zhuxd/aubo_ws/build/aubo_ompl_capture/CMakeFiles/CMakeOutput.log".\n'}
+[0.602720] (aubo_ompl_capture) StdoutLine: {'line': b'See also "/home/zhuxd/aubo_ws/build/aubo_ompl_capture/CMakeFiles/CMakeError.log".\n'}
+[0.608550] (aubo_ompl_capture) CommandEnded: {'returncode': 1}
+[0.627626] (aubo_ompl_capture) JobEnded: {'identifier': 'aubo_ompl_capture', 'rc': 1}
+[0.637845] (-) EventReactorShutdown: {}

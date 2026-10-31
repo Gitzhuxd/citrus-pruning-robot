@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://download.aubo-robotics.cn/sdk/aubo_sdk-0.24.1-rc.3-Linux_x86_64+318754d.zip'
+tag=''

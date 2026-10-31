@@ -1,0 +1,26 @@
+run_id: "1793001920806553-456543-5"
+capture_ok: true
+reason: "ok"
+solve_calls: 1
+planning_attempts: 1
+planner_id: "RRTkConfigDefault"
+group: "aubo_arm"
+frame: "car_base_footprint"
+tcp_link: scissor_tcp
+exact_solution: true
+planner_returned_success: true
+moveit_error_code: 1
+vertex_count: 9
+edge_count: 8
+raw_waypoint_count: 2
+final_waypoint_count: 91
+resolved_range: 15.079644737231007
+goal_bias: 0.050000000000000003
+context_solve_wall_s: 0.011748801
+moveit_reported_planning_s: 0.011653346
+tree_capture_s: 0.00023927900000000001
+export_prepare_s: 0.0030961970000000002
+final_stage: after_request_adapters_before_pipeline_validation
+tree_data: retained_vertices_not_all_samples
+raw_path_vertex_ids: [1, 0]
+output_directory: "/home/zhuxd/aubo_ws/rrt_results/ompl_same_plan/1793001920806553-456543-5"

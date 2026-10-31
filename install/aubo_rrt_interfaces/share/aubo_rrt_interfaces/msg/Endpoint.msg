@@ -1,0 +1,1 @@
+/home/zhuxd/aubo_ws/src/aubo_rrt_interfaces/msg/Endpoint.msg

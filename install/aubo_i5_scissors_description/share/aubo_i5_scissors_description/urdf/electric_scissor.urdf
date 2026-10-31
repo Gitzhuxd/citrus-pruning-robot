@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  electric_scissor.urdf
+
+  电动剪刀末端执行器模型。
+
+  模型组成：
+    1. scissor_base_link
+       剪刀主体，包括外壳、传动机构和固定零件。
+
+    2. scissor_active_blade_link
+       主动刀片，由 scissor_drive_joint 驱动。
+
+    3. scissor_mimic_blade_link
+       从动刀片，通过 mimic 反向跟随主动刀片。
+
+    4. scissor_tcp
+       剪切工具中心点，后续需要根据真实剪切位置标定。
+
+  注意：
+    - STL 文件单位为毫米，因此 mesh scale 设置为 0.001。
+    - 所有 STL 均绕 X 轴旋转 90°，用于修正 CAD 导出坐标系。
+    - visual 用于 RViz 显示。
+    - collision 用于 MoveIt 和 Gazebo 碰撞检测。
+-->
+
+<robot name="electric_scissor">
+
+  <!-- ====================================================== -->
+  <!-- 1. 全局材质定义                                     -->
+  <!-- ====================================================== -->
+
+  <!-- 刀片金属灰 -->
+  <material name="scissor_metal">
+    <color rgba="0.65 0.65 0.65 1.0"/>
+  </material>
+
+  <!-- 剪刀主体深灰 -->
+  <material name="scissor_dark">
+    <color rgba="0.15 0.15 0.15 1.0"/>
+  </material>
+
+  <!-- 黑色零件 -->
+  <material name="scissor_black">
+    <color rgba="0.03 0.03 0.03 1.0"/>
+  </material>
+
+
+  <!-- ====================================================== -->
+  <!-- 2. 剪刀主体 Link                                     -->
+  <!-- ====================================================== -->
+
+  <link name="scissor_base_link">
+
+    <!-- 质量、质心和惯性参数 -->
+    <inertial>
+      <origin
+        xyz="0.0076243979 0.050434019 9.2982989e-07"
+        rpy="0 0 0"/>
+
+      <mass value="0.10016766"/>
+
+      <inertia
+        ixx="0.0001046961"
+        ixy="-9.2972929e-08"
+        ixz="-8.7353947e-08"
+        iyy="7.2682423e-05"
+        iyz="-4.2687321e-08"
+        izz="0.00013057345"/>
+    </inertial>
+
+
+    <!--  主体零件 003  -->
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963 0 0"/>
+
+      <geometry>
+        <mesh
+          filename="package://aubo_i5_scissors_description/meshes/scissors/visual/part_003_solid_003.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+
+      <material name="scissor_dark"/>
+    </visual>
+
+
+    <!--  主体零件 004  -->
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963 0 0"/>
+
+      <geometry>
+        <mesh
+          filename="package://aubo_i5_scissors_description/meshes/scissors/visual/part_004_solid_004.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+
+      <material name="scissor_dark"/>
+    </visual>
+
+
+    <!--  主体零件 005  -->
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963 0 0"/>
+
+      <geometry>
+        <mesh
+          filename="package://aubo_i5_scissors_description/meshes/scissors/visual/part_005_solid_005.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+
+      <material name="scissor_dark"/>
+    </visual>
+
+
+    <!--  主体零件 006  -->
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963 0 0"/>
+
+      <geometry>
+        <mesh
+          filename="package://aubo_i5_scissors_description/meshes/scissors/visual/part_006_solid_006.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+
+      <material name="scissor_dark"/>
+    </visual>
+
+
+    <!--  主体零件 007  -->
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963 0 0"/>
+
+      <geometry>
+        <mesh
+          filename="package://aubo_i5_scissors_description/meshes/scissors/visual/part_007_solid_007.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+
+      <material name="scissor_dark"/>
+    </visual>
+
+
+    <!--  主体零件 008  -->
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963 0 0"/>
+
+      <geometry>
+        <mesh
+          filename="package://aubo_i5_scissors_description/meshes/scissors/visual/part_008_solid_008.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+
+      <material name="scissor_dark"/>
+    </visual>
+
+
+    <!--  主体零件 009  -->
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963 0 0"/>
+
+      <geometry>
+        <mesh
+          filename="package://aubo_i5_scissors_description/meshes/scissors/visual/part_009_solid_009.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+
+      <material name="scissor_dark"/>
+    </visual>
+
+
+    <!-- ================================================== -->
+    <!-- 剪刀主体碰撞模型                                   -->
+    <!-- 当前暂时沿用原始 STL，后期可改成简化碰撞模型        -->
+    <!-- ================================================== -->
+
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963 0 0"/>
+
+      <geometry>
+        <mesh
+          filename="package://aubo_i5_scissors_description/meshes/scissors/visual/part_003_solid_003.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963 0 0"/>
+
+      <geometry>
+        <mesh
+          filename="package://aubo_i5_scissors_description/meshes/scissors/visual/part_004_solid_004.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963 0 0"/>
+
+      <geometry>
+        <mesh
+          filename="package://aubo_i5_scissors_description/meshes/scissors/visual/part_005_solid_005.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963 0 0"/>
+
+      <geometry>
+        <mesh
+          filename="package://aubo_i5_scissors_description/meshes/scissors/visual/part_006_solid_006.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963 0 0"/>
+
+      <geometry>
+        <mesh
+          filename="package://aubo_i5_scissors_description/meshes/scissors/visual/part_007_solid_007.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963 0 0"/>
+
+      <geometry>
+        <mesh
+          filename="package://aubo_i5_scissors_description/meshes/scissors/visual/part_008_solid_008.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963 0 0"/>
+
+      <geometry>
+        <mesh
+          filename="package://aubo_i5_scissors_description/meshes/scissors/visual/part_009_solid_009.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+
+  </link>
+
+
+  <!-- ====================================================== -->
+  <!-- 3. 主动刀片 Link                                     -->
+  <!-- ====================================================== -->
+
+  <link name="scissor_active_blade_link">
+
+    <inertial>
+      <origin
+        xyz="0.0070499998 0.014964871 0.030601738"
+        rpy="0 0 0"/>
+
+      <mass value="0.02"/>
+
+      <inertia
+        ixx="1.9663629e-05"
+        ixy="0"
+        ixz="0"
+        iyy="1.3739718e-05"
+        iyz="0"
+        izz="6.5866103e-06"/>
+    </inertial>
+
+
+    <!-- 主动刀片显示模型 -->
+
+    <visual>
+      <origin
+        xyz="-0.0008 -0.092997894 2.05725e-06"
+        rpy="1.5707963 0 0"/>
+
+      <geometry>
+        <mesh
+          filename="package://aubo_i5_scissors_description/meshes/scissors/visual/part_002_solid_002.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+
+      <material name="scissor_metal"/>
+    </visual>
+
+
+    <!-- 主动刀片碰撞模型 -->
+
+    <collision>
+      <origin
+        xyz="-0.0008 -0.092997894 2.05725e-06"
+        rpy="1.5707963 0 0"/>
+
+      <geometry>
+        <mesh
+          filename="package://aubo_i5_scissors_description/meshes/scissors/visual/part_002_solid_002.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+
+  </link>
+
+
+  <!-- ====================================================== -->
+  <!-- 4. 从动刀片 Link                                     -->
+  <!-- ====================================================== -->
+
+  <link name="scissor_mimic_blade_link">
+
+    <inertial>
+      <origin
+        xyz="-0.0064 0.019301949 -0.026402763"
+        rpy="0 0 0"/>
+
+      <mass value="0.02"/>
+
+      <inertia
+        ixx="1.5965507e-05"
+        ixy="0"
+        ixz="0"
+        iyy="9.8868516e-06"
+        iyz="0"
+        izz="6.6247887e-06"/>
+    </inertial>
+
+
+    <!-- 从动刀片显示模型 -->
+
+    <visual>
+      <origin
+        xyz="-0.0008 -0.092997894 2.05725e-06"
+        rpy="1.5707963 0 0"/>
+
+      <geometry>
+        <mesh
+          filename="package://aubo_i5_scissors_description/meshes/scissors/visual/part_001_solid_001.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+
+      <material name="scissor_metal"/>
+    </visual>
+
+
+    <!-- 从动刀片碰撞模型 -->
+
+    <collision>
+      <origin
+        xyz="-0.0008 -0.092997894 2.05725e-06"
+        rpy="1.5707963 0 0"/>
+
+      <geometry>
+        <mesh
+          filename="package://aubo_i5_scissors_description/meshes/scissors/visual/part_001_solid_001.stl"
+          scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+
+  </link>
+
+
+  <!-- ====================================================== -->
+  <!-- 5. 主动刀片旋转关节                                  -->
+  <!-- ====================================================== -->
+
+  <joint name="scissor_drive_joint" type="revolute">
+
+    <!-- 刀片转轴相对于剪刀主体的位置 -->
+    <origin
+      xyz="0.0008 0.092997894 -2.05725e-06"
+      rpy="0 0 0"/>
+
+    <parent link="scissor_base_link"/>
+    <child link="scissor_active_blade_link"/>
+
+    <!-- 刀片绕局部 X 轴负方向转动 -->
+    <axis xyz="-1 0 0"/>
+
+    <!--
+      lower / upper：允许的旋转角度，单位为弧度
+      effort：最大关节驱动力矩，当前为估计值
+      velocity：最大关节速度，当前为估计值
+    -->
+    <limit
+      lower="0.26"
+      upper="1.0"
+      effort="10"
+      velocity="5"/>
+
+  </joint>
+
+
+  <!-- ====================================================== -->
+  <!-- 6. 从动刀片 Mimic 关节                               -->
+  <!-- ====================================================== -->
+
+  <joint name="scissor_mimic_joint" type="revolute">
+
+    <origin
+      xyz="0.0008 0.092997894 -2.05725e-06"
+      rpy="0 0 0"/>
+
+    <parent link="scissor_base_link"/>
+    <child link="scissor_mimic_blade_link"/>
+
+    <axis xyz="-1 0 0"/>
+
+    <!--
+      multiplier="-1"：
+      从动刀片与主动刀片以相反方向旋转。
+
+      offset="0"：
+      两个刀片之间没有额外角度偏移。
+    -->
+    <mimic
+      joint="scissor_drive_joint"
+      multiplier="-1"
+      offset="0"/>
+
+    <limit
+      lower="-1.0"
+      upper="-0.26"
+      effort="10"
+      velocity="5.0"/>
+
+  </joint>
+
+
+  <!-- ====================================================== -->
+  <!-- 7. 剪切工具中心点 TCP                                -->
+  <!-- ====================================================== -->
+
+  <!--
+    scissor_tcp 是后续 MoveIt 规划所使用的剪切工具坐标系。
+
+    当前 xyz 和 rpy 均为临时零值，不能作为最终剪切点使用。
+
+    后续需要测量：
+      1. scissor_base_link 原点到两刀片有效剪切区域的距离；
+      2. 剪刀接近枝条时的工具朝向；
+      3. 刀片闭合位置对应的真实剪切中心。
+  -->
+
+  <link name="scissor_tcp"/>
+
+  <joint name="scissor_tcp_joint" type="fixed">
+
+    <!-- 后续根据真实测量结果修改 -->
+    <origin
+      xyz="0 0.15 0.005"
+      rpy="-1.5708 0 0"/>
+
+    <parent link="scissor_base_link"/>
+    <child link="scissor_tcp"/>
+
+  </joint>
+
+</robot>

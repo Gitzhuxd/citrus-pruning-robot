@@ -1,0 +1,1 @@
+rclcpp;rclcpp_action;rviz_common;pluginlib;aubo_rrt_interfaces;geometry_msgs;std_srvs;qtbase5-dev

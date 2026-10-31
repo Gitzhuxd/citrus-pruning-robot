@@ -1,0 +1,1 @@
+/home/zhuxd/aubo_ws/build/aubo_i5_scissors_moveit_config/ament_cmake_core/aubo_i5_scissors_moveit_configConfig-version.cmake

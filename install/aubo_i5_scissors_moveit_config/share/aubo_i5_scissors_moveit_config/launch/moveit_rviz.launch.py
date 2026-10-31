@@ -1,0 +1,1 @@
+/home/zhuxd/aubo_ws/src/aubo_i5_scissors_moveit_config/launch/moveit_rviz.launch.py

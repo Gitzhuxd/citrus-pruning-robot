@@ -1,0 +1,1132 @@
+-- Found ros_environment: 3.2.2 (/opt/ros/humble/share/ros_environment/cmake)
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zhuxd/aubo_ws/build/aubo_description
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//launch/aubo_viewer.launch.py
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//launch/load_aubo.launch
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10/visual/link0.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10/visual/link1.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10/visual/link2.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10/visual/link3.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10/visual/link4.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10/visual/link5.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10/visual/link6.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10_30/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10_30/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10_30/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10_30/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10_30/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10_30/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10_30/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10_30/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10_30/visual/link0.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10_30/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10_30/visual/link1.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10_30/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10_30/visual/link2.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10_30/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10_30/visual/link3.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10_30/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10_30/visual/link4.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10_30/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10_30/visual/link5.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10_30/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C10_30/visual/link6.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C16_30/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C16_30/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C16_30/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C16_30/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C16_30/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C16_30/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C16_30/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C16_30/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C16_30/visual/link0.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C16_30/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C16_30/visual/link1.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C16_30/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C16_30/visual/link2.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C16_30/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C16_30/visual/link3.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C16_30/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C16_30/visual/link4.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C16_30/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C16_30/visual/link5.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C16_30/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C16_30/visual/link6.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C20_30/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C20_30/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C20_30/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C20_30/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C20_30/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C20_30/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C20_30/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C20_30/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C20_30/visual/link0.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C20_30/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C20_30/visual/link1.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C20_30/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C20_30/visual/link2.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C20_30/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C20_30/visual/link3.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C20_30/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C20_30/visual/link4.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C20_30/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C20_30/visual/link5.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C20_30/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C20_30/visual/link6.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3/visual/link0.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3/visual/link1.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3/visual/link2.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3/visual/link3.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3/visual/link4.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3/visual/link5.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3/visual/link6.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_10/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_10/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_10/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_10/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_10/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_10/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_10/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_10/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_10/visual/link0.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_10/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_10/visual/link1.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_10/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_10/visual/link2.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_10/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_10/visual/link3.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_10/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_10/visual/link4.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_10/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_10/visual/link5.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_10/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_10/visual/link6.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_12/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_12/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_12/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_12/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_12/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_12/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_12/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_12/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_12/visual/link0.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_12/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_12/visual/link1.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_12/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_12/visual/link2.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_12/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_12/visual/link3.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_12/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_12/visual/link4.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_12/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_12/visual/link5.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_12/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_12/visual/link6.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_30/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_30/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_30/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_30/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_30/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_30/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_30/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_30/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_30/visual/link0.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_30/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_30/visual/link1.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_30/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_30/visual/link2.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_30/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_30/visual/link3.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_30/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_30/visual/link4.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_30/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_30/visual/link5.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_30/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_30/visual/link6.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_39/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_39/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_39/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_39/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_39/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_39/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_39/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_39/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_39/visual/link0.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_39/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_39/visual/link1.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_39/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_39/visual/link2.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_39/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_39/visual/link3.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_39/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_39/visual/link4.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_39/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_39/visual/link5.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_39/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C3_39/visual/link6.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10J/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10J/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10J/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10J/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10J/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10J/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10J/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10J/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10J/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10J/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10J/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10J/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10J/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_10J/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_12/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_12/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_12/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_12/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_12/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_12/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_12/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_12/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_12/visual/link0.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_12/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_12/visual/link1.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_12/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_12/visual/link2.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_12/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_12/visual/link3.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_12/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_12/visual/link4.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_12/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_12/visual/link5.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_12/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_12/visual/link6.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_30/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_30/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_30/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_30/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_30/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_30/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_30/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_30/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_30/visual/link0.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_30/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_30/visual/link1.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_30/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_30/visual/link2.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_30/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_30/visual/link3.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_30/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_30/visual/link4.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_30/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_30/visual/link5.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_30/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_30/visual/link6.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_39/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_39/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_39/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_39/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_39/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_39/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_39/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_39/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_39/visual/link0.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_39/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_39/visual/link1.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_39/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_39/visual/link2.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_39/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_39/visual/link3.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_39/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_39/visual/link4.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_39/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_39/visual/link5.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_39/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C5_39/visual/link6.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C7_10/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C7_10/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C7_10/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C7_10/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C7_10/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C7_10/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C7_10/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C7_10/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C7_10/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C7_10/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C7_10/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C7_10/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C7_10/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_C7_10/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10/visual/link0.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10/visual/link1.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10/visual/link2.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10/visual/link3.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10/visual/link4.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10/visual/link5.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10/visual/link6.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10_10/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10_10/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10_10/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10_10/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10_10/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10_10/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10_10/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10_10/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10_10/visual/link0.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10_10/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10_10/visual/link1.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10_10/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10_10/visual/link2.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10_10/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10_10/visual/link3.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10_10/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10_10/visual/link4.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10_10/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10_10/visual/link5.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10_10/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E10_10/visual/link6.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E16_10/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E16_10/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E16_10/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E16_10/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E16_10/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E16_10/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E16_10/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E16_10/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E16_10/visual/link0.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E16_10/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E16_10/visual/link1.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E16_10/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E16_10/visual/link2.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E16_10/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E16_10/visual/link3.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E16_10/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E16_10/visual/link4.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E16_10/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E16_10/visual/link5.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E16_10/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E16_10/visual/link6.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E20_10/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E20_10/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E20_10/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E20_10/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E20_10/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E20_10/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E20_10/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E20_10/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E20_10/visual/link0.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E20_10/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E20_10/visual/link1.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E20_10/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E20_10/visual/link2.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E20_10/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E20_10/visual/link3.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E20_10/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E20_10/visual/link4.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E20_10/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E20_10/visual/link5.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E20_10/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E20_10/visual/link6.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3/visual/link0.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3/visual/link1.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3/visual/link2.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3/visual/link3.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3/visual/link4.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3/visual/link5.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3/visual/link6.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_10/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_10/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_10/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_10/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_10/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_10/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_10/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_10/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_10/visual/link0.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_10/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_10/visual/link1.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_10/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_10/visual/link2.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_10/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_10/visual/link3.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_10/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_10/visual/link4.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_10/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_10/visual/link5.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_10/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_10/visual/link6.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_12/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_12/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_12/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_12/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_12/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_12/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_12/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_12/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_12/visual/link0.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_12/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_12/visual/link1.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_12/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_12/visual/link2.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_12/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_12/visual/link3.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_12/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_12/visual/link4.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_12/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_12/visual/link5.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_12/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E3_12/visual/link6.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_10/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_10/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_10/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_10/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_10/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_10/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_10/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_10/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_10/visual/link0.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_10/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_10/visual/link1.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_10/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_10/visual/link2.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_10/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_10/visual/link3.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_10/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_10/visual/link4.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_10/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_10/visual/link5.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_10/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_10/visual/link6.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_12/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_12/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_12/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_12/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_12/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_12/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_12/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_12/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_12/visual/link0.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_12/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_12/visual/link1.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_12/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_12/visual/link2.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_12/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_12/visual/link3.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_12/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_12/visual/link4.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_12/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_12/visual/link5.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_12/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_E5_12/visual/link6.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3/visual/link0.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3/visual/link1.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3/visual/link2.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3/visual/link3.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3/visual/link4.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3/visual/link5.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3/visual/link6.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3_B0/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3_B0/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3_B0/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3_B0/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3_B0/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3_B0/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3_B0/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3_B0/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3_B0/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3_B0/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3_B0/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3_B0/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3_B0/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES3_B0/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5/visual/link0.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5/visual/link1.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5/visual/link2.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5/visual/link3.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5/visual/link4.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5/visual/link5.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5/visual/link6.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0_white/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0_white/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0_white/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0_white/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0_white/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0_white/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0_white/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0_white/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0_white/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0_white/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0_white/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0_white/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0_white/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B0_white/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1_white/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1_white/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1_white/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1_white/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1_white/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1_white/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1_white/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1_white/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1_white/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1_white/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1_white/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1_white/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1_white/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_ES5_B1_white/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_F12B/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_F12B/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_F12B/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_F12B/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_F12B/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_F12B/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_F12B/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_F12B/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_F12B/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_F12B/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_F12B/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_F12B/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_F12B/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_F12B/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G3/collision/README.md
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G3/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G3/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G3/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G3/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G3/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G3/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G3/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G3/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G3/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G3/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G3/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G3/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G3/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G3/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G40_T0/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G40_T0/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G40_T0/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G40_T0/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G40_T0/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G40_T0/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G40_T0/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G40_T0/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G40_T0/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G40_T0/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G40_T0/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G40_T0/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G40_T0/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G40_T0/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G6/collision/README.md
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G6/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G6/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G6/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G6/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G6/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G6/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G6/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G6/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G6/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G6/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G6/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G6/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G6/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_G6/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HC4_T0/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HC4_T0/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HC4_T0/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HC4_T0/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HC4_T0/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HC4_T0/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HC4_T0/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HC4_T0/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HC4_T0/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HC4_T0/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HC4_T0/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HC4_T0/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HC4_T0/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HC4_T0/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/collision/link7.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/visual/link0.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/visual/link1.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/visual/link2.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/visual/link3.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/visual/link4.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/visual/link5.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/visual/link6.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/visual/link7.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_L/visual/link7.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/collision/link7.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/visual/link0.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/visual/link1.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/visual/link2.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/visual/link3.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/visual/link4.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/visual/link5.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/visual/link6.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/visual/link7.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRA7_R/visual/link7.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_L/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_L/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_L/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_L/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_L/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_L/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_L/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_L/collision/link7.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_L/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_L/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_L/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_L/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_L/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_L/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_L/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_L/visual/link7.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_R/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_R/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_R/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_R/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_R/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_R/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_R/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_R/collision/link7.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_R/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_R/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_R/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_R/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_R/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_R/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_R/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_HRM_R/visual/link7.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1500/collision/README.md
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1500/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1500/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1500/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1500/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1500/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1500/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1500/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1500/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1500/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1500/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1500/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1500/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1500/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1500/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1650_A/collision/README.md
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1650_A/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1650_A/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1650_A/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1650_A/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1650_A/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1650_A/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1650_A/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1650_A/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1650_A/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1650_A/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1650_A/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1650_A/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1650_A/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I20_1650_A/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_02/collision/README.md
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_02/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_02/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_02/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_02/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_02/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_02/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_02/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_02/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_02/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_02/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_02/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_02/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_02/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_02/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_03/collision/README.md
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_03/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_03/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_03/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_03/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_03/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_03/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_03/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_03/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_03/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_03/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_03/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_03/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_03/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_I5A_03/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_LW2_1500/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_LW2_1500/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_LW2_1500/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_LW2_1500/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_LW2_1500/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_LW2_1500/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_LW2_1500/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_LW2_1500/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_LW2_1500/visual/link0.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_LW2_1500/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_LW2_1500/visual/link1.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_LW2_1500/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_LW2_1500/visual/link2.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_LW2_1500/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_LW2_1500/visual/link3.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_LW2_1500/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_LW2_1500/visual/link4.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_LW2_1500/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_LW2_1500/visual/link5.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_LW2_1500/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_LW2_1500/visual/link6.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2/visual/link0.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2/visual/link1.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2/visual/link2.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2/visual/link3.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2/visual/link4.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2/visual/link5.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2/visual/link6.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2_A0/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2_A0/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2_A0/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2_A0/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2_A0/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2_A0/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2_A0/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2_A0/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2_A0/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2_A0/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2_A0/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2_A0/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2_A0/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S2_A0/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S3/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S3/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S3/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S3/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S3/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S3/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S3/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S3/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S3/visual/link0.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S3/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S3/visual/link1.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S3/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S3/visual/link2.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S3/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S3/visual/link3.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S3/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S3/visual/link4.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S3/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S3/visual/link5.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S3/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S3/visual/link6.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S5/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S5/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S5/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S5/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S5/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S5/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S5/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S5/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S5/visual/link0.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S5/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S5/visual/link1.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S5/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S5/visual/link2.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S5/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S5/visual/link3.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S5/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S5/visual/link4.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S5/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S5/visual/link5.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S5/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_S5/visual/link6.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12/visual/link0.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12/visual/link1.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12/visual/link2.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12/visual/link3.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12/visual/link4.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12/visual/link5.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12/visual/link6.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12_10/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12_10/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12_10/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12_10/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12_10/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12_10/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12_10/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12_10/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12_10/visual/link0.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12_10/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12_10/visual/link1.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12_10/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12_10/visual/link2.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12_10/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12_10/visual/link3.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12_10/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12_10/visual/link4.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12_10/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12_10/visual/link5.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12_10/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T12_10/visual/link6.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6/visual/link0.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6/visual/link1.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6/visual/link2.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6/visual/link3.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6/visual/link4.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6/visual/link5.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6/visual/link6.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6L/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6L/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6L/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6L/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6L/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6L/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6L/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6L/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6L/visual/link0.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6L/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6L/visual/link1.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6L/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6L/visual/link2.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6L/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6L/visual/link3.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6L/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6L/visual/link4.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6L/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6L/visual/link5.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6L/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6L/visual/link6.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_10/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_10/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_10/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_10/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_10/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_10/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_10/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_10/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_10/visual/link0.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_10/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_10/visual/link1.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_10/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_10/visual/link2.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_10/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_10/visual/link3.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_10/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_10/visual/link4.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_10/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_10/visual/link5.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_10/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_10/visual/link6.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_21/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_21/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_21/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_21/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_21/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_21/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_21/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_21/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_21/visual/link0.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_21/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_21/visual/link1.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_21/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_21/visual/link2.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_21/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_21/visual/link3.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_21/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_21/visual/link4.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_21/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_21/visual/link5.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_21/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_T6_21/visual/link6.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_WJ2/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_WJ2/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_WJ2/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_WJ2/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_WJ2/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_WJ2/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_WJ2/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_WJ2/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_WJ2/visual/link0.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_WJ2/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_WJ2/visual/link1.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_WJ2/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_WJ2/visual/link2.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_WJ2/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_WJ2/visual/link3.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_WJ2/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_WJ2/visual/link4.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_WJ2/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_WJ2/visual/link5.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_WJ2/visual/link6.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_WJ2/visual/link6.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10/collision/link0.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10/collision/link1.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10/collision/link3.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10/collision/link4.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10/collision/link5.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10/collision/link6.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10/visual/link0.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10/visual/link1.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10/visual/link1.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10/visual/link2.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10/visual/link2.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10/visual/link3.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10/visual/link3.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10/visual/link4.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10/visual/link4.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10/visual/link5.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10/visual/link5.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10/visual/link6.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10H/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10H/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10H/collision/link2.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10H/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10H/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10H/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10H/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10H/visual/link0.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10H/visual/link0.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10H/visual/link1.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10H/visual/link1.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10H/visual/link2.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10H/visual/link2.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10H/visual/link3.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10H/visual/link3.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10H/visual/link4.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10H/visual/link4.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10H/visual/link5.3ds
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10H/visual/link5.DAE
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10H/visual/link6.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10H/visual/link6.DAE
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10HL/collision/link0.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10HL/collision/link1.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10HL/collision/link2.STL
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10HL/collision/link3.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10HL/collision/link4.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10HL/collision/link5.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10HL/collision/link6.STL
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10HL/visual/link0.3ds
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_description/share/aubo_description//meshes/aubo_i10HL/visual/link0.DAE

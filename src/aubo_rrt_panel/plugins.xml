@@ -1,0 +1,5 @@
+<library path="aubo_rrt_panel">
+  <class name="aubo_rrt_panel/RRTPanel" type="aubo_rrt_panel::RRTPanel" base_class_type="rviz_common::Panel">
+    <description>输入起终点位置与姿态，检查预览、规划、取消、回放及保存 Python RRT 任务。</description>
+  </class>
+</library>

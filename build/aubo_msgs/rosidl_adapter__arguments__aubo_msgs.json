@@ -1,0 +1,16 @@
+{
+  "package_name": "aubo_msgs",
+  "non_idl_tuples": [
+    "/home/zhuxd/aubo_ws/src/aubo_ros2_driver/aubo_msgs:msg/Analog.msg",
+    "/home/zhuxd/aubo_ws/src/aubo_ros2_driver/aubo_msgs:msg/Digital.msg",
+    "/home/zhuxd/aubo_ws/src/aubo_ros2_driver/aubo_msgs:msg/IOStates.msg",
+    "/home/zhuxd/aubo_ws/src/aubo_ros2_driver/aubo_msgs:msg/RobotStateRTMsg.msg",
+    "/home/zhuxd/aubo_ws/src/aubo_ros2_driver/aubo_msgs:msg/MasterboardDataMsg.msg",
+    "/home/zhuxd/aubo_ws/src/aubo_ros2_driver/aubo_msgs:msg/RobotModeDataMsg.msg",
+    "/home/zhuxd/aubo_ws/src/aubo_ros2_driver/aubo_msgs:msg/ToolDataMsg.msg",
+    "/home/zhuxd/aubo_ws/src/aubo_ros2_driver/aubo_msgs:srv/SetPayload.srv",
+    "/home/zhuxd/aubo_ws/src/aubo_ros2_driver/aubo_msgs:srv/SetSpeedSliderFraction.srv",
+    "/home/zhuxd/aubo_ws/src/aubo_ros2_driver/aubo_msgs:srv/SetIO.srv",
+    "/home/zhuxd/aubo_ws/src/aubo_ros2_driver/aubo_msgs:srv/JsonRpc.srv"
+  ]
+}

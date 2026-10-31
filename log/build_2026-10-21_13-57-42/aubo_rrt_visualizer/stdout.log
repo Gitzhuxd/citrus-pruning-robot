@@ -1,0 +1,23 @@
+Consolidate compiler generated dependencies of target rrt_visualizer
+[ 50%] Building CXX object CMakeFiles/rrt_visualizer.dir/src/rrt_visualizer.cpp.o
+[100%] Linking CXX executable rrt_visualizer
+[100%] Built target rrt_visualizer
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_rrt_visualizer/lib/aubo_rrt_visualizer/rrt_visualizer
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_rrt_visualizer/share/aubo_rrt_visualizer/launch/rrt_demo.launch.py
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_rrt_visualizer/share/ament_index/resource_index/package_run_dependencies/aubo_rrt_visualizer
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_rrt_visualizer/share/ament_index/resource_index/parent_prefix_path/aubo_rrt_visualizer
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_rrt_visualizer/share/aubo_rrt_visualizer/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_rrt_visualizer/share/aubo_rrt_visualizer/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_rrt_visualizer/share/aubo_rrt_visualizer/environment/path.sh
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_rrt_visualizer/share/aubo_rrt_visualizer/environment/path.dsv
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_rrt_visualizer/share/aubo_rrt_visualizer/local_setup.bash
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_rrt_visualizer/share/aubo_rrt_visualizer/local_setup.sh
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_rrt_visualizer/share/aubo_rrt_visualizer/local_setup.zsh
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_rrt_visualizer/share/aubo_rrt_visualizer/local_setup.dsv
+-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_visualizer/share/aubo_rrt_visualizer/package.dsv
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_rrt_visualizer/share/ament_index/resource_index/packages/aubo_rrt_visualizer
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_rrt_visualizer/share/aubo_rrt_visualizer/cmake/aubo_rrt_visualizerConfig.cmake
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_rrt_visualizer/share/aubo_rrt_visualizer/cmake/aubo_rrt_visualizerConfig-version.cmake
+-- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_rrt_visualizer/share/aubo_rrt_visualizer/package.xml

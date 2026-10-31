@@ -1,0 +1,1 @@
+/home/zhuxd/aubo_ws/build/aubo_rrt_interfaces/rosidl_typesupport_introspection_c/aubo_rrt_interfaces/msg/detail/endpoint__rosidl_typesupport_introspection_c.h

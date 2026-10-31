@@ -1,0 +1,6 @@
+1792562019.9062972 [INFO] [launch]: All log files can be found below /home/zhuxd/aubo_ws/rrt_results/verification-20261021/rrt_only_ros_logs/2026-10-21-13-53-39-905622-Zhuxd-Linux22-213733
+1792562019.9063795 [INFO] [launch]: Default logging verbosity is set to INFO
+1792562020.4045906 [INFO] [rrt_visualizer-1]: process started with pid [213755]
+1792562132.1056778 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1792562132.1070843 [INFO] [rrt_visualizer-1]: sending signal 'SIGINT' to process[rrt_visualizer-1]
+1792562132.1100996 [ERROR] [rrt_visualizer-1]: process has died [pid 213755, exit code -2, cmd '/home/zhuxd/aubo_ws/install/aubo_rrt_visualizer/lib/aubo_rrt_visualizer/rrt_visualizer --ros-args -r __node:=rrt_visualizer --params-file /tmp/launch_params_u5377pbb --params-file /tmp/launch_params_st5whym4'].

@@ -1,0 +1,53 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from aubo_rrt_interfaces/action/PlanRRT.action
+// generated code does not contain a copyright notice
+
+#include "aubo_rrt_interfaces/msg/Endpoint.idl"
+
+module aubo_rrt_interfaces {
+  module action {
+    struct PlanRRT_Goal {
+      aubo_rrt_interfaces::msg::Endpoint start;
+
+      aubo_rrt_interfaces::msg::Endpoint goal;
+
+      double step_size;
+
+      double goal_bias;
+
+      double collision_step;
+
+      int32 max_iterations;
+
+      double planning_time;
+
+      int32 seed;
+
+      double replay_step;
+    };
+    struct PlanRRT_Result {
+      boolean success;
+
+      string message;
+
+      string output_directory;
+
+      uint32 iterations;
+
+      uint32 tree_nodes;
+
+      uint32 path_nodes;
+
+      double planning_seconds;
+    };
+    struct PlanRRT_Feedback {
+      string phase;
+
+      uint32 iterations;
+
+      uint32 tree_nodes;
+
+      double elapsed_seconds;
+    };
+  };
+};

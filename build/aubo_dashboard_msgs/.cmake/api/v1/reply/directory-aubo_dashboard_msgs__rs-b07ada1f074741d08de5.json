@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "aubo_dashboard_msgs__rs",
+		"source" : "/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/aubo_dashboard_msgs__rs"
+	}
+}

@@ -1,0 +1,1 @@
+Invoking command in '/home/zhuxd/aubo_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/opt/ros/humble /usr/bin/cmake --build /home/zhuxd/aubo_ws/build/realsense2_camera_msgs -- -j20 -l20

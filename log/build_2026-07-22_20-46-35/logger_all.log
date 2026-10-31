@@ -1,0 +1,431 @@
+[0.057s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'realsense2_camera_msgs', 'realsense2_description', 'aubo_i5_scissors_description', '--symlink-install']
+[0.058s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['realsense2_camera_msgs', 'realsense2_description', 'aubo_i5_scissors_description'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7a72f973d5d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7a72f973cfd0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7a72f973cfd0>>)
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.141s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/zhuxd/aubo_ws'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_i5_scissors_description) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_i5_scissors_description) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_i5_scissors_description) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_i5_scissors_description) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_i5_scissors_description) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_i5_scissors_description) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_i5_scissors_description) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_i5_scissors_description) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_i5_scissors_description) by extension 'ros'
+[0.151s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aubo_i5_scissors_description' with type 'ros.ament_python' and name 'aubo_i5_scissors_description'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver) by extension 'ros'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver) by extensions ['cmake', 'python']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver) by extension 'cmake'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver) by extension 'python'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver) by extensions ['python_setup_py']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver) by extension 'python_setup_py'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_dashboard_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_dashboard_msgs) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_dashboard_msgs) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_dashboard_msgs) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_dashboard_msgs) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_dashboard_msgs) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_dashboard_msgs) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_dashboard_msgs) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_dashboard_msgs) by extension 'ros'
+[0.152s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aubo_ros2_driver/aubo_dashboard_msgs' with type 'ros.ament_cmake' and name 'aubo_dashboard_msgs'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_description) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_description) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_description) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_description) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_description) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_description) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_description) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_description) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_description) by extension 'ros'
+[0.154s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aubo_ros2_driver/aubo_description' with type 'ros.ament_cmake' and name 'aubo_description'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_gazebo) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_gazebo) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_gazebo) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_gazebo) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_gazebo) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_gazebo) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_gazebo) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_gazebo) by extension 'ros'
+[0.155s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aubo_ros2_driver/aubo_gazebo' with type 'ros.ament_cmake' and name 'aubo_gazebo'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_moveit_config) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_moveit_config) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_moveit_config) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_moveit_config) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_moveit_config) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_moveit_config) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_moveit_config) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_moveit_config) by extension 'ros'
+[0.156s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aubo_ros2_driver/aubo_moveit_config' with type 'ros.ament_cmake' and name 'aubo_moveit_config'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_msgs) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_msgs) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_msgs) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_msgs) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_msgs) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_msgs) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_msgs) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_msgs) by extension 'ros'
+[0.156s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aubo_ros2_driver/aubo_msgs' with type 'ros.ament_cmake' and name 'aubo_msgs'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_ros2_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_ros2_driver) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_ros2_driver) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_ros2_driver) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_ros2_driver) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_ros2_driver) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_ros2_driver) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_ros2_driver) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/aubo_ros2_driver) by extension 'ros'
+[0.158s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aubo_ros2_driver/aubo_ros2_driver' with type 'ros.ament_cmake' and name 'aubo_ros2_driver'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/ros_joints_plan) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/ros_joints_plan) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/ros_joints_plan) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/ros_joints_plan) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/ros_joints_plan) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/ros_joints_plan) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/ros_joints_plan) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/ros_joints_plan) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/aubo_ros2_driver/ros_joints_plan) by extension 'ros'
+[0.158s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aubo_ros2_driver/ros_joints_plan' with type 'ros.ament_cmake' and name 'ros_joints_plan'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'ros'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['cmake', 'python']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'cmake'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'python'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['python_setup_py']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'python_setup_py'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'ros'
+[0.167s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense-ros/realsense2_camera' with type 'ros.ament_cmake' and name 'realsense2_camera'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'ros'
+[0.168s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense-ros/realsense2_camera_msgs' with type 'ros.ament_cmake' and name 'realsense2_camera_msgs'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'ros'
+[0.169s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense-ros/realsense2_description' with type 'ros.ament_cmake' and name 'realsense2_description'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_rgbd_plugin) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_rgbd_plugin) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_rgbd_plugin) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_rgbd_plugin) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_rgbd_plugin) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_rgbd_plugin) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_rgbd_plugin) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_rgbd_plugin) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_rgbd_plugin) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_rgbd_plugin) ignored
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_ros_mqtt_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_ros_mqtt_bridge) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_ros_mqtt_bridge) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_ros_mqtt_bridge) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_ros_mqtt_bridge) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_ros_mqtt_bridge) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_ros_mqtt_bridge) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_ros_mqtt_bridge) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_ros_mqtt_bridge) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_ros_mqtt_bridge) ignored
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/res) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/res) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/res) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/res) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/res) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/res) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/res) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/res) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/res) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/res) by extensions ['cmake', 'python']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/res) by extension 'cmake'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/res) by extension 'python'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/res) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/res) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.183s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'aubo_dashboard_msgs' in 'src/aubo_ros2_driver/aubo_dashboard_msgs'
+[0.183s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'aubo_description' in 'src/aubo_ros2_driver/aubo_description'
+[0.183s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'aubo_msgs' in 'src/aubo_ros2_driver/aubo_msgs'
+[0.183s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ros_joints_plan' in 'src/aubo_ros2_driver/ros_joints_plan'
+[0.183s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'aubo_moveit_config' in 'src/aubo_ros2_driver/aubo_moveit_config'
+[0.183s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'aubo_ros2_driver' in 'src/aubo_ros2_driver/aubo_ros2_driver'
+[0.183s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'realsense2_camera' in 'src/realsense-ros/realsense2_camera'
+[0.183s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'aubo_gazebo' in 'src/aubo_ros2_driver/aubo_gazebo'
+[0.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.184s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 10 installed packages in /home/zhuxd/aubo_ws/install
+[0.185s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 337 installed packages in /opt/ros/humble
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_args' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_target' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.209s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_camera_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zhuxd/aubo_ws/build/realsense2_camera_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs', 'merge_install': False, 'path': '/home/zhuxd/aubo_ws/src/realsense-ros/realsense2_camera_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_args' from command line to 'None'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_target' from command line to 'None'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.210s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zhuxd/aubo_ws/build/realsense2_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zhuxd/aubo_ws/install/realsense2_description', 'merge_install': False, 'path': '/home/zhuxd/aubo_ws/src/realsense-ros/realsense2_description', 'symlink_install': True, 'test_result_base': None}
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'aubo_i5_scissors_description' build argument 'cmake_args' from command line to 'None'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'aubo_i5_scissors_description' build argument 'cmake_target' from command line to 'None'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'aubo_i5_scissors_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'aubo_i5_scissors_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'aubo_i5_scissors_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'aubo_i5_scissors_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'aubo_i5_scissors_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'aubo_i5_scissors_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.210s] Level 5:colcon.colcon_core.verb:set package 'aubo_i5_scissors_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.210s] DEBUG:colcon.colcon_core.verb:Building package 'aubo_i5_scissors_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zhuxd/aubo_ws/build/aubo_i5_scissors_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description', 'merge_install': False, 'path': '/home/zhuxd/aubo_ws/src/aubo_i5_scissors_description', 'symlink_install': True, 'test_result_base': None}
+[0.210s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.211s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.211s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zhuxd/aubo_ws/src/realsense-ros/realsense2_camera_msgs' with build type 'ament_cmake'
+[0.211s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zhuxd/aubo_ws/src/realsense-ros/realsense2_camera_msgs'
+[0.212s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.212s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.212s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.218s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zhuxd/aubo_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/opt/ros/humble /usr/bin/cmake --build /home/zhuxd/aubo_ws/build/realsense2_camera_msgs -- -j20 -l20
+[0.421s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zhuxd/aubo_ws/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/opt/ros/humble /usr/bin/cmake --build /home/zhuxd/aubo_ws/build/realsense2_camera_msgs -- -j20 -l20
+[0.427s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zhuxd/aubo_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/opt/ros/humble /usr/bin/cmake --install /home/zhuxd/aubo_ws/build/realsense2_camera_msgs
+[0.485s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera_msgs)
+[0.485s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zhuxd/aubo_ws/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/opt/ros/humble /usr/bin/cmake --install /home/zhuxd/aubo_ws/build/realsense2_camera_msgs
+[0.487s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs' for CMake module files
+[0.488s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs' for CMake config files
+[0.490s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'cmake_prefix_path')
+[0.490s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.ps1'
+[0.491s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.dsv'
+[0.491s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.sh'
+[0.492s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/lib'
+[0.492s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'ld_library_path_lib')
+[0.492s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.ps1'
+[0.492s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.dsv'
+[0.492s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.sh'
+[0.493s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/bin'
+[0.493s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/lib/pkgconfig/realsense2_camera_msgs.pc'
+[0.493s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/lib/python3.10/site-packages'
+[0.493s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/bin'
+[0.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.ps1'
+[0.494s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv'
+[0.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.sh'
+[0.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.bash'
+[0.495s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.zsh'
+[0.495s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/colcon-core/packages/realsense2_camera_msgs)
+[0.495s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera_msgs)
+[0.495s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs' for CMake module files
+[0.495s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs' for CMake config files
+[0.496s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'cmake_prefix_path')
+[0.497s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.ps1'
+[0.497s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.dsv'
+[0.497s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.sh'
+[0.497s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/lib'
+[0.497s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'ld_library_path_lib')
+[0.497s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.ps1'
+[0.498s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.dsv'
+[0.498s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.sh'
+[0.498s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/bin'
+[0.498s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/lib/pkgconfig/realsense2_camera_msgs.pc'
+[0.498s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/lib/python3.10/site-packages'
+[0.498s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/bin'
+[0.498s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.ps1'
+[0.499s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv'
+[0.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.sh'
+[0.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.bash'
+[0.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.zsh'
+[0.499s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/share/colcon-core/packages/realsense2_camera_msgs)
+[0.500s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zhuxd/aubo_ws/src/realsense-ros/realsense2_description' with build type 'ament_cmake'
+[0.500s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zhuxd/aubo_ws/src/realsense-ros/realsense2_description'
+[0.500s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.500s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.507s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zhuxd/aubo_ws/build/realsense2_description': CMAKE_PREFIX_PATH=/home/zhuxd/aubo_ws/install/realsense2_camera_msgs:/home/zhuxd/aubo_ws/install/realsense2_description:/home/zhuxd/aubo_ws/install/ros_joints_plan:/home/zhuxd/aubo_ws/install/aubo_ros2_driver:/home/zhuxd/aubo_ws/install/aubo_msgs:/home/zhuxd/aubo_ws/install/aubo_gazebo:/home/zhuxd/aubo_ws/install/aubo_moveit_config:/home/zhuxd/aubo_ws/install/aubo_description:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/opt/ros/humble /usr/bin/cmake --build /home/zhuxd/aubo_ws/build/realsense2_description -- -j20 -l20
+[0.531s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zhuxd/aubo_ws/build/realsense2_description' returned '0': CMAKE_PREFIX_PATH=/home/zhuxd/aubo_ws/install/realsense2_camera_msgs:/home/zhuxd/aubo_ws/install/realsense2_description:/home/zhuxd/aubo_ws/install/ros_joints_plan:/home/zhuxd/aubo_ws/install/aubo_ros2_driver:/home/zhuxd/aubo_ws/install/aubo_msgs:/home/zhuxd/aubo_ws/install/aubo_gazebo:/home/zhuxd/aubo_ws/install/aubo_moveit_config:/home/zhuxd/aubo_ws/install/aubo_description:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/opt/ros/humble /usr/bin/cmake --build /home/zhuxd/aubo_ws/build/realsense2_description -- -j20 -l20
+[0.531s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zhuxd/aubo_ws/build/realsense2_description': CMAKE_PREFIX_PATH=/home/zhuxd/aubo_ws/install/realsense2_camera_msgs:/home/zhuxd/aubo_ws/install/realsense2_description:/home/zhuxd/aubo_ws/install/ros_joints_plan:/home/zhuxd/aubo_ws/install/aubo_ros2_driver:/home/zhuxd/aubo_ws/install/aubo_msgs:/home/zhuxd/aubo_ws/install/aubo_gazebo:/home/zhuxd/aubo_ws/install/aubo_moveit_config:/home/zhuxd/aubo_ws/install/aubo_description:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/opt/ros/humble /usr/bin/cmake --install /home/zhuxd/aubo_ws/build/realsense2_description
+[0.545s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_description)
+[0.546s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_description' for CMake module files
+[0.546s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zhuxd/aubo_ws/build/realsense2_description' returned '0': CMAKE_PREFIX_PATH=/home/zhuxd/aubo_ws/install/realsense2_camera_msgs:/home/zhuxd/aubo_ws/install/realsense2_description:/home/zhuxd/aubo_ws/install/ros_joints_plan:/home/zhuxd/aubo_ws/install/aubo_ros2_driver:/home/zhuxd/aubo_ws/install/aubo_msgs:/home/zhuxd/aubo_ws/install/aubo_gazebo:/home/zhuxd/aubo_ws/install/aubo_moveit_config:/home/zhuxd/aubo_ws/install/aubo_description:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/opt/ros/humble /usr/bin/cmake --install /home/zhuxd/aubo_ws/build/realsense2_description
+[0.546s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_description' for CMake config files
+[0.547s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_description', 'cmake_prefix_path')
+[0.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zhuxd/aubo_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.ps1'
+[0.547s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zhuxd/aubo_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.dsv'
+[0.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zhuxd/aubo_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.sh'
+[0.548s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_description/bin'
+[0.548s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_description/lib/pkgconfig/realsense2_description.pc'
+[0.548s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_description/lib/python3.10/site-packages'
+[0.549s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_description/bin'
+[0.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhuxd/aubo_ws/install/realsense2_description/share/realsense2_description/package.ps1'
+[0.550s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zhuxd/aubo_ws/install/realsense2_description/share/realsense2_description/package.dsv'
+[0.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhuxd/aubo_ws/install/realsense2_description/share/realsense2_description/package.sh'
+[0.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhuxd/aubo_ws/install/realsense2_description/share/realsense2_description/package.bash'
+[0.551s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhuxd/aubo_ws/install/realsense2_description/share/realsense2_description/package.zsh'
+[0.551s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zhuxd/aubo_ws/install/realsense2_description/share/colcon-core/packages/realsense2_description)
+[0.551s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_description)
+[0.551s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_description' for CMake module files
+[0.552s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_description' for CMake config files
+[0.552s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_description', 'cmake_prefix_path')
+[0.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zhuxd/aubo_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.ps1'
+[0.552s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zhuxd/aubo_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.dsv'
+[0.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zhuxd/aubo_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.sh'
+[0.553s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_description/bin'
+[0.553s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_description/lib/pkgconfig/realsense2_description.pc'
+[0.553s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_description/lib/python3.10/site-packages'
+[0.553s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/realsense2_description/bin'
+[0.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhuxd/aubo_ws/install/realsense2_description/share/realsense2_description/package.ps1'
+[0.553s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zhuxd/aubo_ws/install/realsense2_description/share/realsense2_description/package.dsv'
+[0.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhuxd/aubo_ws/install/realsense2_description/share/realsense2_description/package.sh'
+[0.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhuxd/aubo_ws/install/realsense2_description/share/realsense2_description/package.bash'
+[0.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhuxd/aubo_ws/install/realsense2_description/share/realsense2_description/package.zsh'
+[0.554s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zhuxd/aubo_ws/install/realsense2_description/share/colcon-core/packages/realsense2_description)
+[0.554s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/zhuxd/aubo_ws/src/aubo_i5_scissors_description' with build type 'ament_python'
+[0.554s] Level 1:colcon.colcon_core.shell:create_environment_hook('aubo_i5_scissors_description', 'ament_prefix_path')
+[0.554s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/hook/ament_prefix_path.ps1'
+[0.555s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/hook/ament_prefix_path.dsv'
+[0.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/hook/ament_prefix_path.sh'
+[0.555s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.555s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.698s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/zhuxd/aubo_ws/src/aubo_i5_scissors_description'
+[0.699s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.699s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.890s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: install_lib, install, build_scripts, upload, test, compile_catalog, build, bdist_rpm, update_catalog, check, register, alias, dist_info, sdist, easy_install, bdist_dumb, build_ext, extract_messages, setopt, clean, bdist, symlink_data, init_catalog, install_egg_info, install_data, rotate, install_scripts, upload_docs, bdist_egg, bdist_wheel, build_py, build_clib, install_headers, develop, egg_info, saveopts
+[1.039s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --version, --allow-hosts, --egg-path, --upgrade, --no-user-cfg, --script-dir, --prefix, --always-unzip, --install-layout, --always-copy, --optimize, --quiet, --uninstall, --help, --user, --editable, --find-links, --zip-ok, --site-dirs, --record, --install-dir, --index-url, --build-directory, --no-find-links, --multi-version, --local-snapshots-ok, --exclude-scripts, --force-installation-into-system-dir, --dry-run, --verbose, --no-deps
+[1.041s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zhuxd/aubo_ws/build/aubo_i5_scissors_description': CMAKE_PREFIX_PATH=/home/zhuxd/aubo_ws/install/realsense2_description:/home/zhuxd/aubo_ws/install/realsense2_camera_msgs:/home/zhuxd/aubo_ws/install/aubo_description:/home/zhuxd/aubo_ws/install/ros_joints_plan:/home/zhuxd/aubo_ws/install/aubo_ros2_driver:/home/zhuxd/aubo_ws/install/aubo_msgs:/home/zhuxd/aubo_ws/install/aubo_gazebo:/home/zhuxd/aubo_ws/install/aubo_moveit_config:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs PYTHONPATH=/home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/build --no-deps symlink_data
+[1.267s] Level 1:colcon.colcon_core.shell:create_environment_hook('aubo_i5_scissors_description', 'pythonpath_develop')
+[1.267s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/share/aubo_i5_scissors_description/hook/pythonpath_develop.ps1'
+[1.268s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zhuxd/aubo_ws/build/aubo_i5_scissors_description' returned '0': CMAKE_PREFIX_PATH=/home/zhuxd/aubo_ws/install/realsense2_description:/home/zhuxd/aubo_ws/install/realsense2_camera_msgs:/home/zhuxd/aubo_ws/install/aubo_description:/home/zhuxd/aubo_ws/install/ros_joints_plan:/home/zhuxd/aubo_ws/install/aubo_ros2_driver:/home/zhuxd/aubo_ws/install/aubo_msgs:/home/zhuxd/aubo_ws/install/aubo_gazebo:/home/zhuxd/aubo_ws/install/aubo_moveit_config:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs PYTHONPATH=/home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/build --no-deps symlink_data
+[1.268s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/share/aubo_i5_scissors_description/hook/pythonpath_develop.dsv'
+[1.268s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/share/aubo_i5_scissors_description/hook/pythonpath_develop.sh'
+[1.269s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description' for CMake module files
+[1.269s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description' for CMake config files
+[1.269s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib'
+[1.269s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/bin'
+[1.269s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib/pkgconfig/aubo_i5_scissors_description.pc'
+[1.269s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib/python3.10/site-packages'
+[1.269s] Level 1:colcon.colcon_core.shell:create_environment_hook('aubo_i5_scissors_description', 'pythonpath')
+[1.269s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/hook/pythonpath.ps1'
+[1.270s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/hook/pythonpath.dsv'
+[1.270s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/hook/pythonpath.sh'
+[1.270s] Level 1:colcon.colcon_core.environment:checking '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/bin'
+[1.270s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aubo_i5_scissors_description)
+[1.271s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/package.ps1'
+[1.271s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/package.dsv'
+[1.271s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/package.sh'
+[1.271s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/package.bash'
+[1.271s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/package.zsh'
+[1.272s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/colcon-core/packages/aubo_i5_scissors_description)
+[1.272s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.272s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.272s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.272s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.276s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.276s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.276s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.284s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.284s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zhuxd/aubo_ws/install/local_setup.ps1'
+[1.284s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zhuxd/aubo_ws/install/_local_setup_util_ps1.py'
+[1.285s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zhuxd/aubo_ws/install/setup.ps1'
+[1.286s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zhuxd/aubo_ws/install/local_setup.sh'
+[1.286s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zhuxd/aubo_ws/install/_local_setup_util_sh.py'
+[1.286s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zhuxd/aubo_ws/install/setup.sh'
+[1.287s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zhuxd/aubo_ws/install/local_setup.bash'
+[1.287s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zhuxd/aubo_ws/install/setup.bash'
+[1.288s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zhuxd/aubo_ws/install/local_setup.zsh'
+[1.288s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zhuxd/aubo_ws/install/setup.zsh'

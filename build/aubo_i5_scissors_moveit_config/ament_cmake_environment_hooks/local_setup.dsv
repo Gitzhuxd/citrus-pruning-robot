@@ -1,0 +1,2 @@
+source;share/aubo_i5_scissors_moveit_config/environment/ament_prefix_path.sh
+source;share/aubo_i5_scissors_moveit_config/environment/path.sh

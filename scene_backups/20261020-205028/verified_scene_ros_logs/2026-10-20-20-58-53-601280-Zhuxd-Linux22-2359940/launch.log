@@ -1,0 +1,489 @@
+1792501133.6020119 [INFO] [launch]: All log files can be found below /home/zhuxd/aubo_ws/scene_backups/20261020-205028/verified_scene_ros_logs/2026-10-20-20-58-53-601280-Zhuxd-Linux22-2359940
+1792501133.6020942 [INFO] [launch]: Default logging verbosity is set to INFO
+1792501134.3474185 [INFO] [static_transform_publisher-1]: process started with pid [2360218]
+1792501134.3475940 [INFO] [robot_state_publisher-2]: process started with pid [2360220]
+1792501134.3476436 [INFO] [move_group-3]: process started with pid [2360222]
+1792501134.3476777 [INFO] [rviz2-4]: process started with pid [2360224]
+1792501134.3477082 [INFO] [ros2_control_node-5]: process started with pid [2360226]
+1792501134.3477368 [INFO] [spawner-6]: process started with pid [2360228]
+1792501134.3477645 [INFO] [spawner-7]: process started with pid [2360230]
+1792501134.3477912 [INFO] [spawner-8]: process started with pid [2360232]
+1792501134.3636796 [ros2_control_node-5] [33m[WARN] [controller_manager] [Deprecated] Passing the robot description parameter directly to the control_manager node is deprecated. Use '~/robot_description' topic from 'robot_state_publisher' instead.[0m
+1792501134.3640556 [ros2_control_node-5] [0m[INFO] [resource_manager] Loading hardware 'FakeSystem' [0m
+1792501134.3642085 [static_transform_publisher-1] [0m[INFO] [static_transform_publisher0] Spinning until stopped - publishing transform
+1792501134.3642433 [static_transform_publisher-1] translation: ('0.000000', '0.000000', '0.000000')
+1792501134.3642662 [static_transform_publisher-1] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+1792501134.3642850 [static_transform_publisher-1] from 'world' to 'car_base_footprint'[0m
+1792501134.3643672 [ros2_control_node-5] [0m[INFO] [resource_manager] Initialize hardware 'FakeSystem' [0m
+1792501134.3643966 [ros2_control_node-5] [0m[INFO] [resource_manager] Successful initialization of hardware 'FakeSystem'[0m
+1792501134.3644211 [ros2_control_node-5] [0m[INFO] [resource_manager] 'configure' hardware 'FakeSystem' [0m
+1792501134.3644419 [ros2_control_node-5] [0m[INFO] [resource_manager] Successful 'configure' of hardware 'FakeSystem'[0m
+1792501134.3644590 [ros2_control_node-5] [0m[INFO] [resource_manager] 'activate' hardware 'FakeSystem' [0m
+1792501134.3644757 [ros2_control_node-5] [0m[INFO] [resource_manager] Successful 'activate' of hardware 'FakeSystem'[0m
+1792501134.3659997 [ros2_control_node-5] [0m[INFO] [controller_manager] update rate is 100 Hz[0m
+1792501134.3660524 [ros2_control_node-5] [0m[INFO] [controller_manager] Spawning controller_manager RT thread with scheduler priority: 50[0m
+1792501134.3661783 [ros2_control_node-5] [33m[WARN] [controller_manager] Could not enable FIFO RT scheduling policy: with error number <1>(Operation not permitted). See [https://control.ros.org/master/doc/ros2_control/controller_manager/doc/userdoc.html] for details on how to enable realtime scheduling.[0m
+1792501134.4686127 [rviz2-4] [0m[INFO] [rviz2] Stereo is NOT SUPPORTED[0m
+1792501134.4687042 [rviz2-4] [0m[INFO] [rviz2] OpenGl version: 4.5 (GLSL 4.5)[0m
+1792501134.4811211 [rviz2-4] [0m[INFO] [rviz2] Stereo is NOT SUPPORTED[0m
+1792501134.5275996 [rviz2-4] Warning: class_loader.impl: SEVERE WARNING!!! A namespace collision has occurred with plugin factory for class rviz_default_plugins::displays::InteractiveMarkerDisplay. New factory will OVERWRITE existing one. This situation occurs when libraries containing plugins are directly linked against an executable (the one running right now generating this message). Please separate plugins out into their own library or just don't link against the library and use either class_loader::ClassLoader/MultiLibraryClassLoader to open.
+1792501134.5277798 [rviz2-4]          at line 253 in /opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp
+1792501134.5327015 [ros2_control_node-5] [0m[INFO] [controller_manager] Loading controller 'scissor_controller'[0m
+1792501134.5343652 [rviz2-4] [33m[WARN] [gsplat_rviz_plugin] CUDA sort requested but this build has no CUDA support — falling back to CPU sort.[0m
+1792501134.5379674 [ros2_control_node-5] [33m[WARN] [scissor_controller] [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.[0m
+1792501134.5467727 [ros2_control_node-5] [0m[INFO] [controller_manager] Loading controller 'aubo_arm_controller'[0m
+1792501134.5537245 [ros2_control_node-5] [33m[WARN] [aubo_arm_controller] [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.[0m
+1792501134.5564632 [ros2_control_node-5] [0m[INFO] [controller_manager] Loading controller 'joint_state_broadcaster'[0m
+1792501134.5668001 [ros2_control_node-5] [0m[INFO] [controller_manager] Configuring controller 'scissor_controller'[0m
+1792501134.5668743 [ros2_control_node-5] [0m[INFO] [scissor_controller] No specific joint names are used for command interfaces. Using 'joints' parameter.[0m
+1792501134.5668995 [ros2_control_node-5] [0m[INFO] [scissor_controller] Command interfaces are [position] and state interfaces are [position velocity].[0m
+1792501134.5669184 [ros2_control_node-5] [0m[INFO] [scissor_controller] Using 'splines' interpolation method.[0m
+1792501134.5678456 [ros2_control_node-5] [0m[INFO] [scissor_controller] Controller state will be published at 50.00 Hz.[0m
+1792501134.5706365 [ros2_control_node-5] [0m[INFO] [scissor_controller] Action status changes will be monitored at 20.00 Hz.[0m
+1792501134.5766237 [ros2_control_node-5] [0m[INFO] [controller_manager] Configuring controller 'aubo_arm_controller'[0m
+1792501134.5770178 [ros2_control_node-5] [0m[INFO] [aubo_arm_controller] No specific joint names are used for command interfaces. Using 'joints' parameter.[0m
+1792501134.5771077 [ros2_control_node-5] [0m[INFO] [aubo_arm_controller] Command interfaces are [position] and state interfaces are [position velocity].[0m
+1792501134.5771756 [ros2_control_node-5] [0m[INFO] [aubo_arm_controller] Using 'splines' interpolation method.[0m
+1792501134.5772347 [ros2_control_node-5] [0m[INFO] [aubo_arm_controller] Controller state will be published at 50.00 Hz.[0m
+1792501134.5780234 [ros2_control_node-5] [0m[INFO] [aubo_arm_controller] Action status changes will be monitored at 20.00 Hz.[0m
+1792501134.5865910 [ros2_control_node-5] [0m[INFO] [controller_manager] Configuring controller 'joint_state_broadcaster'[0m
+1792501134.5868649 [ros2_control_node-5] [0m[INFO] [joint_state_broadcaster] 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published[0m
+1792501134.7550635 [INFO] [spawner-7]: process has finished cleanly [pid 2360230]
+1792501134.7676086 [INFO] [spawner-6]: process has finished cleanly [pid 2360228]
+1792501134.7877965 [INFO] [spawner-8]: process has finished cleanly [pid 2360232]
+1792501141.4099293 [rviz2-4] [31m[ERROR] [moveit_ros_visualization.motion_planning_frame] Action server: /recognize_objects not available[0m
+1792501141.4152229 [rviz2-4] [0m[INFO] [moveit_ros_visualization.motion_planning_frame] MoveGroup namespace changed: / -> . Reloading params.[0m
+1792501141.4271255 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 0.0  splats: 0  |  sort (cpu): 0.000 ms  render: 0.000 ms  |  TBO: 0.00 MB  SH-TBO: 0.00 MB[0m
+1792501141.4746006 [rviz2-4] [0m[INFO] [moveit_rdf_loader.rdf_loader] Loaded robot model in 0.0481076 seconds[0m
+1792501141.4748960 [rviz2-4] [0m[INFO] [moveit_robot_model.robot_model] Loading robot model 'aubo_i5_scissors_robot'...[0m
+1792501141.5479670 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 121.183 ms[0m
+1792501141.6306174 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.023 ms[0m
+1792501142.1941671 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.303 ms[0m
+1792501143.4286838 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.4  splats: 1899660  |  sort (cpu): 8.328 ms  render: 0.011 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501144.0373340 [rviz2-4] [0m[INFO] [moveit_ros.planning_scene_monitor.planning_scene_monitor] Starting planning scene monitor[0m
+1792501144.0378375 [rviz2-4] [0m[INFO] [moveit_ros.planning_scene_monitor.planning_scene_monitor] Listening to '/monitored_planning_scene'[0m
+1792501144.4775891 [rviz2-4] [0m[INFO] [interactive_marker_display_104232261693920] Connected on namespace: /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic[0m
+1792501144.4857602 [rviz2-4] [0m[INFO] [moveit_ros_visualization.motion_planning_frame] group aubo_arm[0m
+1792501144.4860394 [rviz2-4] [0m[INFO] [moveit_ros_visualization.motion_planning_frame] Constructing new MoveGroup connection for group 'aubo_arm' in namespace ''[0m
+1792501144.4864807 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.419 ms[0m
+1792501144.4903228 [rviz2-4] [0m[INFO] [move_group_interface] Ready to take commands for planning group aubo_arm.[0m
+1792501144.4909346 [rviz2-4] [0m[INFO] [moveit_ros_visualization.motion_planning_frame] group aubo_arm[0m
+1792501144.4963758 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 11.245 ms[0m
+1792501144.5086956 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.006 ms[0m
+1792501145.1256666 [rviz2-4] [0m[INFO] [interactive_marker_display_104232261693920] Sending request for interactive markers[0m
+1792501145.7797325 [rviz2-4] [0m[INFO] [interactive_marker_display_104232261693920] Service response received for initialization[0m
+1792501145.7811146 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.3  splats: 1899660  |  sort (cpu): 10.013 ms  render: 0.006 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501147.0839977 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.175 ms[0m
+1792501147.0935111 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.829 ms[0m
+1792501147.1043720 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.021 ms[0m
+1792501148.4098141 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.4  splats: 1899660  |  sort (cpu): 10.482 ms  render: 0.020 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501149.6968586 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.270 ms[0m
+1792501149.7049236 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.536 ms[0m
+1792501149.7156782 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.022 ms[0m
+1792501150.9904811 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.354 ms  render: 0.023 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501152.2666564 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.212 ms[0m
+1792501152.2757256 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.489 ms[0m
+1792501152.2852371 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.018 ms[0m
+1792501153.5718162 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.861 ms  render: 0.032 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501154.8776135 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.448 ms[0m
+1792501154.8857598 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.803 ms[0m
+1792501154.8969600 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.027 ms[0m
+1792501156.1944354 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.768 ms  render: 0.023 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501157.5131223 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.477 ms[0m
+1792501157.5215955 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.143 ms[0m
+1792501157.5327244 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.027 ms[0m
+1792501158.8191142 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.355 ms  render: 0.023 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501160.1058383 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.196 ms[0m
+1792501160.1148167 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.351 ms[0m
+1792501160.1247535 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.023 ms[0m
+1792501161.3990910 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.759 ms  render: 0.028 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501162.6942043 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.417 ms[0m
+1792501162.7029035 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.243 ms[0m
+1792501162.7130027 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.024 ms[0m
+1792501163.9919667 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.062 ms  render: 0.022 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501165.3094873 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.314 ms[0m
+1792501165.3176622 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.879 ms[0m
+1792501165.3283870 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.025 ms[0m
+1792501166.6138465 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.340 ms  render: 0.018 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501167.9164569 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.201 ms[0m
+1792501167.9256098 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.519 ms[0m
+1792501167.9353685 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.028 ms[0m
+1792501169.1957228 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.753 ms  render: 0.025 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501170.4985971 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.354 ms[0m
+1792501170.5069728 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.895 ms[0m
+1792501170.5181146 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.017 ms[0m
+1792501171.8241513 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.663 ms  render: 0.032 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501173.1210217 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.330 ms[0m
+1792501173.1297112 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.227 ms[0m
+1792501173.1395011 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.020 ms[0m
+1792501174.4140549 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.579 ms  render: 0.022 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501175.7066107 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.353 ms[0m
+1792501175.7148716 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.820 ms[0m
+1792501175.7258632 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.021 ms[0m
+1792501176.9931378 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.925 ms  render: 0.021 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501178.2824857 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.322 ms[0m
+1792501178.2907796 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.834 ms[0m
+1792501178.3017535 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.022 ms[0m
+1792501179.5913403 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.786 ms  render: 0.033 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501180.8885779 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.348 ms[0m
+1792501180.8971813 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.164 ms[0m
+1792501180.9077244 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.020 ms[0m
+1792501182.1971707 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.240 ms  render: 0.024 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501183.5043862 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.293 ms[0m
+1792501183.5129318 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.054 ms[0m
+1792501183.5235124 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.031 ms[0m
+1792501184.7972877 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.475 ms  render: 0.028 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501186.0996122 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.316 ms[0m
+1792501186.1081986 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.195 ms[0m
+1792501186.1187208 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.024 ms[0m
+1792501187.4032705 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.595 ms  render: 0.026 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501188.7137122 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.389 ms[0m
+1792501188.7221212 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.976 ms[0m
+1792501188.7330790 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.025 ms[0m
+1792501190.0139947 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.869 ms  render: 0.025 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501191.3028052 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.459 ms[0m
+1792501191.3112369 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.140 ms[0m
+1792501191.3221817 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.026 ms[0m
+1792501192.6061687 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.720 ms  render: 0.030 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501193.9086015 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.325 ms[0m
+1792501193.9170780 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.991 ms[0m
+1792501193.9275348 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.032 ms[0m
+1792501195.2007401 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.850 ms  render: 0.031 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501196.4820588 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.331 ms[0m
+1792501196.4904714 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.028 ms[0m
+1792501196.5018249 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.022 ms[0m
+1792501197.7628820 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.752 ms  render: 0.025 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501199.0478308 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.224 ms[0m
+1792501199.0569363 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.378 ms[0m
+1792501199.0672958 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.033 ms[0m
+1792501200.3514581 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.531 ms  render: 0.019 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501201.6317246 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.619 ms[0m
+1792501201.6394181 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.598 ms[0m
+1792501201.6507649 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.023 ms[0m
+1792501202.9361761 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.092 ms  render: 0.031 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501204.2364321 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.266 ms[0m
+1792501204.2448754 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.995 ms[0m
+1792501204.2557499 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.027 ms[0m
+1792501205.5449045 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.951 ms  render: 0.030 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501206.8244364 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.280 ms[0m
+1792501206.8327746 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.780 ms[0m
+1792501206.8435631 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.019 ms[0m
+1792501208.1054990 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.750 ms  render: 0.027 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501209.3982337 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.351 ms[0m
+1792501209.4066966 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.105 ms[0m
+1792501209.4173751 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.034 ms[0m
+1792501210.6932311 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.482 ms  render: 0.023 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501211.9711719 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.202 ms[0m
+1792501211.9799600 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.145 ms[0m
+1792501211.9902182 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.022 ms[0m
+1792501213.2618213 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.197 ms  render: 0.017 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501214.5486181 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.327 ms[0m
+1792501214.5570483 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.109 ms[0m
+1792501214.5675800 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.030 ms[0m
+1792501215.8441865 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.753 ms  render: 0.028 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501217.1445682 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.317 ms[0m
+1792501217.1531746 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.216 ms[0m
+1792501217.1648915 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.024 ms[0m
+1792501218.4393060 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.327 ms  render: 0.025 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501219.7420619 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.222 ms[0m
+1792501219.7507522 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.170 ms[0m
+1792501219.7611322 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.024 ms[0m
+1792501221.0627859 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.249 ms  render: 0.019 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501222.3804948 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.357 ms[0m
+1792501222.3887520 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.840 ms[0m
+1792501222.4001529 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.022 ms[0m
+1792501223.6787179 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.151 ms  render: 0.026 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501224.9671521 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.679 ms[0m
+1792501224.9746258 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.411 ms[0m
+1792501224.9862661 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.022 ms[0m
+1792501226.2675493 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.945 ms  render: 0.025 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501227.5644233 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.259 ms[0m
+1792501227.5731316 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.195 ms[0m
+1792501227.5837371 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.023 ms[0m
+1792501228.8581581 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.391 ms  render: 0.028 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501230.1640060 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.356 ms[0m
+1792501230.1724529 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.982 ms[0m
+1792501230.1833913 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.033 ms[0m
+1792501231.4813406 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.939 ms  render: 0.025 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501232.7946019 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.331 ms[0m
+1792501232.8070607 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 13.939 ms[0m
+1792501232.8137031 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.031 ms[0m
+1792501234.0984371 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.045 ms  render: 0.022 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501235.4050570 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.218 ms[0m
+1792501235.4136946 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.017 ms[0m
+1792501235.4248240 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.022 ms[0m
+1792501236.6936309 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.002 ms  render: 0.019 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501238.0039475 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.253 ms[0m
+1792501238.0136471 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 11.055 ms[0m
+1792501238.0238543 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.030 ms[0m
+1792501239.3250549 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.316 ms  render: 0.022 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501240.6318765 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.287 ms[0m
+1792501240.6410978 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.632 ms[0m
+1792501240.6508162 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.023 ms[0m
+1792501241.9325461 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.982 ms  render: 0.025 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501243.2314467 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.320 ms[0m
+1792501243.2394848 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.709 ms[0m
+1792501243.2504730 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.028 ms[0m
+1792501244.5175829 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.909 ms  render: 0.024 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501245.7975569 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.225 ms[0m
+1792501245.8066640 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.513 ms[0m
+1792501245.8168564 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.019 ms[0m
+1792501247.1183355 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.907 ms  render: 0.032 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501248.4157524 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.324 ms[0m
+1792501248.4241147 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.990 ms[0m
+1792501248.4347970 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.020 ms[0m
+1792501249.7066464 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.209 ms  render: 0.023 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501250.9861908 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.219 ms[0m
+1792501250.9947340 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.984 ms[0m
+1792501251.0058014 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.027 ms[0m
+1792501252.2789783 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.138 ms  render: 0.035 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501253.5570610 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.282 ms[0m
+1792501253.5654595 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.875 ms[0m
+1792501253.5768926 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.020 ms[0m
+1792501254.8481331 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.212 ms  render: 0.027 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501256.1264055 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.608 ms[0m
+1792501256.1334696 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.011 ms[0m
+1792501256.1502120 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.022 ms[0m
+1792501257.4262445 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.514 ms  render: 0.041 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501258.7076266 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.316 ms[0m
+1792501258.7158954 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.925 ms[0m
+1792501258.7261355 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.021 ms[0m
+1792501259.9850509 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.212 ms  render: 0.025 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501261.3040092 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.090 ms[0m
+1792501261.3133497 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.496 ms[0m
+1792501261.3230538 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.023 ms[0m
+1792501262.6147785 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 12.996 ms  render: 0.016 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501263.9093335 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.215 ms[0m
+1792501263.9181693 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.179 ms[0m
+1792501263.9283481 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.035 ms[0m
+1792501265.2143242 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.460 ms  render: 0.029 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501266.5132234 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.240 ms[0m
+1792501266.5228148 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 11.075 ms[0m
+1792501266.5339930 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.018 ms[0m
+1792501267.8009887 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.100 ms  render: 0.030 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501269.0891793 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.201 ms[0m
+1792501269.0981548 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.312 ms[0m
+1792501269.1087167 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.026 ms[0m
+1792501270.3999860 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.905 ms  render: 0.026 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501271.7056732 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.310 ms[0m
+1792501271.7139916 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.889 ms[0m
+1792501271.7258155 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.038 ms[0m
+1792501273.0177777 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.022 ms  render: 0.028 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501274.3287275 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.205 ms[0m
+1792501274.3380122 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.675 ms[0m
+1792501274.3475327 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.038 ms[0m
+1792501275.6132877 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.301 ms  render: 0.024 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501276.9220653 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.653 ms[0m
+1792501276.9348116 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 14.722 ms[0m
+1792501276.9436622 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.017 ms[0m
+1792501278.2223408 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.002 ms  render: 0.027 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501279.5213764 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.217 ms[0m
+1792501279.5306768 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.682 ms[0m
+1792501279.5417550 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.030 ms[0m
+1792501280.8332601 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.518 ms  render: 0.027 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501282.1512828 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.286 ms[0m
+1792501282.1603103 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.656 ms[0m
+1792501282.1707907 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.028 ms[0m
+1792501283.4577470 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.169 ms  render: 0.023 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501284.7446988 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.322 ms[0m
+1792501284.7535801 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.477 ms[0m
+1792501284.7647939 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.029 ms[0m
+1792501286.0340524 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.382 ms  render: 0.024 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501287.3234975 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.172 ms[0m
+1792501287.3329663 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.768 ms[0m
+1792501287.3435652 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.023 ms[0m
+1792501288.6327267 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.558 ms  render: 0.030 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501289.9199500 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.188 ms[0m
+1792501289.9292624 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.674 ms[0m
+1792501289.9408276 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.021 ms[0m
+1792501291.2237568 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.440 ms  render: 0.028 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501292.5440650 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.178 ms[0m
+1792501292.5544620 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 11.640 ms[0m
+1792501292.5642703 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.037 ms[0m
+1792501293.8369653 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.647 ms  render: 0.022 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501295.1356580 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.310 ms[0m
+1792501295.1449683 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.860 ms[0m
+1792501295.1558361 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.028 ms[0m
+1792501296.4519224 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.635 ms  render: 0.024 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501297.7636137 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.307 ms[0m
+1792501297.7729044 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.843 ms[0m
+1792501297.7833006 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.027 ms[0m
+1792501299.0612345 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.983 ms  render: 0.030 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501300.3588238 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.205 ms[0m
+1792501300.3689973 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 11.489 ms[0m
+1792501300.3799884 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.025 ms[0m
+1792501301.6690392 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.365 ms  render: 0.030 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501302.9768136 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.242 ms[0m
+1792501302.9870522 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 11.579 ms[0m
+1792501302.9959304 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.025 ms[0m
+1792501304.2848480 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 11.170 ms  render: 0.026 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501305.5917697 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.210 ms[0m
+1792501305.6021514 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 11.736 ms[0m
+1792501305.6121488 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.026 ms[0m
+1792501306.8632061 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 11.271 ms  render: 0.031 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501308.1485803 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.338 ms[0m
+1792501308.1582479 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 11.188 ms[0m
+1792501308.1687968 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.027 ms[0m
+1792501309.4387755 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 11.081 ms  render: 0.021 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501310.7305582 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.313 ms[0m
+1792501310.7404094 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 11.358 ms[0m
+1792501310.7518415 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.031 ms[0m
+1792501312.0175116 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 11.295 ms  render: 0.032 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501313.3237956 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.390 ms[0m
+1792501313.3331826 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 11.049 ms[0m
+1792501313.3448448 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.025 ms[0m
+1792501314.6311712 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.754 ms  render: 0.030 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501315.9300451 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.317 ms[0m
+1792501315.9404376 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 11.834 ms[0m
+1792501315.9517963 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.020 ms[0m
+1792501317.2188537 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 11.743 ms  render: 0.025 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501318.5199025 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.411 ms[0m
+1792501318.5297623 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 11.482 ms[0m
+1792501318.5417793 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.023 ms[0m
+1792501319.8108099 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.125 ms  render: 0.027 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501321.1137424 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.063 ms[0m
+1792501321.1233540 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.488 ms[0m
+1792501321.1331463 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.026 ms[0m
+1792501322.4152865 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.952 ms  render: 0.025 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501323.7018971 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.423 ms[0m
+1792501323.7100012 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.895 ms[0m
+1792501323.7217798 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.027 ms[0m
+1792501324.9964840 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.871 ms  render: 0.022 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501326.3100989 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.229 ms[0m
+1792501326.3187408 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.005 ms[0m
+1792501326.3296893 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.020 ms[0m
+1792501327.6144366 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.731 ms  render: 0.023 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501328.9173040 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.477 ms[0m
+1792501328.9252455 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.667 ms[0m
+1792501328.9367890 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.024 ms[0m
+1792501330.2376325 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.992 ms  render: 0.032 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501331.5400696 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.311 ms[0m
+1792501331.5491319 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.525 ms[0m
+1792501331.5594621 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.014 ms[0m
+1792501332.8585718 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.940 ms  render: 0.024 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501334.1746099 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.269 ms[0m
+1792501334.1829615 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.782 ms[0m
+1792501334.1937306 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.020 ms[0m
+1792501335.4818513 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.742 ms  render: 0.021 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501336.7912419 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.369 ms[0m
+1792501336.7994542 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.867 ms[0m
+1792501336.8107119 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.022 ms[0m
+1792501338.1201835 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.600 ms  render: 0.021 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501339.4359882 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.338 ms[0m
+1792501339.4444678 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.980 ms[0m
+1792501339.4566741 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.021 ms[0m
+1792501340.7524662 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.038 ms  render: 0.026 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501342.0415454 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.222 ms[0m
+1792501342.0506632 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.422 ms[0m
+1792501342.0607600 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.020 ms[0m
+1792501343.3284166 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.162 ms  render: 0.024 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501344.6141710 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.261 ms[0m
+1792501344.6232769 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.565 ms[0m
+1792501344.6328738 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.027 ms[0m
+1792501345.9084849 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.494 ms  render: 0.023 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501347.2152603 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.415 ms[0m
+1792501347.2239382 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.295 ms[0m
+1792501347.2348244 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.027 ms[0m
+1792501348.5333643 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.481 ms  render: 0.028 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501349.8353443 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.463 ms[0m
+1792501349.8438606 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.189 ms[0m
+1792501349.8547125 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.019 ms[0m
+1792501351.1346200 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.766 ms  render: 0.020 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501352.4461768 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.247 ms[0m
+1792501352.4547791 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.085 ms[0m
+1792501352.4655354 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.032 ms[0m
+1792501353.7393467 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.831 ms  render: 0.018 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501355.0267377 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.247 ms[0m
+1792501355.0352032 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.887 ms[0m
+1792501355.0457435 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.020 ms[0m
+1792501356.3289621 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.243 ms  render: 0.013 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501357.6461451 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.235 ms[0m
+1792501357.6551378 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.464 ms[0m
+1792501357.6655891 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.020 ms[0m
+1792501358.9609406 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.159 ms  render: 0.022 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501360.2443531 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.189 ms[0m
+1792501360.2538610 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.826 ms[0m
+1792501360.2631824 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.020 ms[0m
+1792501361.5223727 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.189 ms  render: 0.023 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501362.8109486 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.335 ms[0m
+1792501362.8193831 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.032 ms[0m
+1792501362.8305032 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.021 ms[0m
+1792501364.1156585 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.315 ms  render: 0.024 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501365.4074793 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.298 ms[0m
+1792501365.4159508 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.986 ms[0m
+1792501365.4267638 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.029 ms[0m
+1792501366.7037213 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 11.306 ms  render: 0.021 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501368.0257034 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.229 ms[0m
+1792501368.0344591 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.079 ms[0m
+1792501368.0458970 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.026 ms[0m
+1792501369.3283184 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.899 ms  render: 0.023 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501370.6178181 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.321 ms[0m
+1792501370.6260688 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.776 ms[0m
+1792501370.6377423 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.022 ms[0m
+1792501371.9162202 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.374 ms  render: 0.020 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501373.2289441 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.356 ms[0m
+1792501373.2372565 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.920 ms[0m
+1792501373.2481368 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.021 ms[0m
+1792501374.5360408 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.764 ms  render: 0.019 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501375.8519146 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.357 ms[0m
+1792501375.8603461 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.989 ms[0m
+1792501375.8709111 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.028 ms[0m
+1792501377.1631544 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.117 ms  render: 0.031 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501378.4728184 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.382 ms[0m
+1792501378.4807694 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 9.599 ms[0m
+1792501378.4928243 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.024 ms[0m
+1792501379.7770152 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.317 ms  render: 0.014 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501381.0803528 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.071 ms[0m
+1792501381.0894830 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.300 ms[0m
+1792501381.0998061 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.022 ms[0m
+1792501382.3674221 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.033 ms  render: 0.018 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501383.6725514 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.295 ms[0m
+1792501383.6809881 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.092 ms[0m
+1792501383.6911240 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.023 ms[0m
+1792501384.9696062 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 10.217 ms  render: 0.033 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501386.2700996 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] vbo_upload: 1.350 ms[0m
+1792501386.2785122 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] cpu_sort: 10.082 ms[0m
+1792501386.2896206 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] render: 0.035 ms[0m
+1792501387.2756565 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1792501387.2782648 [INFO] [ros2_control_node-5]: sending signal 'SIGINT' to process[ros2_control_node-5]
+1792501387.2787733 [INFO] [rviz2-4]: sending signal 'SIGINT' to process[rviz2-4]
+1792501387.2791691 [INFO] [move_group-3]: sending signal 'SIGINT' to process[move_group-3]
+1792501387.2795088 [INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+1792501387.2798393 [INFO] [static_transform_publisher-1]: sending signal 'SIGINT' to process[static_transform_publisher-1]
+1792501387.2799637 [ros2_control_node-5] [0m[INFO] [rclcpp] signal_handler(SIGINT/SIGTERM)[0m
+1792501387.2799947 [ros2_control_node-5] [0m[INFO] [controller_manager] Shutdown request received....[0m
+1792501387.2800159 [ros2_control_node-5] [0m[INFO] [controller_manager] Shutting down all controllers in the controller manager.[0m
+1792501387.2800350 [ros2_control_node-5] [0m[INFO] [controller_manager] Deactivating controller 'scissor_controller'[0m
+1792501387.2800524 [ros2_control_node-5] [0m[INFO] [controller_manager] Shutting down controller 'scissor_controller'[0m
+1792501387.2800713 [ros2_control_node-5] [0m[INFO] [controller_manager] Deactivating controller 'aubo_arm_controller'[0m
+1792501387.2800894 [ros2_control_node-5] [0m[INFO] [controller_manager] Shutting down controller 'aubo_arm_controller'[0m
+1792501387.2801051 [ros2_control_node-5] [0m[INFO] [controller_manager] Deactivating controller 'joint_state_broadcaster'[0m
+1792501387.2801206 [ros2_control_node-5] [0m[INFO] [controller_manager] Shutting down controller 'joint_state_broadcaster'[0m
+1792501387.2801363 [ros2_control_node-5] [0m[INFO] [resource_manager] 'deactivate' hardware 'FakeSystem' [0m
+1792501387.2801635 [ros2_control_node-5] [0m[INFO] [resource_manager] Successful 'deactivate' of hardware 'FakeSystem'[0m
+1792501387.2801802 [ros2_control_node-5] [0m[INFO] [resource_manager] 'shutdown' hardware 'FakeSystem' [0m
+1792501387.2801962 [ros2_control_node-5] [0m[INFO] [resource_manager] Successful 'shutdown' of hardware 'FakeSystem'[0m
+1792501387.2802114 [ros2_control_node-5] [0m[INFO] [controller_manager] Shutting down the controller manager.[0m
+1792501387.2803781 [static_transform_publisher-1] [0m[INFO] [rclcpp] signal_handler(SIGINT/SIGTERM)[0m
+1792501387.2804487 [rviz2-4] [0m[INFO] [rclcpp] signal_handler(SIGINT/SIGTERM)[0m
+1792501387.2807186 [rviz2-4] [0m[INFO] [rclcpp] signal_handler(SIGINT/SIGTERM)[0m
+1792501387.2810309 [ERROR] [ros2_control_node-5]: process has died [pid 2360226, exit code -2, cmd '/opt/ros/humble/lib/controller_manager/ros2_control_node --ros-args --params-file /tmp/launch_params_pdljjsw4 --params-file /home/zhuxd/aubo_ws/install/aubo_i5_scissors_moveit_config/share/aubo_i5_scissors_moveit_config/config/ros2_controllers.yaml'].
+1792501387.2811584 [ERROR] [robot_state_publisher-2]: process has died [pid 2360220, exit code -2, cmd '/opt/ros/humble/lib/robot_state_publisher/robot_state_publisher --ros-args --params-file /tmp/launch_params_scl948o0 --params-file /tmp/launch_params_qcopoe9w'].
+1792501387.2813039 [ERROR] [static_transform_publisher-1]: process has died [pid 2360218, exit code -2, cmd '/opt/ros/humble/lib/tf2_ros/static_transform_publisher --frame-id world --child-frame-id car_base_footprint --ros-args -r __node:=static_transform_publisher0'].
+1792501387.2830348 [ERROR] [move_group-3]: process has died [pid 2360222, exit code -2, cmd '/opt/ros/humble/lib/moveit_ros_move_group/move_group --ros-args --params-file /tmp/launch_params_jfyrzkyu --params-file /tmp/launch_params_nw8wnsho'].
+1792501387.5762584 [rviz2-4] [33m[WARN] [interactive_marker_display_104232261693920] Server not available while running, resetting[0m
+1792501387.5786459 [rviz2-4] [0m[INFO] [gsplat_rviz_plugin] [perf] FPS: 1.5  splats: 1899660  |  sort (cpu): 9.808 ms  render: 0.024 ms  |  TBO: 57.97 MB  SH-TBO: 43.48 MB[0m
+1792501388.2614889 [rviz2-4] 
+1792501388.2616127 [rviz2-4] >>> [rcutils|error_handling.c:108] rcutils_set_error_state()
+1792501388.2616420 [rviz2-4] This error state is being overwritten:
+1792501388.2616627 [rviz2-4] 
+1792501388.2616832 [rviz2-4]   'rcl node's context is invalid, at ./src/rcl/node.c:428'
+1792501388.2616999 [rviz2-4] 
+1792501388.2617161 [rviz2-4] with this new error message:
+1792501388.2617326 [rviz2-4] 
+1792501388.2617474 [rviz2-4]   'publisher's context is invalid, at ./src/rcl/publisher.c:389'
+1792501388.2617629 [rviz2-4] 
+1792501388.2617781 [rviz2-4] rcutils_reset_error() should be called after error handling to avoid this.
+1792501388.2617936 [rviz2-4] <<<
+1792501388.2620926 [rviz2-4] [0m[INFO] [moveit_ros.planning_scene_monitor.planning_scene_monitor] Stopping planning scene monitor[0m
+1792501389.3470328 [ERROR] [rviz2-4]: process has died [pid 2360224, exit code -11, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /home/zhuxd/aubo_ws/src/aubo_i5_scissors_moveit_config/config/moveit.rviz --ros-args --params-file /tmp/launch_params_m12no0or --params-file /tmp/launch_params_w0i0hski --params-file /tmp/launch_params_6czzgsym'].

@@ -1,0 +1,11 @@
+/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_adapter/aubo_msgs:msg/Analog.idl
+/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_adapter/aubo_msgs:msg/Digital.idl
+/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_adapter/aubo_msgs:msg/IOStates.idl
+/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_adapter/aubo_msgs:msg/RobotStateRTMsg.idl
+/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_adapter/aubo_msgs:msg/MasterboardDataMsg.idl
+/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_adapter/aubo_msgs:msg/RobotModeDataMsg.idl
+/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_adapter/aubo_msgs:msg/ToolDataMsg.idl
+/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_adapter/aubo_msgs:srv/SetPayload.idl
+/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_adapter/aubo_msgs:srv/SetSpeedSliderFraction.idl
+/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_adapter/aubo_msgs:srv/SetIO.idl
+/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_adapter/aubo_msgs:srv/JsonRpc.idl

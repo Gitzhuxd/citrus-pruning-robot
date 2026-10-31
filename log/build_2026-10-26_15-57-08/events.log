@@ -1,0 +1,206 @@
+[0.000000] (-) TimerEvent: {}
+[0.000133] (-) JobUnselected: {'identifier': 'aubo_dashboard_msgs'}
+[0.000368] (-) JobUnselected: {'identifier': 'aubo_description'}
+[0.000386] (-) JobUnselected: {'identifier': 'aubo_gazebo'}
+[0.000487] (-) JobUnselected: {'identifier': 'aubo_i5_scissors_description'}
+[0.000503] (-) JobUnselected: {'identifier': 'aubo_i5_scissors_moveit_config'}
+[0.000536] (-) JobUnselected: {'identifier': 'aubo_moveit_config'}
+[0.000551] (-) JobUnselected: {'identifier': 'aubo_msgs'}
+[0.000566] (-) JobUnselected: {'identifier': 'aubo_ros2_driver'}
+[0.000581] (-) JobUnselected: {'identifier': 'aubo_rrt_interfaces'}
+[0.000632] (-) JobUnselected: {'identifier': 'aubo_rrt_panel'}
+[0.000648] (-) JobUnselected: {'identifier': 'aubo_rrt_python'}
+[0.000663] (-) JobUnselected: {'identifier': 'aubo_rrt_visualizer'}
+[0.000677] (-) JobUnselected: {'identifier': 'realsense2_camera'}
+[0.000691] (-) JobUnselected: {'identifier': 'realsense2_camera_msgs'}
+[0.000705] (-) JobUnselected: {'identifier': 'realsense2_description'}
+[0.000719] (-) JobUnselected: {'identifier': 'ros_joints_plan'}
+[0.000739] (aubo_ompl_capture) JobQueued: {'identifier': 'aubo_ompl_capture', 'dependencies': OrderedDict()}
+[0.000756] (aubo_ompl_capture) JobStarted: {'identifier': 'aubo_ompl_capture'}
+[0.005717] (aubo_ompl_capture) JobProgress: {'identifier': 'aubo_ompl_capture', 'progress': 'cmake'}
+[0.006001] (aubo_ompl_capture) Command: {'cmd': ['/usr/bin/cmake', '/home/zhuxd/aubo_ws/src/aubo_ompl_capture', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/zhuxd/aubo_ws/install/aubo_ompl_capture'], 'cwd': '/home/zhuxd/aubo_ws/build/aubo_ompl_capture', 'env': OrderedDict([('LANGUAGE', 'zh_CN:en'), ('USER', 'zhuxd'), ('SSH_CLIENT', '10.135.44.163 9023 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/lib:/home/zhuxd/aubo_ws/install/aubo_rrt_panel/lib:/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/lib:/home/zhuxd/aubo_ws/install/aubo_ros2_driver/lib:/home/zhuxd/aubo_ws/install/aubo_msgs/lib:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/lib:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_rviz_plugin/lib:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/zhuxd'), ('OLDPWD', '/home/zhuxd'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('TMPDIR', '/home/zhuxd/aubo_ws/tools/ompl_capture_tmp'), ('COLCON_PREFIX_PATH', '/home/zhuxd/aubo_ws/install:/home/zhuxd/rvizsplat_humble_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zhuxd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('XDG_SESSION_ID', '72'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('AMENT_PREFIX_PATH', '/home/zhuxd/aubo_ws/install/ros_joints_plan:/home/zhuxd/aubo_ws/install/aubo_rrt_visualizer:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_moveit_config:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/realsense2_description:/home/zhuxd/aubo_ws/install/realsense2_camera_msgs:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/home/zhuxd/aubo_ws/install/aubo_rrt_panel:/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces:/home/zhuxd/aubo_ws/install/aubo_ros2_driver:/home/zhuxd/aubo_ws/install/aubo_msgs:/home/zhuxd/aubo_ws/install/aubo_gazebo:/home/zhuxd/aubo_ws/install/aubo_moveit_config:/home/zhuxd/aubo_ws/install/aubo_description:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_rviz_plugin:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/zhuxd/aubo_ws/build/aubo_ompl_capture'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.135.44.163 9023 10.134.214.209 22'), ('PYTHONPATH', '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib/python3.10/site-packages:/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/zhuxd/aubo_ws/build/aubo_rrt_python:/home/zhuxd/aubo_ws/install/aubo_rrt_python/lib/python3.10/site-packages:/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages:/home/zhuxd/aubo_ws/install/aubo_ros2_driver/local/lib/python3.10/dist-packages:/home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zhuxd/aubo_ws/install/ros_joints_plan:/home/zhuxd/aubo_ws/install/aubo_rrt_visualizer:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_moveit_config:/home/zhuxd/aubo_ws/install/realsense2_description:/home/zhuxd/aubo_ws/install/realsense2_camera_msgs:/home/zhuxd/aubo_ws/install/aubo_rrt_panel:/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces:/home/zhuxd/aubo_ws/install/aubo_ros2_driver:/home/zhuxd/aubo_ws/install/aubo_msgs:/home/zhuxd/aubo_ws/install/aubo_gazebo:/home/zhuxd/aubo_ws/install/aubo_moveit_config:/home/zhuxd/aubo_ws/install/aubo_description:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_rviz_plugin:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_msgs:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble')]), 'shell': False}
+[0.099970] (-) TimerEvent: {}
+[0.109095] (aubo_ompl_capture) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.146849] (aubo_ompl_capture) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.151375] (aubo_ompl_capture) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.200081] (-) TimerEvent: {}
+[0.220405] (aubo_ompl_capture) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.224502] (aubo_ompl_capture) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.225045] (aubo_ompl_capture) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.227326] (aubo_ompl_capture) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.229284] (aubo_ompl_capture) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.293851] (aubo_ompl_capture) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.300182] (-) TimerEvent: {}
+[0.300310] (aubo_ompl_capture) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.300541] (aubo_ompl_capture) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.300976] (aubo_ompl_capture) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.305810] (aubo_ompl_capture) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400314] (-) TimerEvent: {}
+[0.417751] (aubo_ompl_capture) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.463779] (aubo_ompl_capture) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.500403] (-) TimerEvent: {}
+[0.503111] (aubo_ompl_capture) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.550409] (aubo_ompl_capture) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.555554] (aubo_ompl_capture) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.563512] (aubo_ompl_capture) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.574519] (aubo_ompl_capture) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.588001] (aubo_ompl_capture) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.600577] (-) TimerEvent: {}
+[0.628514] (aubo_ompl_capture) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.631447] (aubo_ompl_capture) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.700680] (-) TimerEvent: {}
+[0.709811] (aubo_ompl_capture) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.728963] (aubo_ompl_capture) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.757074] (aubo_ompl_capture) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.766099] (aubo_ompl_capture) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.800817] (-) TimerEvent: {}
+[0.823717] (aubo_ompl_capture) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.823932] (aubo_ompl_capture) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.876779] (aubo_ompl_capture) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.877349] (aubo_ompl_capture) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.900904] (-) TimerEvent: {}
+[0.926777] (aubo_ompl_capture) StdoutLine: {'line': b'-- Found moveit_core: 2.5.9 (/opt/ros/humble/share/moveit_core/cmake)\n'}
+[0.972595] (aubo_ompl_capture) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[1.001111] (-) TimerEvent: {}
+[1.020980] (aubo_ompl_capture) StdoutLine: {'line': b'-- Found parameter_traits: 0.7.4 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[1.034602] (aubo_ompl_capture) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.19 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[1.101223] (-) TimerEvent: {}
+[1.143782] (aubo_ompl_capture) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[1.199072] (aubo_ompl_capture) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.199211] (aubo_ompl_capture) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.201271] (-) TimerEvent: {}
+[1.301401] (-) TimerEvent: {}
+[1.401021] (aubo_ompl_capture) StdoutLine: {'line': b'-- Found moveit_ros_planning: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning/cmake)\n'}
+[1.401454] (-) TimerEvent: {}
+[1.404303] (aubo_ompl_capture) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[1.420703] (aubo_ompl_capture) StdoutLine: {'line': b'-- Found moveit_planners_ompl: 2.5.9 (/opt/ros/humble/share/moveit_planners_ompl/cmake)\n'}
+[1.433832] (aubo_ompl_capture) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: serialization filesystem system \n'}
+[1.436326] (aubo_ompl_capture) StdoutLine: {'line': b'-- Found ompl: /opt/ros/humble/include/ompl-1.7;/usr/include;/usr/include/eigen3  \n'}
+[1.487936] (aubo_ompl_capture) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.501543] (-) TimerEvent: {}
+[1.512493] (aubo_ompl_capture) StdoutLine: {'line': b'-- Generating done\n'}
+[1.517965] (aubo_ompl_capture) StdoutLine: {'line': b'-- Build files have been written to: /home/zhuxd/aubo_ws/build/aubo_ompl_capture\n'}
+[1.525797] (aubo_ompl_capture) CommandEnded: {'returncode': 0}
+[1.526624] (aubo_ompl_capture) JobProgress: {'identifier': 'aubo_ompl_capture', 'progress': 'build'}
+[1.526641] (aubo_ompl_capture) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zhuxd/aubo_ws/build/aubo_ompl_capture', '--', '-j20', '-l20'], 'cwd': '/home/zhuxd/aubo_ws/build/aubo_ompl_capture', 'env': OrderedDict([('LANGUAGE', 'zh_CN:en'), ('USER', 'zhuxd'), ('SSH_CLIENT', '10.135.44.163 9023 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/lib:/home/zhuxd/aubo_ws/install/aubo_rrt_panel/lib:/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/lib:/home/zhuxd/aubo_ws/install/aubo_ros2_driver/lib:/home/zhuxd/aubo_ws/install/aubo_msgs/lib:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/lib:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_rviz_plugin/lib:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/zhuxd'), ('OLDPWD', '/home/zhuxd'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('TMPDIR', '/home/zhuxd/aubo_ws/tools/ompl_capture_tmp'), ('COLCON_PREFIX_PATH', '/home/zhuxd/aubo_ws/install:/home/zhuxd/rvizsplat_humble_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zhuxd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('XDG_SESSION_ID', '72'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('AMENT_PREFIX_PATH', '/home/zhuxd/aubo_ws/install/ros_joints_plan:/home/zhuxd/aubo_ws/install/aubo_rrt_visualizer:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_moveit_config:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/realsense2_description:/home/zhuxd/aubo_ws/install/realsense2_camera_msgs:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/home/zhuxd/aubo_ws/install/aubo_rrt_panel:/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces:/home/zhuxd/aubo_ws/install/aubo_ros2_driver:/home/zhuxd/aubo_ws/install/aubo_msgs:/home/zhuxd/aubo_ws/install/aubo_gazebo:/home/zhuxd/aubo_ws/install/aubo_moveit_config:/home/zhuxd/aubo_ws/install/aubo_description:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_rviz_plugin:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/zhuxd/aubo_ws/build/aubo_ompl_capture'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.135.44.163 9023 10.134.214.209 22'), ('PYTHONPATH', '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib/python3.10/site-packages:/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/zhuxd/aubo_ws/build/aubo_rrt_python:/home/zhuxd/aubo_ws/install/aubo_rrt_python/lib/python3.10/site-packages:/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages:/home/zhuxd/aubo_ws/install/aubo_ros2_driver/local/lib/python3.10/dist-packages:/home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zhuxd/aubo_ws/install/ros_joints_plan:/home/zhuxd/aubo_ws/install/aubo_rrt_visualizer:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_moveit_config:/home/zhuxd/aubo_ws/install/realsense2_description:/home/zhuxd/aubo_ws/install/realsense2_camera_msgs:/home/zhuxd/aubo_ws/install/aubo_rrt_panel:/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces:/home/zhuxd/aubo_ws/install/aubo_ros2_driver:/home/zhuxd/aubo_ws/install/aubo_msgs:/home/zhuxd/aubo_ws/install/aubo_gazebo:/home/zhuxd/aubo_ws/install/aubo_moveit_config:/home/zhuxd/aubo_ws/install/aubo_description:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_rviz_plugin:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_msgs:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble')]), 'shell': False}
+[1.563295] (aubo_ompl_capture) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/aubo_ompl_capture.dir/src/capture.cpp.o\n'}
+[1.601710] (-) TimerEvent: {}
+[1.701872] (-) TimerEvent: {}
+[1.802103] (-) TimerEvent: {}
+[1.902330] (-) TimerEvent: {}
+[2.002587] (-) TimerEvent: {}
+[2.102796] (-) TimerEvent: {}
+[2.202975] (-) TimerEvent: {}
+[2.303112] (-) TimerEvent: {}
+[2.403269] (-) TimerEvent: {}
+[2.503415] (-) TimerEvent: {}
+[2.603589] (-) TimerEvent: {}
+[2.703765] (-) TimerEvent: {}
+[2.803997] (-) TimerEvent: {}
+[2.904120] (-) TimerEvent: {}
+[3.004264] (-) TimerEvent: {}
+[3.104418] (-) TimerEvent: {}
+[3.204585] (-) TimerEvent: {}
+[3.304754] (-) TimerEvent: {}
+[3.404946] (-) TimerEvent: {}
+[3.505115] (-) TimerEvent: {}
+[3.605310] (-) TimerEvent: {}
+[3.705512] (-) TimerEvent: {}
+[3.805699] (-) TimerEvent: {}
+[3.905848] (-) TimerEvent: {}
+[4.006108] (-) TimerEvent: {}
+[4.106315] (-) TimerEvent: {}
+[4.206562] (-) TimerEvent: {}
+[4.306834] (-) TimerEvent: {}
+[4.407029] (-) TimerEvent: {}
+[4.507279] (-) TimerEvent: {}
+[4.607552] (-) TimerEvent: {}
+[4.707767] (-) TimerEvent: {}
+[4.807983] (-) TimerEvent: {}
+[4.908173] (-) TimerEvent: {}
+[5.008340] (-) TimerEvent: {}
+[5.108613] (-) TimerEvent: {}
+[5.208901] (-) TimerEvent: {}
+[5.309128] (-) TimerEvent: {}
+[5.409316] (-) TimerEvent: {}
+[5.509521] (-) TimerEvent: {}
+[5.609731] (-) TimerEvent: {}
+[5.709919] (-) TimerEvent: {}
+[5.810184] (-) TimerEvent: {}
+[5.910400] (-) TimerEvent: {}
+[6.010680] (-) TimerEvent: {}
+[6.110855] (-) TimerEvent: {}
+[6.211126] (-) TimerEvent: {}
+[6.311303] (-) TimerEvent: {}
+[6.411503] (-) TimerEvent: {}
+[6.511697] (-) TimerEvent: {}
+[6.611917] (-) TimerEvent: {}
+[6.712078] (-) TimerEvent: {}
+[6.812255] (-) TimerEvent: {}
+[6.912406] (-) TimerEvent: {}
+[7.012687] (-) TimerEvent: {}
+[7.112890] (-) TimerEvent: {}
+[7.213134] (-) TimerEvent: {}
+[7.313348] (-) TimerEvent: {}
+[7.413566] (-) TimerEvent: {}
+[7.513730] (-) TimerEvent: {}
+[7.613931] (-) TimerEvent: {}
+[7.714101] (-) TimerEvent: {}
+[7.814285] (-) TimerEvent: {}
+[7.914473] (-) TimerEvent: {}
+[8.014661] (-) TimerEvent: {}
+[8.114826] (-) TimerEvent: {}
+[8.215043] (-) TimerEvent: {}
+[8.315205] (-) TimerEvent: {}
+[8.415371] (-) TimerEvent: {}
+[8.515556] (-) TimerEvent: {}
+[8.615786] (-) TimerEvent: {}
+[8.716057] (-) TimerEvent: {}
+[8.816320] (-) TimerEvent: {}
+[8.916509] (-) TimerEvent: {}
+[9.016698] (-) TimerEvent: {}
+[9.116965] (-) TimerEvent: {}
+[9.217169] (-) TimerEvent: {}
+[9.317447] (-) TimerEvent: {}
+[9.417634] (-) TimerEvent: {}
+[9.517836] (-) TimerEvent: {}
+[9.618025] (-) TimerEvent: {}
+[9.655289] (aubo_ompl_capture) StdoutLine: {'line': b'[100%] Linking CXX shared library libaubo_ompl_capture.so\n'}
+[9.718177] (-) TimerEvent: {}
+[9.818454] (-) TimerEvent: {}
+[9.918652] (-) TimerEvent: {}
+[10.018824] (-) TimerEvent: {}
+[10.119026] (-) TimerEvent: {}
+[10.185093] (aubo_ompl_capture) StdoutLine: {'line': b'[100%] Built target aubo_ompl_capture\n'}
+[10.193246] (aubo_ompl_capture) CommandEnded: {'returncode': 0}
+[10.193717] (aubo_ompl_capture) JobProgress: {'identifier': 'aubo_ompl_capture', 'progress': 'install'}
+[10.198237] (aubo_ompl_capture) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zhuxd/aubo_ws/build/aubo_ompl_capture'], 'cwd': '/home/zhuxd/aubo_ws/build/aubo_ompl_capture', 'env': OrderedDict([('LANGUAGE', 'zh_CN:en'), ('USER', 'zhuxd'), ('SSH_CLIENT', '10.135.44.163 9023 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/lib:/home/zhuxd/aubo_ws/install/aubo_rrt_panel/lib:/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/lib:/home/zhuxd/aubo_ws/install/aubo_ros2_driver/lib:/home/zhuxd/aubo_ws/install/aubo_msgs/lib:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/lib:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_rviz_plugin/lib:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/zhuxd'), ('OLDPWD', '/home/zhuxd'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('TMPDIR', '/home/zhuxd/aubo_ws/tools/ompl_capture_tmp'), ('COLCON_PREFIX_PATH', '/home/zhuxd/aubo_ws/install:/home/zhuxd/rvizsplat_humble_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zhuxd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('XDG_SESSION_ID', '72'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('AMENT_PREFIX_PATH', '/home/zhuxd/aubo_ws/install/ros_joints_plan:/home/zhuxd/aubo_ws/install/aubo_rrt_visualizer:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_moveit_config:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/realsense2_description:/home/zhuxd/aubo_ws/install/realsense2_camera_msgs:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/home/zhuxd/aubo_ws/install/aubo_rrt_panel:/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces:/home/zhuxd/aubo_ws/install/aubo_ros2_driver:/home/zhuxd/aubo_ws/install/aubo_msgs:/home/zhuxd/aubo_ws/install/aubo_gazebo:/home/zhuxd/aubo_ws/install/aubo_moveit_config:/home/zhuxd/aubo_ws/install/aubo_description:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_rviz_plugin:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/zhuxd/aubo_ws/build/aubo_ompl_capture'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.135.44.163 9023 10.134.214.209 22'), ('PYTHONPATH', '/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib/python3.10/site-packages:/home/zhuxd/aubo_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/zhuxd/aubo_ws/build/aubo_rrt_python:/home/zhuxd/aubo_ws/install/aubo_rrt_python/lib/python3.10/site-packages:/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages:/home/zhuxd/aubo_ws/install/aubo_ros2_driver/local/lib/python3.10/dist-packages:/home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zhuxd/aubo_ws/install/ros_joints_plan:/home/zhuxd/aubo_ws/install/aubo_rrt_visualizer:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_moveit_config:/home/zhuxd/aubo_ws/install/realsense2_description:/home/zhuxd/aubo_ws/install/realsense2_camera_msgs:/home/zhuxd/aubo_ws/install/aubo_rrt_panel:/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces:/home/zhuxd/aubo_ws/install/aubo_ros2_driver:/home/zhuxd/aubo_ws/install/aubo_msgs:/home/zhuxd/aubo_ws/install/aubo_gazebo:/home/zhuxd/aubo_ws/install/aubo_moveit_config:/home/zhuxd/aubo_ws/install/aubo_description:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_rviz_plugin:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_msgs:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble')]), 'shell': False}
+[10.203203] (aubo_ompl_capture) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.203461] (aubo_ompl_capture) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[10.203932] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/share/aubo_ompl_capture//plugins.xml\n'}
+[10.208503] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/lib/libaubo_ompl_capture.so\n'}
+[10.214318] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/share/aubo_ompl_capture/environment/library_path.sh\n'}
+[10.219098] (-) TimerEvent: {}
+[10.221189] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/share/aubo_ompl_capture/environment/library_path.dsv\n'}
+[10.225971] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/share/ament_index/resource_index/package_run_dependencies/aubo_ompl_capture\n'}
+[10.233537] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/share/ament_index/resource_index/parent_prefix_path/aubo_ompl_capture\n'}
+[10.239609] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/share/aubo_ompl_capture/environment/ament_prefix_path.sh\n'}
+[10.244166] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/share/aubo_ompl_capture/environment/ament_prefix_path.dsv\n'}
+[10.251282] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/share/aubo_ompl_capture/environment/path.sh\n'}
+[10.256968] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/share/aubo_ompl_capture/environment/path.dsv\n'}
+[10.261768] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/share/aubo_ompl_capture/local_setup.bash\n'}
+[10.267114] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/share/aubo_ompl_capture/local_setup.sh\n'}
+[10.271176] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/share/aubo_ompl_capture/local_setup.zsh\n'}
+[10.277489] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/share/aubo_ompl_capture/local_setup.dsv\n'}
+[10.281452] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/share/aubo_ompl_capture/package.dsv\n'}
+[10.288292] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/share/ament_index/resource_index/packages/aubo_ompl_capture\n'}
+[10.292538] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/share/ament_index/resource_index/moveit_core__pluginlib__plugin/aubo_ompl_capture\n'}
+[10.297925] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/share/aubo_ompl_capture/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[10.302362] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/share/aubo_ompl_capture/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[10.306757] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/share/aubo_ompl_capture/cmake/aubo_ompl_captureConfig.cmake\n'}
+[10.313463] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/share/aubo_ompl_capture/cmake/aubo_ompl_captureConfig-version.cmake\n'}
+[10.319171] (-) TimerEvent: {}
+[10.320231] (aubo_ompl_capture) StdoutLine: {'line': b'-- Symlinking: /home/zhuxd/aubo_ws/install/aubo_ompl_capture/share/aubo_ompl_capture/package.xml\n'}
+[10.326515] (aubo_ompl_capture) CommandEnded: {'returncode': 0}
+[10.344269] (aubo_ompl_capture) JobEnded: {'identifier': 'aubo_ompl_capture', 'rc': 0}
+[10.344644] (-) EventReactorShutdown: {}

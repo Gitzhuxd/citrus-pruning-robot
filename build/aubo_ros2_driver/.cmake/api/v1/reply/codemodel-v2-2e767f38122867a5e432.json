@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-d3d0b35aa67a665f33cf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "aubo_ros2_driver",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_aubo_ros2_driver_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_aubo_ros2_driver_egg-RelWithDebInfo-286629be5bead486b3d2.json",
+					"name" : "ament_cmake_python_build_aubo_ros2_driver_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_aubo_ros2_driver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_aubo_ros2_driver-RelWithDebInfo-7120e222ad542a71a75c.json",
+					"name" : "ament_cmake_python_copy_aubo_ros2_driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "aubo_robot_driver_plugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-aubo_robot_driver_plugin-RelWithDebInfo-bb440220ab4ef18ba73b.json",
+					"name" : "aubo_robot_driver_plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "aubo_ros2_control_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-aubo_ros2_control_node-RelWithDebInfo-a5ba9c830dfb4b3719b6.json",
+					"name" : "aubo_ros2_control_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "aubo_ros2_driver_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-aubo_ros2_driver_uninstall-RelWithDebInfo-f88e5ff4ed9e07702c9d.json",
+					"name" : "aubo_ros2_driver_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-RelWithDebInfo-be11558b0fe76a7106c7.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/zhuxd/aubo_ws/build/aubo_ros2_driver",
+		"source" : "/home/zhuxd/aubo_ws/src/aubo_ros2_driver/aubo_ros2_driver"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

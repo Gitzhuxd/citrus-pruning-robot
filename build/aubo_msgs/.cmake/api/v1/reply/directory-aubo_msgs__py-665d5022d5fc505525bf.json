@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "aubo_msgs__py",
+		"source" : "/home/zhuxd/aubo_ws/build/aubo_msgs/aubo_msgs__py"
+	}
+}

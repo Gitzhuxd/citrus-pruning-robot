@@ -1,0 +1,1 @@
+/home/zhuxd/aubo_ws/build/aubo_ompl_capture/ament_cmake_core/aubo_ompl_captureConfig-version.cmake

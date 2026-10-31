@@ -1,0 +1,42 @@
+[0.000000] (-) TimerEvent: {}
+[0.000104] (-) JobUnselected: {'identifier': 'aubo_dashboard_msgs'}
+[0.000222] (-) JobUnselected: {'identifier': 'aubo_description'}
+[0.000397] (-) JobUnselected: {'identifier': 'aubo_gazebo'}
+[0.000568] (-) JobUnselected: {'identifier': 'aubo_i5_scissors_description'}
+[0.000606] (-) JobUnselected: {'identifier': 'aubo_i5_scissors_moveit_config'}
+[0.000654] (-) JobUnselected: {'identifier': 'aubo_moveit_config'}
+[0.000692] (-) JobUnselected: {'identifier': 'aubo_msgs'}
+[0.000719] (-) JobUnselected: {'identifier': 'aubo_ros2_driver'}
+[0.000779] (-) JobUnselected: {'identifier': 'aubo_rrt_visualizer'}
+[0.000801] (-) JobUnselected: {'identifier': 'realsense2_camera'}
+[0.000823] (-) JobUnselected: {'identifier': 'realsense2_camera_msgs'}
+[0.000844] (-) JobUnselected: {'identifier': 'realsense2_description'}
+[0.000904] (-) JobUnselected: {'identifier': 'ros_joints_plan'}
+[0.000924] (aubo_rrt_python) JobQueued: {'identifier': 'aubo_rrt_python', 'dependencies': OrderedDict()}
+[0.000944] (aubo_rrt_python) JobStarted: {'identifier': 'aubo_rrt_python'}
+[0.099746] (-) TimerEvent: {}
+[0.200067] (-) TimerEvent: {}
+[0.300348] (-) TimerEvent: {}
+[0.400594] (-) TimerEvent: {}
+[0.500827] (-) TimerEvent: {}
+[0.510305] (aubo_rrt_python) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/zhuxd/aubo_ws/build/aubo_rrt_python/build', '--no-deps', 'symlink_data'], 'cwd': '/home/zhuxd/aubo_ws/build/aubo_rrt_python', 'env': {'LANGUAGE': 'zh_CN:en', 'USER': 'zhuxd', 'SSH_CLIENT': '10.135.44.163 12607 22', 'LC_TIME': 'zh_CN.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/zhuxd', 'OLDPWD': '/home/zhuxd', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'zh_CN.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'humble', 'LOGNAME': 'zhuxd', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'XDG_SESSION_ID': '23', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PAPERSIZE': 'a4', 'LC_ADDRESS': 'zh_CN.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'zh_CN.UTF-8', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'PWD': '/home/zhuxd/aubo_ws/build/aubo_rrt_python', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.135.44.163 12607 10.134.214.209 22', 'PYTHONPATH': '/home/zhuxd/aubo_ws/build/aubo_rrt_python/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zhuxd/aubo_ws/install/aubo_rrt_python/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1'}, 'shell': False}
+[0.600924] (-) TimerEvent: {}
+[0.651169] (aubo_rrt_python) StdoutLine: {'line': b'running develop\n'}
+[0.701041] (-) TimerEvent: {}
+[0.732452] (aubo_rrt_python) StdoutLine: {'line': b'running egg_info\n'}
+[0.732658] (aubo_rrt_python) StdoutLine: {'line': b'writing aubo_rrt_python.egg-info/PKG-INFO\n'}
+[0.732791] (aubo_rrt_python) StdoutLine: {'line': b'writing dependency_links to aubo_rrt_python.egg-info/dependency_links.txt\n'}
+[0.732966] (aubo_rrt_python) StdoutLine: {'line': b'writing entry points to aubo_rrt_python.egg-info/entry_points.txt\n'}
+[0.733029] (aubo_rrt_python) StdoutLine: {'line': b'writing requirements to aubo_rrt_python.egg-info/requires.txt\n'}
+[0.733085] (aubo_rrt_python) StdoutLine: {'line': b'writing top-level names to aubo_rrt_python.egg-info/top_level.txt\n'}
+[0.734178] (aubo_rrt_python) StdoutLine: {'line': b"reading manifest file 'aubo_rrt_python.egg-info/SOURCES.txt'\n"}
+[0.734563] (aubo_rrt_python) StdoutLine: {'line': b"writing manifest file 'aubo_rrt_python.egg-info/SOURCES.txt'\n"}
+[0.735314] (aubo_rrt_python) StdoutLine: {'line': b'running build_ext\n'}
+[0.735442] (aubo_rrt_python) StdoutLine: {'line': b'Creating /home/zhuxd/aubo_ws/install/aubo_rrt_python/lib/python3.10/site-packages/aubo-rrt-python.egg-link (link to .)\n'}
+[0.735947] (aubo_rrt_python) StdoutLine: {'line': b'Installing rrt_demo script to /home/zhuxd/aubo_ws/install/aubo_rrt_python/lib/aubo_rrt_python\n'}
+[0.736160] (aubo_rrt_python) StdoutLine: {'line': b'\n'}
+[0.736220] (aubo_rrt_python) StdoutLine: {'line': b'Installed /home/zhuxd/aubo_ws/build/aubo_rrt_python\n'}
+[0.736276] (aubo_rrt_python) StdoutLine: {'line': b'running symlink_data\n'}
+[0.754669] (aubo_rrt_python) CommandEnded: {'returncode': 0}
+[0.761554] (aubo_rrt_python) JobEnded: {'identifier': 'aubo_rrt_python', 'rc': 0}
+[0.761978] (-) EventReactorShutdown: {}

@@ -1,0 +1,89 @@
+{
+  "algorithm": "Python basic RRT (not the RViz OMPL planner)",
+  "success": true,
+  "outcome": "success",
+  "settings": {
+    "start_state": "home",
+    "goal_state": "pose1",
+    "seed": 42,
+    "step_size": 0.3,
+    "goal_bias": 0.1,
+    "collision_step": 0.04,
+    "max_iterations": 2500,
+    "planning_time": 60.0,
+    "keep_alive": true,
+    "replay_step": 0.08,
+    "output_directory": "/home/zhuxd/aubo_ws/rrt_results/python"
+  },
+  "joint_names": [
+    "shoulder_joint",
+    "upperArm_joint",
+    "foreArm_joint",
+    "wrist1_joint",
+    "wrist2_joint",
+    "wrist3_joint"
+  ],
+  "joint_lower": [
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586
+  ],
+  "joint_upper": [
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586
+  ],
+  "limits_source": "runtime MoveIt model; hardware limits not confirmed",
+  "start": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "goal": [
+    -0.0347,
+    1.215,
+    2.2564,
+    0.7984,
+    0.3818,
+    0.5207
+  ],
+  "iterations": 47,
+  "tree_nodes": 49,
+  "collision_checks": 254,
+  "rejected_edges": 0,
+  "planning_wall_seconds_including_services_and_visualization": 0.14288184200268006,
+  "postprocess_seconds": 0.09355216400581412,
+  "path_tree_indices": [
+    0,
+    1,
+    4,
+    5,
+    7,
+    13,
+    14,
+    17,
+    19,
+    22,
+    29,
+    42,
+    43,
+    47,
+    48
+  ],
+  "path_l2_joint_length_rad": 4.11698585788386,
+  "path_validation_checks": 145,
+  "path_validation_max_joint_step_rad": 0.02,
+  "world_collision_objects": [],
+  "octomap_bytes": 0,
+  "gaussian_tree_is_visual_only": true,
+  "display_only_no_execution": true
+}

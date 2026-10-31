@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-cf049965c97e080ecf53.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "realsense2_camera_msgs__py",
+					"jsonFile" : "directory-realsense2_camera_msgs__py-fff4d41e226f475d3693.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/zhuxd/aubo_ws/build/realsense2_camera_msgs/realsense2_camera_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "realsense2_camera_msgs__rs",
+					"jsonFile" : "directory-realsense2_camera_msgs__rs-74c251cf7639469379a5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/zhuxd/aubo_ws/build/realsense2_camera_msgs/realsense2_camera_msgs__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "realsense2_camera_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_realsense2_camera_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_realsense2_camera_msgs_egg-bb277eae5ccf70fb7fd9.json",
+					"name" : "ament_cmake_python_build_realsense2_camera_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_realsense2_camera_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_realsense2_camera_msgs-2e5cc7a9ef9fd95c9a63.json",
+					"name" : "ament_cmake_python_symlink_realsense2_camera_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "realsense2_camera_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-realsense2_camera_msgs-b21058c158f264839164.json",
+					"name" : "realsense2_camera_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "realsense2_camera_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-realsense2_camera_msgs__cpp-adcca9768f6dff09ba37.json",
+					"name" : "realsense2_camera_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "realsense2_camera_msgs__py::@46e0aa58040928cc65e9",
+					"jsonFile" : "target-realsense2_camera_msgs__py-2f78775caa1ad2c61f80.json",
+					"name" : "realsense2_camera_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "realsense2_camera_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-realsense2_camera_msgs__rosidl_generator_c-d81357afca631fbd59bd.json",
+					"name" : "realsense2_camera_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "realsense2_camera_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-realsense2_camera_msgs__rosidl_generator_py-25d320cd3ffc07faea9f.json",
+					"name" : "realsense2_camera_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "realsense2_camera_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-realsense2_camera_msgs__rosidl_typesupport_c-cd71ba86eb8a5ee41c76.json",
+					"name" : "realsense2_camera_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "realsense2_camera_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-realsense2_camera_msgs__rosidl_typesupport_c__pyext-fbd33b6f874fe4f8689b.json",
+					"name" : "realsense2_camera_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "realsense2_camera_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-realsense2_camera_msgs__rosidl_typesupport_cpp-dd7597e690b9c399ec15.json",
+					"name" : "realsense2_camera_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "realsense2_camera_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-realsense2_camera_msgs__rosidl_typesupport_fastrtps_c-542440accee2a6063767.json",
+					"name" : "realsense2_camera_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext-ecbc8f50ea0aa91534dc.json",
+					"name" : "realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp-020505f77cb7dccfecee.json",
+					"name" : "realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "realsense2_camera_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-realsense2_camera_msgs__rosidl_typesupport_introspection_c-1cf25077f0e512e2960f.json",
+					"name" : "realsense2_camera_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext-ae419de115f15ae3c01c.json",
+					"name" : "realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "realsense2_camera_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-realsense2_camera_msgs__rosidl_typesupport_introspection_cpp-f0d86e49f88859902abf.json",
+					"name" : "realsense2_camera_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "realsense2_camera_msgs__rs::@158beb8ba386666c63ab",
+					"jsonFile" : "target-realsense2_camera_msgs__rs-e53daf438e234535d2bc.json",
+					"name" : "realsense2_camera_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "realsense2_camera_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-realsense2_camera_msgs_uninstall-dfd46811865d94049a03.json",
+					"name" : "realsense2_camera_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-c73bde14fffa0a4e129a.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/zhuxd/aubo_ws/build/realsense2_camera_msgs",
+		"source" : "/home/zhuxd/aubo_ws/src/realsense-ros/realsense2_camera_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "group": "aubo_arm",
+  "tcp": "scissor_tcp",
+  "frame": "world",
+  "settings": {
+    "step_size": 0.3,
+    "goal_bias": 0.1,
+    "collision_step": 0.04,
+    "planning_time": 60.0,
+    "replay_step": 0.08,
+    "max_iterations": 2500,
+    "seed": 42
+  },
+  "joint_names": [
+    "shoulder_joint",
+    "upperArm_joint",
+    "foreArm_joint",
+    "wrist1_joint",
+    "wrist2_joint",
+    "wrist3_joint"
+  ],
+  "start": {
+    "mode": 1,
+    "name": "home",
+    "resolved_joints_rad": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "resolved_pose": {
+      "frame": "world",
+      "position_m": [
+        0.004999999999510161,
+        -0.3654999999995103,
+        1.6084999999992653
+      ],
+      "quaternion_xyzw": [
+        0.4999990816991052,
+        -0.5000009183016569,
+        0.499999081696657,
+        0.5000009182992082
+      ]
+    }
+  },
+  "goal": {
+    "mode": 2,
+    "name": "home",
+    "resolved_joints_rad": [
+      2.032335906418668,
+      -0.1815371088184197,
+      -1.648815219815328,
+      -1.5816120529717224,
+      -1.0645929531095382,
+      0.05045515099174352
+    ],
+    "resolved_pose": {
+      "frame": "world",
+      "position_m": [
+        0.4404893081944713,
+        -0.33734013188765116,
+        1.2882997014162092
+      ],
+      "quaternion_xyzw": [
+        0.6414212762023533,
+        -0.19669733463567188,
+        0.707826217098194,
+        0.22106775289631733
+      ]
+    },
+    "requested_pose": {
+      "frame": "world",
+      "position_m": [
+        0.44049,
+        -0.33734,
+        1.2883
+      ],
+      "quaternion_xyzw": [
+        0.641421245657561,
+        -0.19669731800029802,
+        0.707826243358538,
+        0.22106777224084995
+      ]
+    }
+  },
+  "full_state_joint_names": [
+    "shoulder_joint",
+    "upperArm_joint",
+    "foreArm_joint",
+    "wrist1_joint",
+    "wrist2_joint",
+    "wrist3_joint",
+    "scissor_drive_joint",
+    "scissor_mimic_joint"
+  ],
+  "full_state_positions_rad": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.3,
+    -0.3
+  ],
+  "joint_lower": [
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586
+  ],
+  "joint_upper": [
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586
+  ],
+  "display_only_no_execution": true,
+  "gaussian_tree_is_visual_only": true
+}

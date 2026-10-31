@@ -1,0 +1,9 @@
+{
+  "package_name": "aubo_rrt_interfaces",
+  "non_idl_tuples": [
+    "/home/zhuxd/aubo_ws/src/aubo_rrt_interfaces:msg/Endpoint.msg",
+    "/home/zhuxd/aubo_ws/src/aubo_rrt_interfaces:srv/GetRRTInfo.srv",
+    "/home/zhuxd/aubo_ws/src/aubo_rrt_interfaces:srv/PreviewRRT.srv",
+    "/home/zhuxd/aubo_ws/src/aubo_rrt_interfaces:action/PlanRRT.action"
+  ]
+}

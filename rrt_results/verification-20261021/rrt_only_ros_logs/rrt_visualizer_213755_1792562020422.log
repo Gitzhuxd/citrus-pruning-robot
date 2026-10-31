@@ -1,0 +1,9 @@
+[INFO] [moveit_rdf_loader.rdf_loader] Loaded robot model in 0.0198522 seconds
+[INFO] [moveit_robot_model.robot_model] Loading robot model 'aubo_i5_scissors_robot'...
+[INFO] [rrt_visualizer] Named state home: bounds=yes collision_free=yes
+[INFO] [rrt_visualizer] Named state pose1: bounds=yes collision_free=yes
+[INFO] [rrt_visualizer] Named state pose2: bounds=yes collision_free=yes
+[WARN] [moveit.ompl_planning.model_based_planning_context] It looks like the planning volume was not specified.
+[INFO] [moveit.ompl_planning.model_based_planning_context] Planner configuration 'aubo_arm[RRTkConfigDefault]' will use planner 'geometric::RRT'. Additional configuration parameters will be set when the planner is constructed.
+[INFO] [rrt_visualizer] RRT_EXPORT_READY exact=true vertices=638 edges=637 output=/home/zhuxd/aubo_ws/rrt_results/20261021-135341-213755
+[INFO] [rclcpp] signal_handler(SIGINT/SIGTERM)

@@ -1,0 +1,16 @@
+[0.457s] Invoking command in '/home/zhuxd/aubo_ws/build/aubo_i5_scissors_description': CMAKE_PREFIX_PATH=/home/zhuxd/aubo_ws/install/aubo_description:/home/zhuxd/aubo_ws/install/ros_joints_plan:/home/zhuxd/aubo_ws/install/aubo_ros2_driver:/home/zhuxd/aubo_ws/install/aubo_msgs:/home/zhuxd/aubo_ws/install/aubo_gazebo:/home/zhuxd/aubo_ws/install/aubo_moveit_config:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs PYTHONPATH=/home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/build --no-deps symlink_data
+[0.587s] running develop
+[0.658s] running egg_info
+[0.658s] writing aubo_i5_scissors_description.egg-info/PKG-INFO
+[0.658s] writing dependency_links to aubo_i5_scissors_description.egg-info/dependency_links.txt
+[0.658s] writing entry points to aubo_i5_scissors_description.egg-info/entry_points.txt
+[0.658s] writing requirements to aubo_i5_scissors_description.egg-info/requires.txt
+[0.658s] writing top-level names to aubo_i5_scissors_description.egg-info/top_level.txt
+[0.659s] reading manifest file 'aubo_i5_scissors_description.egg-info/SOURCES.txt'
+[0.659s] writing manifest file 'aubo_i5_scissors_description.egg-info/SOURCES.txt'
+[0.660s] running build_ext
+[0.660s] Creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib/python3.10/site-packages/aubo-i5-scissors-description.egg-link (link to .)
+[0.661s] 
+[0.661s] Installed /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description
+[0.661s] running symlink_data
+[0.675s] Invoked command in '/home/zhuxd/aubo_ws/build/aubo_i5_scissors_description' returned '0': CMAKE_PREFIX_PATH=/home/zhuxd/aubo_ws/install/aubo_description:/home/zhuxd/aubo_ws/install/ros_joints_plan:/home/zhuxd/aubo_ws/install/aubo_ros2_driver:/home/zhuxd/aubo_ws/install/aubo_msgs:/home/zhuxd/aubo_ws/install/aubo_gazebo:/home/zhuxd/aubo_ws/install/aubo_moveit_config:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs PYTHONPATH=/home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/build --no-deps symlink_data

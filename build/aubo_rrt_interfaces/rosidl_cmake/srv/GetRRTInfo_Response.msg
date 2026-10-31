@@ -1,0 +1,6 @@
+
+bool ready
+string message
+string[] named_states
+geometry_msgs/PoseStamped current_pose
+moveit_msgs/RobotState current_state

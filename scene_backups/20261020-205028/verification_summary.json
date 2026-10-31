@@ -1,0 +1,15 @@
+{
+  "automatic_software_fallback": true,
+  "aubo_arm_ready": true,
+  "selected_gaussian_count_loaded": true,
+  "controllers_loaded": {
+    "joint_state_broadcaster": true,
+    "aubo_arm_controller": true,
+    "scissor_controller": true
+  },
+  "rviz_windows": [
+    "0x3800019 \"/home/zhuxd/aubo_ws/src/aubo_i5_scissors_moveit_config/config/moveit.rviz - RViz\": (\"rviz2\" \"rviz2\")  1600x1050+10+40  +0+59"
+  ],
+  "screenshot_returncode": 0,
+  "single_rviz_process": true
+}
