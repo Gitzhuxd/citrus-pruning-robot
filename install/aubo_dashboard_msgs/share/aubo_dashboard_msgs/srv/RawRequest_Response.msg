@@ -1,2 +1,1 @@
-
-string answer
+/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/rosidl_cmake/srv/RawRequest_Response.msg

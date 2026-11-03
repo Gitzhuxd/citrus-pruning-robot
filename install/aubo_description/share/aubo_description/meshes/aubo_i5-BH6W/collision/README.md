@@ -1,1 +1,1 @@
-collision中 link6与i5的相同，需再更改
+/home/zhuxd/aubo_ws/src/aubo_ros2_driver/aubo_description/meshes/aubo_i5-BH6W/collision/README.md

@@ -1,0 +1,301 @@
+[0.016s] Invoking command in '/home/zhuxd/aubo_ws/build/aubo_rrt_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble /usr/bin/cmake /home/zhuxd/aubo_ws/src/aubo_rrt_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces
+[0.622s] -- The C compiler identification is GNU 11.4.0
+[0.790s] -- The CXX compiler identification is GNU 11.4.0
+[0.797s] -- Detecting C compiler ABI info
+[0.869s] -- Detecting C compiler ABI info - done
+[0.874s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.874s] -- Detecting C compile features
+[0.874s] -- Detecting C compile features - done
+[0.878s] -- Detecting CXX compiler ABI info
+[0.934s] -- Detecting CXX compiler ABI info - done
+[0.938s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.938s] -- Detecting CXX compile features
+[0.938s] -- Detecting CXX compile features - done
+[0.942s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.050s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.101s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.155s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.161s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.189s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.232s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.272s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.314s] -- Found moveit_msgs: 2.2.1 (/opt/ros/humble/share/moveit_msgs/cmake)
+[1.679s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.927s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.305s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.324s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.325s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.349s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.350s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.350s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.350s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.367s] -- Found PythonExtra: .so  
+[2.589s] -- Configuring done
+[2.647s] -- Generating done
+[2.665s] -- Build files have been written to: /home/zhuxd/aubo_ws/build/aubo_rrt_interfaces
+[2.681s] Invoked command in '/home/zhuxd/aubo_ws/build/aubo_rrt_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble /usr/bin/cmake /home/zhuxd/aubo_ws/src/aubo_rrt_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces
+[2.682s] Invoking command in '/home/zhuxd/aubo_ws/build/aubo_rrt_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble /usr/bin/cmake --build /home/zhuxd/aubo_ws/build/aubo_rrt_interfaces -- -j20 -l20
+[2.726s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.739s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.739s] [  5%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[2.740s] [  5%] Built target ament_cmake_python_symlink_aubo_rrt_interfaces
+[2.974s] running egg_info
+[2.975s] creating aubo_rrt_interfaces.egg-info
+[2.975s] writing aubo_rrt_interfaces.egg-info/PKG-INFO
+[2.975s] writing dependency_links to aubo_rrt_interfaces.egg-info/dependency_links.txt
+[2.975s] writing top-level names to aubo_rrt_interfaces.egg-info/top_level.txt
+[2.975s] writing manifest file 'aubo_rrt_interfaces.egg-info/SOURCES.txt'
+[2.978s] reading manifest file 'aubo_rrt_interfaces.egg-info/SOURCES.txt'
+[2.978s] writing manifest file 'aubo_rrt_interfaces.egg-info/SOURCES.txt'
+[3.021s] [  5%] Built target ament_cmake_python_build_aubo_rrt_interfaces_egg
+[3.049s] [  5%] Built target aubo_rrt_interfaces__rs
+[3.507s] [  5%] Built target aubo_rrt_interfaces__cpp
+[3.520s] [  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.521s] [  8%] [32mBuilding C object CMakeFiles/aubo_rrt_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aubo_rrt_interfaces/srv/detail/get_rrt_info__functions.c.o[0m
+[3.529s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.529s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.532s] [ 14%] [32mBuilding C object CMakeFiles/aubo_rrt_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aubo_rrt_interfaces/srv/detail/preview_rrt__functions.c.o[0m
+[3.532s] [ 16%] [32mBuilding C object CMakeFiles/aubo_rrt_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aubo_rrt_interfaces/msg/detail/endpoint__functions.c.o[0m
+[3.537s] [ 17%] [32mBuilding C object CMakeFiles/aubo_rrt_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aubo_rrt_interfaces/action/detail/plan_rrt__functions.c.o[0m
+[3.777s] [ 19%] [32m[1mLinking C shared library libaubo_rrt_interfaces__rosidl_generator_c.so[0m
+[3.898s] [ 19%] Built target aubo_rrt_interfaces__rosidl_generator_c
+[3.910s] [ 21%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.911s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.915s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.182s] [ 26%] [32mBuilding CXX object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aubo_rrt_interfaces/srv/preview_rrt__type_support.cpp.o[0m
+[4.182s] [ 28%] [32mBuilding CXX object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aubo_rrt_interfaces/msg/endpoint__type_support.cpp.o[0m
+[4.187s] [ 30%] [32mBuilding CXX object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aubo_rrt_interfaces/srv/get_rrt_info__type_support.cpp.o[0m
+[4.199s] [ 32%] [32mBuilding CXX object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aubo_rrt_interfaces/action/plan_rrt__type_support.cpp.o[0m
+[4.284s] [ 33%] [32mBuilding CXX object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aubo_rrt_interfaces/msg/detail/endpoint__type_support.cpp.o[0m
+[4.303s] [ 35%] [32mBuilding CXX object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aubo_rrt_interfaces/srv/detail/get_rrt_info__type_support.cpp.o[0m
+[4.303s] [ 37%] [32mBuilding CXX object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aubo_rrt_interfaces/srv/detail/preview_rrt__type_support.cpp.o[0m
+[4.311s] [ 39%] [32mBuilding CXX object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aubo_rrt_interfaces/action/detail/plan_rrt__type_support.cpp.o[0m
+[4.576s] [ 44%] [32mBuilding CXX object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_rrt_interfaces/srv/detail/dds_fastrtps/get_rrt_info__type_support.cpp.o[0m
+[4.576s] [ 44%] [32mBuilding CXX object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_rrt_interfaces/srv/detail/dds_fastrtps/preview_rrt__type_support.cpp.o[0m
+[4.581s] [ 44%] [32mBuilding CXX object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_rrt_interfaces/msg/detail/dds_fastrtps/endpoint__type_support.cpp.o[0m
+[4.582s] [ 46%] [32mBuilding CXX object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_rrt_interfaces/action/detail/dds_fastrtps/plan_rrt__type_support.cpp.o[0m
+[4.865s] [ 48%] [32mBuilding CXX object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aubo_rrt_interfaces/srv/get_rrt_info__type_support.cpp.o[0m
+[4.869s] [ 50%] [32mBuilding CXX object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aubo_rrt_interfaces/msg/endpoint__type_support.cpp.o[0m
+[4.874s] [ 51%] [32mBuilding CXX object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aubo_rrt_interfaces/srv/preview_rrt__type_support.cpp.o[0m
+[4.888s] [ 53%] [32mBuilding CXX object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aubo_rrt_interfaces/action/plan_rrt__type_support.cpp.o[0m
+[5.052s] [ 55%] [32m[1mLinking CXX shared library libaubo_rrt_interfaces__rosidl_typesupport_c.so[0m
+[5.093s] [ 57%] [32mBuilding CXX object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aubo_rrt_interfaces/srv/detail/get_rrt_info__type_support_c.cpp.o[0m
+[5.096s] [ 58%] [32mBuilding CXX object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aubo_rrt_interfaces/srv/detail/preview_rrt__type_support_c.cpp.o[0m
+[5.096s] [ 60%] [32mBuilding CXX object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aubo_rrt_interfaces/msg/detail/endpoint__type_support_c.cpp.o[0m
+[5.111s] [ 62%] [32mBuilding CXX object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aubo_rrt_interfaces/action/detail/plan_rrt__type_support_c.cpp.o[0m
+[5.199s] [ 62%] Built target aubo_rrt_interfaces__rosidl_typesupport_c
+[5.301s] [ 64%] [32mBuilding C object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aubo_rrt_interfaces/msg/detail/endpoint__type_support.c.o[0m
+[5.308s] [ 66%] [32mBuilding C object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aubo_rrt_interfaces/srv/detail/get_rrt_info__type_support.c.o[0m
+[5.309s] [ 67%] [32mBuilding C object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aubo_rrt_interfaces/srv/detail/preview_rrt__type_support.c.o[0m
+[5.313s] [ 69%] [32mBuilding C object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aubo_rrt_interfaces/action/detail/plan_rrt__type_support.c.o[0m
+[5.525s] [ 71%] [32m[1mLinking C shared library libaubo_rrt_interfaces__rosidl_typesupport_introspection_c.so[0m
+[5.722s] [ 71%] Built target aubo_rrt_interfaces__rosidl_typesupport_introspection_c
+[6.059s] [ 73%] [32m[1mLinking CXX shared library libaubo_rrt_interfaces__rosidl_typesupport_cpp.so[0m
+[6.276s] [ 73%] Built target aubo_rrt_interfaces__rosidl_typesupport_cpp
+[6.560s] [ 75%] [32m[1mLinking CXX shared library libaubo_rrt_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[6.885s] [ 76%] [32m[1mLinking CXX shared library libaubo_rrt_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[7.110s] [ 78%] [32m[1mLinking CXX shared library libaubo_rrt_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[7.444s] [ 78%] Built target aubo_rrt_interfaces__rosidl_typesupport_introspection_cpp
+[7.478s] [ 78%] Built target aubo_rrt_interfaces__rosidl_typesupport_fastrtps_c
+[7.554s] [ 78%] Built target aubo_rrt_interfaces__rosidl_typesupport_fastrtps_cpp
+[7.664s] [ 78%] Built target aubo_rrt_interfaces
+[7.739s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[11.733s] [ 80%] Built target aubo_rrt_interfaces__py
+[11.805s] [ 82%] [32mBuilding C object CMakeFiles/aubo_rrt_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aubo_rrt_interfaces/msg/_endpoint_s.c.o[0m
+[11.805s] [ 85%] [32mBuilding C object CMakeFiles/aubo_rrt_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aubo_rrt_interfaces/srv/_get_rrt_info_s.c.o[0m
+[11.808s] [ 85%] [32mBuilding C object CMakeFiles/aubo_rrt_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aubo_rrt_interfaces/srv/_preview_rrt_s.c.o[0m
+[11.825s] [ 87%] [32mBuilding C object CMakeFiles/aubo_rrt_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aubo_rrt_interfaces/action/_plan_rrt_s.c.o[0m
+[12.089s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/aubo_rrt_interfaces/libaubo_rrt_interfaces__rosidl_generator_py.so[0m
+[12.144s] [ 89%] Built target aubo_rrt_interfaces__rosidl_generator_py
+[12.160s] [ 94%] [32mBuilding C object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/aubo_rrt_interfaces/_aubo_rrt_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[12.160s] [ 94%] [32mBuilding C object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/aubo_rrt_interfaces/_aubo_rrt_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[12.160s] [ 94%] [32mBuilding C object CMakeFiles/aubo_rrt_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/aubo_rrt_interfaces/_aubo_rrt_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[12.256s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/aubo_rrt_interfaces/aubo_rrt_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[12.256s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/aubo_rrt_interfaces/aubo_rrt_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[12.257s] [100%] [32m[1mLinking C shared library rosidl_generator_py/aubo_rrt_interfaces/aubo_rrt_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[12.306s] [100%] Built target aubo_rrt_interfaces__rosidl_typesupport_c__pyext
+[12.310s] [100%] Built target aubo_rrt_interfaces__rosidl_typesupport_introspection_c__pyext
+[12.323s] [100%] Built target aubo_rrt_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[12.332s] Invoked command in '/home/zhuxd/aubo_ws/build/aubo_rrt_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble /usr/bin/cmake --build /home/zhuxd/aubo_ws/build/aubo_rrt_interfaces -- -j20 -l20
+[12.333s] Invoking command in '/home/zhuxd/aubo_ws/build/aubo_rrt_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble /usr/bin/cmake --install /home/zhuxd/aubo_ws/build/aubo_rrt_interfaces
+[12.338s] -- Install configuration: ""
+[12.339s] -- Execute custom install script
+[12.339s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/ament_index/resource_index/rosidl_interfaces/aubo_rrt_interfaces
+[12.345s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/action/detail/plan_rrt__functions.h
+[12.353s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/action/detail/plan_rrt__struct.h
+[12.361s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/action/detail/plan_rrt__type_support.h
+[12.370s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/action/plan_rrt.h
+[12.378s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/msg/detail/endpoint__functions.h
+[12.386s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/msg/detail/endpoint__struct.h
+[12.395s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/msg/detail/endpoint__type_support.h
+[12.404s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/msg/endpoint.h
+[12.410s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/msg/rosidl_generator_c__visibility_control.h
+[12.416s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/get_rrt_info__functions.h
+[12.424s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/get_rrt_info__struct.h
+[12.432s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/get_rrt_info__type_support.h
+[12.440s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/preview_rrt__functions.h
+[12.446s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/preview_rrt__struct.h
+[12.455s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/preview_rrt__type_support.h
+[12.461s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/get_rrt_info.h
+[12.470s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/preview_rrt.h
+[12.476s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/environment/library_path.sh
+[12.484s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/environment/library_path.dsv
+[12.490s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/action/detail/plan_rrt__rosidl_typesupport_fastrtps_c.h
+[12.499s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/msg/detail/endpoint__rosidl_typesupport_fastrtps_c.h
+[12.507s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[12.516s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/get_rrt_info__rosidl_typesupport_fastrtps_c.h
+[12.522s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/preview_rrt__rosidl_typesupport_fastrtps_c.h
+[12.530s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/action/detail/plan_rrt__rosidl_typesupport_introspection_c.h
+[12.535s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/msg/detail/endpoint__rosidl_typesupport_introspection_c.h
+[12.542s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[12.550s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/get_rrt_info__rosidl_typesupport_introspection_c.h
+[12.559s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/preview_rrt__rosidl_typesupport_introspection_c.h
+[12.566s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/action/detail/plan_rrt__builder.hpp
+[12.575s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/action/detail/plan_rrt__struct.hpp
+[12.583s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/action/detail/plan_rrt__traits.hpp
+[12.589s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/action/detail/plan_rrt__type_support.hpp
+[12.597s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/action/plan_rrt.hpp
+[12.603s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/msg/detail/endpoint__builder.hpp
+[12.614s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/msg/detail/endpoint__struct.hpp
+[12.622s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/msg/detail/endpoint__traits.hpp
+[12.629s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/msg/detail/endpoint__type_support.hpp
+[12.637s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/msg/endpoint.hpp
+[12.645s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[12.651s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/get_rrt_info__builder.hpp
+[12.659s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/get_rrt_info__struct.hpp
+[12.667s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/get_rrt_info__traits.hpp
+[12.676s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/get_rrt_info__type_support.hpp
+[12.681s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/preview_rrt__builder.hpp
+[12.690s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/preview_rrt__struct.hpp
+[12.697s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/preview_rrt__traits.hpp
+[12.705s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/preview_rrt__type_support.hpp
+[12.713s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/get_rrt_info.hpp
+[12.722s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/preview_rrt.hpp
+[12.731s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/action/detail/plan_rrt__rosidl_typesupport_fastrtps_cpp.hpp
+[12.740s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/msg/detail/endpoint__rosidl_typesupport_fastrtps_cpp.hpp
+[12.747s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[12.758s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/get_rrt_info__rosidl_typesupport_fastrtps_cpp.hpp
+[12.767s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/preview_rrt__rosidl_typesupport_fastrtps_cpp.hpp
+[12.778s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/action/detail/plan_rrt__rosidl_typesupport_introspection_cpp.hpp
+[12.784s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/msg/detail/endpoint__rosidl_typesupport_introspection_cpp.hpp
+[12.794s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/get_rrt_info__rosidl_typesupport_introspection_cpp.hpp
+[12.804s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/include/aubo_rrt_interfaces/aubo_rrt_interfaces/srv/detail/preview_rrt__rosidl_typesupport_introspection_cpp.hpp
+[12.813s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/environment/pythonpath.sh
+[12.822s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/environment/pythonpath.dsv
+[12.828s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces-0.1.0-py3.10.egg-info/PKG-INFO
+[12.834s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces-0.1.0-py3.10.egg-info/SOURCES.txt
+[12.842s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces-0.1.0-py3.10.egg-info/dependency_links.txt
+[12.851s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces-0.1.0-py3.10.egg-info/top_level.txt
+[12.859s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/__init__.py
+[12.867s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/_aubo_rrt_interfaces_s.ep.rosidl_typesupport_c.c
+[12.875s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/_aubo_rrt_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[12.883s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/_aubo_rrt_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[12.893s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/action/__init__.py
+[12.901s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/action/_plan_rrt.py
+[12.911s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/action/_plan_rrt_s.c
+[12.921s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/aubo_rrt_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[12.930s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/aubo_rrt_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[12.938s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/aubo_rrt_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[12.948s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/libaubo_rrt_interfaces__rosidl_generator_py.so
+[12.958s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/msg/__init__.py
+[12.965s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/msg/_endpoint.py
+[12.971s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/msg/_endpoint_s.c
+[12.978s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/srv/__init__.py
+[12.985s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/srv/_get_rrt_info.py
+[12.991s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/srv/_get_rrt_info_s.c
+[12.997s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/srv/_preview_rrt.py
+[13.005s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/srv/_preview_rrt_s.c
+[13.014s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/aubo_rrt_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[13.014s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/aubo_rrt_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[13.014s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/aubo_rrt_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[13.014s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/ament_index/resource_index/rust_packages/aubo_rrt_interfaces
+[13.024s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/rust/Cargo.toml
+[13.033s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/rust/build.rs
+[13.043s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/rust/src/action.rs
+[13.049s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/rust/src/action/rmw.rs
+[13.055s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/rust/src/lib.rs
+[13.061s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/rust/src/msg.rs
+[13.067s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/rust/src/msg/rmw.rs
+[13.073s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/rust/src/srv.rs
+[13.079s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/rust/src/srv/rmw.rs
+[13.085s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/msg/Endpoint.idl
+[13.091s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/srv/GetRRTInfo.idl
+[13.098s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/srv/PreviewRRT.idl
+[13.106s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/action/PlanRRT.idl
+[13.112s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/msg/Endpoint.msg
+[13.117s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/srv/GetRRTInfo.srv
+[13.123s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/srv/GetRRTInfo_Request.msg
+[13.129s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/srv/GetRRTInfo_Response.msg
+[13.134s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/srv/PreviewRRT.srv
+[13.142s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/srv/PreviewRRT_Request.msg
+[13.150s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/srv/PreviewRRT_Response.msg
+[13.156s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/action/PlanRRT.action
+[13.162s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/ament_index/resource_index/package_run_dependencies/aubo_rrt_interfaces
+[13.168s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/ament_index/resource_index/parent_prefix_path/aubo_rrt_interfaces
+[13.174s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/environment/ament_prefix_path.sh
+[13.180s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/environment/ament_prefix_path.dsv
+[13.188s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/environment/path.sh
+[13.193s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/environment/path.dsv
+[13.200s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/local_setup.bash
+[13.210s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/local_setup.sh
+[13.217s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/local_setup.zsh
+[13.226s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/local_setup.dsv
+[13.232s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/package.dsv
+[13.238s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/ament_index/resource_index/packages/aubo_rrt_interfaces
+[13.244s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/rosidl_cmake-extras.cmake
+[13.250s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[13.257s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[13.273s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[13.284s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[13.295s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[13.307s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[13.321s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[13.338s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/aubo_rrt_interfacesConfig.cmake
+[13.351s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/aubo_rrt_interfacesConfig-version.cmake
+[13.361s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/package.xml
+[13.370s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/lib/libaubo_rrt_interfaces__rosidl_generator_c.so
+[13.370s] -- Set runtime path of "/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/lib/libaubo_rrt_interfaces__rosidl_generator_c.so" to ""
+[13.370s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/lib/libaubo_rrt_interfaces__rosidl_typesupport_fastrtps_c.so
+[13.371s] -- Set runtime path of "/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/lib/libaubo_rrt_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[13.371s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/lib/libaubo_rrt_interfaces__rosidl_typesupport_introspection_c.so
+[13.371s] -- Set runtime path of "/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/lib/libaubo_rrt_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[13.371s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/lib/libaubo_rrt_interfaces__rosidl_typesupport_c.so
+[13.372s] -- Set runtime path of "/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/lib/libaubo_rrt_interfaces__rosidl_typesupport_c.so" to ""
+[13.372s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/lib/libaubo_rrt_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[13.372s] -- Set runtime path of "/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/lib/libaubo_rrt_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[13.372s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/lib/libaubo_rrt_interfaces__rosidl_typesupport_introspection_cpp.so
+[13.373s] -- Set runtime path of "/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/lib/libaubo_rrt_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[13.373s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/lib/libaubo_rrt_interfaces__rosidl_typesupport_cpp.so
+[13.373s] -- Set runtime path of "/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/lib/libaubo_rrt_interfaces__rosidl_typesupport_cpp.so" to ""
+[13.415s] Listing '/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces'...
+[13.416s] Compiling '/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/__init__.py'...
+[13.416s] Listing '/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/action'...
+[13.416s] Compiling '/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/action/__init__.py'...
+[13.416s] Compiling '/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/action/_plan_rrt.py'...
+[13.416s] Listing '/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/msg'...
+[13.416s] Compiling '/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/msg/__init__.py'...
+[13.416s] Compiling '/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/msg/_endpoint.py'...
+[13.416s] Listing '/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/srv'...
+[13.416s] Compiling '/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/srv/__init__.py'...
+[13.416s] Compiling '/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/srv/_get_rrt_info.py'...
+[13.416s] Compiling '/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/local/lib/python3.10/dist-packages/aubo_rrt_interfaces/srv/_preview_rrt.py'...
+[13.420s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/lib/libaubo_rrt_interfaces__rosidl_generator_py.so
+[13.420s] -- Set runtime path of "/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/lib/libaubo_rrt_interfaces__rosidl_generator_py.so" to ""
+[13.420s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/export_aubo_rrt_interfaces__rosidl_generator_cExport.cmake
+[13.420s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/export_aubo_rrt_interfaces__rosidl_generator_cExport-noconfig.cmake
+[13.420s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/export_aubo_rrt_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[13.420s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/export_aubo_rrt_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[13.420s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/aubo_rrt_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[13.421s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/aubo_rrt_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[13.421s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/aubo_rrt_interfaces__rosidl_typesupport_cExport.cmake
+[13.421s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/aubo_rrt_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[13.421s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/export_aubo_rrt_interfaces__rosidl_generator_cppExport.cmake
+[13.421s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/export_aubo_rrt_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[13.421s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/export_aubo_rrt_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[13.421s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/aubo_rrt_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[13.421s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/aubo_rrt_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[13.421s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/aubo_rrt_interfaces__rosidl_typesupport_cppExport.cmake
+[13.421s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/aubo_rrt_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[13.421s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/export_aubo_rrt_interfaces__rosidl_generator_pyExport.cmake
+[13.421s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_rrt_interfaces/share/aubo_rrt_interfaces/cmake/export_aubo_rrt_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[13.423s] Invoked command in '/home/zhuxd/aubo_ws/build/aubo_rrt_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble /usr/bin/cmake --install /home/zhuxd/aubo_ws/build/aubo_rrt_interfaces

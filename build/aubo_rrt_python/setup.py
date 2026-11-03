@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/src/aubo_rrt_python/setup.py

@@ -1,1 +1,1 @@
-### 为i5碰撞模型，需更改
+/home/zhuxd/aubo_ws/src/aubo_ros2_driver/aubo_description/meshes/aubo_I5A_03/collision/README.md

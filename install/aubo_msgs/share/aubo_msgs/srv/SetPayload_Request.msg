@@ -1,2 +1,1 @@
-float32 mass
-geometry_msgs/Vector3 center_of_gravity
+/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_cmake/srv/SetPayload_Request.msg

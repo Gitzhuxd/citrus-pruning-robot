@@ -1,1 +1,27 @@
-/home/zhuxd/aubo_ws/src/aubo_rrt_visualizer/package.xml
+<?xml version="1.0"?>
+<package format="3">
+  <name>aubo_rrt_visualizer</name>
+  <version>0.1.0</version>
+  <description>Export and visualize a single AUBO RRT planning tree in RViz.</description>
+  <maintainer email="zhuxd@example.com">zhuxd</maintainer>
+  <license>BSD-3-Clause</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>moveit_core</depend>
+  <depend>moveit_ros_planning</depend>
+  <depend>moveit_planners_ompl</depend>
+  <depend>moveit_msgs</depend>
+  <depend>visualization_msgs</depend>
+  <depend>ompl</depend>
+
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>moveit_configs_utils</exec_depend>
+  <exec_depend>aubo_i5_scissors_moveit_config</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

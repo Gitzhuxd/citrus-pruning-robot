@@ -1,2 +1,1 @@
-# Service to load programs or installations
-string filename
+/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/rosidl_cmake/srv/Load_Request.msg

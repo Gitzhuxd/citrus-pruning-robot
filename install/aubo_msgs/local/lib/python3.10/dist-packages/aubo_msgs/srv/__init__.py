@@ -1,4 +1,1 @@
-from aubo_msgs.srv._json_rpc import JsonRpc  # noqa: F401
-from aubo_msgs.srv._set_io import SetIO  # noqa: F401
-from aubo_msgs.srv._set_payload import SetPayload  # noqa: F401
-from aubo_msgs.srv._set_speed_slider_fraction import SetSpeedSliderFraction  # noqa: F401
+/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_generator_py/aubo_msgs/srv/__init__.py

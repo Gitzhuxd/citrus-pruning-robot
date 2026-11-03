@@ -1,6 +1,1 @@
-string cls
-string func
-string params
----
-string result
-string error
+/home/zhuxd/aubo_ws/src/aubo_ros2_driver/aubo_msgs/srv/JsonRpc.srv

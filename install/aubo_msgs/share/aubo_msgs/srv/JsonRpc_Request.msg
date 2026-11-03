@@ -1,3 +1,1 @@
-string cls
-string func
-string params
+/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_cmake/srv/JsonRpc_Request.msg

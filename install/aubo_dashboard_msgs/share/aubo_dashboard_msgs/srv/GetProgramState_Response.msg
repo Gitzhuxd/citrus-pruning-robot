@@ -1,5 +1,1 @@
-
-ProgramState state
-string program_name
-string answer
-bool success
+/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/rosidl_cmake/srv/GetProgramState_Response.msg

@@ -1,0 +1,604 @@
+[0.014s] Invoking command in '/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble /usr/bin/cmake /home/zhuxd/aubo_ws/src/aubo_ros2_driver/aubo_dashboard_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs
+[0.618s] -- The C compiler identification is GNU 11.4.0
+[0.787s] -- The CXX compiler identification is GNU 11.4.0
+[0.794s] -- Detecting C compiler ABI info
+[0.871s] -- Detecting C compiler ABI info - done
+[0.878s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.878s] -- Detecting C compile features
+[0.878s] -- Detecting C compile features - done
+[0.880s] -- Detecting CXX compiler ABI info
+[0.931s] -- Detecting CXX compiler ABI info - done
+[0.935s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.935s] -- Detecting CXX compile features
+[0.936s] -- Detecting CXX compile features - done
+[0.939s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.064s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.107s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.151s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.157s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.185s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.228s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.266s] -- Found action_msgs: 1.2.3 (/opt/ros/humble/share/action_msgs/cmake)
+[1.579s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.719s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.890s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.907s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.908s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.933s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.933s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.933s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.933s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.947s] -- Found PythonExtra: .so  
+[2.041s] -- Configuring done
+[2.076s] -- Generating done
+[2.088s] -- Build files have been written to: /home/zhuxd/aubo_ws/build/aubo_dashboard_msgs
+[2.098s] Invoked command in '/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble /usr/bin/cmake /home/zhuxd/aubo_ws/src/aubo_ros2_driver/aubo_dashboard_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs
+[2.099s] Invoking command in '/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble /usr/bin/cmake --build /home/zhuxd/aubo_ws/build/aubo_dashboard_msgs -- -j20 -l20
+[2.132s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.135s] [  1%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.139s] [  2%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[2.141s] [  2%] Built target ament_cmake_python_symlink_aubo_dashboard_msgs
+[2.321s] running egg_info
+[2.322s] creating aubo_dashboard_msgs.egg-info
+[2.323s] writing aubo_dashboard_msgs.egg-info/PKG-INFO
+[2.323s] writing dependency_links to aubo_dashboard_msgs.egg-info/dependency_links.txt
+[2.323s] writing top-level names to aubo_dashboard_msgs.egg-info/top_level.txt
+[2.323s] writing manifest file 'aubo_dashboard_msgs.egg-info/SOURCES.txt'
+[2.325s] reading manifest file 'aubo_dashboard_msgs.egg-info/SOURCES.txt'
+[2.325s] writing manifest file 'aubo_dashboard_msgs.egg-info/SOURCES.txt'
+[2.361s] [  2%] Built target ament_cmake_python_build_aubo_dashboard_msgs_egg
+[2.735s] [  2%] Built target aubo_dashboard_msgs__rs
+[3.736s] [  2%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/aubo_dashboard_msgs/msg/detail/program_state__functions.c.o[0m
+[3.743s] [  3%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/aubo_dashboard_msgs/srv/detail/get_program_state__functions.c.o[0m
+[3.745s] [  3%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/aubo_dashboard_msgs/srv/detail/get_robot_mode__functions.c.o[0m
+[3.751s] [  4%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/aubo_dashboard_msgs/srv/detail/add_to_log__functions.c.o[0m
+[3.751s] [  4%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/aubo_dashboard_msgs/srv/detail/is_program_running__functions.c.o[0m
+[3.751s] [  8%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/aubo_dashboard_msgs/srv/detail/is_in_remote_control__functions.c.o[0m
+[3.754s] [  5%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/aubo_dashboard_msgs/srv/detail/get_loaded_program__functions.c.o[0m
+[3.754s] [  9%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/aubo_dashboard_msgs/srv/detail/get_safety_mode__functions.c.o[0m
+[3.755s] [  5%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/aubo_dashboard_msgs/srv/detail/is_program_saved__functions.c.o[0m
+[3.758s] [  6%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/aubo_dashboard_msgs/msg/detail/robot_mode__functions.c.o[0m
+[3.759s] [  7%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/aubo_dashboard_msgs/msg/detail/safety_mode__functions.c.o[0m
+[3.760s] [ 10%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/aubo_dashboard_msgs/srv/detail/load__functions.c.o[0m
+[3.774s] [ 11%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/aubo_dashboard_msgs/srv/detail/popup__functions.c.o[0m
+[3.800s] [ 12%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/aubo_dashboard_msgs/action/detail/set_mode__functions.c.o[0m
+[3.800s] [ 12%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/aubo_dashboard_msgs/srv/detail/raw_request__functions.c.o[0m
+[3.813s] [ 12%] Built target aubo_dashboard_msgs__cpp
+[3.848s] [ 13%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.859s] [ 14%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.861s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.188s] [ 16%] [32m[1mLinking C shared library libaubo_dashboard_msgs__rosidl_generator_c.so[0m
+[4.337s] [ 16%] Built target aubo_dashboard_msgs__rosidl_generator_c
+[4.368s] [ 17%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.373s] [ 18%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.382s] [ 19%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[5.642s] [ 19%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aubo_dashboard_msgs/msg/program_state__type_support.cpp.o[0m
+[5.667s] [ 19%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aubo_dashboard_msgs/srv/add_to_log__type_support.cpp.o[0m
+[5.667s] [ 20%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aubo_dashboard_msgs/srv/get_loaded_program__type_support.cpp.o[0m
+[5.669s] [ 21%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aubo_dashboard_msgs/srv/get_program_state__type_support.cpp.o[0m
+[5.675s] [ 23%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aubo_dashboard_msgs/msg/robot_mode__type_support.cpp.o[0m
+[5.680s] [ 22%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aubo_dashboard_msgs/msg/safety_mode__type_support.cpp.o[0m
+[5.689s] [ 24%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aubo_dashboard_msgs/srv/load__type_support.cpp.o[0m
+[5.690s] [ 25%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aubo_dashboard_msgs/srv/get_safety_mode__type_support.cpp.o[0m
+[5.705s] [ 25%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aubo_dashboard_msgs/srv/get_robot_mode__type_support.cpp.o[0m
+[5.705s] [ 26%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aubo_dashboard_msgs/srv/is_program_saved__type_support.cpp.o[0m
+[5.705s] [ 26%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aubo_dashboard_msgs/srv/popup__type_support.cpp.o[0m
+[5.706s] [ 27%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aubo_dashboard_msgs/action/set_mode__type_support.cpp.o[0m
+[5.708s] [ 29%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aubo_dashboard_msgs/srv/is_in_remote_control__type_support.cpp.o[0m
+[5.711s] [ 27%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aubo_dashboard_msgs/srv/raw_request__type_support.cpp.o[0m
+[5.719s] [ 29%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aubo_dashboard_msgs/srv/is_program_running__type_support.cpp.o[0m
+[7.743s] [ 29%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aubo_dashboard_msgs/msg/detail/program_state__type_support.cpp.o[0m
+[7.755s] [ 30%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aubo_dashboard_msgs/msg/detail/robot_mode__type_support.cpp.o[0m
+[7.779s] [ 31%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aubo_dashboard_msgs/msg/detail/safety_mode__type_support.cpp.o[0m
+[7.780s] [ 31%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aubo_dashboard_msgs/srv/detail/add_to_log__type_support.cpp.o[0m
+[7.780s] [ 32%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aubo_dashboard_msgs/srv/detail/get_loaded_program__type_support.cpp.o[0m
+[7.803s] [ 33%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aubo_dashboard_msgs/srv/detail/get_program_state__type_support.cpp.o[0m
+[7.813s] [ 34%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aubo_dashboard_msgs/srv/detail/get_robot_mode__type_support.cpp.o[0m
+[7.817s] [ 35%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aubo_dashboard_msgs/srv/detail/is_program_running__type_support.cpp.o[0m
+[7.824s] [ 36%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aubo_dashboard_msgs/srv/detail/get_safety_mode__type_support.cpp.o[0m
+[7.828s] [ 36%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aubo_dashboard_msgs/srv/detail/is_in_remote_control__type_support.cpp.o[0m
+[7.829s] [ 37%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aubo_dashboard_msgs/srv/detail/load__type_support.cpp.o[0m
+[7.830s] [ 37%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aubo_dashboard_msgs/srv/detail/is_program_saved__type_support.cpp.o[0m
+[7.855s] [ 38%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aubo_dashboard_msgs/srv/detail/popup__type_support.cpp.o[0m
+[7.862s] [ 38%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aubo_dashboard_msgs/srv/detail/raw_request__type_support.cpp.o[0m
+[7.912s] [ 39%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aubo_dashboard_msgs/action/detail/set_mode__type_support.cpp.o[0m
+[8.185s] [ 40%] [32m[1mLinking CXX shared library libaubo_dashboard_msgs__rosidl_typesupport_cpp.so[0m
+[8.400s] [ 40%] Built target aubo_dashboard_msgs__rosidl_typesupport_cpp
+[8.774s] [ 40%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/aubo_dashboard_msgs/msg/program_state__type_support.cpp.o[0m
+[8.797s] [ 41%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/aubo_dashboard_msgs/msg/robot_mode__type_support.cpp.o[0m
+[8.912s] [ 42%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/aubo_dashboard_msgs/msg/safety_mode__type_support.cpp.o[0m
+[8.916s] [ 42%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/aubo_dashboard_msgs/srv/add_to_log__type_support.cpp.o[0m
+[9.052s] [ 43%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/aubo_dashboard_msgs/srv/get_loaded_program__type_support.cpp.o[0m
+[9.099s] [ 44%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/aubo_dashboard_msgs/srv/get_program_state__type_support.cpp.o[0m
+[9.197s] [ 44%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/aubo_dashboard_msgs/srv/get_robot_mode__type_support.cpp.o[0m
+[9.213s] [ 45%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/aubo_dashboard_msgs/srv/get_safety_mode__type_support.cpp.o[0m
+[9.272s] [ 46%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/aubo_dashboard_msgs/srv/is_program_running__type_support.cpp.o[0m
+[9.292s] [ 46%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/aubo_dashboard_msgs/srv/is_in_remote_control__type_support.cpp.o[0m
+[9.300s] [ 47%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/aubo_dashboard_msgs/srv/is_program_saved__type_support.cpp.o[0m
+[9.313s] [ 48%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/aubo_dashboard_msgs/srv/load__type_support.cpp.o[0m
+[9.355s] [ 48%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_dashboard_msgs/msg/detail/dds_fastrtps/program_state__type_support.cpp.o[0m
+[9.371s] [ 49%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/aubo_dashboard_msgs/srv/popup__type_support.cpp.o[0m
+[9.414s] [ 49%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/aubo_dashboard_msgs/srv/raw_request__type_support.cpp.o[0m
+[9.424s] [ 50%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/aubo_dashboard_msgs/action/set_mode__type_support.cpp.o[0m
+[9.442s] [ 51%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_dashboard_msgs/msg/detail/dds_fastrtps/robot_mode__type_support.cpp.o[0m
+[9.493s] [ 52%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_dashboard_msgs/msg/detail/dds_fastrtps/safety_mode__type_support.cpp.o[0m
+[9.493s] [ 52%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_dashboard_msgs/srv/detail/dds_fastrtps/add_to_log__type_support.cpp.o[0m
+[9.520s] [ 53%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_dashboard_msgs/srv/detail/dds_fastrtps/get_loaded_program__type_support.cpp.o[0m
+[9.551s] [ 54%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_dashboard_msgs/srv/detail/dds_fastrtps/get_program_state__type_support.cpp.o[0m
+[9.551s] [ 55%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_dashboard_msgs/srv/detail/dds_fastrtps/get_robot_mode__type_support.cpp.o[0m
+[9.589s] [ 55%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_dashboard_msgs/srv/detail/dds_fastrtps/get_safety_mode__type_support.cpp.o[0m
+[9.617s] [ 56%] [32m[1mLinking CXX shared library libaubo_dashboard_msgs__rosidl_typesupport_c.so[0m
+[9.686s] [ 57%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_dashboard_msgs/srv/detail/dds_fastrtps/is_program_running__type_support.cpp.o[0m
+[9.732s] [ 57%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_dashboard_msgs/srv/detail/dds_fastrtps/is_program_saved__type_support.cpp.o[0m
+[9.734s] [ 58%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_dashboard_msgs/srv/detail/dds_fastrtps/is_in_remote_control__type_support.cpp.o[0m
+[9.816s] [ 58%] Built target aubo_dashboard_msgs__rosidl_typesupport_c
+[9.837s] [ 59%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_dashboard_msgs/srv/detail/dds_fastrtps/load__type_support.cpp.o[0m
+[9.866s] [ 60%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_dashboard_msgs/srv/detail/dds_fastrtps/popup__type_support.cpp.o[0m
+[9.866s] [ 60%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_dashboard_msgs/srv/detail/dds_fastrtps/raw_request__type_support.cpp.o[0m
+[9.911s] [ 61%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aubo_dashboard_msgs/action/detail/dds_fastrtps/set_mode__type_support.cpp.o[0m
+[10.156s] [ 61%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aubo_dashboard_msgs/msg/detail/program_state__type_support.c.o[0m
+[10.172s] [ 62%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aubo_dashboard_msgs/msg/detail/robot_mode__type_support.c.o[0m
+[10.180s] [ 63%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aubo_dashboard_msgs/msg/detail/safety_mode__type_support.c.o[0m
+[10.250s] [ 64%] [32m[1mLinking CXX shared library libaubo_dashboard_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[10.276s] [ 64%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aubo_dashboard_msgs/srv/detail/add_to_log__type_support.c.o[0m
+[10.281s] [ 65%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aubo_dashboard_msgs/srv/detail/get_loaded_program__type_support.c.o[0m
+[10.296s] [ 66%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aubo_dashboard_msgs/srv/detail/get_program_state__type_support.c.o[0m
+[10.384s] [ 66%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aubo_dashboard_msgs/srv/detail/get_robot_mode__type_support.c.o[0m
+[10.406s] [ 67%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aubo_dashboard_msgs/srv/detail/get_safety_mode__type_support.c.o[0m
+[10.437s] [ 68%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aubo_dashboard_msgs/srv/detail/is_program_running__type_support.c.o[0m
+[10.503s] [ 68%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aubo_dashboard_msgs/srv/detail/is_in_remote_control__type_support.c.o[0m
+[10.521s] [ 69%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aubo_dashboard_msgs/srv/detail/is_program_saved__type_support.c.o[0m
+[10.588s] [ 70%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aubo_dashboard_msgs/srv/detail/load__type_support.c.o[0m
+[10.614s] [ 71%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aubo_dashboard_msgs/srv/detail/popup__type_support.c.o[0m
+[10.628s] [ 71%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aubo_dashboard_msgs/srv/detail/raw_request__type_support.c.o[0m
+[10.630s] [ 71%] Built target aubo_dashboard_msgs__rosidl_typesupport_introspection_cpp
+[10.687s] [ 72%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aubo_dashboard_msgs/action/detail/set_mode__type_support.c.o[0m
+[10.848s] [ 73%] [32m[1mLinking C shared library libaubo_dashboard_msgs__rosidl_typesupport_introspection_c.so[0m
+[10.926s] [ 73%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aubo_dashboard_msgs/msg/detail/program_state__type_support_c.cpp.o[0m
+[10.928s] [ 74%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aubo_dashboard_msgs/msg/detail/robot_mode__type_support_c.cpp.o[0m
+[10.928s] [ 75%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aubo_dashboard_msgs/msg/detail/safety_mode__type_support_c.cpp.o[0m
+[10.945s] [ 76%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aubo_dashboard_msgs/srv/detail/get_loaded_program__type_support_c.cpp.o[0m
+[10.948s] [ 76%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aubo_dashboard_msgs/srv/detail/add_to_log__type_support_c.cpp.o[0m
+[10.948s] [ 76%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aubo_dashboard_msgs/srv/detail/get_robot_mode__type_support_c.cpp.o[0m
+[10.972s] [ 76%] Built target aubo_dashboard_msgs__rosidl_typesupport_introspection_c
+[10.972s] [ 77%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aubo_dashboard_msgs/srv/detail/get_program_state__type_support_c.cpp.o[0m
+[11.007s] [ 78%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aubo_dashboard_msgs/srv/detail/is_program_running__type_support_c.cpp.o[0m
+[11.011s] [ 79%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aubo_dashboard_msgs/srv/detail/get_safety_mode__type_support_c.cpp.o[0m
+[11.038s] [ 79%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aubo_dashboard_msgs/srv/detail/is_in_remote_control__type_support_c.cpp.o[0m
+[11.085s] [ 80%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aubo_dashboard_msgs/srv/detail/is_program_saved__type_support_c.cpp.o[0m
+[11.225s] [ 81%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aubo_dashboard_msgs/srv/detail/load__type_support_c.cpp.o[0m
+[11.318s] [ 82%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aubo_dashboard_msgs/srv/detail/popup__type_support_c.cpp.o[0m
+[11.431s] [ 83%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aubo_dashboard_msgs/action/detail/set_mode__type_support_c.cpp.o[0m
+[11.436s] [ 83%] [32mBuilding CXX object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aubo_dashboard_msgs/srv/detail/raw_request__type_support_c.cpp.o[0m
+[12.045s] [ 84%] [32m[1mLinking CXX shared library libaubo_dashboard_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[12.138s] [ 85%] [32m[1mLinking CXX shared library libaubo_dashboard_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[12.156s] [ 85%] Built target aubo_dashboard_msgs__rosidl_typesupport_fastrtps_cpp
+[12.216s] [ 85%] Built target aubo_dashboard_msgs__rosidl_typesupport_fastrtps_c
+[12.233s] [ 85%] Built target aubo_dashboard_msgs
+[12.247s] [ 86%] [34m[1mGenerating Python code for ROS interfaces[0m
+[14.052s] [ 86%] Built target aubo_dashboard_msgs__py
+[14.070s] [ 88%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_py.dir/rosidl_generator_py/aubo_dashboard_msgs/msg/_robot_mode_s.c.o[0m
+[14.070s] [ 88%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_py.dir/rosidl_generator_py/aubo_dashboard_msgs/srv/_get_loaded_program_s.c.o[0m
+[14.074s] [ 88%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_py.dir/rosidl_generator_py/aubo_dashboard_msgs/srv/_add_to_log_s.c.o[0m
+[14.074s] [ 89%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_py.dir/rosidl_generator_py/aubo_dashboard_msgs/msg/_safety_mode_s.c.o[0m
+[14.074s] [ 88%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_py.dir/rosidl_generator_py/aubo_dashboard_msgs/srv/_get_safety_mode_s.c.o[0m
+[14.074s] [ 88%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_py.dir/rosidl_generator_py/aubo_dashboard_msgs/msg/_program_state_s.c.o[0m
+[14.074s] [ 92%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_py.dir/rosidl_generator_py/aubo_dashboard_msgs/srv/_get_program_state_s.c.o[0m
+[14.075s] [ 93%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_py.dir/rosidl_generator_py/aubo_dashboard_msgs/srv/_popup_s.c.o[0m
+[14.075s] [ 94%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_py.dir/rosidl_generator_py/aubo_dashboard_msgs/srv/_is_in_remote_control_s.c.o[0m
+[14.075s] [ 94%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_py.dir/rosidl_generator_py/aubo_dashboard_msgs/srv/_is_program_running_s.c.o[0m
+[14.075s] [ 91%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_py.dir/rosidl_generator_py/aubo_dashboard_msgs/srv/_is_program_saved_s.c.o[0m
+[14.075s] [ 94%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_py.dir/rosidl_generator_py/aubo_dashboard_msgs/srv/_get_robot_mode_s.c.o[0m
+[14.077s] [ 95%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_py.dir/rosidl_generator_py/aubo_dashboard_msgs/srv/_raw_request_s.c.o[0m
+[14.077s] [ 96%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_py.dir/rosidl_generator_py/aubo_dashboard_msgs/srv/_load_s.c.o[0m
+[14.078s] [ 96%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_generator_py.dir/rosidl_generator_py/aubo_dashboard_msgs/action/_set_mode_s.c.o[0m
+[14.332s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/aubo_dashboard_msgs/libaubo_dashboard_msgs__rosidl_generator_py.so[0m
+[14.425s] [ 97%] Built target aubo_dashboard_msgs__rosidl_generator_py
+[14.445s] [ 97%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/aubo_dashboard_msgs/_aubo_dashboard_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[14.445s] [ 97%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/aubo_dashboard_msgs/_aubo_dashboard_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[14.445s] [ 97%] [32mBuilding C object CMakeFiles/aubo_dashboard_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/aubo_dashboard_msgs/_aubo_dashboard_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[14.588s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/aubo_dashboard_msgs/aubo_dashboard_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[14.588s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/aubo_dashboard_msgs/aubo_dashboard_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[14.623s] [100%] [32m[1mLinking C shared library rosidl_generator_py/aubo_dashboard_msgs/aubo_dashboard_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[14.625s] [100%] Built target aubo_dashboard_msgs__rosidl_typesupport_fastrtps_c__pyext
+[14.631s] [100%] Built target aubo_dashboard_msgs__rosidl_typesupport_introspection_c__pyext
+[14.655s] [100%] Built target aubo_dashboard_msgs__rosidl_typesupport_c__pyext
+[14.668s] Invoked command in '/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble /usr/bin/cmake --build /home/zhuxd/aubo_ws/build/aubo_dashboard_msgs -- -j20 -l20
+[14.669s] Invoking command in '/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble /usr/bin/cmake --install /home/zhuxd/aubo_ws/build/aubo_dashboard_msgs
+[14.676s] -- Install configuration: ""
+[14.676s] -- Execute custom install script
+[14.676s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/ament_index/resource_index/rosidl_interfaces/aubo_dashboard_msgs
+[14.685s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/action/detail/set_mode__functions.h
+[14.692s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/action/detail/set_mode__struct.h
+[14.699s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/action/detail/set_mode__type_support.h
+[14.708s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/action/set_mode.h
+[14.716s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/program_state__functions.h
+[14.724s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/program_state__struct.h
+[14.731s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/program_state__type_support.h
+[14.738s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/robot_mode__functions.h
+[14.747s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/robot_mode__struct.h
+[14.755s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/robot_mode__type_support.h
+[14.764s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/safety_mode__functions.h
+[14.771s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/safety_mode__struct.h
+[14.777s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/safety_mode__type_support.h
+[14.783s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/program_state.h
+[14.793s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/robot_mode.h
+[14.802s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/rosidl_generator_c__visibility_control.h
+[14.808s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/safety_mode.h
+[14.815s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/add_to_log.h
+[14.821s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/add_to_log__functions.h
+[14.827s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/add_to_log__struct.h
+[14.834s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/add_to_log__type_support.h
+[14.839s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_loaded_program__functions.h
+[14.845s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_loaded_program__struct.h
+[14.852s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_loaded_program__type_support.h
+[14.859s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_program_state__functions.h
+[14.865s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_program_state__struct.h
+[14.873s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_program_state__type_support.h
+[14.880s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_robot_mode__functions.h
+[14.887s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_robot_mode__struct.h
+[14.894s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_robot_mode__type_support.h
+[14.902s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_safety_mode__functions.h
+[14.909s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_safety_mode__struct.h
+[14.915s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_safety_mode__type_support.h
+[14.925s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_in_remote_control__functions.h
+[14.931s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_in_remote_control__struct.h
+[14.939s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_in_remote_control__type_support.h
+[14.947s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_running__functions.h
+[14.955s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_running__struct.h
+[14.960s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_running__type_support.h
+[14.966s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_saved__functions.h
+[14.973s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_saved__struct.h
+[14.980s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_saved__type_support.h
+[14.985s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/load__functions.h
+[14.991s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/load__struct.h
+[14.997s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/load__type_support.h
+[15.003s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/popup__functions.h
+[15.012s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/popup__struct.h
+[15.020s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/popup__type_support.h
+[15.026s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/raw_request__functions.h
+[15.031s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/raw_request__struct.h
+[15.037s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/raw_request__type_support.h
+[15.043s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/get_loaded_program.h
+[15.049s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/get_program_state.h
+[15.056s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/get_robot_mode.h
+[15.062s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/get_safety_mode.h
+[15.068s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/is_in_remote_control.h
+[15.077s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/is_program_running.h
+[15.083s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/is_program_saved.h
+[15.089s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/load.h
+[15.095s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/popup.h
+[15.101s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/raw_request.h
+[15.107s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/environment/library_path.sh
+[15.115s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/environment/library_path.dsv
+[15.121s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/action/detail/set_mode__rosidl_typesupport_fastrtps_c.h
+[15.127s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/program_state__rosidl_typesupport_fastrtps_c.h
+[15.133s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/robot_mode__rosidl_typesupport_fastrtps_c.h
+[15.139s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/safety_mode__rosidl_typesupport_fastrtps_c.h
+[15.145s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[15.151s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/add_to_log__rosidl_typesupport_fastrtps_c.h
+[15.158s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_loaded_program__rosidl_typesupport_fastrtps_c.h
+[15.164s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_program_state__rosidl_typesupport_fastrtps_c.h
+[15.171s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_robot_mode__rosidl_typesupport_fastrtps_c.h
+[15.180s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_safety_mode__rosidl_typesupport_fastrtps_c.h
+[15.186s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_in_remote_control__rosidl_typesupport_fastrtps_c.h
+[15.191s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_running__rosidl_typesupport_fastrtps_c.h
+[15.197s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_saved__rosidl_typesupport_fastrtps_c.h
+[15.203s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/load__rosidl_typesupport_fastrtps_c.h
+[15.210s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/popup__rosidl_typesupport_fastrtps_c.h
+[15.216s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/raw_request__rosidl_typesupport_fastrtps_c.h
+[15.223s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/action/detail/set_mode__rosidl_typesupport_introspection_c.h
+[15.230s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/program_state__rosidl_typesupport_introspection_c.h
+[15.237s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/robot_mode__rosidl_typesupport_introspection_c.h
+[15.242s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/safety_mode__rosidl_typesupport_introspection_c.h
+[15.250s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[15.256s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/add_to_log__rosidl_typesupport_introspection_c.h
+[15.261s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_loaded_program__rosidl_typesupport_introspection_c.h
+[15.267s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_program_state__rosidl_typesupport_introspection_c.h
+[15.276s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_robot_mode__rosidl_typesupport_introspection_c.h
+[15.283s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_safety_mode__rosidl_typesupport_introspection_c.h
+[15.290s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_in_remote_control__rosidl_typesupport_introspection_c.h
+[15.296s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_running__rosidl_typesupport_introspection_c.h
+[15.302s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_saved__rosidl_typesupport_introspection_c.h
+[15.308s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/load__rosidl_typesupport_introspection_c.h
+[15.314s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/popup__rosidl_typesupport_introspection_c.h
+[15.321s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/raw_request__rosidl_typesupport_introspection_c.h
+[15.327s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/action/detail/set_mode__builder.hpp
+[15.334s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/action/detail/set_mode__struct.hpp
+[15.340s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/action/detail/set_mode__traits.hpp
+[15.346s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/action/detail/set_mode__type_support.hpp
+[15.353s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/action/set_mode.hpp
+[15.358s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/program_state__builder.hpp
+[15.364s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/program_state__struct.hpp
+[15.371s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/program_state__traits.hpp
+[15.376s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/program_state__type_support.hpp
+[15.383s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/robot_mode__builder.hpp
+[15.389s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/robot_mode__struct.hpp
+[15.394s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/robot_mode__traits.hpp
+[15.401s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/robot_mode__type_support.hpp
+[15.408s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/safety_mode__builder.hpp
+[15.414s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/safety_mode__struct.hpp
+[15.420s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/safety_mode__traits.hpp
+[15.425s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/safety_mode__type_support.hpp
+[15.431s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/program_state.hpp
+[15.437s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/robot_mode.hpp
+[15.443s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[15.449s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/safety_mode.hpp
+[15.457s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/add_to_log.hpp
+[15.462s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/add_to_log__builder.hpp
+[15.469s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/add_to_log__struct.hpp
+[15.475s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/add_to_log__traits.hpp
+[15.483s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/add_to_log__type_support.hpp
+[15.490s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_loaded_program__builder.hpp
+[15.499s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_loaded_program__struct.hpp
+[15.505s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_loaded_program__traits.hpp
+[15.512s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_loaded_program__type_support.hpp
+[15.519s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_program_state__builder.hpp
+[15.525s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_program_state__struct.hpp
+[15.531s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_program_state__traits.hpp
+[15.537s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_program_state__type_support.hpp
+[15.543s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_robot_mode__builder.hpp
+[15.551s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_robot_mode__struct.hpp
+[15.559s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_robot_mode__traits.hpp
+[15.568s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_robot_mode__type_support.hpp
+[15.574s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_safety_mode__builder.hpp
+[15.581s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_safety_mode__struct.hpp
+[15.589s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_safety_mode__traits.hpp
+[15.598s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_safety_mode__type_support.hpp
+[15.606s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_in_remote_control__builder.hpp
+[15.613s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_in_remote_control__struct.hpp
+[15.622s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_in_remote_control__traits.hpp
+[15.628s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_in_remote_control__type_support.hpp
+[15.634s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_running__builder.hpp
+[15.640s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_running__struct.hpp
+[15.647s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_running__traits.hpp
+[15.653s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_running__type_support.hpp
+[15.660s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_saved__builder.hpp
+[15.668s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_saved__struct.hpp
+[15.674s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_saved__traits.hpp
+[15.680s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_saved__type_support.hpp
+[15.686s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/load__builder.hpp
+[15.692s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/load__struct.hpp
+[15.698s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/load__traits.hpp
+[15.705s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/load__type_support.hpp
+[15.713s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/popup__builder.hpp
+[15.718s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/popup__struct.hpp
+[15.724s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/popup__traits.hpp
+[15.732s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/popup__type_support.hpp
+[15.743s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/raw_request__builder.hpp
+[15.752s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/raw_request__struct.hpp
+[15.760s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/raw_request__traits.hpp
+[15.768s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/raw_request__type_support.hpp
+[15.775s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/get_loaded_program.hpp
+[15.782s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/get_program_state.hpp
+[15.788s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/get_robot_mode.hpp
+[15.796s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/get_safety_mode.hpp
+[15.803s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/is_in_remote_control.hpp
+[15.808s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/is_program_running.hpp
+[15.816s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/is_program_saved.hpp
+[15.822s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/load.hpp
+[15.828s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/popup.hpp
+[15.835s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/raw_request.hpp
+[15.841s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/action/detail/set_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[15.847s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/program_state__rosidl_typesupport_fastrtps_cpp.hpp
+[15.852s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/robot_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[15.861s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/safety_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[15.869s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[15.875s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/add_to_log__rosidl_typesupport_fastrtps_cpp.hpp
+[15.882s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_loaded_program__rosidl_typesupport_fastrtps_cpp.hpp
+[15.887s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_program_state__rosidl_typesupport_fastrtps_cpp.hpp
+[15.893s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_robot_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[15.899s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_safety_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[15.907s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_in_remote_control__rosidl_typesupport_fastrtps_cpp.hpp
+[15.913s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_running__rosidl_typesupport_fastrtps_cpp.hpp
+[15.919s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_saved__rosidl_typesupport_fastrtps_cpp.hpp
+[15.926s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/load__rosidl_typesupport_fastrtps_cpp.hpp
+[15.935s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/popup__rosidl_typesupport_fastrtps_cpp.hpp
+[15.941s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/raw_request__rosidl_typesupport_fastrtps_cpp.hpp
+[15.949s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/action/detail/set_mode__rosidl_typesupport_introspection_cpp.hpp
+[15.957s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/program_state__rosidl_typesupport_introspection_cpp.hpp
+[15.964s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/robot_mode__rosidl_typesupport_introspection_cpp.hpp
+[15.970s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/msg/detail/safety_mode__rosidl_typesupport_introspection_cpp.hpp
+[15.977s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/add_to_log__rosidl_typesupport_introspection_cpp.hpp
+[15.984s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_loaded_program__rosidl_typesupport_introspection_cpp.hpp
+[15.992s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_program_state__rosidl_typesupport_introspection_cpp.hpp
+[15.999s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_robot_mode__rosidl_typesupport_introspection_cpp.hpp
+[16.005s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/get_safety_mode__rosidl_typesupport_introspection_cpp.hpp
+[16.013s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_in_remote_control__rosidl_typesupport_introspection_cpp.hpp
+[16.022s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_running__rosidl_typesupport_introspection_cpp.hpp
+[16.027s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/is_program_saved__rosidl_typesupport_introspection_cpp.hpp
+[16.033s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/load__rosidl_typesupport_introspection_cpp.hpp
+[16.039s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/popup__rosidl_typesupport_introspection_cpp.hpp
+[16.046s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/include/aubo_dashboard_msgs/aubo_dashboard_msgs/srv/detail/raw_request__rosidl_typesupport_introspection_cpp.hpp
+[16.052s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/environment/pythonpath.sh
+[16.059s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/environment/pythonpath.dsv
+[16.068s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs-2.3.2-py3.10.egg-info/PKG-INFO
+[16.074s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs-2.3.2-py3.10.egg-info/SOURCES.txt
+[16.083s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs-2.3.2-py3.10.egg-info/dependency_links.txt
+[16.090s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs-2.3.2-py3.10.egg-info/top_level.txt
+[16.097s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/__init__.py
+[16.102s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/_aubo_dashboard_msgs_s.ep.rosidl_typesupport_c.c
+[16.108s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/_aubo_dashboard_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[16.116s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/_aubo_dashboard_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[16.124s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/action/__init__.py
+[16.131s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/action/_set_mode.py
+[16.137s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/action/_set_mode_s.c
+[16.145s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/aubo_dashboard_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[16.152s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/aubo_dashboard_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[16.159s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/aubo_dashboard_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[16.166s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/libaubo_dashboard_msgs__rosidl_generator_py.so
+[16.173s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/msg/__init__.py
+[16.181s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/msg/_program_state.py
+[16.188s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/msg/_program_state_s.c
+[16.194s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/msg/_robot_mode.py
+[16.202s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/msg/_robot_mode_s.c
+[16.210s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/msg/_safety_mode.py
+[16.218s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/msg/_safety_mode_s.c
+[16.225s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/__init__.py
+[16.234s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_add_to_log.py
+[16.241s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_add_to_log_s.c
+[16.247s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_get_loaded_program.py
+[16.255s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_get_loaded_program_s.c
+[16.261s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_get_program_state.py
+[16.268s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_get_program_state_s.c
+[16.274s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_get_robot_mode.py
+[16.280s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_get_robot_mode_s.c
+[16.288s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_get_safety_mode.py
+[16.298s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_get_safety_mode_s.c
+[16.306s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_is_in_remote_control.py
+[16.312s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_is_in_remote_control_s.c
+[16.319s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_is_program_running.py
+[16.325s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_is_program_running_s.c
+[16.332s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_is_program_saved.py
+[16.339s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_is_program_saved_s.c
+[16.347s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_load.py
+[16.356s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_load_s.c
+[16.365s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_popup.py
+[16.374s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_popup_s.c
+[16.380s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_raw_request.py
+[16.390s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_raw_request_s.c
+[16.399s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/aubo_dashboard_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[16.400s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/aubo_dashboard_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[16.400s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/aubo_dashboard_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[16.400s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/ament_index/resource_index/rust_packages/aubo_dashboard_msgs
+[16.407s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/rust/Cargo.toml
+[16.414s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/rust/build.rs
+[16.421s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/rust/src/action.rs
+[16.428s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/rust/src/action/rmw.rs
+[16.434s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/rust/src/lib.rs
+[16.443s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/rust/src/msg.rs
+[16.451s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/rust/src/msg/rmw.rs
+[16.458s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/rust/src/srv.rs
+[16.468s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/rust/src/srv/rmw.rs
+[16.477s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/msg/ProgramState.idl
+[16.485s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/msg/RobotMode.idl
+[16.493s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/msg/SafetyMode.idl
+[16.501s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/AddToLog.idl
+[16.508s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/GetLoadedProgram.idl
+[16.515s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/GetProgramState.idl
+[16.523s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/GetRobotMode.idl
+[16.530s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/GetSafetyMode.idl
+[16.537s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/IsProgramRunning.idl
+[16.543s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/IsInRemoteControl.idl
+[16.552s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/IsProgramSaved.idl
+[16.560s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/Load.idl
+[16.566s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/Popup.idl
+[16.574s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/RawRequest.idl
+[16.582s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/action/SetMode.idl
+[16.592s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/msg/ProgramState.msg
+[16.598s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/msg/RobotMode.msg
+[16.605s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/msg/SafetyMode.msg
+[16.613s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/AddToLog.srv
+[16.620s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/AddToLog_Request.msg
+[16.628s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/AddToLog_Response.msg
+[16.636s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/GetLoadedProgram.srv
+[16.645s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/GetLoadedProgram_Request.msg
+[16.652s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/GetLoadedProgram_Response.msg
+[16.659s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/GetProgramState.srv
+[16.668s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/GetProgramState_Request.msg
+[16.675s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/GetProgramState_Response.msg
+[16.685s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/GetRobotMode.srv
+[16.695s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/GetRobotMode_Request.msg
+[16.704s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/GetRobotMode_Response.msg
+[16.710s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/GetSafetyMode.srv
+[16.720s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/GetSafetyMode_Request.msg
+[16.730s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/GetSafetyMode_Response.msg
+[16.738s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/IsProgramRunning.srv
+[16.745s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/IsProgramRunning_Request.msg
+[16.751s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/IsProgramRunning_Response.msg
+[16.757s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/IsInRemoteControl.srv
+[16.764s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/IsInRemoteControl_Request.msg
+[16.773s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/IsInRemoteControl_Response.msg
+[16.780s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/IsProgramSaved.srv
+[16.787s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/IsProgramSaved_Request.msg
+[16.793s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/IsProgramSaved_Response.msg
+[16.803s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/Load.srv
+[16.810s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/Load_Request.msg
+[16.818s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/Load_Response.msg
+[16.825s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/Popup.srv
+[16.832s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/Popup_Request.msg
+[16.838s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/Popup_Response.msg
+[16.844s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/RawRequest.srv
+[16.851s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/RawRequest_Request.msg
+[16.858s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/srv/RawRequest_Response.msg
+[16.865s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/action/SetMode.action
+[16.874s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/ament_index/resource_index/package_run_dependencies/aubo_dashboard_msgs
+[16.880s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/ament_index/resource_index/parent_prefix_path/aubo_dashboard_msgs
+[16.887s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/environment/ament_prefix_path.sh
+[16.894s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/environment/ament_prefix_path.dsv
+[16.900s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/environment/path.sh
+[16.909s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/environment/path.dsv
+[16.915s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/local_setup.bash
+[16.925s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/local_setup.sh
+[16.934s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/local_setup.zsh
+[16.944s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/local_setup.dsv
+[16.953s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/package.dsv
+[16.961s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/ament_index/resource_index/packages/aubo_dashboard_msgs
+[16.970s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/rosidl_cmake-extras.cmake
+[16.979s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.985s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.991s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[16.998s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[17.004s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[17.012s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[17.019s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[17.026s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/aubo_dashboard_msgsConfig.cmake
+[17.034s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/aubo_dashboard_msgsConfig-version.cmake
+[17.040s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/package.xml
+[17.048s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/lib/libaubo_dashboard_msgs__rosidl_generator_c.so
+[17.049s] -- Set runtime path of "/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/lib/libaubo_dashboard_msgs__rosidl_generator_c.so" to ""
+[17.049s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/lib/libaubo_dashboard_msgs__rosidl_typesupport_fastrtps_c.so
+[17.050s] -- Set runtime path of "/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/lib/libaubo_dashboard_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[17.050s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/lib/libaubo_dashboard_msgs__rosidl_typesupport_introspection_c.so
+[17.050s] -- Set runtime path of "/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/lib/libaubo_dashboard_msgs__rosidl_typesupport_introspection_c.so" to ""
+[17.050s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/lib/libaubo_dashboard_msgs__rosidl_typesupport_c.so
+[17.051s] -- Set runtime path of "/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/lib/libaubo_dashboard_msgs__rosidl_typesupport_c.so" to ""
+[17.051s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/lib/libaubo_dashboard_msgs__rosidl_typesupport_fastrtps_cpp.so
+[17.052s] -- Set runtime path of "/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/lib/libaubo_dashboard_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[17.052s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/lib/libaubo_dashboard_msgs__rosidl_typesupport_introspection_cpp.so
+[17.052s] -- Set runtime path of "/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/lib/libaubo_dashboard_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[17.052s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/lib/libaubo_dashboard_msgs__rosidl_typesupport_cpp.so
+[17.053s] -- Set runtime path of "/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/lib/libaubo_dashboard_msgs__rosidl_typesupport_cpp.so" to ""
+[17.102s] Listing '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs'...
+[17.102s] Compiling '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/__init__.py'...
+[17.102s] Listing '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/action'...
+[17.102s] Compiling '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/action/__init__.py'...
+[17.102s] Compiling '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/action/_set_mode.py'...
+[17.102s] Listing '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/msg'...
+[17.102s] Compiling '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/msg/__init__.py'...
+[17.102s] Compiling '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/msg/_program_state.py'...
+[17.102s] Compiling '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/msg/_robot_mode.py'...
+[17.102s] Compiling '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/msg/_safety_mode.py'...
+[17.102s] Listing '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv'...
+[17.102s] Compiling '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/__init__.py'...
+[17.102s] Compiling '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_add_to_log.py'...
+[17.102s] Compiling '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_get_loaded_program.py'...
+[17.102s] Compiling '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_get_program_state.py'...
+[17.102s] Compiling '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_get_robot_mode.py'...
+[17.102s] Compiling '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_get_safety_mode.py'...
+[17.102s] Compiling '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_is_in_remote_control.py'...
+[17.103s] Compiling '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_is_program_running.py'...
+[17.103s] Compiling '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_is_program_saved.py'...
+[17.103s] Compiling '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_load.py'...
+[17.103s] Compiling '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_popup.py'...
+[17.103s] Compiling '/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/local/lib/python3.10/dist-packages/aubo_dashboard_msgs/srv/_raw_request.py'...
+[17.108s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/lib/libaubo_dashboard_msgs__rosidl_generator_py.so
+[17.108s] -- Set runtime path of "/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/lib/libaubo_dashboard_msgs__rosidl_generator_py.so" to ""
+[17.109s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/export_aubo_dashboard_msgs__rosidl_generator_cExport.cmake
+[17.109s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/export_aubo_dashboard_msgs__rosidl_generator_cExport-noconfig.cmake
+[17.109s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/export_aubo_dashboard_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[17.109s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/export_aubo_dashboard_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[17.109s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/aubo_dashboard_msgs__rosidl_typesupport_introspection_cExport.cmake
+[17.109s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/aubo_dashboard_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[17.109s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/aubo_dashboard_msgs__rosidl_typesupport_cExport.cmake
+[17.109s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/aubo_dashboard_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[17.110s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/export_aubo_dashboard_msgs__rosidl_generator_cppExport.cmake
+[17.110s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/export_aubo_dashboard_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[17.110s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/export_aubo_dashboard_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[17.110s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/aubo_dashboard_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[17.110s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/aubo_dashboard_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[17.110s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/aubo_dashboard_msgs__rosidl_typesupport_cppExport.cmake
+[17.110s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/aubo_dashboard_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[17.110s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/export_aubo_dashboard_msgs__rosidl_generator_pyExport.cmake
+[17.110s] -- Installing: /home/zhuxd/aubo_ws/install/aubo_dashboard_msgs/share/aubo_dashboard_msgs/cmake/export_aubo_dashboard_msgs__rosidl_generator_pyExport-noconfig.cmake
+[17.112s] Invoked command in '/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble /usr/bin/cmake --install /home/zhuxd/aubo_ws/build/aubo_dashboard_msgs

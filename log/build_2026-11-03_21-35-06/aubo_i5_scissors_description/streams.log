@@ -1,0 +1,67 @@
+[0.369s] Invoking command in '/home/zhuxd/aubo_ws/src/aubo_i5_scissors_description': CMAKE_PREFIX_PATH=/home/zhuxd/aubo_ws/install/realsense2_description:/home/zhuxd/aubo_ws/install/realsense2_camera_msgs:/home/zhuxd/aubo_ws/install/aubo_description:/home/zhuxd/aubo_ws/install/ros_joints_plan:/home/zhuxd/aubo_ws/install/aubo_rrt_visualizer:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_moveit_config:/home/zhuxd/aubo_ws/install/aubo_rrt_panel:/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces:/home/zhuxd/aubo_ws/install/aubo_ros2_driver:/home/zhuxd/aubo_ws/install/aubo_ompl_capture:/home/zhuxd/aubo_ws/install/aubo_msgs:/home/zhuxd/aubo_ws/install/aubo_gazebo:/home/zhuxd/aubo_ws/install/aubo_moveit_config:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_rviz_plugin:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_msgs PYTHONPATH=/home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/aubo_i5_scissors_description build --build-base /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/build install --record /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/install.log --install-scripts $base/lib/aubo_i5_scissors_description --single-version-externally-managed install_data
+[0.505s] running egg_info
+[0.505s] creating ../../build/aubo_i5_scissors_description/aubo_i5_scissors_description.egg-info
+[0.505s] writing ../../build/aubo_i5_scissors_description/aubo_i5_scissors_description.egg-info/PKG-INFO
+[0.505s] writing dependency_links to ../../build/aubo_i5_scissors_description/aubo_i5_scissors_description.egg-info/dependency_links.txt
+[0.505s] writing entry points to ../../build/aubo_i5_scissors_description/aubo_i5_scissors_description.egg-info/entry_points.txt
+[0.505s] writing requirements to ../../build/aubo_i5_scissors_description/aubo_i5_scissors_description.egg-info/requires.txt
+[0.506s] writing top-level names to ../../build/aubo_i5_scissors_description/aubo_i5_scissors_description.egg-info/top_level.txt
+[0.506s] writing manifest file '../../build/aubo_i5_scissors_description/aubo_i5_scissors_description.egg-info/SOURCES.txt'
+[0.507s] reading manifest file '../../build/aubo_i5_scissors_description/aubo_i5_scissors_description.egg-info/SOURCES.txt'
+[0.507s] adding license file 'LICENSE'
+[0.507s] writing manifest file '../../build/aubo_i5_scissors_description/aubo_i5_scissors_description.egg-info/SOURCES.txt'
+[0.507s] running build
+[0.507s] running build_py
+[0.507s] creating /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/build
+[0.507s] creating /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/build/lib
+[0.507s] creating /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/build/lib/aubo_i5_scissors_description
+[0.507s] copying aubo_i5_scissors_description/__init__.py -> /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/build/lib/aubo_i5_scissors_description
+[0.507s] running install
+[0.507s] running install_lib
+[0.508s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib/python3.10/site-packages/aubo_i5_scissors_description
+[0.508s] copying /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/build/lib/aubo_i5_scissors_description/__init__.py -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib/python3.10/site-packages/aubo_i5_scissors_description
+[0.508s] byte-compiling /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib/python3.10/site-packages/aubo_i5_scissors_description/__init__.py to __init__.cpython-310.pyc
+[0.508s] running install_data
+[0.508s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/ament_index
+[0.508s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/ament_index/resource_index
+[0.508s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/ament_index/resource_index/packages
+[0.508s] copying resource/aubo_i5_scissors_description -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/ament_index/resource_index/packages
+[0.508s] copying package.xml -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description
+[0.508s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/launch
+[0.508s] copying launch/display_scissors.launch.py -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/launch
+[0.508s] copying launch/display_robot_core.launch.py -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/launch
+[0.508s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/urdf
+[0.509s] copying urdf/transboard.urdf -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/urdf
+[0.509s] copying urdf/electric_scissor.urdf -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/urdf
+[0.509s] copying urdf/robot_core.xacro -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/urdf
+[0.509s] copying urdf/aubo_tracked_platform_macro.xacro -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/urdf
+[0.509s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes
+[0.509s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors
+[0.509s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+[0.509s] copying meshes/scissors/visual/part_002_solid_002.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+[0.509s] copying meshes/scissors/visual/part_008_solid_008.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+[0.509s] copying meshes/scissors/visual/part_003_solid_003.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+[0.521s] copying meshes/scissors/visual/part_006_solid_006.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+[0.521s] copying meshes/scissors/visual/part_004_solid_004.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+[0.521s] copying meshes/scissors/visual/part_001_solid_001.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+[0.521s] copying meshes/scissors/visual/part_007_solid_007.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+[0.521s] copying meshes/scissors/visual/part_005_solid_005.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+[0.522s] copying meshes/scissors/visual/part_009_solid_009.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/scissors/visual
+[0.522s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/transboard
+[0.522s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/transboard/visual
+[0.522s] copying meshes/transboard/visual/transboard_part_001_solid_001.stl -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/transboard/visual
+[0.522s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/car
+[0.522s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/car/visual
+[0.522s] copying meshes/car/visual/hd2_base.dae -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/car/visual
+[0.523s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/car/materials
+[0.523s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/car/materials/scripts
+[0.523s] copying meshes/car/materials/scripts/model.material -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/car/materials/scripts
+[0.523s] creating /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/car/materials/textures
+[0.523s] copying meshes/car/materials/textures/HD2_Roughness.jpg -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/car/materials/textures
+[0.524s] copying meshes/car/materials/textures/HD2_Albedo.jpg -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/car/materials/textures
+[0.532s] copying meshes/car/materials/textures/HD2_Metalness.jpg -> /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/share/aubo_i5_scissors_description/meshes/car/materials/textures
+[0.532s] running install_egg_info
+[0.534s] Copying ../../build/aubo_i5_scissors_description/aubo_i5_scissors_description.egg-info to /home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib/python3.10/site-packages/aubo_i5_scissors_description-0.0.0-py3.10.egg-info
+[0.534s] running install_scripts
+[0.546s] writing list of installed files to '/home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/install.log'
+[0.560s] Invoked command in '/home/zhuxd/aubo_ws/src/aubo_i5_scissors_description' returned '0': CMAKE_PREFIX_PATH=/home/zhuxd/aubo_ws/install/realsense2_description:/home/zhuxd/aubo_ws/install/realsense2_camera_msgs:/home/zhuxd/aubo_ws/install/aubo_description:/home/zhuxd/aubo_ws/install/ros_joints_plan:/home/zhuxd/aubo_ws/install/aubo_rrt_visualizer:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_moveit_config:/home/zhuxd/aubo_ws/install/aubo_rrt_panel:/home/zhuxd/aubo_ws/install/aubo_rrt_interfaces:/home/zhuxd/aubo_ws/install/aubo_ros2_driver:/home/zhuxd/aubo_ws/install/aubo_ompl_capture:/home/zhuxd/aubo_ws/install/aubo_msgs:/home/zhuxd/aubo_ws/install/aubo_gazebo:/home/zhuxd/aubo_ws/install/aubo_moveit_config:/home/zhuxd/aubo_ws/install/aubo_dashboard_msgs:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_rviz_plugin:/home/zhuxd/rvizsplat_humble_ws/install/gsplat_msgs PYTHONPATH=/home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/aubo_i5_scissors_description build --build-base /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/build install --record /home/zhuxd/aubo_ws/build/aubo_i5_scissors_description/install.log --install-scripts $base/lib/aubo_i5_scissors_description --single-version-externally-managed install_data

@@ -1,1 +1,1 @@
-/home/zhuxd/aubo_ws/build/aubo_rrt_visualizer/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/aubo_rrt_visualizer
+rclcpp;moveit_core;moveit_ros_planning;moveit_planners_ompl;moveit_msgs;visualization_msgs;ompl;ament_index_python;launch;launch_ros;moveit_configs_utils;aubo_i5_scissors_moveit_config

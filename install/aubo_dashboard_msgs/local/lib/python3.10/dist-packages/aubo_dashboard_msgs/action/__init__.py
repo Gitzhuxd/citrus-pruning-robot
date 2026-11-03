@@ -1,1 +1,1 @@
-from aubo_dashboard_msgs.action._set_mode import SetMode  # noqa: F401
+/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/rosidl_generator_py/aubo_dashboard_msgs/action/__init__.py

@@ -1,1 +1,1 @@
-aubo_dashboard_msgs
+/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/ament_cmake_python/aubo_dashboard_msgs/aubo_dashboard_msgs.egg-info/top_level.txt

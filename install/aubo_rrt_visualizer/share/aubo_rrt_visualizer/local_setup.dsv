@@ -1,1 +1,2 @@
-/home/zhuxd/aubo_ws/build/aubo_rrt_visualizer/ament_cmake_environment_hooks/local_setup.dsv
+source;share/aubo_rrt_visualizer/environment/ament_prefix_path.sh
+source;share/aubo_rrt_visualizer/environment/path.sh

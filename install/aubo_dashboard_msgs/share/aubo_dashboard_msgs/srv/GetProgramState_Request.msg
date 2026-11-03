@@ -1,0 +1,1 @@
+/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/rosidl_cmake/srv/GetProgramState_Request.msg

@@ -1,4 +1,1 @@
-
-string answer
-string program_name
-bool success
+/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/rosidl_cmake/srv/GetLoadedProgram_Response.msg

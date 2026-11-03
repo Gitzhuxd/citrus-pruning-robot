@@ -1,6 +1,0 @@
-Invoking command in '/home/zhuxd/aubo_ws/build/aubo_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/zhuxd/aubo_ws/src/aubo_ros2_driver/aubo_moveit_config -DCMAKE_INSTALL_PREFIX=/home/zhuxd/aubo_ws/install/aubo_moveit_config
-Invoked command in '/home/zhuxd/aubo_ws/build/aubo_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/zhuxd/aubo_ws/src/aubo_ros2_driver/aubo_moveit_config -DCMAKE_INSTALL_PREFIX=/home/zhuxd/aubo_ws/install/aubo_moveit_config
-Invoking command in '/home/zhuxd/aubo_ws/build/aubo_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zhuxd/aubo_ws/build/aubo_moveit_config -- -j20 -l20
-Invoked command in '/home/zhuxd/aubo_ws/build/aubo_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zhuxd/aubo_ws/build/aubo_moveit_config -- -j20 -l20
-Invoking command in '/home/zhuxd/aubo_ws/build/aubo_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zhuxd/aubo_ws/build/aubo_moveit_config
-Invoked command in '/home/zhuxd/aubo_ws/build/aubo_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zhuxd/aubo_ws/build/aubo_moveit_config

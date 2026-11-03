@@ -1,0 +1,4 @@
+[console_scripts]
+rrt_demo = aubo_rrt_python.rrt_demo:main
+rrt_server = aubo_rrt_python.rrt_server:main
+

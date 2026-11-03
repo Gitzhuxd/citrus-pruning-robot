@@ -1,3 +1,1 @@
-from aubo_dashboard_msgs.msg._program_state import ProgramState  # noqa: F401
-from aubo_dashboard_msgs.msg._robot_mode import RobotMode  # noqa: F401
-from aubo_dashboard_msgs.msg._safety_mode import SafetyMode  # noqa: F401
+/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/rosidl_generator_py/aubo_dashboard_msgs/msg/__init__.py

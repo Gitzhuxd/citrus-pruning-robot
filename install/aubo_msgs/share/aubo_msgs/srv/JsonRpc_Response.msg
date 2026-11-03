@@ -1,3 +1,1 @@
-
-string result
-string error
+/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_cmake/srv/JsonRpc_Response.msg

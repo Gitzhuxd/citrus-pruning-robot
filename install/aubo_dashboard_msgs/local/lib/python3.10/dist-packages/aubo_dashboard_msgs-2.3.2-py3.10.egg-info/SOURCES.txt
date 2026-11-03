@@ -1,6 +1,1 @@
-setup.py
-aubo_dashboard_msgs/__init__.py
-aubo_dashboard_msgs.egg-info/PKG-INFO
-aubo_dashboard_msgs.egg-info/SOURCES.txt
-aubo_dashboard_msgs.egg-info/dependency_links.txt
-aubo_dashboard_msgs.egg-info/top_level.txt
+/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/ament_cmake_python/aubo_dashboard_msgs/aubo_dashboard_msgs.egg-info/SOURCES.txt

@@ -1,2 +1,1 @@
-
-bool success
+/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_cmake/srv/SetIO_Response.msg

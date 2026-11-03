@@ -1,0 +1,348 @@
+[0.014s] Invoking command in '/home/zhuxd/aubo_ws/build/aubo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble /usr/bin/cmake /home/zhuxd/aubo_ws/src/aubo_ros2_driver/aubo_msgs -DCMAKE_INSTALL_PREFIX=/home/zhuxd/aubo_ws/install/aubo_msgs
+[0.020s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.104s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.109s] -- Found builtin_interfaces: 1.2.3 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.127s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.128s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.132s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.140s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.148s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.156s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.162s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.176s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.429s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.755s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.878s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.901s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.915s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.915s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.915s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.014s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.014s] -- Added test 'lint_cmake' to check CMake code style
+[1.014s] -- Added test 'xmllint' to check XML markup files
+[1.014s] -- Configuring done
+[1.054s] -- Generating done
+[1.061s] -- Build files have been written to: /home/zhuxd/aubo_ws/build/aubo_msgs
+[1.068s] Invoked command in '/home/zhuxd/aubo_ws/build/aubo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble /usr/bin/cmake /home/zhuxd/aubo_ws/src/aubo_ros2_driver/aubo_msgs -DCMAKE_INSTALL_PREFIX=/home/zhuxd/aubo_ws/install/aubo_msgs
+[1.069s] Invoking command in '/home/zhuxd/aubo_ws/build/aubo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble /usr/bin/cmake --build /home/zhuxd/aubo_ws/build/aubo_msgs -- -j20 -l20
+[1.097s] [35m[1mConsolidate compiler generated dependencies of target aubo_msgs__rosidl_generator_c[0m
+[1.107s] [  1%] Built target aubo_msgs__rs
+[1.107s] [ 13%] Built target aubo_msgs__rosidl_generator_c
+[1.108s] [ 13%] Built target ament_cmake_python_symlink_aubo_msgs
+[1.108s] [ 13%] Built target aubo_msgs__cpp
+[1.114s] [35m[1mConsolidate compiler generated dependencies of target aubo_msgs__rosidl_typesupport_c[0m
+[1.116s] [35m[1mConsolidate compiler generated dependencies of target aubo_msgs__rosidl_typesupport_introspection_c[0m
+[1.116s] [35m[1mConsolidate compiler generated dependencies of target aubo_msgs__rosidl_typesupport_cpp[0m
+[1.117s] [35m[1mConsolidate compiler generated dependencies of target aubo_msgs__rosidl_typesupport_fastrtps_c[0m
+[1.122s] [35m[1mConsolidate compiler generated dependencies of target aubo_msgs__rosidl_typesupport_introspection_cpp[0m
+[1.122s] [35m[1mConsolidate compiler generated dependencies of target aubo_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[1.127s] [ 24%] Built target aubo_msgs__rosidl_typesupport_c
+[1.131s] [ 35%] Built target aubo_msgs__rosidl_typesupport_introspection_c
+[1.133s] [ 47%] Built target aubo_msgs__rosidl_typesupport_cpp
+[1.139s] [ 58%] Built target aubo_msgs__rosidl_typesupport_fastrtps_c
+[1.143s] [ 70%] Built target aubo_msgs__rosidl_typesupport_fastrtps_cpp
+[1.144s] [ 82%] Built target aubo_msgs__rosidl_typesupport_introspection_cpp
+[1.158s] [ 82%] Built target aubo_msgs
+[1.172s] [ 83%] Built target aubo_msgs__py
+[1.181s] [35m[1mConsolidate compiler generated dependencies of target aubo_msgs__rosidl_generator_py[0m
+[1.196s] [ 94%] Built target aubo_msgs__rosidl_generator_py
+[1.203s] [35m[1mConsolidate compiler generated dependencies of target aubo_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.203s] [35m[1mConsolidate compiler generated dependencies of target aubo_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[1.205s] [35m[1mConsolidate compiler generated dependencies of target aubo_msgs__rosidl_typesupport_c__pyext[0m
+[1.212s] [ 96%] Built target aubo_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.212s] [ 98%] Built target aubo_msgs__rosidl_typesupport_introspection_c__pyext
+[1.213s] [100%] Built target aubo_msgs__rosidl_typesupport_c__pyext
+[1.262s] running egg_info
+[1.263s] writing aubo_msgs.egg-info/PKG-INFO
+[1.263s] writing dependency_links to aubo_msgs.egg-info/dependency_links.txt
+[1.263s] writing top-level names to aubo_msgs.egg-info/top_level.txt
+[1.265s] reading manifest file 'aubo_msgs.egg-info/SOURCES.txt'
+[1.265s] writing manifest file 'aubo_msgs.egg-info/SOURCES.txt'
+[1.285s] [100%] Built target ament_cmake_python_build_aubo_msgs_egg
+[1.294s] Invoked command in '/home/zhuxd/aubo_ws/build/aubo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble /usr/bin/cmake --build /home/zhuxd/aubo_ws/build/aubo_msgs -- -j20 -l20
+[1.296s] Invoking command in '/home/zhuxd/aubo_ws/build/aubo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble /usr/bin/cmake --install /home/zhuxd/aubo_ws/build/aubo_msgs
+[1.304s] -- Install configuration: ""
+[1.304s] -- Execute custom install script
+[1.304s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/ament_index/resource_index/rosidl_interfaces/aubo_msgs
+[1.305s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/analog.h
+[1.305s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/analog__functions.h
+[1.305s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/analog__struct.h
+[1.305s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/analog__type_support.h
+[1.306s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/digital__functions.h
+[1.306s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/digital__struct.h
+[1.306s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/digital__type_support.h
+[1.306s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/io_states__functions.h
+[1.306s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/io_states__struct.h
+[1.306s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/io_states__type_support.h
+[1.306s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/masterboard_data_msg__functions.h
+[1.306s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/masterboard_data_msg__struct.h
+[1.307s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/masterboard_data_msg__type_support.h
+[1.307s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_mode_data_msg__functions.h
+[1.307s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_mode_data_msg__struct.h
+[1.307s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_mode_data_msg__type_support.h
+[1.307s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_state_rt_msg__functions.h
+[1.307s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_state_rt_msg__struct.h
+[1.307s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_state_rt_msg__type_support.h
+[1.307s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/tool_data_msg__functions.h
+[1.307s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/tool_data_msg__struct.h
+[1.307s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/tool_data_msg__type_support.h
+[1.307s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/digital.h
+[1.307s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/io_states.h
+[1.307s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/masterboard_data_msg.h
+[1.308s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/robot_mode_data_msg.h
+[1.308s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/robot_state_rt_msg.h
+[1.308s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/rosidl_generator_c__visibility_control.h
+[1.308s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/tool_data_msg.h
+[1.308s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/json_rpc__functions.h
+[1.308s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/json_rpc__struct.h
+[1.308s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/json_rpc__type_support.h
+[1.308s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_io__functions.h
+[1.308s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_io__struct.h
+[1.308s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_io__type_support.h
+[1.309s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_payload__functions.h
+[1.309s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_payload__struct.h
+[1.309s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_payload__type_support.h
+[1.309s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_speed_slider_fraction__functions.h
+[1.309s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_speed_slider_fraction__struct.h
+[1.309s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_speed_slider_fraction__type_support.h
+[1.309s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/json_rpc.h
+[1.309s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/set_io.h
+[1.309s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/set_payload.h
+[1.310s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/set_speed_slider_fraction.h
+[1.310s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/environment/library_path.sh
+[1.310s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/environment/library_path.dsv
+[1.311s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/analog__rosidl_typesupport_fastrtps_c.h
+[1.311s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/digital__rosidl_typesupport_fastrtps_c.h
+[1.311s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/io_states__rosidl_typesupport_fastrtps_c.h
+[1.311s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/masterboard_data_msg__rosidl_typesupport_fastrtps_c.h
+[1.311s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_mode_data_msg__rosidl_typesupport_fastrtps_c.h
+[1.311s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_state_rt_msg__rosidl_typesupport_fastrtps_c.h
+[1.311s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/tool_data_msg__rosidl_typesupport_fastrtps_c.h
+[1.311s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.311s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/json_rpc__rosidl_typesupport_fastrtps_c.h
+[1.311s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_io__rosidl_typesupport_fastrtps_c.h
+[1.311s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_payload__rosidl_typesupport_fastrtps_c.h
+[1.311s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_speed_slider_fraction__rosidl_typesupport_fastrtps_c.h
+[1.312s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/analog.hpp
+[1.312s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/analog__builder.hpp
+[1.312s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/analog__struct.hpp
+[1.312s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/analog__traits.hpp
+[1.313s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/analog__type_support.hpp
+[1.313s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/digital__builder.hpp
+[1.313s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/digital__struct.hpp
+[1.313s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/digital__traits.hpp
+[1.313s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/digital__type_support.hpp
+[1.313s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/io_states__builder.hpp
+[1.313s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/io_states__struct.hpp
+[1.313s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/io_states__traits.hpp
+[1.313s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/io_states__type_support.hpp
+[1.313s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/masterboard_data_msg__builder.hpp
+[1.314s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/masterboard_data_msg__struct.hpp
+[1.314s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/masterboard_data_msg__traits.hpp
+[1.314s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/masterboard_data_msg__type_support.hpp
+[1.314s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_mode_data_msg__builder.hpp
+[1.314s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_mode_data_msg__struct.hpp
+[1.314s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_mode_data_msg__traits.hpp
+[1.314s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_mode_data_msg__type_support.hpp
+[1.314s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_state_rt_msg__builder.hpp
+[1.314s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_state_rt_msg__struct.hpp
+[1.314s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_state_rt_msg__traits.hpp
+[1.315s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_state_rt_msg__type_support.hpp
+[1.315s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/tool_data_msg__builder.hpp
+[1.315s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/tool_data_msg__struct.hpp
+[1.315s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/tool_data_msg__traits.hpp
+[1.315s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/tool_data_msg__type_support.hpp
+[1.315s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/digital.hpp
+[1.315s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/io_states.hpp
+[1.315s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/masterboard_data_msg.hpp
+[1.315s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/robot_mode_data_msg.hpp
+[1.316s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/robot_state_rt_msg.hpp
+[1.316s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.316s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/tool_data_msg.hpp
+[1.316s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/json_rpc__builder.hpp
+[1.316s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/json_rpc__struct.hpp
+[1.316s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/json_rpc__traits.hpp
+[1.316s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/json_rpc__type_support.hpp
+[1.316s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_io__builder.hpp
+[1.316s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_io__struct.hpp
+[1.316s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_io__traits.hpp
+[1.317s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_io__type_support.hpp
+[1.317s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_payload__builder.hpp
+[1.317s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_payload__struct.hpp
+[1.317s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_payload__traits.hpp
+[1.317s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_payload__type_support.hpp
+[1.317s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_speed_slider_fraction__builder.hpp
+[1.317s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_speed_slider_fraction__struct.hpp
+[1.317s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_speed_slider_fraction__traits.hpp
+[1.317s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_speed_slider_fraction__type_support.hpp
+[1.317s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/json_rpc.hpp
+[1.317s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/set_io.hpp
+[1.318s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/set_payload.hpp
+[1.318s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/set_speed_slider_fraction.hpp
+[1.318s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/analog__rosidl_typesupport_fastrtps_cpp.hpp
+[1.318s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/digital__rosidl_typesupport_fastrtps_cpp.hpp
+[1.318s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/io_states__rosidl_typesupport_fastrtps_cpp.hpp
+[1.319s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/masterboard_data_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[1.319s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_mode_data_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[1.319s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_state_rt_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[1.319s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/tool_data_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[1.319s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.319s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/json_rpc__rosidl_typesupport_fastrtps_cpp.hpp
+[1.319s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_io__rosidl_typesupport_fastrtps_cpp.hpp
+[1.319s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_payload__rosidl_typesupport_fastrtps_cpp.hpp
+[1.319s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_speed_slider_fraction__rosidl_typesupport_fastrtps_cpp.hpp
+[1.320s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/analog__rosidl_typesupport_introspection_c.h
+[1.320s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/digital__rosidl_typesupport_introspection_c.h
+[1.320s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/io_states__rosidl_typesupport_introspection_c.h
+[1.320s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/masterboard_data_msg__rosidl_typesupport_introspection_c.h
+[1.320s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_mode_data_msg__rosidl_typesupport_introspection_c.h
+[1.320s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_state_rt_msg__rosidl_typesupport_introspection_c.h
+[1.320s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/tool_data_msg__rosidl_typesupport_introspection_c.h
+[1.320s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.320s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/json_rpc__rosidl_typesupport_introspection_c.h
+[1.321s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_io__rosidl_typesupport_introspection_c.h
+[1.321s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_payload__rosidl_typesupport_introspection_c.h
+[1.321s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_speed_slider_fraction__rosidl_typesupport_introspection_c.h
+[1.321s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/analog__rosidl_typesupport_introspection_cpp.hpp
+[1.321s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/digital__rosidl_typesupport_introspection_cpp.hpp
+[1.321s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/io_states__rosidl_typesupport_introspection_cpp.hpp
+[1.321s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/masterboard_data_msg__rosidl_typesupport_introspection_cpp.hpp
+[1.321s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_mode_data_msg__rosidl_typesupport_introspection_cpp.hpp
+[1.322s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/robot_state_rt_msg__rosidl_typesupport_introspection_cpp.hpp
+[1.322s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/msg/detail/tool_data_msg__rosidl_typesupport_introspection_cpp.hpp
+[1.322s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/json_rpc__rosidl_typesupport_introspection_cpp.hpp
+[1.322s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_io__rosidl_typesupport_introspection_cpp.hpp
+[1.322s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_payload__rosidl_typesupport_introspection_cpp.hpp
+[1.322s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/include/aubo_msgs/aubo_msgs/srv/detail/set_speed_slider_fraction__rosidl_typesupport_introspection_cpp.hpp
+[1.322s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/environment/pythonpath.sh
+[1.322s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/environment/pythonpath.dsv
+[1.323s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs-2.0.0-py3.10.egg-info/PKG-INFO
+[1.323s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs-2.0.0-py3.10.egg-info/SOURCES.txt
+[1.323s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs-2.0.0-py3.10.egg-info/dependency_links.txt
+[1.323s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs-2.0.0-py3.10.egg-info/top_level.txt
+[1.324s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/__init__.py
+[1.324s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/_aubo_msgs_s.ep.rosidl_typesupport_c.c
+[1.324s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/_aubo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.324s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/_aubo_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[1.324s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/aubo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.324s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/aubo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.324s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/aubo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.324s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/libaubo_msgs__rosidl_generator_py.so
+[1.324s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/msg/__init__.py
+[1.324s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/msg/_analog.py
+[1.324s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/msg/_analog_s.c
+[1.325s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/msg/_digital.py
+[1.325s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/msg/_digital_s.c
+[1.325s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/msg/_io_states.py
+[1.325s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/msg/_io_states_s.c
+[1.325s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/msg/_masterboard_data_msg.py
+[1.325s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/msg/_masterboard_data_msg_s.c
+[1.325s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/msg/_robot_mode_data_msg.py
+[1.325s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/msg/_robot_mode_data_msg_s.c
+[1.325s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/msg/_robot_state_rt_msg.py
+[1.325s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/msg/_robot_state_rt_msg_s.c
+[1.325s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/msg/_tool_data_msg.py
+[1.326s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/msg/_tool_data_msg_s.c
+[1.326s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/srv/__init__.py
+[1.326s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/srv/_json_rpc.py
+[1.326s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/srv/_json_rpc_s.c
+[1.326s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/srv/_set_io.py
+[1.326s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/srv/_set_io_s.c
+[1.326s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/srv/_set_payload.py
+[1.326s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/srv/_set_payload_s.c
+[1.326s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/srv/_set_speed_slider_fraction.py
+[1.326s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/srv/_set_speed_slider_fraction_s.c
+[1.327s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/aubo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.327s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/aubo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.327s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/aubo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.327s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/ament_index/resource_index/rust_packages/aubo_msgs
+[1.327s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/rust/Cargo.toml
+[1.328s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/rust/build.rs
+[1.328s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/rust/src/lib.rs
+[1.328s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/rust/src/msg.rs
+[1.328s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/rust/src/msg/rmw.rs
+[1.328s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/rust/src/srv.rs
+[1.328s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/rust/src/srv/rmw.rs
+[1.328s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/msg/Analog.idl
+[1.328s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/msg/Digital.idl
+[1.328s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/msg/IOStates.idl
+[1.329s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/msg/RobotStateRTMsg.idl
+[1.329s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/msg/MasterboardDataMsg.idl
+[1.329s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/msg/RobotModeDataMsg.idl
+[1.329s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/msg/ToolDataMsg.idl
+[1.329s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/srv/SetPayload.idl
+[1.329s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/srv/SetSpeedSliderFraction.idl
+[1.329s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/srv/SetIO.idl
+[1.329s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/srv/JsonRpc.idl
+[1.330s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/msg/Analog.msg
+[1.330s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/msg/Digital.msg
+[1.330s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/msg/IOStates.msg
+[1.330s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/msg/RobotStateRTMsg.msg
+[1.330s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/msg/MasterboardDataMsg.msg
+[1.330s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/msg/RobotModeDataMsg.msg
+[1.330s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/msg/ToolDataMsg.msg
+[1.331s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/srv/SetPayload.srv
+[1.331s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/srv/SetPayload_Request.msg
+[1.331s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/srv/SetPayload_Response.msg
+[1.331s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/srv/SetSpeedSliderFraction.srv
+[1.331s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/srv/SetSpeedSliderFraction_Request.msg
+[1.331s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/srv/SetSpeedSliderFraction_Response.msg
+[1.331s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/srv/SetIO.srv
+[1.331s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/srv/SetIO_Request.msg
+[1.331s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/srv/SetIO_Response.msg
+[1.332s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/srv/JsonRpc.srv
+[1.332s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/srv/JsonRpc_Request.msg
+[1.332s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/srv/JsonRpc_Response.msg
+[1.332s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/ament_index/resource_index/package_run_dependencies/aubo_msgs
+[1.332s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/ament_index/resource_index/parent_prefix_path/aubo_msgs
+[1.332s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/environment/ament_prefix_path.sh
+[1.332s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/environment/ament_prefix_path.dsv
+[1.332s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/environment/path.sh
+[1.333s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/environment/path.dsv
+[1.333s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/local_setup.bash
+[1.333s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/local_setup.sh
+[1.333s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/local_setup.zsh
+[1.333s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/local_setup.dsv
+[1.333s] -- Symlinking: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/package.dsv
+[1.338s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/ament_index/resource_index/packages/aubo_msgs
+[1.338s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/rosidl_cmake-extras.cmake
+[1.338s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.338s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.339s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.339s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.339s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.339s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.339s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[1.339s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/aubo_msgsConfig.cmake
+[1.339s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/aubo_msgsConfig-version.cmake
+[1.339s] -- Up-to-date symlink: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/package.xml
+[1.339s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/lib/libaubo_msgs__rosidl_generator_c.so
+[1.339s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/lib/libaubo_msgs__rosidl_typesupport_fastrtps_c.so
+[1.340s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/lib/libaubo_msgs__rosidl_typesupport_fastrtps_cpp.so
+[1.340s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/lib/libaubo_msgs__rosidl_typesupport_introspection_c.so
+[1.340s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/lib/libaubo_msgs__rosidl_typesupport_c.so
+[1.340s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/lib/libaubo_msgs__rosidl_typesupport_introspection_cpp.so
+[1.340s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/lib/libaubo_msgs__rosidl_typesupport_cpp.so
+[1.363s] Listing '/home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs'...
+[1.363s] Compiling '/home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/__init__.py'...
+[1.363s] Listing '/home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/msg'...
+[1.363s] Listing '/home/zhuxd/aubo_ws/install/aubo_msgs/local/lib/python3.10/dist-packages/aubo_msgs/srv'...
+[1.366s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/lib/libaubo_msgs__rosidl_generator_py.so
+[1.366s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/export_aubo_msgs__rosidl_generator_cExport.cmake
+[1.366s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/export_aubo_msgs__rosidl_generator_cExport-noconfig.cmake
+[1.366s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/export_aubo_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[1.366s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/export_aubo_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.366s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/export_aubo_msgs__rosidl_generator_cppExport.cmake
+[1.366s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/export_aubo_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.366s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/export_aubo_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.366s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/aubo_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.366s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/aubo_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.366s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/aubo_msgs__rosidl_typesupport_cExport.cmake
+[1.366s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/aubo_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[1.367s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/aubo_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.367s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/aubo_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.367s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/aubo_msgs__rosidl_typesupport_cppExport.cmake
+[1.367s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/aubo_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[1.367s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/export_aubo_msgs__rosidl_generator_pyExport.cmake
+[1.367s] -- Up-to-date: /home/zhuxd/aubo_ws/install/aubo_msgs/share/aubo_msgs/cmake/export_aubo_msgs__rosidl_generator_pyExport-noconfig.cmake
+[1.369s] Invoked command in '/home/zhuxd/aubo_ws/build/aubo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zhuxd/aubo_ws/install/aubo_i5_scissors_description:/home/zhuxd/aubo_ws/install/aubo_rrt_python:/opt/ros/humble /usr/bin/cmake --install /home/zhuxd/aubo_ws/build/aubo_msgs
