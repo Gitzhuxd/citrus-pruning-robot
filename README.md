@@ -5,7 +5,8 @@
 <!-- 配图位置：将截图放入仓库 docs/images/ 目录，再取消下方对应图片的注释。 -->
 
 > **项目图**：
-![Uploading 6a5e681056310d6b8db7084bba53869c.png…]()
+<img width="2558" height="1131" alt="6a5e681056310d6b8db7084bba53869c" src="https://github.com/user-attachments/assets/f1d64713-4e3b-4f04-9ce5-43622d9527f7" />
+
 
 <!-- ![机器人整机模型](docs/images/robot-overview.png) -->
 
