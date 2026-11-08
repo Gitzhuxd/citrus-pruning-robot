@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/zhuxd/aubo_ws/build/aubo_ompl_capture/libaubo_ompl_capture.so" "TARGETS" "aubo_ompl_capture" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

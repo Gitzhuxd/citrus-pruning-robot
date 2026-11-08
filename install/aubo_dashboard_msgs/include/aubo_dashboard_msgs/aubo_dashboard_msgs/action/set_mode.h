@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/rosidl_generator_c/aubo_dashboard_msgs/action/set_mode.h

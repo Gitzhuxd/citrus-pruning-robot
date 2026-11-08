@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_description/ament_cmake_core/aubo_descriptionConfig-version.cmake

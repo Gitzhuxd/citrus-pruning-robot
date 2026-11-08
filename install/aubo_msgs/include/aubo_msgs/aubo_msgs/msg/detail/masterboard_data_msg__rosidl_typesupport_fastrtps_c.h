@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_typesupport_fastrtps_c/aubo_msgs/msg/detail/masterboard_data_msg__rosidl_typesupport_fastrtps_c.h

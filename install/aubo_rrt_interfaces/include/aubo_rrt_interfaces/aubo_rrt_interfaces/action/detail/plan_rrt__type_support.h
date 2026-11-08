@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_rrt_interfaces/rosidl_generator_c/aubo_rrt_interfaces/action/detail/plan_rrt__type_support.h

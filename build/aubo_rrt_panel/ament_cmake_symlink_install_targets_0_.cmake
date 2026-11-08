@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/zhuxd/aubo_ws/build/aubo_rrt_panel/libaubo_rrt_panel.so" "TARGETS" "aubo_rrt_panel" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

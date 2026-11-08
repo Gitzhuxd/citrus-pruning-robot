@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_typesupport_fastrtps_cpp/aubo_msgs/srv/detail/set_io__rosidl_typesupport_fastrtps_cpp.hpp

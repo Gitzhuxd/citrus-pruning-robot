@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/rosidl_generator_py/aubo_dashboard_msgs/srv/_is_in_remote_control_s.c

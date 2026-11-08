@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/rosidl_generator_cpp/aubo_dashboard_msgs/msg/program_state.hpp

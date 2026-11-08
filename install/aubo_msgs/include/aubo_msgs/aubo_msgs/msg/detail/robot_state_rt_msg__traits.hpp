@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_generator_cpp/aubo_msgs/msg/detail/robot_state_rt_msg__traits.hpp

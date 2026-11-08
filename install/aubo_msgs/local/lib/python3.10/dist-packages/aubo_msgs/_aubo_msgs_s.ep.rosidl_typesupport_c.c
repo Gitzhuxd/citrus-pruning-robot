@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_generator_py/aubo_msgs/_aubo_msgs_s.ep.rosidl_typesupport_c.c

@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/rosidl_generator_rs/aubo_dashboard_msgs/rust/src/lib.rs

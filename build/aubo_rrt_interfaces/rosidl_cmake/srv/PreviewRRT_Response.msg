@@ -1,7 +1,0 @@
-
-bool success
-string message
-moveit_msgs/RobotState start_state
-moveit_msgs/RobotState goal_state
-geometry_msgs/PoseStamped start_pose
-geometry_msgs/PoseStamped goal_pose

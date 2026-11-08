@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_rrt_interfaces/ament_cmake_python/aubo_rrt_interfaces/aubo_rrt_interfaces.egg-info/top_level.txt

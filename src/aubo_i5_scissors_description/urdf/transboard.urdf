@@ -1,24 +1,332 @@
 <?xml version='1.0' encoding='utf-8'?>
 <robot name="generated_robot">
+  <!-- 转接板统一外观颜色：与旧模型相同的浅灰色 -->
+  <material name="zhuanjie_light_gray">
+    <color rgba="0.65 0.65 0.65 1.0" />
+  </material>
   <link name="zhuanjie_link">
     <inertial>
-      <origin xyz="0 -0.004 -0.06875" rpy="0 0 0" />
-      <mass value="0.079097956" />
-      <inertia ixx="0.00012504233" iyy="0.00016169764" izz="3.7499023e-05" ixy="0" ixz="0" iyz="0" />
+      <origin xyz="9.310785e-07 0.0042695852 -0.0053529353" rpy="0 0 0" />
+      <mass value="0.12434114" />
+      <inertia ixx="0.00023967195" iyy="6.1960928e-05" izz="0.00028685898" ixy="7.290332e-09" ixz="5.0716415e-10" iyz="-2.6180274e-05" />
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="1.5707963 0 0" />
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_part_001_solid_001.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_001_solid_001.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="zhuanjie_light_gray">
-        <color rgba="0.65 0.65 0.65 1.0"/>
-      </material>
+      <material name="zhuanjie_light_gray" />
     </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="1.5707963 0 0" />
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_part_001_solid_001.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_002_solid_002.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_003_solid_003.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_004_solid_004.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_005_solid_005.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_006_solid_006.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_007_solid_007.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_008_solid_008.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_009_solid_009.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_010_solid_010.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_011_solid_011.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_012_solid_012.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_013_solid_013.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_014_solid_014.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_015_solid_015.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_016_solid_016.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_017_solid_017.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_018_solid_018.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_019_solid_019.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_020_solid_020.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_021_solid_021.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_022_solid_022.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_023_solid_023.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_024_solid_024.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_025_solid_025.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_026_solid_026.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_027_solid_027.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_028_solid_028.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_029_solid_029.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_030_solid_030.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_031_solid_031.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_032_solid_032.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_033_solid_033.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_034_solid_034.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_035_solid_035.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_036_solid_036.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_037_solid_037.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_038_solid_038.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_039_solid_039.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_040_solid_040.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_041_solid_041.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_042_solid_042.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.046349457 -0.0056408806" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://aubo_i5_scissors_description/meshes/transboard/visual/transboard_043_solid_043.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="zhuanjie_light_gray" />
+    </visual>
+    <collision name="collision_1">
+      <origin xyz="1.5489354e-05 -0.022654981 -0.0095132023" rpy="-0.0048964329 0.00053798713 1.5875022" />
+      <geometry>
+        <box size="0.137288 0.075002379 0.0088851837" />
+      </geometry>
+    </collision>
+    <collision name="collision_2">
+      <origin xyz="-2.1410089e-06 0.067627028 0.012013044" rpy="-8.7670844e-06 -0.28885221 1.5708245" />
+      <geometry>
+        <box size="0.050147123 0.075002379 0.0036976099" />
+      </geometry>
+    </collision>
+    <collision name="collision_3">
+      <origin xyz="-1.874862e-05 0.024279097 -0.00429803" rpy="0.0024137883 -0.0061457755 1.5716882" />
+      <geometry>
+        <box size="0.08333503 0.061467053 0.0036845512" />
       </geometry>
     </collision>
   </link>

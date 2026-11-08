@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_rrt_interfaces/rosidl_generator_cpp/aubo_rrt_interfaces/msg/detail/endpoint__struct.hpp

@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/realsense2_camera_msgs/rosidl_cmake/srv/SafetyPresetWrite_Request.msg

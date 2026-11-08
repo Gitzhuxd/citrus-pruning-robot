@@ -1,9 +1,0 @@
-aubo_rrt_interfaces/Endpoint start
-aubo_rrt_interfaces/Endpoint goal
-float64 step_size
-float64 goal_bias
-float64 collision_step
-int32 max_iterations
-float64 planning_time
-int32 seed
-float64 replay_step

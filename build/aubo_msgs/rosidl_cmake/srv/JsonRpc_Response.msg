@@ -1,3 +1,0 @@
-
-string result
-string error

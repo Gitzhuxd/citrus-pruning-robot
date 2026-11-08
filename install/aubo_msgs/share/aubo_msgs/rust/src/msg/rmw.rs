@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_generator_rs/aubo_msgs/rust/src/msg/rmw.rs

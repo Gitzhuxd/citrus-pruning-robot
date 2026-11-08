@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/rosidl_typesupport_introspection_c/aubo_dashboard_msgs/action/detail/set_mode__rosidl_typesupport_introspection_c.h

@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/zhuxd/aubo_ws/build/aubo_rrt_interfaces/rosidl_generator_py/aubo_rrt_interfaces/aubo_rrt_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" "TARGETS" "aubo_rrt_interfaces__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/aubo_rrt_interfaces")

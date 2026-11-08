@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_rrt_interfaces/ament_cmake_core/aubo_rrt_interfacesConfig-version.cmake

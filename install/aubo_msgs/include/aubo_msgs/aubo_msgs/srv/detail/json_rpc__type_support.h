@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_generator_c/aubo_msgs/srv/detail/json_rpc__type_support.h

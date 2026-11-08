@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_rrt_interfaces/rosidl_generator_rs/aubo_rrt_interfaces/rust/src/msg.rs

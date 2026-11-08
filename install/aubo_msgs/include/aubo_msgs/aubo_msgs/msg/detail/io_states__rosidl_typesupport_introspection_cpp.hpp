@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_typesupport_introspection_cpp/aubo_msgs/msg/detail/io_states__rosidl_typesupport_introspection_cpp.hpp

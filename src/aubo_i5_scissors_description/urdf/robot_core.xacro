@@ -4,39 +4,110 @@
   xmlns:xacro="http://www.ros.org/wiki/xacro"
   name="aubo_i5_scissors_robot">
 
-    <!-- 转接板对于AUBO末端ee_link的安装位置 -->
-  <xacro:arg name="tranboard_mount_xyz" default="0.10 0 0"/>
-
-  <!-- rpy依次为：绕X、绕Y、绕Z -->
-  <xacro:arg name="tranboard_mount_rpy" default="1.57079632679 0 1.57079632679"/>
-
-
-  <!-- 剪刀相对于转接板的安装位置 -->
-  <xacro:arg name="scissor_mount_xyz" default="0 0 -0.1"/>
-
-  <!-- rpy依次为：绕X、绕Y、绕Z -->
-  <xacro:arg name="scissor_mount_rpy" default="0 -1.57079632679 0"/>
-
-  
-
   <!-- ====================================================== -->
-  <!-- D435i相对于转接板的安装位姿 -->
+  <!-- 第一部分：机器人各部件的安装参数 -->
   <!-- ====================================================== -->
-
-  <!-- 单位：米 -->
-  <xacro:arg
-    name="camera_mount_xyz"
-    default="0 0.01 -0.04"/>
-
-  <!-- 单位：弧度，依次绕X、Y、Z -->
-  <xacro:arg
-    name="camera_mount_rpy"
-    default="0 0 1.57079632679"/>
 
   <!--
-    true：RViz、MoveIt、Gazebo仿真阶段，使用官方标称内部外参
-    false：以后连接真实D435i，由realsense2_camera驱动发布内部TF
+    说明：
+    xyz：位置参数，单位为米（m）
+    rpy：姿态参数，单位为弧度（rad）
+
+    rpy 分别表示 roll、pitch、yaw。
+    URDF 使用固定轴 RPY 旋转约定。
+
+    所有安装参数均表示：
+    子 Link 坐标系相对于父 Link 坐标系的安装位姿。
   -->
+
+
+  <!-- ====================================================== -->
+  <!-- 1.1 转接板相对于 AUBO 末端的安装位姿 -->
+  <!-- ====================================================== -->
+
+  <!--
+    父 Link：ee_link
+    子 Link：zhuanjie_link
+
+    xyz：转接板相对于 ee_link 的平移位置
+    rpy：转接板相对于 ee_link 的旋转姿态
+  -->
+
+  <xacro:arg
+    name="tranboard_mount_xyz"
+    default="0.055 0 0.013"/>
+
+  <xacro:arg
+    name="tranboard_mount_rpy"
+    default="0 0 -1.57079632679"/>
+
+
+  <!-- ====================================================== -->
+  <!-- 1.2 电动剪刀相对于转接板的安装位姿 -->
+  <!-- ====================================================== -->
+
+  <!--
+    父 Link：zhuanjie_link
+    子 Link：scissor_base_link
+
+    作用：
+    确定电动剪刀在转接板上的安装位置和方向。
+
+    这里只控制剪刀整体的安装姿态，
+    不控制剪刀刀片的开合角度。
+  -->
+
+  <xacro:arg
+    name="scissor_mount_xyz"
+    default="0 -0.05 -0.005"/>
+
+  <xacro:arg
+    name="scissor_mount_rpy"
+    default="1.57079632679 0 1.57079632679"/>
+
+
+  <!-- ====================================================== -->
+  <!-- 1.3 Gemini 435Le 相对于转接板的安装位姿 -->
+  <!-- ====================================================== -->
+
+  <!--
+    父 Link：zhuanjie_link
+    子 Link：camera_screw_frame
+
+    xyz：相机安装坐标系相对于转接板的位置
+    rpy：相机安装坐标系相对于转接板的姿态
+
+    注意：
+    这里定义的是相机整体安装外参。
+
+    彩色相机、深度相机和红外相机之间的内部坐标
+    关系由 Orbbec 官方 URDF 模型负责描述。
+  -->
+
+  <xacro:arg
+    name="camera_mount_xyz"
+    default="-0.032 0.039 0.035"/>
+
+  <xacro:arg
+    name="camera_mount_rpy"
+    default="0 -1.22173046 -1.57079632679"/>
+
+
+  <!--
+    预留参数：camera_use_nominal_extrinsics
+
+    原计划：
+    true  ：使用官方标称内部外参
+    false ：由真实相机驱动提供内部 TF
+
+    注意：
+    当前直接导入官方 Gemini 435Le URDF 模型，
+    此参数尚未参与任何条件判断或宏调用。
+
+    因此修改此参数目前不会改变 TF 发布行为。
+    后续真机联调时再实现对应的 TF 控制逻辑。
+  -->
+
   <xacro:arg
     name="camera_use_nominal_extrinsics"
     default="true"/>
@@ -44,112 +115,270 @@
 
 
   <!-- ====================================================== -->
-  <!-- 导入并创建履带车模型 -->
+  <!-- 第二部分：履带式移动平台 -->
   <!-- ====================================================== -->
+
+  <!-- 2.1 导入履带平台 Xacro 宏文件 -->
 
   <xacro:include
     filename="$(find aubo_i5_scissors_description)/urdf/aubo_tracked_platform_macro.xacro"/>
 
+
   <!--
+    2.2 创建履带平台模型
+
     prefix="car_"：
-    给履带车的所有link、joint和material增加car_前缀，
-    避免履带车base_link与AUBO的base_link重名。
+    给履带平台的 Link、Joint 等名称添加 car_ 前缀。
+
+    目的：
+    避免履带平台的 base_link 与 AUBO 机械臂的
+    base_link 出现名称冲突。
+
+    例如：
+    car_base_footprint
+    car_aubo_mount_frame
   -->
-  <xacro:aubo_tracked_platform prefix="car_"/>
+
+  <xacro:aubo_tracked_platform
+    prefix="car_"/>
+
+
 
   <!-- ====================================================== -->
-  <!-- 0. 将AUBO机械臂安装到履带车平台 -->
+  <!-- 第三部分：AUBO i5 六自由度机械臂 -->
   <!-- ====================================================== -->
 
-  <joint name="car_aubo_mount_joint" type="fixed">
-    <!-- 履带车机械臂安装接口 -->
-    <parent link="car_aubo_mount_frame"/>
-
-    <!-- AUBO原模型的根link -->
-    <child link="base_link"/>
-
-    <!-- 两个安装坐标系暂时完全重合 -->
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-  </joint>
-
-  <!-- ====================================================== -->
-  <!-- 1. 导入AUBO机械臂宏 -->
-  <!-- ====================================================== -->
+  <!-- 3.1 导入 AUBO 官方机械臂 Xacro 宏 -->
 
   <xacro:include
     filename="$(find aubo_description)/urdf/xacro/inc/aubo_macro.xacro"/>
 
-  <!-- 创建AUBO i5六自由度机械臂 -->
+
+  <!--
+    3.2 创建 AUBO i5 机械臂
+
+    robot_model：
+    指定机械臂型号为 aubo_i5。
+
+    transmission_hw_interface：
+    沿用当前 AUBO 模型宏使用的关节控制接口配置。
+  -->
+
   <xacro:aubo_robot
     robot_model="aubo_i5"
     transmission_hw_interface="hardware_interface/PositionJointInterface"/>
 
 
-  
+  <!-- ====================================================== -->
+  <!-- 3.3 将 AUBO i5 固定安装到履带平台 -->
+  <!-- ====================================================== -->
+
+  <!--
+    关节名称：car_aubo_mount_joint
+    关节类型：fixed（固定关节）
+
+    父 Link：car_aubo_mount_frame
+    子 Link：base_link
+
+    作用：
+    将 AUBO 机械臂底座固定到履带平台安装接口。
+
+    xyz="0 0 0"：
+    两个连接坐标系的原点重合。
+
+    rpy="0 0 0"：
+    两个连接坐标系方向一致。
+  -->
+
+  <joint
+    name="car_aubo_mount_joint"
+    type="fixed">
+
+    <parent link="car_aubo_mount_frame"/>
+
+    <child link="base_link"/>
+
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0"/>
+
+  </joint>
+
+
+
+  <!-- ====================================================== -->
+  <!-- 第四部分：机械臂末端转接板 -->
+  <!-- ====================================================== -->
+
+  <!-- 4.1 导入转接板 URDF 模型 -->
+
   <xacro:include
     filename="$(find aubo_i5_scissors_description)/urdf/transboard.urdf"/>
 
-  <joint name="fix_transboard" type="fixed">
 
-    <!-- AUBO官方模型提供的末端连接坐标系 -->
+  <!--
+    4.2 将转接板安装在 AUBO 机械臂末端
+
+    关节名称：fix_transboard
+    关节类型：fixed
+
+    父 Link：ee_link
+    子 Link：zhuanjie_link
+
+    作用：
+    建立机械臂末端与转接板之间的固定连接。
+
+    安装位置和姿态使用第一部分定义的参数。
+  -->
+
+  <joint
+    name="fix_transboard"
+    type="fixed">
+
     <parent link="ee_link"/>
 
-    <!-- 剪刀URDF的根连杆 -->
     <child link="zhuanjie_link"/>
 
-    <!-- 根据转接板调整 -->
     <origin
       xyz="$(arg tranboard_mount_xyz)"
       rpy="$(arg tranboard_mount_rpy)"/>
 
   </joint>
 
+
+
   <!-- ====================================================== -->
-  <!-- 2. 导入电动剪刀URDF -->
+  <!-- 第五部分：电动剪刀末端执行器 -->
   <!-- ====================================================== -->
+
+  <!--
+    5.1 导入电动剪刀 URDF 模型
+
+    electric_scissor.urdf 负责描述：
+    1. 剪刀的 Link 结构
+    2. 剪刀的 Joint 连接
+    3. 剪刀的 Visual 可视化模型
+    4. 剪刀的 Collision 碰撞模型
+    5. 剪刀的运动关节及约束
+
+    剪刀内部结构与安装位姿分开管理，
+    方便以后调整剪刀结构而不修改机器人主体。
+  -->
 
   <xacro:include
     filename="$(find aubo_i5_scissors_description)/urdf/electric_scissor.urdf"/>
 
+
   <!-- ====================================================== -->
-  <!-- 3. 将剪刀安装到AUBO末端 -->
+  <!-- 5.2 将电动剪刀固定安装到转接板 -->
   <!-- ====================================================== -->
 
-  <joint name="scissor_mount_joint" type="fixed">
+  <!--
+    关节名称：scissor_mount_joint
+    关节类型：fixed
 
-    <!-- 转接板的连接坐标系 -->
+    父 Link：zhuanjie_link
+    子 Link：scissor_base_link
+
+    作用：
+    确定剪刀基座相对于转接板的安装位置和方向。
+
+    剪刀开合运动由 electric_scissor.urdf
+    中定义的活动关节负责。
+  -->
+
+  <joint
+    name="scissor_mount_joint"
+    type="fixed">
+
     <parent link="zhuanjie_link"/>
 
-    <!-- 剪刀URDF的根连杆 -->
     <child link="scissor_base_link"/>
 
-    <!-- 先用零位姿验证连接，后续根据转接板调整 -->
     <origin
       xyz="$(arg scissor_mount_xyz)"
       rpy="$(arg scissor_mount_rpy)"/>
 
   </joint>
 
-    <!-- ====================================================== -->
-  <!-- 4. 导入RealSense D435i模型 -->
+
+
   <!-- ====================================================== -->
+  <!-- 第六部分：Orbbec Gemini 435Le 深度相机 -->
+  <!-- ====================================================== -->
+
+  <!--
+    6.1 导入 Orbbec 官方相机 URDF/Xacro 模型
+
+    文件：
+    gemini_435_Le.urdf.xacro
+
+    该文件直接定义相机模型，不需要额外调用
+    sensor_gemini435le 宏。
+
+    主要坐标系包括：
+    camera_screw_frame
+    camera_link
+    camera_depth_frame
+    camera_color_frame
+    camera_color_optical_frame
+    camera_left_ir_frame
+    camera_right_ir_frame
+
+    相机的网格、碰撞几何及内部固定关节
+    均由 Orbbec 官方模型定义。
+
+    注意：
+    如果以后同时加载第二台相机，
+    需要避免出现同名的 Link 和 Joint。
+  -->
 
   <xacro:include
-    filename="$(find realsense2_description)/urdf/_d435i.urdf.xacro"/>
+    filename="$(find orbbec_description)/urdf/gemini_435_Le.urdf.xacro"/>
+
 
   <!-- ====================================================== -->
-  <!-- 5. 将D435i安装到转接板 -->
+  <!-- 6.2 将 Gemini 435Le 固定安装到转接板 -->
   <!-- ====================================================== -->
 
-  <xacro:sensor_d435i
-    parent="zhuanjie_link"
-    name="camera"
-    use_nominal_extrinsics="$(arg camera_use_nominal_extrinsics)">
+  <!--
+    关节名称：gemini435le_mount_joint
+    关节类型：fixed
+
+    父 Link：zhuanjie_link
+    子 Link：camera_screw_frame
+
+    作用：
+    建立 Gemini 435Le 与转接板的固定连接。
+
+    camera_screw_frame：
+    官方模型中的相机根 Link，
+    用作相机整体的机械安装坐标系。
+
+    camera_mount_xyz：
+    控制相机安装位置。
+
+    camera_mount_rpy：
+    控制相机安装姿态。
+
+    注意：
+    该关节只描述相机整体的安装关系，
+    不会改变相机内部 RGB、Depth、IR 的外参。
+  -->
+
+  <joint
+    name="gemini435le_mount_joint"
+    type="fixed">
+
+    <parent link="zhuanjie_link"/>
+
+    <child link="camera_screw_frame"/>
 
     <origin
       xyz="$(arg camera_mount_xyz)"
       rpy="$(arg camera_mount_rpy)"/>
 
-  </xacro:sensor_d435i>
+  </joint>
+
 
 </robot>

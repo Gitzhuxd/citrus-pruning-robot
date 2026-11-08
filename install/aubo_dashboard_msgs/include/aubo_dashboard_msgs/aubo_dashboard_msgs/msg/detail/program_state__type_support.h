@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/rosidl_generator_c/aubo_dashboard_msgs/msg/detail/program_state__type_support.h

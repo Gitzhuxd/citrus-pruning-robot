@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/ament_cmake_core/aubo_dashboard_msgsConfig-version.cmake

@@ -36,8 +36,8 @@
   <exec_depend>joint_state_publisher_gui</exec_depend>
   <exec_depend>rviz2</exec_depend>
   
-  <!-- RealSense D435i描述文件依赖 -->
-  <depend>realsense2_description</depend>
+  <!-- Orbbec Gemini 435Le描述文件依赖 -->
+  <depend>orbbec_description</depend> 
 
   <!-- 测试依赖 -->
   <test_depend>ament_copyright</test_depend>

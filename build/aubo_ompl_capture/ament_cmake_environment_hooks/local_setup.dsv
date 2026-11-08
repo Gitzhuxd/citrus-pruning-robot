@@ -1,3 +1,0 @@
-source;share/aubo_ompl_capture/environment/ament_prefix_path.sh
-source;share/aubo_ompl_capture/environment/library_path.sh
-source;share/aubo_ompl_capture/environment/path.sh

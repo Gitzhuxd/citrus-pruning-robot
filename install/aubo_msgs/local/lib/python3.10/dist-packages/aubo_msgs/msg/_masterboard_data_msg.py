@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_msgs/rosidl_generator_py/aubo_msgs/msg/_masterboard_data_msg.py

@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_dashboard_msgs/rosidl_generator_cpp/aubo_dashboard_msgs/srv/detail/is_program_running__type_support.hpp

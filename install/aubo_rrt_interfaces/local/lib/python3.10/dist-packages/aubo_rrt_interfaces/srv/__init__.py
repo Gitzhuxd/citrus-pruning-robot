@@ -1,1 +1,0 @@
-/home/zhuxd/aubo_ws/build/aubo_rrt_interfaces/rosidl_generator_py/aubo_rrt_interfaces/srv/__init__.py
