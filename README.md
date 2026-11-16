@@ -6,6 +6,7 @@
 
 > **项目图**：
 <img width="2558" height="1131" alt="6a5e681056310d6b8db7084bba53869c" src="https://github.com/user-attachments/assets/f1d64713-4e3b-4f04-9ce5-43622d9527f7" />
+<img width="2327" height="1261" alt="8546dac4-9449-4b9a-979e-802a15b0b3c3" src="https://github.com/user-attachments/assets/e5219144-af17-4de9-9c53-c90ff957bb43" />
 
 
 <!-- ![机器人整机模型](docs/images/robot-overview.png) -->
