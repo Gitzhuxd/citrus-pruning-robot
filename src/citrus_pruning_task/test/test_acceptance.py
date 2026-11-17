@@ -38,6 +38,24 @@ class AcceptanceTests(unittest.TestCase):
         no_stump["world_after"].pop("citrus_S01_stump")
         self.assertFalse(evaluate(no_stump)["checks"]["scene_update"]["ok"])
 
+    def test_s07_acceptance_checks_the_reported_shoot_and_stump(self):
+        report = load("verified_stump_replay_result.json")
+        report["target"] = "S07"
+        report["stages"]["transit"]["reused"] = False
+        closure = report["stages"]["closure"]
+        s01_contacts = closure["target_contacts"]
+        closure["target_contacts"] = [("citrus_S07", blade) for _, blade in s01_contacts]
+        s01_after = report["world_after"]
+        report["world_after"] = report["world_before"].copy()
+        report["world_after"].pop("citrus_S07")
+        report["world_after"]["citrus_S07_stump"] = 1
+        self.assertTrue(evaluate(report)["passed"])
+
+        wrong_cut = dict(report, world_after=s01_after)
+        self.assertFalse(evaluate(wrong_cut)["checks"]["scene_update"]["ok"])
+        closure["target_contacts"] = s01_contacts
+        self.assertFalse(evaluate(report)["checks"]["closure"]["ok"])
+
     def test_isolation_guard(self):
         self.assertIsNone(isolation_error({"ROS_DOMAIN_ID": "94", "ROS_LOCALHOST_ONLY": "1"}))
         self.assertTrue(isolation_error({"ROS_DOMAIN_ID": "0", "ROS_LOCALHOST_ONLY": "1"}))

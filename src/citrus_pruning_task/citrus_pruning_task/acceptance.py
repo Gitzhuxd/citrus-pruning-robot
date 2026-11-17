@@ -1,4 +1,4 @@
-"""Acceptance rules for one S01 run (pure Python, usable without ROS).
+"""Acceptance rules for one simulated cut (pure Python, usable without ROS).
 
 The rules mirror what the verified record
 ``s01_stump_demo_v1/verified_stump_replay/result.json`` demonstrates, plus the
@@ -7,10 +7,6 @@ requirement that the transit is planned again (not reused from a file).
 import json
 import sys
 from pathlib import Path
-
-SHOOT = "citrus_S01"
-STUMP = "citrus_S01_stump"
-
 
 def _stage_ok(stages, name):
     stage = stages.get(name) or {}
@@ -24,7 +20,10 @@ def _stage_ok(stages, name):
 
 
 def evaluate(report):
-    """Return ``{"passed": bool, "checks": {name: {"ok": bool, "detail": str}}}``."""
+    """Evaluate the reported target. Legacy S01 reports may omit its ID."""
+    target = report.get("target", "S01")
+    shoot = f"citrus_{target}"
+    stump = f"{shoot}_stump"
     stages = report.get("stages") or {}
     checks = {}
 
@@ -38,16 +37,16 @@ def evaluate(report):
 
     closure = stages.get("closure") or {}
     contacts = {tuple(pair) for pair in closure.get("target_contacts", [])}
-    want = {(SHOOT, "scissor_active_blade_link"), (SHOOT, "scissor_mimic_blade_link")}
+    want = {(shoot, "scissor_active_blade_link"), (shoot, "scissor_mimic_blade_link")}
     checks["closure"] = {"ok": closure.get("status") == "passed" and want <= contacts,
                          "detail": f"status={closure.get('status')}, samples={closure.get('samples')}"}
 
     before, after = report.get("world_before") or {}, report.get("world_after") or {}
-    expected_after = {k: v for k, v in before.items() if k != SHOOT}
+    expected_after = {k: v for k, v in before.items() if k != shoot}
     if report.get("scene_stump_length_mm"):
-        expected_after[STUMP] = 1
-    checks["scene_update"] = {"ok": bool(before) and SHOOT in before and after == expected_after,
-                              "detail": f"S01 removed={SHOOT not in after}, stump present={STUMP in after}"}
+        expected_after[stump] = 1
+    checks["scene_update"] = {"ok": bool(before) and shoot in before and after == expected_after,
+                              "detail": f"{target} removed={shoot not in after}, stump present={stump in after}"}
 
     ok, detail = _stage_ok(stages, "withdrawal")
     if "disengagement" in stages:
@@ -57,14 +56,14 @@ def evaluate(report):
 
     checks["no_error"] = {"ok": bool(report.get("success")) and "error" not in report,
                           "detail": report.get("error", "success")}
-    return {"passed": all(item["ok"] for item in checks.values()), "checks": checks}
+    return {"passed": all(item["ok"] for item in checks.values()), "target": target, "checks": checks}
 
 
 def format_checks(result):
     lines = []
     for name, item in result["checks"].items():
         lines.append(f"  [{'PASS' if item['ok'] else 'FAIL'}] {name:<18} {item['detail']}")
-    lines.append(f"  => S01 acceptance {'PASSED' if result['passed'] else 'FAILED'}")
+    lines.append(f"  => {result.get('target', 'S01')} acceptance {'PASSED' if result['passed'] else 'FAILED'}")
     return "\n".join(lines)
 
 

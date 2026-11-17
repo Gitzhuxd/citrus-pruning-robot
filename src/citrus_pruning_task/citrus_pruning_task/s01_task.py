@@ -16,13 +16,15 @@ import time
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Optional
+from typing import Mapping, Optional
 
 import numpy as np
 import rclpy
 from ament_index_python.packages import get_package_share_directory
 from moveit_msgs.msg import DisplayTrajectory, RobotState, RobotTrajectory
 from moveit_msgs.srv import GetStateValidity
+from rcl_interfaces.msg import ParameterType
+from rcl_interfaces.srv import GetParameters
 from rclpy.duration import Duration
 from rclpy.qos import DurabilityPolicy, QoSProfile
 from rclpy.serialization import deserialize_message, serialize_message
@@ -53,6 +55,10 @@ class TaskConfig:
     play: bool = True
     hold_at_cut_s: float = 1.0
     reset_before_run: bool = True
+    target: str = TARGET
+    approach_angle_deg: float = 0.0
+    normal_sign: int = 1
+    fixed_joints: Optional[Mapping[str, float]] = None
 
 
 def scene_command(planner, name):
@@ -139,6 +145,50 @@ def pose_position(pose):
     return np.array([pose.position.x, pose.position.y, pose.position.z])
 
 
+def fixed_precut_state(planner, start, arm, joints, precut_pose):
+    """Check a fixed six-axis target against the live model, scene and TCP pose."""
+    if set(joints) != set(arm):
+        raise ValueError("Fixed target must name exactly the six arm joints")
+    try:
+        values = {name: float(joints[name]) for name in arm}
+    except (TypeError, ValueError) as exc:
+        raise ValueError("Fixed target angles must be finite numbers in rad") from exc
+    if not all(math.isfinite(angle) for angle in values.values()):
+        raise ValueError("Fixed target angles must be finite numbers in rad")
+
+    client = planner.node.create_client(GetParameters, "/move_group/get_parameters")
+    try:
+        reply = planner.call(client, GetParameters.Request(names=["robot_description"])).values
+    finally:
+        planner.node.destroy_client(client)
+    if len(reply) != 1 or reply[0].type != ParameterType.PARAMETER_STRING:
+        raise RuntimeError("MoveIt did not provide robot_description for joint-limit validation")
+    try:
+        urdf = ET.fromstring(reply[0].string_value)
+        for name, angle in values.items():
+            joint = urdf.find(f"./joint[@name='{name}']")
+            limit = None if joint is None else joint.find("limit")
+            if joint is None or joint.get("type") != "revolute" or joint.find("mimic") is not None or limit is None:
+                raise ValueError(f"Expected a bounded independent revolute joint: {name}")
+            lower, upper = float(limit.attrib["lower"]), float(limit.attrib["upper"])
+            if not math.isfinite(lower) or not math.isfinite(upper) or not lower <= angle <= upper:
+                raise ValueError(f"Fixed joint target is outside the live limits for {name}")
+    except (ET.ParseError, KeyError) as exc:
+        raise RuntimeError("MoveIt robot_description has invalid joint limits") from exc
+
+    state = with_positions(start, values)
+    planner.valid_state(state, "fixed precut joints")
+    actual = planner.fk_pose(state, "fixed precut joints")
+    q_actual, q_expected = actual.orientation, precut_pose.orientation
+    actual_rot = Rotation.from_quat([q_actual.x, q_actual.y, q_actual.z, q_actual.w])
+    expected_rot = Rotation.from_quat([q_expected.x, q_expected.y, q_expected.z, q_expected.w])
+    position_error = np.linalg.norm(pose_position(actual) - pose_position(precut_pose))
+    angle_error = (actual_rot.inv() * expected_rot).magnitude()
+    if not math.isfinite(position_error) or position_error > 0.001 or angle_error > math.radians(1.0):
+        raise ValueError("Fixed joint target does not match this scene's precut pose within 1 mm / 1 deg")
+    return state
+
+
 def plan_retreat(planner, closed_state, goal, approach, rotation, branch, report, *,
                  stump=STUMP, separation_m=0.005):
     """Axial disengagement from the stump (if touching), then a straight withdrawal."""
@@ -195,7 +245,11 @@ def plan_retreat(planner, closed_state, goal, approach, rotation, branch, report
 
 
 def run(planner, config: TaskConfig, report, log=print):
-    """Plan and check the full S01 chain. Fills ``report``; raises on failure."""
+    """Plan and check a full simulated cut. Fills ``report``; raises on failure."""
+    if not math.isfinite(config.approach_angle_deg) or config.normal_sign not in (-1, 1):
+        raise ValueError("Approach angle must be finite and normal_sign must be -1 or +1")
+    if config.fixed_joints is not None and config.reuse_transit is not None:
+        raise ValueError("A fixed joint target requires a freshly planned transit")
     path = Path(get_package_share_directory("aubo_i5_scissors_moveit_config"))
     srdf = ET.parse(path / "config/aubo_i5_scissors_robot.srdf").getroot()
     arm = {joint.attrib["name"]: float(joint.attrib["value"])
@@ -206,7 +260,11 @@ def run(planner, config: TaskConfig, report, log=print):
     model = json.loads(config.model.read_text(encoding="utf-8"))
     if model["frame_id"] != "tree_base" or model["units"] != "m":
         raise ValueError("Expected a metric tree_base model")
-    target = next(target for target in model["targets"] if target["id"] == TARGET)
+    target = next((item for item in model["targets"] if item["id"] == config.target), None)
+    if target is None:
+        raise ValueError(f"Unknown cut target in tree model: {config.target}")
+    shoot = "citrus_" + config.target
+    stump = shoot + "_stump"
 
     if config.reset_before_run:
         log("[0/6] reset scene: /citrus/reset")
@@ -215,9 +273,11 @@ def run(planner, config: TaskConfig, report, log=print):
     branch = unit(tree_rotation.apply(target["axis"]))
     approach = tree_rotation.apply(target["approach"])
     approach = unit(approach - np.dot(approach, branch) * branch)
-    rotation = Rotation.from_matrix(np.column_stack([branch, np.cross(approach, branch), approach]))
+    approach = Rotation.from_rotvec(math.radians(config.approach_angle_deg) * branch).apply(approach)
+    normal = config.normal_sign * branch
+    rotation = Rotation.from_matrix(np.column_stack([normal, np.cross(approach, normal), approach]))
     junction = tree_rotation.apply(target["position"]) + translation
-    stump_offset = scene_stump_offset(planner)
+    stump_offset = scene_stump_offset(planner, target=config.target)
     offset = config.offset_mm * 0.001 if config.offset_mm is not None else (stump_offset or 0.006)
     cut = junction + offset * branch
     goal = cut - rotation.apply(MOUTH_OFFSET)
@@ -234,17 +294,27 @@ def run(planner, config: TaskConfig, report, log=print):
     report["start_joints"] = joint_values(start)
     planner.valid_state(start, "open-scissor home")
 
-    log("[1/6] transit: IK /compute_ik + OMPL /plan_kinematic_path from SRDF home")
+    log("[1/6] transit: OMPL /plan_kinematic_path from SRDF home")
     if config.reuse_transit:
         saved = deserialize_message(config.reuse_transit.read_bytes(), DisplayTrajectory)
         if saved.model_id != srdf.attrib["name"] or not saved.trajectory:
             raise ValueError("The saved transit uses a different robot or is empty")
         transit = saved.trajectory[0]
     else:
-        pre_ik = planner.inverse(start, precut_pose, arm)
+        if config.fixed_joints is None:
+            pre_ik = planner.inverse(start, precut_pose, arm)
+        else:
+            pre_ik = fixed_precut_state(planner, start, arm, config.fixed_joints, precut_pose)
         transit = planner.transit(start, pre_ik, arm)
     pre_state, report["stages"]["transit"] = planner.validate_trajectory(transit, start, precut_pose, "transit")
     report["stages"]["transit"]["reused"] = config.reuse_transit is not None
+    if config.fixed_joints is not None:
+        reached, expected_joints = joint_values(pre_state), joint_values(pre_ik)
+        # An angle shifted by 2*pi can reach the same TCP pose via a different path.
+        joint_error = max(abs(reached[name] - expected_joints[name]) for name in arm)
+        report["stages"]["transit"]["target_joint_max_abs_error_rad"] = joint_error
+        if not math.isfinite(joint_error) or joint_error > 0.00031:
+            raise ValueError("Transit did not reach the specified six-axis joint target")
 
     log("[2/6] insertion: straight 120 mm via /compute_cartesian_path")
     insertion, fraction = planner.straight(pre_state, cut_pose, "insertion")
@@ -252,32 +322,33 @@ def run(planner, config: TaskConfig, report, log=print):
     report["stages"]["insertion"] = {**in_metrics, "fraction": fraction}
 
     log("[3/6] closure: blade sweep checked with /check_state_validity")
-    closed_state, closure = check_closure(planner, cut_state, closed, report["stages"].setdefault("closure", {}))
+    closed_state, closure = check_closure(
+        planner, cut_state, closed, report["stages"].setdefault("closure", {}), shoot=shoot)
     if closure is None:
         report["world_after"] = world_counts(planner)
         if report["world_after"] != before:
             raise RuntimeError("The scene changed despite closure failure")
         raise ValueError(f"closure: {report['stages']['closure'].get('status')}")
 
-    expected = {name: count for name, count in before.items() if name != SHOOT}
+    expected = {name: count for name, count in before.items() if name != shoot}
     if stump_offset:
         if not math.isclose(offset, stump_offset, abs_tol=1e-8, rel_tol=0):
             raise ValueError("Planned cut and scene stump lengths differ; no cut was committed")
-        expected[STUMP] = 1
+        expected[stump] = 1
 
     def commit_cut():
-        scene_command(planner, "cut/" + TARGET)
+        scene_command(planner, "cut/" + config.target)
         after = world_counts(planner)
         if after != expected:
             raise RuntimeError(f"Unexpected post-cut scene: {after}")
         return after
 
-    log("[4/6] scene update: /citrus/cut/S01 (shoot removed, stump kept), then retreat preflight")
+    log(f"[4/6] scene update: /citrus/cut/{config.target}, then retreat preflight")
     # Preflight the retreat in the post-cut world, then reset for synchronized playback.
     try:
         report["world_after"] = commit_cut()
         log("[5/6] retreat: axial disengagement + straight withdrawal via /compute_cartesian_path")
-        retreat = plan_retreat(planner, closed_state, goal, approach, rotation, branch, report["stages"])
+        retreat = plan_retreat(planner, closed_state, goal, approach, rotation, branch, report["stages"], stump=stump)
     finally:
         scene_command(planner, "reset")
         verify_world(planner, model, None)
@@ -302,9 +373,11 @@ def run(planner, config: TaskConfig, report, log=print):
 def execute(planner, config: TaskConfig, log=print):
     """Run once, always write ``result.json`` and return the report."""
     config.output.mkdir(parents=True, exist_ok=False)
-    report = {"target": TARGET, "success": False, "fracture_physics": False, "stages": {},
+    report = {"target": config.target, "success": False, "fracture_physics": False, "stages": {},
               "output_dir": str(config.output),
               "parameters": {"offset_mm": config.offset_mm, "play": config.play,
+                             "approach_angle_deg": config.approach_angle_deg, "normal_sign": config.normal_sign,
+                             "fixed_joints_rad": dict(config.fixed_joints) if config.fixed_joints is not None else None,
                              "reuse_transit": str(config.reuse_transit) if config.reuse_transit else None,
                              "model": str(config.model)}}
     started = time.monotonic()
