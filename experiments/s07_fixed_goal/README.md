@@ -28,3 +28,15 @@ A successful result must contain all five motion stages, replace
 `citrus_S07` with `citrus_S07_stump` during replay, preserve S01, and
 restore the intact tree afterward. The run publishes simulated joint
 states; set `rviz:=true` on a graphical Ubuntu session to watch it.
+
+## Replay the saved run independently
+
+The independent replay can update the scene when it has the matching
+successful result. The result binds the recorded target and the exact
+CDR hash. Without this information, omit `--commit-cut` to show only the
+simulated arm motion.
+
+```bash
+ros2 run citrus_pruning_task s01_replay results/s07_smoke_new/display_trajectory.cdr --commit-cut
+ros2 service call /citrus/reset std_srvs/srv/Trigger '{}'
+```

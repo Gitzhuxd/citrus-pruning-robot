@@ -10,6 +10,7 @@ Changes for the packaged version:
   and the robot plans again from the fixed SRDF ``home`` state;
 * the acceptance summary from ``acceptance.py`` is added to the report.
 """
+import hashlib
 import json
 import math
 import time
@@ -355,7 +356,9 @@ def run(planner, config: TaskConfig, report, log=print):
 
     display = DisplayTrajectory(model_id=srdf.attrib["name"], trajectory_start=start,
                                 trajectory=[transit, insertion, closure, *retreat])
-    (config.output / "display_trajectory.cdr").write_bytes(serialize_message(display))
+    trajectory_bytes = serialize_message(display)
+    (config.output / "display_trajectory.cdr").write_bytes(trajectory_bytes)
+    report["trajectory_sha256"] = hashlib.sha256(trajectory_bytes).hexdigest()
     report["segments"] = ["transit", "insertion", "closure", *(
         ["disengagement"] if "disengagement" in report["stages"] else []), "withdrawal"]
     if config.play:
