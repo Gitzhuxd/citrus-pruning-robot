@@ -14,7 +14,7 @@ from pathlib import Path
 
 import rclpy
 from ament_index_python.packages import get_package_share_directory
-from rclpy.executors import SingleThreadedExecutor
+from rclpy.executors import ExternalShutdownException, SingleThreadedExecutor
 from rclpy.node import Node
 from rclpy.qos import DurabilityPolicy, QoSProfile
 from std_msgs.msg import String
@@ -73,7 +73,7 @@ class S01TaskNode(Node):
     def run_once(self):
         if not self._lock.acquire(blocking=False):
             return False, "An S01 round is already running"
-        helper = rclpy.create_node("citrus_s01_task_client")
+        helper = rclpy.create_node("citrus_s01_task_client", use_global_arguments=False)
         try:
             config = self._config()
             self.get_logger().info(f"S01 round started; output {config.output}")
@@ -116,7 +116,7 @@ def main(args=None):
     try:
         while rclpy.ok() and not node.done:
             executor.spin_once(timeout_sec=0.2)
-    except KeyboardInterrupt:
+    except (KeyboardInterrupt, ExternalShutdownException):
         pass
     finally:
         passed = node.last_passed
