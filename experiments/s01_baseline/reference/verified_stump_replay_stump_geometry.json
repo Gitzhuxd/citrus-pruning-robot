@@ -1,0 +1,14 @@
+{
+  "visual_frame": "tree_base",
+  "visual_length_mm": 6.000000000000177,
+  "collision_id": "citrus_S01_stump",
+  "collision_frame": "car_base_footprint",
+  "cylinder_height_mm": 8.999999999999947,
+  "cylinder_radius_mm": 6.1,
+  "cut_cap_world_m": [
+    0.44982368187018473,
+    -0.3701763181298153,
+    1.455994816413719
+  ],
+  "cut_cap_error_mm": 5.551115123125783e-14
+}

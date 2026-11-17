@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="scan_guided_citrus_snapshot">
+  <link name="tree_base" />
+  <link name="tree_static">
+    <visual>
+      <geometry>
+        <mesh filename="package://citrus_pruning_sim/meshes/static.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://citrus_pruning_sim/meshes/static_collision.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="tree_static_fixed" type="fixed">
+    <parent link="tree_base" />
+    <child link="tree_static" />
+  </joint>
+  <link name="tree_S01">
+    <visual>
+      <geometry>
+        <mesh filename="package://citrus_pruning_sim/meshes/S01.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://citrus_pruning_sim/meshes/S01_collision.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="tree_S01_fixed" type="fixed">
+    <parent link="tree_base" />
+    <child link="tree_S01" />
+  </joint>
+  <link name="tree_S02">
+    <visual>
+      <geometry>
+        <mesh filename="package://citrus_pruning_sim/meshes/S02.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://citrus_pruning_sim/meshes/S02_collision.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="tree_S02_fixed" type="fixed">
+    <parent link="tree_base" />
+    <child link="tree_S02" />
+  </joint>
+  <link name="tree_S03">
+    <visual>
+      <geometry>
+        <mesh filename="package://citrus_pruning_sim/meshes/S03.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://citrus_pruning_sim/meshes/S03_collision.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="tree_S03_fixed" type="fixed">
+    <parent link="tree_base" />
+    <child link="tree_S03" />
+  </joint>
+  <link name="tree_S04">
+    <visual>
+      <geometry>
+        <mesh filename="package://citrus_pruning_sim/meshes/S04.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://citrus_pruning_sim/meshes/S04_collision.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="tree_S04_fixed" type="fixed">
+    <parent link="tree_base" />
+    <child link="tree_S04" />
+  </joint>
+  <link name="tree_S05">
+    <visual>
+      <geometry>
+        <mesh filename="package://citrus_pruning_sim/meshes/S05.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://citrus_pruning_sim/meshes/S05_collision.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="tree_S05_fixed" type="fixed">
+    <parent link="tree_base" />
+    <child link="tree_S05" />
+  </joint>
+  <link name="tree_S06">
+    <visual>
+      <geometry>
+        <mesh filename="package://citrus_pruning_sim/meshes/S06.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://citrus_pruning_sim/meshes/S06_collision.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="tree_S06_fixed" type="fixed">
+    <parent link="tree_base" />
+    <child link="tree_S06" />
+  </joint>
+  <link name="tree_S07">
+    <visual>
+      <geometry>
+        <mesh filename="package://citrus_pruning_sim/meshes/S07.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://citrus_pruning_sim/meshes/S07_collision.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="tree_S07_fixed" type="fixed">
+    <parent link="tree_base" />
+    <child link="tree_S07" />
+  </joint>
+  <link name="tree_S08">
+    <visual>
+      <geometry>
+        <mesh filename="package://citrus_pruning_sim/meshes/S08.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://citrus_pruning_sim/meshes/S08_collision.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="tree_S08_fixed" type="fixed">
+    <parent link="tree_base" />
+    <child link="tree_S08" />
+  </joint>
+</robot>

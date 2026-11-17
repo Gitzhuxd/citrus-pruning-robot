@@ -1,0 +1,2 @@
+data: '{"revision": 9, "cut_ids": ["S01"], "active_target_ids": ["S02", "S03", "S04", "S05", "S06", "S07", "S08"], "frame_id": "tree_base", "moveit_sync": "synchronized", "message": "S01 completed; simulated shoot geometry updated.", "s01_cut_offset_m": 0.006, "s01_stump_present": true, "leaves_in_collision": false, "fracture_physics": false, "ik_verified": false, "scan_reference_is_gaussian_render": false}'
+---

@@ -1,0 +1,14 @@
+# Parameters of the citrus_s01_task node (citrus_pruning_task/task_node.py).
+# Values reproduce the verified S01 round; change them here, not in code.
+citrus_s01_task:
+  ros__parameters:
+    # Empty: <citrus_pruning_sim share>/data/tree_model.json (same file as every archived run)
+    # model_path: ""
+    output_root: ""          # empty: ~/aubo_ws/results/s01 ; each round -> <output_root>/<YYYYmmdd_HHMMSS>/
+    offset_mm: -1.0          # < 0: use the stump length published by the scene (6 mm)
+    play: true               # replay the round in RViz after all checks pass
+    hold_at_cut_s: 1.0       # pause at the cut point during replay
+    reuse_transit: ""        # demo only; acceptance requires a freshly planned transit
+    auto_start: false
+    auto_start_delay_s: 8.0  # time for move_group and the scene to synchronise
+    exit_after_auto_start: false

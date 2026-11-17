@@ -1,0 +1,502 @@
+{
+  "target": "S01",
+  "success": true,
+  "fracture_physics": false,
+  "stages": {
+    "transit": {
+      "waypoints": 27,
+      "validity_samples": 81,
+      "position_error_mm": 0.16606724732383935,
+      "orientation_error_deg": 0.007742766712311232,
+      "trajectory_duration_s": 2.573539467,
+      "reused": true
+    },
+    "insertion": {
+      "waypoints": 13,
+      "validity_samples": 23,
+      "position_error_mm": 3.66829998779688e-07,
+      "orientation_error_deg": 4.1868454860347505e-07,
+      "trajectory_duration_s": 1.111111095,
+      "fraction": 1.0
+    },
+    "closure": {
+      "samples": 141,
+      "target_contacts": [
+        [
+          "citrus_S01",
+          "scissor_active_blade_link"
+        ],
+        [
+          "citrus_S01",
+          "scissor_mimic_blade_link"
+        ]
+      ],
+      "status": "passed"
+    },
+    "disengagement": {
+      "waypoints": 5,
+      "validity_samples": 55,
+      "position_error_mm": 0.0005394542088970482,
+      "orientation_error_deg": 4.269594004460183e-07,
+      "trajectory_duration_s": 0.32165322700000004,
+      "fraction": 1.0,
+      "lift_mm": 5.0,
+      "start_contact_depth_m": [
+        [
+          "citrus_S01_stump",
+          "scissor_active_blade_link",
+          1.4907446703980536e-10
+        ],
+        [
+          "citrus_S01_stump",
+          "scissor_mimic_blade_link",
+          0.00020000018025068448
+        ]
+      ],
+      "sample_trace": [
+        {
+          "travel_mm": 0.0,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_active_blade_link",
+              1.4907446703980536e-10
+            ],
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.00020000018025068448
+            ]
+          ]
+        },
+        {
+          "travel_mm": 0.08902662668208515,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.00011097355359630322
+            ]
+          ]
+        },
+        {
+          "travel_mm": 0.1780228019028002,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              2.1977378394440232e-05
+            ]
+          ]
+        },
+        {
+          "travel_mm": 0.2669885189202432,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.0004956699942634366
+            ]
+          ]
+        },
+        {
+          "travel_mm": 0.35592377099426764,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.00040674533674587047
+            ]
+          ]
+        },
+        {
+          "travel_mm": 0.4448285513862454,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.0003178515394474543
+            ]
+          ]
+        },
+        {
+          "travel_mm": 0.5337028533599956,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.00022898860886450494
+            ]
+          ]
+        },
+        {
+          "travel_mm": 0.6225466701797221,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.0001401565515147044
+            ]
+          ]
+        },
+        {
+          "travel_mm": 0.7113599951129732,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              5.135537393108172e-05
+            ]
+          ]
+        },
+        {
+          "travel_mm": 0.8001428214283555,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.0008809355593497429
+            ]
+          ]
+        },
+        {
+          "travel_mm": 0.8888951423949061,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.0007921938849728355
+            ]
+          ]
+        },
+        {
+          "travel_mm": 0.9776169512856596,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.0007034830384325019
+            ]
+          ]
+        },
+        {
+          "travel_mm": 1.0746194858419986,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.0006064854345539827
+            ]
+          ]
+        },
+        {
+          "travel_mm": 1.1715852719923017,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.0005095249566807967
+            ]
+          ]
+        },
+        {
+          "travel_mm": 1.268514300940088,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.000412601613581851
+            ]
+          ]
+        },
+        {
+          "travel_mm": 1.3654065638904143,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.00031571541402282275
+            ]
+          ]
+        },
+        {
+          "travel_mm": 1.462262052052744,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.0002188663667635563
+            ]
+          ]
+        },
+        {
+          "travel_mm": 1.5590807566376264,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.00012205448056119122
+            ]
+          ]
+        },
+        {
+          "travel_mm": 1.6558626688588705,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              2.527976416981056e-05
+            ]
+          ]
+        },
+        {
+          "travel_mm": 1.7526077799323043,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.0004776543657797005
+            ]
+          ]
+        },
+        {
+          "travel_mm": 1.8493160810779083,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.0003810364553527971
+            ]
+          ]
+        },
+        {
+          "travel_mm": 1.945987563515634,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.00028445583095551097
+            ]
+          ]
+        },
+        {
+          "travel_mm": 2.0426222184694067,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.00018791250189113384
+            ]
+          ]
+        },
+        {
+          "travel_mm": 2.139220037166671,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              9.14064774632565e-05
+            ]
+          ]
+        },
+        {
+          "travel_mm": 2.235781010835932,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.00019739894178484444
+            ]
+          ]
+        },
+        {
+          "travel_mm": 2.33230513070902,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              0.00010229103205714078
+            ]
+          ]
+        },
+        {
+          "travel_mm": 2.4287923880192652,
+          "contacts": [
+            [
+              "citrus_S01_stump",
+              "scissor_mimic_blade_link",
+              7.218338821704774e-06
+            ]
+          ]
+        },
+        {
+          "travel_mm": 2.525242774004416,
+          "contacts": []
+        },
+        {
+          "travel_mm": 2.621656279903527,
+          "contacts": []
+        },
+        {
+          "travel_mm": 2.718032896958268,
+          "contacts": []
+        },
+        {
+          "travel_mm": 2.8143726164127276,
+          "contacts": []
+        },
+        {
+          "travel_mm": 2.910675429514518,
+          "contacts": []
+        },
+        {
+          "travel_mm": 3.0069413275136636,
+          "contacts": []
+        },
+        {
+          "travel_mm": 3.1031703016612577,
+          "contacts": []
+        },
+        {
+          "travel_mm": 3.1993623432123544,
+          "contacts": []
+        },
+        {
+          "travel_mm": 3.295517443424429,
+          "contacts": []
+        },
+        {
+          "travel_mm": 3.3916355935580373,
+          "contacts": []
+        },
+        {
+          "travel_mm": 3.48771678487502,
+          "contacts": []
+        },
+        {
+          "travel_mm": 3.583761008640304,
+          "contacts": []
+        },
+        {
+          "travel_mm": 3.6754068490569716,
+          "contacts": []
+        },
+        {
+          "travel_mm": 3.7670187614486323,
+          "contacts": []
+        },
+        {
+          "travel_mm": 3.8585967382225834,
+          "contacts": []
+        },
+        {
+          "travel_mm": 3.9501407717883437,
+          "contacts": []
+        },
+        {
+          "travel_mm": 4.04165085455783,
+          "contacts": []
+        },
+        {
+          "travel_mm": 4.13312697894427,
+          "contacts": []
+        },
+        {
+          "travel_mm": 4.22456913736375,
+          "contacts": []
+        },
+        {
+          "travel_mm": 4.315977322234546,
+          "contacts": []
+        },
+        {
+          "travel_mm": 4.407351525976261,
+          "contacts": []
+        },
+        {
+          "travel_mm": 4.498691741012427,
+          "contacts": []
+        },
+        {
+          "travel_mm": 4.5899979597674765,
+          "contacts": []
+        },
+        {
+          "travel_mm": 4.681270174666683,
+          "contacts": []
+        },
+        {
+          "travel_mm": 4.7725083781410715,
+          "contacts": []
+        },
+        {
+          "travel_mm": 4.863712562620309,
+          "contacts": []
+        },
+        {
+          "travel_mm": 4.954882720537802,
+          "contacts": []
+        },
+        {
+          "travel_mm": 4.999577289851578,
+          "contacts": []
+        }
+      ]
+    },
+    "withdrawal": {
+      "waypoints": 13,
+      "validity_samples": 23,
+      "position_error_mm": 4.1375126358629284e-07,
+      "orientation_error_deg": 8.342628068442382e-06,
+      "trajectory_duration_s": 1.11378461,
+      "fraction": 1.0
+    }
+  },
+  "junction_world_m": [
+    0.44999999999999996,
+    -0.37,
+    1.45
+  ],
+  "cut_world_m": [
+    0.4498236818701847,
+    -0.3701763181298153,
+    1.455994816413719
+  ],
+  "shoot_offset_mm": 6.0,
+  "scene_stump_length_mm": 6.0,
+  "open_rad": 0.3009,
+  "closed_rad": 1.0,
+  "world_before": {
+    "citrus_S01": 1,
+    "citrus_S02": 1,
+    "citrus_S03": 1,
+    "citrus_S04": 1,
+    "citrus_S05": 1,
+    "citrus_S06": 1,
+    "citrus_S07": 1,
+    "citrus_S08": 1,
+    "citrus_static": 103
+  },
+  "world_after": {
+    "citrus_S01_stump": 1,
+    "citrus_S02": 1,
+    "citrus_S03": 1,
+    "citrus_S04": 1,
+    "citrus_S05": 1,
+    "citrus_S06": 1,
+    "citrus_S07": 1,
+    "citrus_S08": 1,
+    "citrus_static": 103
+  },
+  "replay_world_after": {
+    "citrus_S01_stump": 1,
+    "citrus_S02": 1,
+    "citrus_S03": 1,
+    "citrus_S04": 1,
+    "citrus_S05": 1,
+    "citrus_S06": 1,
+    "citrus_S07": 1,
+    "citrus_S08": 1,
+    "citrus_static": 103
+  }
+}

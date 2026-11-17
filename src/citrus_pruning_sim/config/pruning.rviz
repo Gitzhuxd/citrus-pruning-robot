@@ -1,0 +1,73 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Background Color: 241; 244; 240
+    Fixed Frame: world
+    Frame Rate: 30
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Ground grid
+      Enabled: true
+      Alpha: 0.35
+      Cell Size: 0.25
+      Plane Cell Count: 16
+      Color: 160; 169; 160
+      Reference Frame: <Fixed Frame>
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Citrus tree and cut targets
+      Enabled: true
+      Topic:
+        Value: /citrus/markers
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Depth: 1
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Collision cylinders - leaves excluded
+      Enabled: false
+      Topic:
+        Value: /citrus/collision
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Depth: 1
+    - Class: rviz_default_plugins/Marker
+      Name: Scan centers reference - enable show_scan at launch
+      Enabled: false
+      Topic:
+        Value: /citrus/reference
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Depth: 1
+    - Class: rviz_default_plugins/Axes
+      Name: Tree base axes
+      Enabled: true
+      Reference Frame: tree_base
+      Length: 0.25
+      Radius: 0.008
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Name: Current View
+      Target Frame: tree_base
+      Distance: 3.4
+      Pitch: 0.32
+      Yaw: 0.85
+      Focal Point:
+        X: 0.0
+        Y: 0.0
+        Z: 0.9
+      Near Clip Distance: 0.01
+Window Geometry:
+  Width: 1400
+  Height: 900
