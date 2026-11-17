@@ -17,3 +17,9 @@ __pycache__/
 # 系统文件
 .DS_Store
 Thumbs.db
+
+# Local experiment inputs and generated task results
+/.import/
+/results/*
+!/results/README.md
+!/results/COLCON_IGNORE

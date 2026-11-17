@@ -127,6 +127,13 @@ def generate_launch_description():
     moveit = MoveItConfigsBuilder(
         "aubo_i5_scissors_robot", package_name=CONFIG_PACKAGE
     ).to_moveit_configs()
+    # Use the stock planner for daily runs. Historical experiments supply their own capture launch.
+    ompl = moveit.planning_pipelines["ompl"]
+    ompl["planning_plugin"] = "ompl_interface/OMPLPlanner"
+    ompl["request_adapters"] = " ".join(
+        adapter for adapter in ompl["request_adapters"].split()
+        if adapter != "aubo_ompl_capture/CaptureResult"
+    )
     # The rigid lower deck touches the chassis at z=0.430 m by design.
     semantic = ET.fromstring(moveit.robot_description_semantic["robot_description_semantic"])
     ET.SubElement(semantic, "disable_collisions", link1="car_base_link",

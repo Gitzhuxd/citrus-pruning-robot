@@ -21,3 +21,23 @@ All historical experiment directories at the workspace root retain their origina
    - Use `run_formal.sh` / `run_closure_comparison.sh` / `run_s07_wrap.sh` inside each directory (they source `../install/setup.bash` then `install/local_setup.bash`).
 4. **`pruning_seeded_s07_v1/`** (Seeded OMPL RRT S07 comparison):
    - Uses its own `install/local_setup.bash` (overriding `aubo_ompl_capture` with `CITRUS_OMPL_SEED` support) and `run_batch.py` in `ROS_DOMAIN_ID=98`.
+
+## Ubuntu S01 smoke test
+
+The desktop-source import is the parent of the native-planner change. Build the
+two citrus packages over the existing AUBO installation:
+
+```bash
+source /opt/ros/humble/setup.bash
+source ~/aubo_ws/install/local_setup.bash
+colcon build --base-paths src/citrus_pruning_sim src/citrus_pruning_task --symlink-install
+source install/local_setup.bash
+```
+
+In two terminals with the same unused local simulation domain in 91–99, start
+`ros2 launch citrus_pruning_task simulation.launch.py rviz:=false`, then run
+`python3 experiments/s01_baseline/probe_s01.py results/s01_smoke_new` from the
+workspace root. The probe plans from scratch twice, checks the first replay's
+scene update, resets the scene, and verifies the second fresh plan without
+replay. It checks the effective planner is native OMPL; use the separate legacy
+launch for capture and seeded comparisons.
