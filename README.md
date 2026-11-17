@@ -11,233 +11,108 @@
 
 <!-- ![机器人整机模型](docs/images/robot-overview.png) -->
 
-| 建议截图 | 建议文件名 | 截图内容 |
-| --- | --- | --- |
-| 整机模型 | `robot-overview.png` | RViz 中显示完整机器人，尽量使用清晰的斜侧视角 |
-| 末端结构 | `end-effector.png` | 放大展示转接板、剪刀及相机安装关系 |
-| 运动规划 | `motion-planning.png` | 展示目标姿态、障碍物及规划轨迹 |
-| RRT 可视化 | `rrt-visualization.png` | 展示规划树、最终路径和 RViz 面板；功能验证后补充 |
+## 项目功能
 
-## 目录
+- **柑橘树场景**。参考三维高斯重建结果建立简化树模型，标注 `S01` 到 `S08` 共 8 个剪切点。111 段枝干用圆柱表示碰撞几何，376 个叶片实例用于外观显示。树的位置与朝向可以通过 launch 参数设置。
+- **S01 剪切仿真**。从 `home` 出发，使用 OMPL 基础 RRT 到达预剪切位姿，随后依次验证进刀、闭刀、剪后场景更新和撤离。默认保留 6 mm 短桩，需要时先沿枝条轴向脱离，再闭刀撤离。
+- **OMPL 规划过程记录**。在原 MoveIt 演示中，对单次基础 RRT 规划获取探索树、原始路径和经 MoveIt 处理的路径。RViz 使用剪刀 TCP 的正运动学结果，将关节空间中的节点投影到三维场景。
 
-- [项目背景](#项目背景)
-- [系统组成](#系统组成)
-- [开发环境](#开发环境)
-- [功能包说明](#功能包说明)
-- [整机装配与坐标关系](#整机装配与坐标关系)
-- [下载与编译](#下载与编译)
-- [模型与规划启动](#模型与规划启动)
-- [RRT 算法与可视化](#rrt-算法与可视化)
-- [实验记录](#实验记录)
-- [后续工作](#后续工作)
-- [第三方依赖与许可](#第三方依赖与许可)
+当前已在 Ubuntu 22.04 上验证 S01 的重新规划、仿真回放和场景复位。剪切用树模型和 MoveIt 碰撞体的变化表示，当前验证范围为仿真。
 
-## 项目背景
-
-本项目面向柑橘新梢摘心作业。作业空间包含枝条、叶片等障碍物，需要在满足剪切要求的前提下，使机械臂携带电动剪刀到达目标位置，并完成接近、剪切和撤离动作。
-
-研究重点包括：
-
-- 建立履带平台、AUBO i5、转接板、剪刀和深度相机的统一机器人模型。
-- 根据剪切点位置、枝条方向和剪刀几何关系构造末端目标姿态。
-- 利用 MoveIt 2 与 OMPL 进行机械臂运动规划和碰撞检查。
-- 开发 RRT 算法及可视化工具，辅助观察采样、树扩展和路径生成过程。
-- 为后续候选剪切姿态选择、规划策略对比和实机验证建立实验基础。
-
-当前开发以仿真和规划验证为主；真实机械臂、相机数据及剪刀控制的联调结果按实际完成情况补充。
-
-## 系统组成
-
-| 组成部分 | 配置或用途 |
-| --- | --- |
-| 机械臂 | AUBO i5，六自由度机械臂 |
-| 移动平台 | 履带底盘，作为机械臂安装平台 |
-| 转接板 | 连接机械臂末端与作业工具 |
-| 末端执行器 | 电动剪刀，用于新梢剪切 |
-| 深度相机 | Orbbec Gemini 435Le，用于后续图像、深度与点云接入 |
-| 规划框架 | MoveIt 2 与 OMPL |
-| 可视化工具 | RViz2、RRT 可视化节点与面板插件 |
-
-**相机变更说明：** 早期版本使用 Intel RealSense D435i，当前模型更新为 Gemini 435Le。历史 RealSense 相关源码或配置可能仍然保留；存在相关目录不代表当前启动文件会启用旧相机。
-
-## 开发环境
-
-| 项目 | 开发环境 |
-| --- | --- |
-| 操作系统 | Ubuntu 22.04 |
-| ROS | ROS 2 Humble |
-| 运动规划 | MoveIt 2、OMPL |
-| 可视化 | RViz2 |
-| 开发语言 | Python、C++ |
-| 机器人描述 | URDF、Xacro、SRDF |
-| 工作空间 | `~/aubo_ws` |
-| 构建工具 | colcon |
-
-本文启动示例面向模型显示与规划验证。Gazebo 和实机运行所需的启动参数、控制器及依赖应按对应功能另行配置。
-
-## 功能包说明
-
-以下列出项目自定义功能包；第三方驱动目录不在此表中逐一展开。
+## 工作区结构
 
 | 路径 | 职责 |
 | --- | --- |
-| `src/aubo_i5_scissors_description/` | 机器人整机模型、Xacro 装配、网格资源及模型显示启动文件 |
-| `src/aubo_i5_scissors_moveit_config/` | MoveIt 配置、SRDF、规划器配置及规划启动文件 |
-| `src/aubo_rrt_interfaces/` | RRT 相关 ROS 消息、服务和动作接口 |
-| `src/aubo_rrt_python/` | Python RRT 算法实现与 ROS 节点 |
-| `src/aubo_rrt_visualizer/` | C++ RRT 可视化 |
-| `src/aubo_rrt_panel/` | RViz 面板插件 |
-| `src/aubo_ompl_capture/` | 面向真实 OMPL RRT 规划树的捕获功能 |
+| [`src/citrus_pruning_sim`](src/citrus_pruning_sim/) | 果树几何、静态 URDF、剪切点、剪切和复位服务，以及 MoveIt 场景同步 |
+| [`src/citrus_pruning_task`](src/citrus_pruning_task/) | S01 任务节点、端到端仿真启动文件和运行说明 |
+| [`src/aubo_i5_scissors_description`](src/aubo_i5_scissors_description/) | 履带底盘、机械臂、剪刀和相机的 URDF/Xacro 装配与网格资源 |
+| [`src/aubo_i5_scissors_moveit_config`](src/aubo_i5_scissors_moveit_config/) | SRDF、运动学、关节约束、规划器及 MoveIt 启动配置 |
+| [`src/aubo_ompl_capture`](src/aubo_ompl_capture/) | 采集同一次 OMPL RRT 规划的探索树和路径 |
+| `src/aubo_rrt_*` | 自编 RRT、演示节点、ROS 接口和 RViz 面板 |
+| [`experiments`](experiments/README.md) | 历史实验索引和各轮复现所需的 ROS 环境 |
+| `results/` | 本地运行生成的 JSON、轨迹和日志，由 Git 忽略 |
 
-各包的具体可执行程序、话题、服务和参数，以包内源码与启动文件为准。尚未验证的功能不作为已完成能力或实验结论。
+整机装配入口是 `robot_core.xacro`。机械臂规划组为 `aubo_arm`，剪刀工具坐标系为 `scissor_tcp`。仿真用 `world` 作为固定坐标系，果树几何以 `tree_base` 为参考。 [整机装配源码](src/aubo_i5_scissors_description/urdf/robot_core.xacro)
 
-## 整机装配与坐标关系
+## 快速开始
 
-整机装配入口：
+### 构建与加载
 
-```text
-src/aubo_i5_scissors_description/urdf/robot_core.xacro
-```
-
-整机由履带平台承载 AUBO i5，机械臂末端连接转接板，剪刀和相机分别安装在转接板上。
-
-| 父部件或参考坐标系 | 子部件或连接坐标系 | 说明 |
-| --- | --- | --- |
-| 履带平台 | AUBO i5 `base_link` | 机械臂固定在底盘安装位置；中间安装坐标系以 Xacro 为准 |
-| AUBO i5 `base_link` | AUBO `ee_link` | 经机械臂各关节及连杆连接，并非直接固定连接 |
-| `ee_link` | 转接板 `zhuanjie_link` | 末端转接板固定连接 |
-| `zhuanjie_link` | 剪刀 `scissor_base_link` | 剪刀安装连接 |
-| `zhuanjie_link` | Gemini 435Le `camera_screw_frame` | 相机安装参考连接，内部坐标系由相机描述文件定义 |
-
-上述表格概括装配关系，不代替完整 TF 树。履带平台可能使用 `car_` 前缀，底盘根坐标系、机械臂安装坐标系及相机内部坐标系应以展开后的 URDF 为准。
-
-修改相机、转接板或剪刀后，需要检查安装位姿、碰撞几何、SRDF 中的碰撞排除关系和规划起始状态。相机外观模型替换与真实相机驱动启动是两项独立配置。
-
-<!-- ![末端结构与相机安装](docs/images/end-effector.png) -->
-
-## 下载与编译
-
-### 1. 获取源码
-
-在主目录下执行以下命令；目标 `~/aubo_ws` 应不存在或为空：
-
-```bash
-cd ~
-git clone https://github.com/Gitzhuxd/citrus-pruning-robot.git aubo_ws
-```
-
-如果下载的版本仍使用 Git 子模块，需要在仓库根目录补充执行：
-
-```bash
-cd ~/aubo_ws
-git submodule update --init --recursive
-```
-
-若第三方驱动已经转换为普通源码目录，则无需初始化子模块。转换状态以实际提交的仓库内容为准。
-
-### 2. 加载 ROS 环境并安装依赖
-
-在已经安装 ROS 2 Humble 和初始化 rosdep 的环境中执行：
+使用 Ubuntu 22.04、ROS 2 Humble、MoveIt 2 和 colcon。已有 AUBO 工作区时，可用其已安装的机器人模型与规划配置，只构建两个柑橘功能包。在本仓库根目录执行以下命令。
 
 ```bash
 source /opt/ros/humble/setup.bash
-cd ~/aubo_ws
+source ~/aubo_ws/install/local_setup.bash
+colcon build --base-paths src --symlink-install \
+  --packages-select citrus_pruning_sim citrus_pruning_task
+source install/local_setup.bash
+```
+
+如果从源码搭建新环境，先准备 ROS 2 Humble 和 rosdep，再从仓库根目录安装依赖并构建。相机或驱动依赖按对应 SDK 说明安装。
+
+```bash
+source /opt/ros/humble/setup.bash
 rosdep install --from-paths src --ignore-src --rosdistro humble -r -y
+colcon build --base-paths src --symlink-install --packages-up-to citrus_pruning_task
+source install/setup.bash
 ```
 
-如遇到无法解析的 rosdep 键或第三方 SDK 依赖，应根据错误和对应驱动文档补齐后再编译。
+此前的运行验收使用了已有 AUBO 工作区作为依赖。两个入口的详细操作和启动问题处理见包内说明。 [S01 仿真使用说明](src/citrus_pruning_task/README.md)
 
-### 3. 编译并加载工作空间
+### 启动 S01 仿真
+
+打开两个终端，进入本仓库根目录，并按所用的构建方式加载 ROS 和工作区。两个终端使用同一个本机仿真域。
 
 ```bash
-cd ~/aubo_ws
-colcon build --symlink-install
-source ~/aubo_ws/install/setup.bash
+export ROS_DOMAIN_ID=99 ROS_LOCALHOST_ONLY=1
 ```
 
-每个新终端运行项目之前，都需要先加载 ROS 环境和工作空间环境。
-
-## 模型与规划启动
-
-### 显示整机模型
+**终端一**在 Ubuntu 图形桌面启动仿真。通过 SSH 无窗口运行时，改用 `rviz:=false`。
 
 ```bash
-source /opt/ros/humble/setup.bash
-source ~/aubo_ws/install/setup.bash
-ros2 launch aubo_i5_scissors_description display_robot_core.launch.py
+ros2 launch citrus_pruning_task simulation.launch.py rviz:=true
 ```
 
-检查底盘、机械臂和末端部件是否完整加载，网格资源路径是否正确，坐标关系是否符合实际装配。
-
-### 启动 MoveIt 规划演示
+**终端二**等到 MoveIt 输出 `You can start planning now!` 且树场景就绪后，运行规划与回放。无窗口检查规划结果时，可省略 `--play`。
 
 ```bash
-source /opt/ros/humble/setup.bash
-source ~/aubo_ws/install/setup.bash
+ros2 run citrus_pruning_task cut_s01 --play \
+  --output "$PWD/results/s01_$(date +%Y%m%d_%H%M%S_%N)"
+```
+
+`result.json` 记录任务是否成功、各阶段的校验和剪后碰撞场景。`stages.transit.reused` 为 `false` 时，转移路径来自本次规划。`display_trajectory.cdr` 保存可回放的轨迹。带 `--play` 的运行结束后，在开启下一轮前恢复树场景。
+
+```bash
+ros2 service call /citrus/reset std_srvs/srv/Trigger '{}'
+```
+
+## 在 RViz 查看 OMPL RRT 探索树
+
+采集使用原 AUBO MoveIt 演示入口。在加载 AUBO 工作区的图形终端中运行以下命令。如果 RViz 配置启用了 `CitrusGaussian`，请加载对应的 RVizSplat 插件并按本机路径选择 PLY 文件。
+
+```bash
 ros2 launch aubo_i5_scissors_moveit_config demo.launch.py
 ```
 
-在 RViz 中检查规划组、起始状态和目标状态，再进行规划。该命令用于规划演示，不代表已接通真实机械臂控制。
+在 **MotionPlanning** 面板选 `aubo_arm`、`RRTkConfigDefault`，将 **Planning Attempts** 设为 `1`，点击 **Plan**。在 **OMPL RRT Same Plan** 显示项中，蓝点和灰边为探索树，黄色为原始路径，洋红为 MoveIt 处理后的路径。
 
-### 单独检查 Xacro 展开
-
-```bash
-ros2 run xacro xacro \
-  ~/aubo_ws/src/aubo_i5_scissors_description/urdf/robot_core.xacro \
-  -o /tmp/robot_core_test.urdf
-```
-
-Xacro 展开成功说明描述文件可被处理，仍需进一步验证网格加载、TF 和碰撞模型。
-
-<!-- ![MoveIt 运动规划](docs/images/motion-planning.png) -->
-
-## RRT 算法与可视化
-
-项目包含两类相关工具：
-
-| 路线 | 涉及功能包 | 用途 |
-| --- | --- | --- |
-| 自定义 RRT 实现与展示 | `aubo_rrt_python`、`aubo_rrt_interfaces`、`aubo_rrt_visualizer`、`aubo_rrt_panel` | 算法开发、消息交互和规划过程展示 |
-| OMPL 规划树捕获 | `aubo_ompl_capture` | 捕获底层实际规划过程中的树结构，辅助规划分析 |
-
-自定义 RRT 的演示树和 MoveIt/OMPL 实际规划树应分别记录来源，避免在实验分析中混用。
-
-> 待补充：各节点的启动命令、RViz 面板加载方法、话题名称、消息类型及一次完整实验示例。
-
-<!-- ![RRT 规划树及控制面板](docs/images/rrt-visualization.png) -->
-
-## 实验记录
-
-每次实验建议记录 Git 提交编号、机器人模型版本、场景、起始状态、目标约束、规划器及时间预算。
-
-| 指标 | 记录内容 |
+| 话题 | 内容 |
 | --- | --- |
-| 规划成功率 | 成功任务数 / 总任务数，并记录失败判定标准 |
-| 规划耗时 | 明确计时是否包含 IK、碰撞检查、路径简化和轨迹时间参数化 |
-| 路径长度 | 明确关节空间或笛卡尔空间的计算方法与单位 |
-| 路径平滑性 | 使用明确、可重复计算的指标 |
-| 规划树规模 | 明确节点数、边数和统计阶段 |
-| 随机性 | 记录重复次数；可控时记录随机种子 |
+| `/rrt_ompl/markers` | 树节点、树边和路径的 RViz 标记 |
+| `/rrt_ompl/raw_path` | 同次规划的原始轨迹 |
+| `/rrt_ompl/final_path` | MoveIt 处理后的轨迹 |
+| `/rrt_ompl/status` | 采集状态和运行编号 |
 
-> 待补充：测试场景截图、实验参数、重复实验结果和对照方法。本文不预填未经验证的数据。
-><img width="2558" height="1351" alt="d98a40c7e51c91767f693e86f9daaa04" src="https://github.com/user-attachments/assets/b14f3746-0a0f-4186-848c-0f86c3585485" />
+采集程序按运行编号保存记录到 `~/aubo_ws/rrt_results/ompl_same_plan/`。探索树是一次规划结束后的快照。S01 仿真入口沿用基础 RRT，并把任务输出独立写入 `results/`。 [采集插件源码](src/aubo_ompl_capture/)
 
-> 
+![RViz 规划与可视化记录](https://github.com/user-attachments/assets/b14f3746-0a0f-4186-848c-0f86c3585485)
 
-## 后续工作
+## 实验与后续工作
 
-- 验证 Gemini 435Le 与转接板更新后的整机模型及自碰撞关系。
-- 完善“预备点 → 剪切点 → 撤离点”的连续作业流程。
-- 接入相机图像、深度和点云，建立环境碰撞表示。
-- 完善候选剪切姿态生成与姿态—路径联合决策实验。
-- 整理 RRT 可视化和 OMPL 规划树捕获工具的运行文档。
-- 在仿真验证后开展机械臂与电动剪刀实机联调。
+历史实验涵盖 S01 进刀方向、闭刀碰撞和短桩撤离，以及 S07 的等价关节角目标对照。复现时核对场景版本、起点、候选目标、规划预算和随机种子，并保留各阶段的失败原因。 [实验目录与复现索引](experiments/README.md)
+
+后续将把同一套场景扩展到多个剪切点，比较候选姿态的排序、筛选和规划预算分配。实机阶段将验证相机与剪刀的安装标定、剪刀关节行程及作业中的碰撞模型。
 
 ## 第三方依赖与许可
 
-项目涉及 AUBO、Orbbec、RealSense、ROS 2、MoveIt 2 和 OMPL 等第三方软件。第三方源码、模型及资源按各自的许可证使用，保留对应的版权声明和许可文件。
-
-- [Orbbec ROS 2 驱动](https://github.com/orbbec/OrbbecSDK_ROS2)
-- [项目仓库](https://github.com/Gitzhuxd/citrus-pruning-robot)
-
-项目自研代码的许可证尚待仓库维护者明确；引用第三方代码的许可证不等于已为整个项目指定同一许可证。
+AUBO、Orbbec、RealSense、ROS 2、MoveIt 2 和 OMPL 的源码与资源遵循各自的许可及版权声明。子包声明见各自的 `package.xml`。 [Orbbec ROS 2 驱动](https://github.com/orbbec/OrbbecSDK_ROS2)
