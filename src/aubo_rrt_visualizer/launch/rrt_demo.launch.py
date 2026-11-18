@@ -17,14 +17,12 @@ def generate_launch_description():
         "aubo_i5_scissors_robot", package_name=config_package
     ).to_moveit_configs()
 
+    config_dir = get_package_share_directory(config_package)
     arguments = [
         DeclareLaunchArgument("start_scene", default_value="true"),
         DeclareLaunchArgument(
             "rviz_config",
-            default_value=(
-                "/home/zhuxd/aubo_ws/src/"
-                "aubo_i5_scissors_moveit_config/config/moveit.rviz"
-            ),
+            default_value=os.path.join(config_dir, "config", "moveit.rviz"),
         ),
         DeclareLaunchArgument("start_state", default_value="home"),
         DeclareLaunchArgument("goal_state", default_value="pose1"),
@@ -33,15 +31,13 @@ def generate_launch_description():
         DeclareLaunchArgument("seed", default_value="42"),
         DeclareLaunchArgument(
             "output_directory",
-            default_value=os.path.expanduser("~/aubo_ws/rrt_results"),
+            default_value=os.path.abspath("results/rrt/visualizer"),
         ),
     ]
 
     scene = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            os.path.join(
-                get_package_share_directory(config_package), "launch", "demo.launch.py"
-            )
+            os.path.join(config_dir, "launch", "demo.launch.py")
         ),
         condition=IfCondition(LaunchConfiguration("start_scene")),
         launch_arguments={"rviz_config": LaunchConfiguration("rviz_config")}.items(),

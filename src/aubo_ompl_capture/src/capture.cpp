@@ -15,7 +15,6 @@
 #include <atomic>
 #include <chrono>
 #include <cmath>
-#include <cstdlib>
 #include <filesystem>
 #include <fstream>
 #include <iomanip>
@@ -255,9 +254,7 @@ public:
     raw_ = node->create_publisher<Display>("/rrt_ompl/raw_path", qos);
     final_ = node->create_publisher<Display>("/rrt_ompl/final_path", qos);
     status_ = node->create_publisher<std_msgs::msg::String>("/rrt_ompl/status", qos);
-    const char* home = std::getenv("HOME");
-    if (!home) throw std::runtime_error("HOME is missing");
-    output_ = fs::path(home) / "aubo_ws/rrt_results/ompl_same_plan";
+    output_ = fs::current_path() / "results" / "rrt" / "ompl_same_plan";
   }
   std::string getDescription() const override { return "Capture same-call OMPL RRT tree and final path"; }
   bool adaptAndPlan(const PlannerFn& planner, const planning_scene::PlanningSceneConstPtr& scene,

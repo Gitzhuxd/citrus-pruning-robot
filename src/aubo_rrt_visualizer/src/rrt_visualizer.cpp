@@ -18,7 +18,6 @@
 #include <algorithm>
 #include <chrono>
 #include <cmath>
-#include <cstdlib>
 #include <ctime>
 #include <filesystem>
 #include <fstream>
@@ -141,8 +140,8 @@ public:
       return result;
     };
 
-    const auto home = std::string(std::getenv("HOME"));
-    const fs::path base = parameter<std::string>("output_directory", home + "/aubo_ws/rrt_results");
+    const fs::path base = parameter<std::string>(
+        "output_directory", (fs::current_path() / "results" / "rrt" / "visualizer").string());
     const auto now = std::time(nullptr);
     std::ostringstream name;
     name << std::put_time(std::localtime(&now), "%Y%m%d-%H%M%S") << '-' << getpid();
@@ -271,7 +270,7 @@ public:
       status.text = "RRT: no exact solution";
       markers_.markers.push_back(std::move(status));
     }
-    const fs::path rviz = parameter<std::string>("rviz_config", home + "/aubo_ws/src/aubo_i5_scissors_moveit_config/config/moveit.rviz");
+    const fs::path rviz = parameter<std::string>("rviz_config", "");
     if (fs::is_regular_file(rviz)) fs::copy_file(rviz, directory / "scene.rviz");
     if (exact && !response.trajectory_.empty())
     {

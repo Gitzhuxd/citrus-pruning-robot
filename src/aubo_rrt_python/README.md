@@ -1,35 +1,22 @@
 # AUBO i5 Python RRT 仿真演示
 
-已直接安装到 `/home/zhuxd/aubo_ws/src/aubo_rrt_python`。
-使用 ROS 2 Humble 和现有 MoveIt 仿真服务。
-
-## 运行
-
-若原来的 demo 正在运行，先在它的启动终端按 Ctrl+C。
-在 **Ubuntu 图形桌面中打开的终端**启动原来的仿真：
+使用 ROS 2 Humble 和 MoveIt 仿真服务。先按项目 README 构建。在本项目根目录的 Ubuntu 图形终端运行：
 
 ```bash
 source /opt/ros/humble/setup.bash
-source ~/aubo_ws/install/setup.bash
-source ~/rvizsplat_humble_ws/install/local_setup.bash
+source install/local_setup.bash
 ros2 launch aubo_i5_scissors_moveit_config demo.launch.py
 ```
 
-普通 Windows SSH 终端没有自动连接 Ubuntu 图形桌面，不能用它直接打开 RViz。
-Python 节点本身没有窗口，可在 Ubuntu 或 SSH 的另一终端运行：
+在同一工作区的另一终端加载相同环境后，运行：
 
 ```bash
-source /opt/ros/humble/setup.bash
-source ~/aubo_ws/install/setup.bash
 ros2 run aubo_rrt_python rrt_demo
 ```
 
-该包已经编译；更改 `.py` 文件后保存并重新运行即可。
-不要同时运行多个同名 Python 节点。
-
 ## 预期画面
 
-原机械臂、Gaussian 果树变换及相机视角保留，配置中新增 `PythonRRT` 显示。
+RViz 配置中的 `PythonRRT` 显示机械臂的搜索结果。
 绿色球为起点 home 的剪刀 TCP，红色球为目标 pose1 的 TCP。
 蓝色小球和灰蓝线表示真实 RRT 树节点、边的 TCP 投影。
 搜索结束后按节点接受顺序回放，每个节点间隔 0.08 秒。
@@ -45,7 +32,7 @@ MarkerArray 使用 `/rrt_python/markers`，Reliable、Transient Local、depth 1�
 若 RViz 已经打开，可使用 File → Open Config 打开下面这个文件来加载新增显示：
 
 ```text
-/home/zhuxd/aubo_ws/src/aubo_i5_scissors_moveit_config/config/moveit.rviz
+src/aubo_i5_scissors_moveit_config/config/moveit.rviz
 ```
 
 ## 算法与数据
@@ -63,7 +50,7 @@ MarkerArray 使用 `/rrt_python/markers`，Reliable、Transient Local、depth 1�
 每次运行自动创建目录：
 
 ```text
-/home/zhuxd/aubo_ws/rrt_results/python/日期_时间/
+results/rrt/python/日期_时间/
   tree.csv       节点编号、父节点、六轴关节角、TCP 坐标
   path.csv       最终细化路径的关节角和 TCP 坐标
   summary.json   随机种子、参数、节点数、检查次数、路径长度及耗时
@@ -100,15 +87,10 @@ ros2 run aubo_rrt_python rrt_demo --ros-args -p replay_step:=0.0
 核心算法测试：
 
 ```bash
-cd ~/aubo_ws/src/aubo_rrt_python
+cd src/aubo_rrt_python
 python3 -m unittest discover -s test -p test_rrt_core.py -v
 ```
 
 本次测试：11 项核心测试通过；默认 home → pose1 为 47 次迭代、49 个树节点、
 15 个路径节点、145 个细化路径状态。独立联调进一步检查了全部树边的 532 个状态，
 以及 145 个路径坐标的 FK 一致性；真实回放和晚订阅完整消息检查通过。
-验收数据位于 `/home/zhuxd/aubo_ws/rrt_results/python_verification/`。
-
-修改前备份：
-`/home/zhuxd/aubo_ws/rrt_setup_backups/python_rrt_20261023_225132/`。
-备份含 `COLCON_IGNORE`，不会被 colcon 识别为重复包。

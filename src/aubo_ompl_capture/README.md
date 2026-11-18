@@ -4,21 +4,12 @@
 
 ## 运行方式
 
-保留原启动入口。在 Ubuntu 图形桌面终端运行：
+在本项目根目录打开 Ubuntu 图形终端。构建和加载步骤见项目 README。
 
 ```bash
 source /opt/ros/humble/setup.bash
-source ~/aubo_ws/install/setup.bash
-source ~/rvizsplat_humble_ws/install/local_setup.bash
+source install/local_setup.bash
 ros2 launch aubo_i5_scissors_moveit_config demo.launch.py
-```
-
-本次验收发现根分区已满，而 `/home` 有空间。在根分区清理之前，启动前在同一终端增加以下两行，
-让 ROS launch 把临时参数文件放到工程目录（无需修改启动文件）：
-
-```bash
-mkdir -p ~/aubo_ws/tools/ompl_capture_tmp
-export TMPDIR=~/aubo_ws/tools/ompl_capture_tmp
 ```
 
 RViz 必须从已登录的 Ubuntu 图形桌面启动；普通 SSH 终端缺少显示环境，不能仅靠设置 TMPDIR 解决。
@@ -57,7 +48,7 @@ initialize、配置、getPlanningContext、solve、terminate。没有实现第�
 每次运行保存到：
 
 ```text
-/home/zhuxd/aubo_ws/rrt_results/ompl_same_plan/<run_id>/
+results/rrt/ompl_same_plan/<run_id>/
 ```
 
 其中保存节点、边、原始和处理后路径 CSV，以及规划请求、实际上下文请求、场景和结果的 CDR 消息。
@@ -91,21 +82,6 @@ CDR 使用本机 moveit_msgs 类型读取，可用于后续验证；不同消息
   通过当前 MoveIt 场景的有效性检查。此结果不代表已添加果树碰撞体。
 - 在发布后新建订阅者，仍能收到完整树和路径；每个快照以 DELETEALL 清除上一棵树。
 - `attempts=2` 和 `RRTConnectkConfigDefault` 均正常返回规划结果，同时跳过采集并清除旧树。
-
-验收记录：`/home/zhuxd/aubo_ws/rrt_results/ompl_capture_verification/` 下的 `action_*.json`、
-`saved_check_*.json`、`demo.log` 和 `completed.png`。
-验证脚本 `verify_capture.py` 仅发出 plan_only 请求；`check_saved.py` 检查后加入的订阅者、FK 和树边。
-
-## 恢复原配置
-
-修改前备份位于：
-
-```text
-/home/zhuxd/aubo_ws/rrt_setup_backups/ompl_same_plan_20261025_231329/
-```
-
-恢复备份中的配置包 package.xml、config/ompl_planning.yaml 和 config/moveit.rviz 即可退出此采集入口。
-该备份已放置 COLCON_IGNORE，不参与工作空间包扫描。
 
 ## 接口依据
 

@@ -398,45 +398,6 @@ Visualization Manager:
         Show Robot Visual: true
       Value: true
       Velocity_Scaling_Factor: 0.1
-    - Advanced:
-        Alpha Threshold: 0.05000000074505806
-        Clip Box:
-          Clip Max:
-            X: 10
-            Y: 10
-            Z: 10
-          Clip Min:
-            X: -10
-            Y: -10
-            Z: -10
-          Value: false
-        SH Degree: 1
-        Scene Capture:
-          Capture: false
-          Save Path: /tmp/gsplat_capture.png
-        Sort Backend: CPU
-        WBOIT:
-          Transparency Mode: Sorted
-          WBOIT Alpha Discard: 0.009999999776482582
-          WBOIT Weight Exponent: 2
-          WBOIT Weight Scale: 5
-      Class: gsplat_rviz_plugin/GsplatDisplay
-      Enabled: true
-      Name: CitrusGaussian
-      Source: PLY File
-      Splat File: /home/zhuxd/桌面/柑桔树_100cm_圆柱主干4cm_叶片避让.ply
-      Topic: ""
-      Transform:
-        Position (m):
-          X: 1
-          Y: 0
-          Z: 0
-        Rotation RPY (deg):
-          X: -90
-          Y: 0
-          Z: 0
-        Scale: 2
-      Value: true
     - Class: rviz_default_plugins/MarkerArray
       Enabled: true
       Name: RRTExploration

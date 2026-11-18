@@ -22,7 +22,8 @@ MODEL_HASH = "70fd014449358300987381e2385234799d0bfe00e6cbc9e918771e55702ab82f"
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--source", type=Path, required=True, help="Archived s07_wrap_paired/results.json")
+    parser.add_argument("--source", type=Path, default=Path(__file__).resolve().with_name("source_results.json"),
+                        help="Use a matching S07 source file instead of the bundled fixture")
     parser.add_argument("--candidate", choices=("raw_04", "wrapped_04"), required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--play", action="store_true", help="Play the verified simulated cut, then reset")

@@ -4,7 +4,7 @@ citrus_s01_task:
   ros__parameters:
     # Empty: <citrus_pruning_sim share>/data/tree_model.json (same file as every archived run)
     # model_path: ""
-    output_root: ""          # empty: ~/aubo_ws/results/s01 ; each round -> <output_root>/<YYYYmmdd_HHMMSS>/
+    output_root: ""          # empty: results/s01 in this workspace, then one folder per run
     offset_mm: -1.0          # < 0: use the stump length published by the scene (6 mm)
     play: true               # replay the round in RViz after all checks pass
     hold_at_cut_s: 1.0       # pause at the cut point during replay

@@ -27,12 +27,11 @@ from .s01_task import TaskConfig, execute
 
 
 def default_output_root():
-    # ~/aubo_ws/results/s01 when installed in ~/aubo_ws/install/citrus_pruning_task
     share = Path(get_package_share_directory("citrus_pruning_task"))
     for parent in share.parents:
         if (parent / "install").is_dir() and (parent / "src").is_dir():
             return parent / "results" / "s01"
-    return Path.home() / "aubo_ws" / "results" / "s01"
+    return Path.cwd() / "results" / "s01"
 
 
 class S01TaskNode(Node):

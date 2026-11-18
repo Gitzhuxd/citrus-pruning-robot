@@ -1,0 +1,4678 @@
+{
+  "config": {
+    "target": "S07",
+    "tree_xyz_world_m": [
+      1.093761543,
+      0.601040764,
+      0.0
+    ],
+    "tree_quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.9238795325088455,
+      -0.38268343237098346
+    ],
+    "cut_world_m": [
+      0.6160103757650781,
+      -0.0022441634289539036,
+      0.6938789988559358
+    ],
+    "neighbor": null,
+    "world_cylinders": {
+      "citrus_S01": 1,
+      "citrus_S02": 1,
+      "citrus_S03": 1,
+      "citrus_S04": 1,
+      "citrus_S05": 1,
+      "citrus_S06": 1,
+      "citrus_S07": 1,
+      "citrus_S08": 1,
+      "citrus_static": 103
+    },
+    "planner_id": "RRTkConfigDefault",
+    "budget_s": 8.0,
+    "angles_deg": [
+      -90
+    ],
+    "start_joints": {
+      "foreArm_joint": 0.0,
+      "shoulder_joint": 0.0,
+      "upperArm_joint": 0.0,
+      "wrist1_joint": 0.0,
+      "wrist2_joint": 0.0,
+      "wrist3_joint": 0.0,
+      "scissor_drive_joint": 0.3009,
+      "scissor_mimic_joint": -0.3009
+    },
+    "comparison": "saved_s07_ik_legal_wrap",
+    "conditional_diagnostic": true,
+    "scope": "All 12 once-row -90/+1 IK solutions, shared per pair; IK search excluded from 8 s budget.",
+    "source_results": "/home/zhuxd/aubo_ws/pruning_closure_screen_v1/formal_s07/results.json",
+    "source_sha256": "169e5a43757c7b5116a094db7ec368d987a2833f69dac728daf5c01141721413",
+    "source_trajectory_ids": [
+      "once_01",
+      "once_02",
+      "once_03",
+      "once_04",
+      "once_05",
+      "once_06",
+      "once_07",
+      "once_08",
+      "once_09",
+      "once_10",
+      "once_11",
+      "once_12"
+    ],
+    "urdf_sha256": "b6669361e36038ab5257d2a498560e02dfbba131e6f23e45f86e9c0d13361940",
+    "revolute_limits_rad": {
+      "foreArm_joint": [
+        -6.283185307179586,
+        6.283185307179586
+      ],
+      "shoulder_joint": [
+        -6.283185307179586,
+        6.283185307179586
+      ],
+      "upperArm_joint": [
+        -6.283185307179586,
+        6.283185307179586
+      ],
+      "wrist1_joint": [
+        -6.283185307179586,
+        6.283185307179586
+      ],
+      "wrist2_joint": [
+        -6.283185307179586,
+        6.283185307179586
+      ],
+      "wrist3_joint": [
+        -6.283185307179586,
+        6.283185307179586
+      ]
+    },
+    "limit_margin_rad": 0.0001,
+    "junction_world_m": [
+      0.6199999996126817,
+      -1.4609868870252285e-11,
+      0.69
+    ],
+    "closed_rad": 1.0,
+    "retained_stump_m": 0.006,
+    "normal_signs": [
+      1
+    ]
+  },
+  "trials": [
+    {
+      "success": false,
+      "elapsed_s": 1.7533979080035351,
+      "selected_angle_deg": null,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.00032131699845194817,
+            "pre_ik_validation": 0.0010486450046300888,
+            "screen_insertion": 0.02634423600102309,
+            "screen_withdrawal": 0.022586108010727912,
+            "screen_closure": 0.07858490600483492,
+            "transit": 1.6244650809967425
+          },
+          "success": false,
+          "pre_ik_joints": {
+            "foreArm_joint": -4.6381193425464335,
+            "shoulder_joint": -5.476409271814709,
+            "upperArm_joint": -1.1889092003573378,
+            "wrist1_joint": 4.193656371516588,
+            "wrist2_joint": 0.4327568117147136,
+            "wrist3_joint": -0.5560271394284647,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 8.426144612754042,
+          "wrap_turns": {
+            "foreArm_joint": 0,
+            "shoulder_joint": 0,
+            "upperArm_joint": 0,
+            "wrist1_joint": 0,
+            "wrist2_joint": 0,
+            "wrist3_joint": 0
+          },
+          "precut_pose_error": {
+            "position_m": 3.186176921738355e-06,
+            "orientation_rad": 9.62738870922856e-06
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": -4.749657126145973,
+            "shoulder_joint": -5.731154055325367,
+            "upperArm_joint": -1.201166767415488,
+            "wrist1_joint": 3.6523042249739333,
+            "wrist2_joint": 0.5425995615897147,
+            "wrist3_joint": -0.05858788105349199,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "retry_eligible": true,
+          "failure_stage": "transit",
+          "failure": "transit: MoveIt code -6"
+        }
+      ],
+      "stages": null,
+      "phase_seconds": {
+        "joint_representation": 0.00032131699845194817,
+        "pre_ik_validation": 0.0010486450046300888,
+        "screen_insertion": 0.02634423600102309,
+        "screen_withdrawal": 0.022586108010727912,
+        "screen_closure": 0.07858490600483492,
+        "transit": 1.6244650809967425
+      },
+      "trajectory_id": "raw_01",
+      "method": "raw",
+      "repetition": 1,
+      "source_trajectory_id": "once_01",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": -4.6381193425464335,
+        "shoulder_joint": -5.476409271814709,
+        "upperArm_joint": -1.1889092003573378,
+        "wrist1_joint": 4.193656371516588,
+        "wrist2_joint": 0.4327568117147136,
+        "wrist3_joint": -0.5560271394284647,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": false,
+      "elapsed_s": 0.21382108199759386,
+      "selected_angle_deg": null,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.0004670610069297254,
+            "pre_ik_validation": 0.0013918709883000702,
+            "screen_insertion": 0.033171652990859,
+            "screen_withdrawal": 0.029793788999086246,
+            "screen_closure": 0.07810565701220185,
+            "transit": 0.07082161799189635
+          },
+          "success": false,
+          "pre_ik_joints": {
+            "foreArm_joint": 1.6450659646331527,
+            "shoulder_joint": 0.8067760353648774,
+            "upperArm_joint": -1.1889092003573378,
+            "wrist1_joint": -2.0895289356629982,
+            "wrist2_joint": 0.4327568117147136,
+            "wrist3_joint": -0.5560271394284647,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 3.1037413707922292,
+          "wrap_turns": {
+            "foreArm_joint": 1,
+            "shoulder_joint": 1,
+            "upperArm_joint": 0,
+            "wrist1_joint": -1,
+            "wrist2_joint": 0,
+            "wrist3_joint": 0
+          },
+          "precut_pose_error": {
+            "position_m": 3.1861769215752265e-06,
+            "orientation_rad": 9.627388708812653e-06
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": 1.5335281810336139,
+            "shoulder_joint": 0.5520312518542201,
+            "upperArm_joint": -1.201166767415488,
+            "wrist1_joint": -2.630881082205653,
+            "wrist2_joint": 0.5425995615897147,
+            "wrist3_joint": -0.05858788105349211,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "retry_eligible": false,
+          "failure_stage": "transit",
+          "failure": "transit: MoveIt code -2"
+        }
+      ],
+      "stages": null,
+      "phase_seconds": {
+        "joint_representation": 0.0004670610069297254,
+        "pre_ik_validation": 0.0013918709883000702,
+        "screen_insertion": 0.033171652990859,
+        "screen_withdrawal": 0.029793788999086246,
+        "screen_closure": 0.07810565701220185,
+        "transit": 0.07082161799189635
+      },
+      "trajectory_id": "wrapped_01",
+      "method": "wrapped",
+      "repetition": 1,
+      "source_trajectory_id": "once_01",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": -4.6381193425464335,
+        "shoulder_joint": -5.476409271814709,
+        "upperArm_joint": -1.1889092003573378,
+        "wrist1_joint": 4.193656371516588,
+        "wrist2_joint": 0.4327568117147136,
+        "wrist3_joint": -0.5560271394284647,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": false,
+      "elapsed_s": 1.7679915379994782,
+      "selected_angle_deg": null,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.0003910910018021241,
+            "pre_ik_validation": 0.001032408996252343,
+            "screen_insertion": 0.029021356007433496,
+            "screen_withdrawal": 0.030522412998834625,
+            "screen_closure": 0.08178340899758041,
+            "transit": 1.6251892900036182
+          },
+          "success": false,
+          "pre_ik_joints": {
+            "foreArm_joint": 1.6450631556091864,
+            "shoulder_joint": 0.8067787968576923,
+            "upperArm_joint": -1.1889038423123006,
+            "wrist1_joint": -2.089515401289931,
+            "wrist2_joint": 0.43275993756922215,
+            "wrist3_joint": -0.5560483278903547,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 3.1037336673769786,
+          "wrap_turns": {
+            "foreArm_joint": 0,
+            "shoulder_joint": 1,
+            "upperArm_joint": -1,
+            "wrist1_joint": 0,
+            "wrist2_joint": 1,
+            "wrist3_joint": 0
+          },
+          "precut_pose_error": {
+            "position_m": 9.917135191405746e-07,
+            "orientation_rad": 2.4496009630323524e-06
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": 1.5335281810822943,
+            "shoulder_joint": 0.5520312518069987,
+            "upperArm_joint": -1.2011667674105642,
+            "wrist1_joint": -2.630881082346238,
+            "wrist2_joint": 0.5425995617778743,
+            "wrist3_joint": -0.05858788088464275,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "retry_eligible": true,
+          "failure_stage": "transit",
+          "failure": "transit: MoveIt code -6"
+        }
+      ],
+      "stages": null,
+      "phase_seconds": {
+        "joint_representation": 0.0003910910018021241,
+        "pre_ik_validation": 0.001032408996252343,
+        "screen_insertion": 0.029021356007433496,
+        "screen_withdrawal": 0.030522412998834625,
+        "screen_closure": 0.08178340899758041,
+        "transit": 1.6251892900036182
+      },
+      "trajectory_id": "wrapped_02",
+      "method": "wrapped",
+      "repetition": 2,
+      "source_trajectory_id": "once_02",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": 1.6450631556091864,
+        "shoulder_joint": -5.476406510321894,
+        "upperArm_joint": 5.094281464867286,
+        "wrist1_joint": -2.089515401289931,
+        "wrist2_joint": -5.850425369610364,
+        "wrist3_joint": -0.5560483278903547,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": false,
+      "elapsed_s": 1.7727831439988222,
+      "selected_angle_deg": null,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.0003350269980728626,
+            "pre_ik_validation": 0.0011916780058527365,
+            "screen_insertion": 0.02292324000154622,
+            "screen_withdrawal": 0.02356705899001099,
+            "screen_closure": 0.09530737799650524,
+            "transit": 1.6293949529936071
+          },
+          "success": false,
+          "pre_ik_joints": {
+            "foreArm_joint": 1.6450631556091864,
+            "shoulder_joint": -5.476406510321894,
+            "upperArm_joint": 5.094281464867286,
+            "wrist1_joint": -2.089515401289931,
+            "wrist2_joint": -5.850425369610364,
+            "wrist3_joint": -0.5560483278903547,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 9.876826719958556,
+          "wrap_turns": {
+            "foreArm_joint": 0,
+            "shoulder_joint": 0,
+            "upperArm_joint": 0,
+            "wrist1_joint": 0,
+            "wrist2_joint": 0,
+            "wrist3_joint": 0
+          },
+          "precut_pose_error": {
+            "position_m": 9.91713519326896e-07,
+            "orientation_rad": 2.449600963093199e-06
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": 1.533528181082295,
+            "shoulder_joint": -5.7311540553725875,
+            "upperArm_joint": 5.082018539769022,
+            "wrist1_joint": -2.6308810823462374,
+            "wrist2_joint": -5.740585745401712,
+            "wrist3_joint": -0.05858788088464272,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "retry_eligible": true,
+          "failure_stage": "transit",
+          "failure": "transit: MoveIt code -6"
+        }
+      ],
+      "stages": null,
+      "phase_seconds": {
+        "joint_representation": 0.0003350269980728626,
+        "pre_ik_validation": 0.0011916780058527365,
+        "screen_insertion": 0.02292324000154622,
+        "screen_withdrawal": 0.02356705899001099,
+        "screen_closure": 0.09530737799650524,
+        "transit": 1.6293949529936071
+      },
+      "trajectory_id": "raw_02",
+      "method": "raw",
+      "repetition": 2,
+      "source_trajectory_id": "once_02",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": 1.6450631556091864,
+        "shoulder_joint": -5.476406510321894,
+        "upperArm_joint": 5.094281464867286,
+        "wrist1_joint": -2.089515401289931,
+        "wrist2_joint": -5.850425369610364,
+        "wrist3_joint": -0.5560483278903547,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": true,
+      "elapsed_s": 0.6228570889943512,
+      "selected_angle_deg": -90,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.0005562060105148703,
+            "pre_ik_validation": 0.0017139839910669252,
+            "screen_insertion": 0.027675097997416742,
+            "screen_withdrawal": 0.026885853003477678,
+            "screen_closure": 0.08520354000211228,
+            "transit": 0.2648365289933281,
+            "insertion": 0.02777709800284356,
+            "closure": 0.07373313100833911,
+            "scene_update": 0.04814934000023641,
+            "retreat": 0.06619834899902344
+          },
+          "success": true,
+          "pre_ik_joints": {
+            "foreArm_joint": 1.645065642775637,
+            "shoulder_joint": -5.476405720136197,
+            "upperArm_joint": -1.1889015791437514,
+            "wrist1_joint": -2.0895071938649323,
+            "wrist2_joint": -5.850423497405248,
+            "wrist3_joint": 5.7271285482210885,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 10.271525902490122,
+          "wrap_turns": {
+            "foreArm_joint": 0,
+            "shoulder_joint": 0,
+            "upperArm_joint": 0,
+            "wrist1_joint": 0,
+            "wrist2_joint": 0,
+            "wrist3_joint": 0
+          },
+          "precut_pose_error": {
+            "position_m": 6.608018625700562e-07,
+            "orientation_rad": 1.9088247121758827e-06
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": 1.5335281810849937,
+            "shoulder_joint": -5.731154055374297,
+            "upperArm_joint": -1.2011667674102002,
+            "wrist1_joint": -2.6308810823503617,
+            "wrist2_joint": -5.740585745395046,
+            "wrist3_joint": 6.224597426301362,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "cut_joints": {
+            "foreArm_joint": 1.5335281810853445,
+            "shoulder_joint": -5.731154055373385,
+            "upperArm_joint": -1.201166767409688,
+            "wrist1_joint": -2.630881082349499,
+            "wrist2_joint": -5.740585745397982,
+            "wrist3_joint": 6.224597426300627,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "scene_update_timing_s": {
+            "trigger_call_s": 0.0462371999892639,
+            "confirmation_query_s": 0.0018689310090849176
+          }
+        }
+      ],
+      "stages": {
+        "transit": {
+          "waypoints": 141,
+          "validity_samples": 523,
+          "position_error_mm": 0.1903691385922165,
+          "orientation_error_deg": 0.02527587287004692,
+          "trajectory_duration_s": 13.937363425000001
+        },
+        "insertion": {
+          "waypoints": 16,
+          "validity_samples": 37,
+          "position_error_mm": 3.2182615052007365e-07,
+          "orientation_error_deg": 8.623960117577465e-08,
+          "trajectory_duration_s": 1.473488514,
+          "fraction": 1.0
+        },
+        "closure": {
+          "samples": 141,
+          "target_contacts": [
+            [
+              "citrus_S07",
+              "scissor_active_blade_link"
+            ],
+            [
+              "citrus_S07",
+              "scissor_mimic_blade_link"
+            ]
+          ],
+          "status": "passed"
+        },
+        "disengagement": {
+          "waypoints": 4,
+          "validity_samples": 37,
+          "position_error_mm": 0.0002609223720617246,
+          "orientation_error_deg": 6.766382069808625e-07,
+          "trajectory_duration_s": 0.263356026,
+          "fraction": 1.0,
+          "lift_mm": 5.0,
+          "start_contact_depth_m": [
+            [
+              "citrus_S07_stump",
+              "scissor_mimic_blade_link",
+              0.00019999997162174847
+            ]
+          ],
+          "sample_trace": [
+            {
+              "travel_mm": 0.0,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00019999997162174847
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.14352518459709435,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  5.64747907289775e-05
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.28708110552524757,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0004755810859118695
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.4306677501863487,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0003320115774915412
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.5742851059792986,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0001884116605815842
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.717933160300787,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  4.478134708646474e-05
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.8616119005460569,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0008194717880106505
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.0053213141057098,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0006757771474754485
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.1490613883699101,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0005320519167338661
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.2928321107265437,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0003882961084446852
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.4366334685604154,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0002445097352617422
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.5783483716916133,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00010280860020599152
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.720092920380324,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0005101805890190535
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.8618671025120046,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00036854823896691793
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.0036709059696083,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00022688558983570162
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.1455043186344076,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  8.519265462190029e-05
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.287367328384999,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00014666889234797578
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.4292599230980914,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  6.877370957005236e-06
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.571182090648003,
+              "contacts": []
+            },
+            {
+              "travel_mm": 2.713133818906904,
+              "contacts": []
+            },
+            {
+              "travel_mm": 2.855115095744517,
+              "contacts": []
+            },
+            {
+              "travel_mm": 2.9971259090287927,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.1391662466250674,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.281236096396538,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.4233354462042027,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.5654642839073447,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.7076225973619437,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.849810374422486,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.992027602941541,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.134274270769215,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.276550365752582,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.418855875737721,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.5350817460978945,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.651327179876123,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.767592170433278,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.883876711129668,
+              "contacts": []
+            },
+            {
+              "travel_mm": 5.000180795324185,
+              "contacts": []
+            }
+          ]
+        },
+        "withdrawal": {
+          "waypoints": 16,
+          "validity_samples": 37,
+          "position_error_mm": 9.24504745775707e-07,
+          "orientation_error_deg": 2.342178392941645e-07,
+          "trajectory_duration_s": 1.480360209,
+          "fraction": 1.0
+        }
+      },
+      "phase_seconds": {
+        "joint_representation": 0.0005562060105148703,
+        "pre_ik_validation": 0.0017139839910669252,
+        "screen_insertion": 0.027675097997416742,
+        "screen_withdrawal": 0.026885853003477678,
+        "screen_closure": 0.08520354000211228,
+        "transit": 0.2648365289933281,
+        "insertion": 0.02777709800284356,
+        "closure": 0.07373313100833911,
+        "scene_update": 0.04814934000023641,
+        "retreat": 0.06619834899902344
+      },
+      "trajectory_id": "raw_03",
+      "method": "raw",
+      "repetition": 3,
+      "source_trajectory_id": "once_03",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": 1.645065642775637,
+        "shoulder_joint": -5.476405720136197,
+        "upperArm_joint": -1.1889015791437514,
+        "wrist1_joint": -2.0895071938649323,
+        "wrist2_joint": -5.850423497405248,
+        "wrist3_joint": 5.7271285482210885,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": false,
+      "elapsed_s": 1.6923000039969338,
+      "selected_angle_deg": null,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.000505403004353866,
+            "pre_ik_validation": 0.001696841005468741,
+            "screen_insertion": 0.027438306002295576,
+            "screen_withdrawal": 0.025079565006308258,
+            "screen_closure": 0.0771403079997981,
+            "transit": 1.560373004002031
+          },
+          "success": false,
+          "pre_ik_joints": {
+            "foreArm_joint": 1.645065642775637,
+            "shoulder_joint": 0.8067795870433896,
+            "upperArm_joint": -1.1889015791437514,
+            "wrist1_joint": -2.0895071938649323,
+            "wrist2_joint": 0.4327618097743384,
+            "wrist3_joint": -0.5560567589584977,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 3.1037305702005002,
+          "wrap_turns": {
+            "foreArm_joint": 0,
+            "shoulder_joint": 1,
+            "upperArm_joint": 0,
+            "wrist1_joint": 0,
+            "wrist2_joint": 1,
+            "wrist3_joint": -1
+          },
+          "precut_pose_error": {
+            "position_m": 6.608018624665546e-07,
+            "orientation_rad": 1.9088247122537204e-06
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": 1.533528181084993,
+            "shoulder_joint": 0.5520312518052889,
+            "upperArm_joint": -1.2011667674102005,
+            "wrist1_joint": -2.630881082350362,
+            "wrist2_joint": 0.5425995617845403,
+            "wrist3_joint": -0.058587880878223614,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "retry_eligible": false,
+          "failure_stage": "transit",
+          "failure": "transit: MoveIt code -2"
+        }
+      ],
+      "stages": null,
+      "phase_seconds": {
+        "joint_representation": 0.000505403004353866,
+        "pre_ik_validation": 0.001696841005468741,
+        "screen_insertion": 0.027438306002295576,
+        "screen_withdrawal": 0.025079565006308258,
+        "screen_closure": 0.0771403079997981,
+        "transit": 1.560373004002031
+      },
+      "trajectory_id": "wrapped_03",
+      "method": "wrapped",
+      "repetition": 3,
+      "source_trajectory_id": "once_03",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": 1.645065642775637,
+        "shoulder_joint": -5.476405720136197,
+        "upperArm_joint": -1.1889015791437514,
+        "wrist1_joint": -2.0895071938649323,
+        "wrist2_joint": -5.850423497405248,
+        "wrist3_joint": 5.7271285482210885,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": true,
+      "elapsed_s": 0.48857022999436595,
+      "selected_angle_deg": -90,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.00035064699477516115,
+            "pre_ik_validation": 0.0012072139943484217,
+            "screen_insertion": 0.028444576004403643,
+            "screen_withdrawal": 0.022627645012107678,
+            "screen_closure": 0.07353090599644929,
+            "transit": 0.14231128199025989,
+            "insertion": 0.02521402799175121,
+            "closure": 0.07235411800502334,
+            "scene_update": 0.047795121994568035,
+            "retreat": 0.07459709300019313
+          },
+          "success": true,
+          "pre_ik_joints": {
+            "foreArm_joint": 1.645064919372804,
+            "shoulder_joint": 0.8067784465469157,
+            "upperArm_joint": -1.188902719972686,
+            "wrist1_joint": -2.0895136777192684,
+            "wrist2_joint": 0.4327622278001405,
+            "wrist3_joint": -0.5560493548245915,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 3.103733424202124,
+          "wrap_turns": {
+            "foreArm_joint": 0,
+            "shoulder_joint": 0,
+            "upperArm_joint": 0,
+            "wrist1_joint": -1,
+            "wrist2_joint": 0,
+            "wrist3_joint": 0
+          },
+          "precut_pose_error": {
+            "position_m": 4.010688561144369e-08,
+            "orientation_rad": 1.2434572717957361e-07
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": 1.5335281810845245,
+            "shoulder_joint": 0.5520312518060905,
+            "upperArm_joint": -1.2011667674105801,
+            "wrist1_joint": -2.6308810823521105,
+            "wrist2_joint": 0.5425995617807693,
+            "wrist3_joint": -0.05858788087659723,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "cut_joints": {
+            "foreArm_joint": 1.5335281810859134,
+            "shoulder_joint": 0.5520312518063523,
+            "upperArm_joint": -1.201166767408974,
+            "wrist1_joint": -2.6308810823495237,
+            "wrist2_joint": 0.5425995617820868,
+            "wrist3_joint": -0.058587880879414335,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "scene_update_timing_s": {
+            "trigger_call_s": 0.04622713499702513,
+            "confirmation_query_s": 0.0015263679961208254
+          }
+        }
+      ],
+      "stages": {
+        "transit": {
+          "waypoints": 59,
+          "validity_samples": 189,
+          "position_error_mm": 0.2462514687785981,
+          "orientation_error_deg": 0.027190498459504144,
+          "trajectory_duration_s": 5.782042497
+        },
+        "insertion": {
+          "waypoints": 16,
+          "validity_samples": 37,
+          "position_error_mm": 3.215200715267154e-07,
+          "orientation_error_deg": 8.620746048671773e-08,
+          "trajectory_duration_s": 1.473066173,
+          "fraction": 1.0
+        },
+        "closure": {
+          "samples": 141,
+          "target_contacts": [
+            [
+              "citrus_S07",
+              "scissor_active_blade_link"
+            ],
+            [
+              "citrus_S07",
+              "scissor_mimic_blade_link"
+            ]
+          ],
+          "status": "passed"
+        },
+        "disengagement": {
+          "waypoints": 4,
+          "validity_samples": 37,
+          "position_error_mm": 0.00026092237186404533,
+          "orientation_error_deg": 6.766157869319347e-07,
+          "trajectory_duration_s": 0.263356026,
+          "fraction": 1.0,
+          "lift_mm": 5.0,
+          "start_contact_depth_m": [
+            [
+              "citrus_S07_stump",
+              "scissor_mimic_blade_link",
+              0.00019999997140699818
+            ]
+          ],
+          "sample_trace": [
+            {
+              "travel_mm": 0.0,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00019999997140699818
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.14352518459442587,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  5.647479051698326e-05
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.2870811055201405,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00047558108570055086
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.4306677501787807,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00033201157728270027
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.5742851059690811,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00018841166037538844
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.7179331602883522,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  4.478134688278502e-05
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.8616119005302849,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0008194717878111806
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.0053213140877484,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0006757771472780404
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.1490613883497534,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.000532051916538687
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.2928321107035334,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00038829610825257476
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.4366334685349853,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00024450973507185973
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.5783483716605116,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00010280860002187514
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.7200929203436228,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0005101805888466464
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.8618671024694913,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00036854823879998587
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.003670905921437,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00022688558967436153
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.1455043185804104,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  8.519265446561307e-05
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.2873673283257436,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00014666889222279987
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.4292599230330376,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  6.877370836000145e-06
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.571182090577048,
+              "contacts": []
+            },
+            {
+              "travel_mm": 2.7131338188303546,
+              "contacts": []
+            },
+            {
+              "travel_mm": 2.8551150956624824,
+              "contacts": []
+            },
+            {
+              "travel_mm": 2.9971259089407662,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.139166246531273,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.2812360962972758,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.4233354460993697,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.5654642837964534,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.707622597245507,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.849810374300603,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.9920276028139643,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.13427427063577,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.276550365613559,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.418855875592959,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.535081745938678,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.65132717970288,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.76759217024615,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.883876710928146,
+              "contacts": []
+            },
+            {
+              "travel_mm": 5.000180795108202,
+              "contacts": []
+            }
+          ]
+        },
+        "withdrawal": {
+          "waypoints": 16,
+          "validity_samples": 37,
+          "position_error_mm": 9.245046832650255e-07,
+          "orientation_error_deg": 2.3421786867693612e-07,
+          "trajectory_duration_s": 1.480360209,
+          "fraction": 1.0
+        }
+      },
+      "phase_seconds": {
+        "joint_representation": 0.00035064699477516115,
+        "pre_ik_validation": 0.0012072139943484217,
+        "screen_insertion": 0.028444576004403643,
+        "screen_withdrawal": 0.022627645012107678,
+        "screen_closure": 0.07353090599644929,
+        "transit": 0.14231128199025989,
+        "insertion": 0.02521402799175121,
+        "closure": 0.07235411800502334,
+        "scene_update": 0.047795121994568035,
+        "retreat": 0.07459709300019313
+      },
+      "trajectory_id": "wrapped_04",
+      "method": "wrapped",
+      "repetition": 4,
+      "source_trajectory_id": "once_04",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": 1.645064919372804,
+        "shoulder_joint": 0.8067784465469157,
+        "upperArm_joint": -1.188902719972686,
+        "wrist1_joint": 4.193671629460318,
+        "wrist2_joint": 0.4327622278001405,
+        "wrist3_joint": -0.5560493548245915,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": true,
+      "elapsed_s": 0.5772897210117662,
+      "selected_angle_deg": -90,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.0005871749890502542,
+            "pre_ik_validation": 0.0019581870001275092,
+            "screen_insertion": 0.028277535995584913,
+            "screen_withdrawal": 0.024807584995869547,
+            "screen_closure": 0.08880728400254156,
+            "transit": 0.20429629199497867,
+            "insertion": 0.028601031997823156,
+            "closure": 0.0904339289991185,
+            "scene_update": 0.04579194499820005,
+            "retreat": 0.0635782289900817
+          },
+          "success": true,
+          "pre_ik_joints": {
+            "foreArm_joint": 1.645064919372804,
+            "shoulder_joint": 0.8067784465469157,
+            "upperArm_joint": -1.188902719972686,
+            "wrist1_joint": 4.193671629460318,
+            "wrist2_joint": 0.4327622278001405,
+            "wrist3_joint": -0.5560493548245915,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 4.780583175186255,
+          "wrap_turns": {
+            "foreArm_joint": 0,
+            "shoulder_joint": 0,
+            "upperArm_joint": 0,
+            "wrist1_joint": 0,
+            "wrist2_joint": 0,
+            "wrist3_joint": 0
+          },
+          "precut_pose_error": {
+            "position_m": 4.01068857152376e-08,
+            "orientation_rad": 1.2434572732678379e-07
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": 1.5335281810845247,
+            "shoulder_joint": 0.5520312518060905,
+            "upperArm_joint": -1.2011667674105801,
+            "wrist1_joint": 3.652304224827476,
+            "wrist2_joint": 0.5425995617807693,
+            "wrist3_joint": -0.05858788087659737,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "cut_joints": {
+            "foreArm_joint": 1.5335281810840955,
+            "shoulder_joint": 0.5520312518069022,
+            "upperArm_joint": -1.2011667674100073,
+            "wrist1_joint": 3.6523042248298503,
+            "wrist2_joint": 0.5425995617782423,
+            "wrist3_joint": -0.05858788088015141,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "scene_update_timing_s": {
+            "trigger_call_s": 0.044431620000978,
+            "confirmation_query_s": 0.001320832991041243
+          }
+        }
+      ],
+      "stages": {
+        "transit": {
+          "waypoints": 70,
+          "validity_samples": 239,
+          "position_error_mm": 0.18581588372125285,
+          "orientation_error_deg": 0.015434069822734368,
+          "trajectory_duration_s": 6.897004135
+        },
+        "insertion": {
+          "waypoints": 16,
+          "validity_samples": 37,
+          "position_error_mm": 3.222033177232672e-07,
+          "orientation_error_deg": 8.639148112765172e-08,
+          "trajectory_duration_s": 1.4731292580000002,
+          "fraction": 1.0
+        },
+        "closure": {
+          "samples": 141,
+          "target_contacts": [
+            [
+              "citrus_S07",
+              "scissor_active_blade_link"
+            ],
+            [
+              "citrus_S07",
+              "scissor_mimic_blade_link"
+            ]
+          ],
+          "status": "passed"
+        },
+        "disengagement": {
+          "waypoints": 4,
+          "validity_samples": 37,
+          "position_error_mm": 0.0002609223718044077,
+          "orientation_error_deg": 6.767458211891745e-07,
+          "trajectory_duration_s": 0.263356026,
+          "fraction": 1.0,
+          "lift_mm": 5.0,
+          "start_contact_depth_m": [
+            [
+              "citrus_S07_stump",
+              "scissor_mimic_blade_link",
+              0.0001999999720243869
+            ]
+          ],
+          "sample_trace": [
+            {
+              "travel_mm": 0.0,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0001999999720243869
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.14352518460065608,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  5.647479112802366e-05
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.2870811055326975,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00047558108631072553
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.43066775019737746,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0003320115778866671
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.5742851059939068,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0001884116609730968
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.7179331603190471,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  4.478134747419174e-05
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.8616119005671694,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0008194717883920245
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.005321314130673,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0006757771478530319
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.149061388398844,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.000532051917107495
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.2928321107590415,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00038829610881482255
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.4366334685963997,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00024450973562825044
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.5783483717381848,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00010280860056219127
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.720092920437311,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0005101805893565782
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.8618671025790392,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00036854823929467095
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.003670906047313,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0002268855901534307
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.145504318722465,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  8.519265492930104e-05
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.2873673284835516,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00014666889261469993
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.4292599232071126,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  6.877371215443394e-06
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.5711820907672305,
+              "contacts": []
+            },
+            {
+              "travel_mm": 2.713133819036542,
+              "contacts": []
+            },
+            {
+              "travel_mm": 2.8551150958848055,
+              "contacts": []
+            },
+            {
+              "travel_mm": 2.9971259091796267,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.139166246785995,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.281236096568065,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.423335446386314,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.565464284099604,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.7076225975645647,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.8498103746357986,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.992027603165369,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.134274271003189,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.276550365997111,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.41885587599272,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.535081746382406,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.6513271801905605,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.767592170777463,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.883876711503214,
+              "contacts": []
+            },
+            {
+              "travel_mm": 5.000180795727437,
+              "contacts": []
+            }
+          ]
+        },
+        "withdrawal": {
+          "waypoints": 16,
+          "validity_samples": 37,
+          "position_error_mm": 9.245045599343951e-07,
+          "orientation_error_deg": 2.3421787815956118e-07,
+          "trajectory_duration_s": 1.480360209,
+          "fraction": 1.0
+        }
+      },
+      "phase_seconds": {
+        "joint_representation": 0.0005871749890502542,
+        "pre_ik_validation": 0.0019581870001275092,
+        "screen_insertion": 0.028277535995584913,
+        "screen_withdrawal": 0.024807584995869547,
+        "screen_closure": 0.08880728400254156,
+        "transit": 0.20429629199497867,
+        "insertion": 0.028601031997823156,
+        "closure": 0.0904339289991185,
+        "scene_update": 0.04579194499820005,
+        "retreat": 0.0635782289900817
+      },
+      "trajectory_id": "raw_04",
+      "method": "raw",
+      "repetition": 4,
+      "source_trajectory_id": "once_04",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": 1.645064919372804,
+        "shoulder_joint": 0.8067784465469157,
+        "upperArm_joint": -1.188902719972686,
+        "wrist1_joint": 4.193671629460318,
+        "wrist2_joint": 0.4327622278001405,
+        "wrist3_joint": -0.5560493548245915,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": false,
+      "elapsed_s": 1.335574049007846,
+      "selected_angle_deg": null,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.0005994259990984574,
+            "pre_ik_validation": 0.002018463987042196,
+            "screen_insertion": 0.027659686995320953,
+            "screen_withdrawal": 0.02819682500557974,
+            "screen_closure": 0.08663970799534582,
+            "transit": 1.1902683320076903
+          },
+          "success": false,
+          "pre_ik_joints": {
+            "foreArm_joint": 1.6450647831863272,
+            "shoulder_joint": -5.4764064979017,
+            "upperArm_joint": -1.188902412837801,
+            "wrist1_joint": 4.193673687327586,
+            "wrist2_joint": 0.43276155709589337,
+            "wrist3_joint": -0.5560520035402464,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 7.2245505472739495,
+          "wrap_turns": {
+            "foreArm_joint": 0,
+            "shoulder_joint": 0,
+            "upperArm_joint": 0,
+            "wrist1_joint": 0,
+            "wrist2_joint": 0,
+            "wrist3_joint": 0
+          },
+          "precut_pose_error": {
+            "position_m": 2.2585107463548295e-07,
+            "orientation_rad": 9.301865625752863e-07
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": 1.5335281810842247,
+            "shoulder_joint": -5.731154055373669,
+            "upperArm_joint": -1.2011667674103927,
+            "wrist1_joint": 3.6523042248296664,
+            "wrist2_joint": 0.542599561781903,
+            "wrist3_joint": -0.05858788087924086,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "failure_stage": "transit",
+          "failure": "transit waypoint 112:3: invalid state, contacts=[('foreArm_Link', 'camera_screw_frame')]"
+        }
+      ],
+      "stages": null,
+      "phase_seconds": {
+        "joint_representation": 0.0005994259990984574,
+        "pre_ik_validation": 0.002018463987042196,
+        "screen_insertion": 0.027659686995320953,
+        "screen_withdrawal": 0.02819682500557974,
+        "screen_closure": 0.08663970799534582,
+        "transit": 1.1902683320076903
+      },
+      "trajectory_id": "raw_05",
+      "method": "raw",
+      "repetition": 5,
+      "source_trajectory_id": "once_05",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": 1.6450647831863272,
+        "shoulder_joint": -5.4764064979017,
+        "upperArm_joint": -1.188902412837801,
+        "wrist1_joint": 4.193673687327586,
+        "wrist2_joint": 0.43276155709589337,
+        "wrist3_joint": -0.5560520035402464,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": false,
+      "elapsed_s": 1.7563532320054946,
+      "selected_angle_deg": null,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.0003215750039089471,
+            "pre_ik_validation": 0.000907399007701315,
+            "screen_insertion": 0.02395109599456191,
+            "screen_withdrawal": 0.023496451001847163,
+            "screen_closure": 0.0922507420036709,
+            "transit": 1.6153590100002475
+          },
+          "success": false,
+          "pre_ik_joints": {
+            "foreArm_joint": 1.6450647831863272,
+            "shoulder_joint": 0.806778809277886,
+            "upperArm_joint": -1.188902412837801,
+            "wrist1_joint": -2.089511619852,
+            "wrist2_joint": 0.43276155709589337,
+            "wrist3_joint": -0.5560520035402464,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 3.103732324262029,
+          "wrap_turns": {
+            "foreArm_joint": 0,
+            "shoulder_joint": 1,
+            "upperArm_joint": 0,
+            "wrist1_joint": -1,
+            "wrist2_joint": 0,
+            "wrist3_joint": 0
+          },
+          "precut_pose_error": {
+            "position_m": 2.258510747816995e-07,
+            "orientation_rad": 9.301865628053938e-07
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": 1.533528181084225,
+            "shoulder_joint": 0.5520312518059167,
+            "upperArm_joint": -1.2011667674103925,
+            "wrist1_joint": -2.6308810823499202,
+            "wrist2_joint": 0.542599561781903,
+            "wrist3_joint": -0.058587880879240765,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "retry_eligible": true,
+          "failure_stage": "transit",
+          "failure": "transit: MoveIt code -6"
+        }
+      ],
+      "stages": null,
+      "phase_seconds": {
+        "joint_representation": 0.0003215750039089471,
+        "pre_ik_validation": 0.000907399007701315,
+        "screen_insertion": 0.02395109599456191,
+        "screen_withdrawal": 0.023496451001847163,
+        "screen_closure": 0.0922507420036709,
+        "transit": 1.6153590100002475
+      },
+      "trajectory_id": "wrapped_05",
+      "method": "wrapped",
+      "repetition": 5,
+      "source_trajectory_id": "once_05",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": 1.6450647831863272,
+        "shoulder_joint": -5.4764064979017,
+        "upperArm_joint": -1.188902412837801,
+        "wrist1_joint": 4.193673687327586,
+        "wrist2_joint": 0.43276155709589337,
+        "wrist3_joint": -0.5560520035402464,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": true,
+      "elapsed_s": 0.9611091990082059,
+      "selected_angle_deg": -90,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.00035451201256364584,
+            "pre_ik_validation": 0.0010022009955719113,
+            "screen_insertion": 0.027251759995124303,
+            "screen_withdrawal": 0.03146742799435742,
+            "screen_closure": 0.08376642898656428,
+            "transit": 0.59779342400725,
+            "insertion": 0.0272584070044104,
+            "closure": 0.07716148499457631,
+            "scene_update": 0.04851897599291988,
+            "retreat": 0.06640378000156488
+          },
+          "success": true,
+          "pre_ik_joints": {
+            "foreArm_joint": 1.645068251624509,
+            "shoulder_joint": 0.8067785556641756,
+            "upperArm_joint": -1.1888975185413166,
+            "wrist1_joint": -2.0895069273344973,
+            "wrist2_joint": 0.4327611396266196,
+            "wrist3_joint": -0.5560584585332862,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 3.103730161053372,
+          "wrap_turns": {
+            "foreArm_joint": 1,
+            "shoulder_joint": 1,
+            "upperArm_joint": 0,
+            "wrist1_joint": -1,
+            "wrist2_joint": 0,
+            "wrist3_joint": -1
+          },
+          "precut_pose_error": {
+            "position_m": 1.7082386862287778e-06,
+            "orientation_rad": 3.7951158411305884e-06
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": 1.5335281810416361,
+            "shoulder_joint": 0.5520312518477323,
+            "upperArm_joint": -1.2011667674134967,
+            "wrist1_joint": -2.6308810822126056,
+            "wrist2_joint": 0.542599561616471,
+            "wrist3_joint": -0.058587881040474465,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "cut_joints": {
+            "foreArm_joint": 1.5335281810377361,
+            "shoulder_joint": 0.5520312518493515,
+            "upperArm_joint": -1.2011667674148394,
+            "wrist1_joint": -2.6308810822110225,
+            "wrist2_joint": 0.5425995616069277,
+            "wrist3_joint": -0.05858788104486386,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "scene_update_timing_s": {
+            "trigger_call_s": 0.04698856400500517,
+            "confirmation_query_s": 0.0015019169950392097
+          }
+        }
+      ],
+      "stages": {
+        "transit": {
+          "waypoints": 58,
+          "validity_samples": 188,
+          "position_error_mm": 0.14597553780405512,
+          "orientation_error_deg": 0.019967167967272426,
+          "trajectory_duration_s": 5.665791242
+        },
+        "insertion": {
+          "waypoints": 16,
+          "validity_samples": 37,
+          "position_error_mm": 3.5625392359459687e-07,
+          "orientation_error_deg": 9.551009960082051e-08,
+          "trajectory_duration_s": 1.473354257,
+          "fraction": 1.0
+        },
+        "closure": {
+          "samples": 141,
+          "target_contacts": [
+            [
+              "citrus_S07",
+              "scissor_active_blade_link"
+            ],
+            [
+              "citrus_S07",
+              "scissor_mimic_blade_link"
+            ]
+          ],
+          "status": "passed"
+        },
+        "disengagement": {
+          "waypoints": 4,
+          "validity_samples": 37,
+          "position_error_mm": 0.00026092237297473944,
+          "orientation_error_deg": 6.794024877876442e-07,
+          "trajectory_duration_s": 0.263356025,
+          "fraction": 1.0,
+          "lift_mm": 5.0,
+          "start_contact_depth_m": [
+            [
+              "citrus_S07_stump",
+              "scissor_mimic_blade_link",
+              0.00019999997131168594
+            ]
+          ],
+          "sample_trace": [
+            {
+              "travel_mm": 0.0,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00019999997131168594
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.1435251849472078,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  5.647479006869135e-05
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.2870811062258745,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00047558108506339815
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.43066775123694373,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00033201157628233045
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.5742851073799773,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00018841165901174677
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.7179331620518453,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  4.4781345155942066e-05
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.861611902646568,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0008194717855579625
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.0053213165566832,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0006757771446688811
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.1490613911713319,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0005320519135733766
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.2928321138782197,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00038829610493069504
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.436633472061875,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00024450973139422824
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.5783483752241987,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00010280859630403379
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.7200929239433873,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0005101805847663503
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.8618671061058039,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00036854823470331446
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.003670909593855,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00022688558556126405
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.1455043222889225,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  8.519265033632583e-05
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.287367332069645,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0001466688860685627
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.4292599268129766,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  6.877364796615539e-06
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.5711820943927566,
+              "contacts": []
+            },
+            {
+              "travel_mm": 2.7131338226814825,
+              "contacts": []
+            },
+            {
+              "travel_mm": 2.8551150995487435,
+              "contacts": []
+            },
+            {
+              "travel_mm": 2.9971259128622916,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.1391662504880165,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.281236100288673,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.423335450125617,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.565464287857551,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.707622601341008,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.849810378430506,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.9920276069782936,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.134274274834169,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.276550369846084,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.418855879859176,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.535081749258731,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.651327182076187,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.767592171671996,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.883876711406625,
+              "contacts": []
+            },
+            {
+              "travel_mm": 5.0001807946386165,
+              "contacts": []
+            }
+          ]
+        },
+        "withdrawal": {
+          "waypoints": 16,
+          "validity_samples": 37,
+          "position_error_mm": 9.24504517026541e-07,
+          "orientation_error_deg": 2.3421785651664173e-07,
+          "trajectory_duration_s": 1.480360208,
+          "fraction": 1.0
+        }
+      },
+      "phase_seconds": {
+        "joint_representation": 0.00035451201256364584,
+        "pre_ik_validation": 0.0010022009955719113,
+        "screen_insertion": 0.027251759995124303,
+        "screen_withdrawal": 0.03146742799435742,
+        "screen_closure": 0.08376642898656428,
+        "transit": 0.59779342400725,
+        "insertion": 0.0272584070044104,
+        "closure": 0.07716148499457631,
+        "scene_update": 0.04851897599291988,
+        "retreat": 0.06640378000156488
+      },
+      "trajectory_id": "wrapped_06",
+      "method": "wrapped",
+      "repetition": 6,
+      "source_trajectory_id": "once_06",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": -4.638117055555077,
+        "shoulder_joint": -5.476406751515411,
+        "upperArm_joint": -1.1888975185413166,
+        "wrist1_joint": 4.193678379845089,
+        "wrist2_joint": 0.4327611396266196,
+        "wrist3_joint": 5.7271268486463,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": false,
+      "elapsed_s": 1.7949471010069828,
+      "selected_angle_deg": null,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.0003584789956221357,
+            "pre_ik_validation": 0.0017388700071023777,
+            "screen_insertion": 0.029201320008723997,
+            "screen_withdrawal": 0.028718508998281322,
+            "screen_closure": 0.09700124101073015,
+            "transit": 1.637862267991295
+          },
+          "success": false,
+          "pre_ik_joints": {
+            "foreArm_joint": -4.638117055555077,
+            "shoulder_joint": -5.476406751515411,
+            "upperArm_joint": -1.1888975185413166,
+            "wrist1_joint": 4.193678379845089,
+            "wrist2_joint": 0.4327611396266196,
+            "wrist3_joint": 5.7271268486463,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 10.173044801666046,
+          "wrap_turns": {
+            "foreArm_joint": 0,
+            "shoulder_joint": 0,
+            "upperArm_joint": 0,
+            "wrist1_joint": 0,
+            "wrist2_joint": 0,
+            "wrist3_joint": 0
+          },
+          "precut_pose_error": {
+            "position_m": 1.708238686211477e-06,
+            "orientation_rad": 3.7951158409201613e-06
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": -4.749657126137951,
+            "shoulder_joint": -5.731154055331855,
+            "upperArm_joint": -1.201166767413497,
+            "wrist1_joint": 3.6523042249669797,
+            "wrist2_joint": 0.5425995616164713,
+            "wrist3_joint": 6.224597426139113,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "retry_eligible": true,
+          "failure_stage": "transit",
+          "failure": "transit: MoveIt code -6"
+        }
+      ],
+      "stages": null,
+      "phase_seconds": {
+        "joint_representation": 0.0003584789956221357,
+        "pre_ik_validation": 0.0017388700071023777,
+        "screen_insertion": 0.029201320008723997,
+        "screen_withdrawal": 0.028718508998281322,
+        "screen_closure": 0.09700124101073015,
+        "transit": 1.637862267991295
+      },
+      "trajectory_id": "raw_06",
+      "method": "raw",
+      "repetition": 6,
+      "source_trajectory_id": "once_06",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": -4.638117055555077,
+        "shoulder_joint": -5.476406751515411,
+        "upperArm_joint": -1.1888975185413166,
+        "wrist1_joint": 4.193678379845089,
+        "wrist2_joint": 0.4327611396266196,
+        "wrist3_joint": 5.7271268486463,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": true,
+      "elapsed_s": 0.5980448159971274,
+      "selected_angle_deg": -90,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.0004919780039926991,
+            "pre_ik_validation": 0.001444045003154315,
+            "screen_insertion": 0.03124725099769421,
+            "screen_withdrawal": 0.030582450999645516,
+            "screen_closure": 0.09082583199779037,
+            "transit": 0.21178142698772717,
+            "insertion": 0.028830096998717636,
+            "closure": 0.08391584899800364,
+            "scene_update": 0.05000386500614695,
+            "retreat": 0.06878748399321921
+          },
+          "success": true,
+          "pre_ik_joints": {
+            "foreArm_joint": 1.6450628184046392,
+            "shoulder_joint": -5.47640595573182,
+            "upperArm_joint": -1.1889024292272077,
+            "wrist1_joint": -2.0895084613400914,
+            "wrist2_joint": 0.4327578417048167,
+            "wrist3_joint": 5.727128277282614,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 8.453642180664716,
+          "wrap_turns": {
+            "foreArm_joint": 0,
+            "shoulder_joint": 0,
+            "upperArm_joint": 0,
+            "wrist1_joint": 0,
+            "wrist2_joint": 0,
+            "wrist3_joint": 0
+          },
+          "precut_pose_error": {
+            "position_m": 1.2100926272072108e-06,
+            "orientation_rad": 4.847958931239644e-06
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": 1.5335281810814287,
+            "shoulder_joint": -5.731154055373463,
+            "upperArm_joint": -1.2011667674097823,
+            "wrist1_joint": -2.6308810823384103,
+            "wrist2_joint": 0.5425995617830259,
+            "wrist3_joint": 6.224597426285603,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "cut_joints": {
+            "foreArm_joint": 1.5335281810439576,
+            "shoulder_joint": -5.73115405533193,
+            "upperArm_joint": -1.20116676741392,
+            "wrist1_joint": -2.6308810822235573,
+            "wrist2_joint": 0.5425995616159494,
+            "wrist3_joint": 6.224597426152513,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "scene_update_timing_s": {
+            "trigger_call_s": 0.048312489001546055,
+            "confirmation_query_s": 0.001639591995626688
+          }
+        }
+      ],
+      "stages": {
+        "transit": {
+          "waypoints": 93,
+          "validity_samples": 342,
+          "position_error_mm": 0.05530165028789747,
+          "orientation_error_deg": 0.015134153173437309,
+          "trajectory_duration_s": 9.115985741
+        },
+        "insertion": {
+          "waypoints": 16,
+          "validity_samples": 37,
+          "position_error_mm": 3.543432429957087e-07,
+          "orientation_error_deg": 9.491744828010667e-08,
+          "trajectory_duration_s": 1.473079302,
+          "fraction": 1.0
+        },
+        "closure": {
+          "samples": 141,
+          "target_contacts": [
+            [
+              "citrus_S07",
+              "scissor_active_blade_link"
+            ],
+            [
+              "citrus_S07",
+              "scissor_mimic_blade_link"
+            ]
+          ],
+          "status": "passed"
+        },
+        "disengagement": {
+          "waypoints": 4,
+          "validity_samples": 37,
+          "position_error_mm": 0.0002609223727727997,
+          "orientation_error_deg": 6.794720473232754e-07,
+          "trajectory_duration_s": 0.263356025,
+          "fraction": 1.0,
+          "lift_mm": 5.0,
+          "start_contact_depth_m": [
+            [
+              "citrus_S07_stump",
+              "scissor_mimic_blade_link",
+              0.00019999997170845553
+            ]
+          ],
+          "sample_trace": [
+            {
+              "travel_mm": 0.0,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00019999997170845553
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.14352518492908406,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  5.647479048368753e-05
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.2870811061898453,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00047558108550613314
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.4306677511829332,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0003320115767435349
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.5742851073079533,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00018841165949147866
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.7179331619619637,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  4.4781345654146944e-05
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.8616119025388363,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0008194717860907268
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.0053213164304649,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0006757771452203394
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.1490613910272065,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0005320519141428419
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.2928321137160272,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0003882961055181228
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.4366334718818834,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00024450973199946437
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.5783483750529845,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00010280859690068072
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.720092923781092,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0005101805853712561
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.8618671059523442,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0003685482352979272
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.0036709094490406,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00022688558614587152
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.1455043221530845,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  8.519265091086509e-05
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.2873673319428023,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.000146668886730107
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.429259926694587,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  6.87736544117162e-06
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.571182094283703,
+              "contacts": []
+            },
+            {
+              "travel_mm": 2.7131338225814208,
+              "contacts": []
+            },
+            {
+              "travel_mm": 2.855115099457362,
+              "contacts": []
+            },
+            {
+              "travel_mm": 2.997125912780215,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.139166250414541,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.2812361002244104,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.423335450070369,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.565464287811176,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.7076226013037608,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.8498103784022684,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.9920276069587657,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.134274274823783,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.276550369844527,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.418855879866966,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.535081749356861,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.6513271822643425,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.767592171950594,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.883876711775334,
+              "contacts": []
+            },
+            {
+              "travel_mm": 5.000180795097877,
+              "contacts": []
+            }
+          ]
+        },
+        "withdrawal": {
+          "waypoints": 16,
+          "validity_samples": 37,
+          "position_error_mm": 9.245046814602718e-07,
+          "orientation_error_deg": 2.342178434833092e-07,
+          "trajectory_duration_s": 1.480360208,
+          "fraction": 1.0
+        }
+      },
+      "phase_seconds": {
+        "joint_representation": 0.0004919780039926991,
+        "pre_ik_validation": 0.001444045003154315,
+        "screen_insertion": 0.03124725099769421,
+        "screen_withdrawal": 0.030582450999645516,
+        "screen_closure": 0.09082583199779037,
+        "transit": 0.21178142698772717,
+        "insertion": 0.028830096998717636,
+        "closure": 0.08391584899800364,
+        "scene_update": 0.05000386500614695,
+        "retreat": 0.06878748399321921
+      },
+      "trajectory_id": "raw_07",
+      "method": "raw",
+      "repetition": 7,
+      "source_trajectory_id": "once_07",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": 1.6450628184046392,
+        "shoulder_joint": -5.47640595573182,
+        "upperArm_joint": -1.1889024292272077,
+        "wrist1_joint": -2.0895084613400914,
+        "wrist2_joint": 0.4327578417048167,
+        "wrist3_joint": 5.727128277282614,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": false,
+      "elapsed_s": 0.5267428590013878,
+      "selected_angle_deg": null,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.000413633999414742,
+            "pre_ik_validation": 0.0013492959988070652,
+            "screen_insertion": 0.027147974004037678,
+            "screen_withdrawal": 0.03312519600149244,
+            "screen_closure": 0.09168199100531638,
+            "transit": 0.37296470000001136
+          },
+          "success": false,
+          "pre_ik_joints": {
+            "foreArm_joint": 1.6450628184046392,
+            "shoulder_joint": 0.8067793514477666,
+            "upperArm_joint": -1.1889024292272077,
+            "wrist1_joint": -2.0895084613400914,
+            "wrist2_joint": 0.4327578417048167,
+            "wrist3_joint": -0.556057029896972,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 3.103729686153248,
+          "wrap_turns": {
+            "foreArm_joint": 0,
+            "shoulder_joint": 1,
+            "upperArm_joint": 0,
+            "wrist1_joint": 0,
+            "wrist2_joint": 0,
+            "wrist3_joint": -1
+          },
+          "precut_pose_error": {
+            "position_m": 1.2100926272106716e-06,
+            "orientation_rad": 4.847958931489639e-06
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": 1.5335281810814294,
+            "shoulder_joint": 0.5520312518061233,
+            "upperArm_joint": -1.201166767409782,
+            "wrist1_joint": -2.6308810823384094,
+            "wrist2_joint": 0.5425995617830256,
+            "wrist3_joint": -0.05858788089398357,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "retry_eligible": false,
+          "failure_stage": "transit",
+          "failure": "transit: MoveIt code -2"
+        }
+      ],
+      "stages": null,
+      "phase_seconds": {
+        "joint_representation": 0.000413633999414742,
+        "pre_ik_validation": 0.0013492959988070652,
+        "screen_insertion": 0.027147974004037678,
+        "screen_withdrawal": 0.03312519600149244,
+        "screen_closure": 0.09168199100531638,
+        "transit": 0.37296470000001136
+      },
+      "trajectory_id": "wrapped_07",
+      "method": "wrapped",
+      "repetition": 7,
+      "source_trajectory_id": "once_07",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": 1.6450628184046392,
+        "shoulder_joint": -5.47640595573182,
+        "upperArm_joint": -1.1889024292272077,
+        "wrist1_joint": -2.0895084613400914,
+        "wrist2_joint": 0.4327578417048167,
+        "wrist3_joint": 5.727128277282614,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": false,
+      "elapsed_s": 0.6641859419905813,
+      "selected_angle_deg": null,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.0003427079936955124,
+            "pre_ik_validation": 0.0013459570036502555,
+            "screen_insertion": 0.025537171008181758,
+            "screen_withdrawal": 0.033055074003641494,
+            "screen_closure": 0.09682441200129688,
+            "transit": 0.5070185140066314
+          },
+          "success": false,
+          "pre_ik_joints": {
+            "foreArm_joint": 1.6450649669372954,
+            "shoulder_joint": 0.8067784343123474,
+            "upperArm_joint": -1.188902659820684,
+            "wrist1_joint": -2.0895134651080376,
+            "wrist2_joint": 0.43276229427549406,
+            "wrist3_joint": -0.5560495734999096,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 3.1037333285010815,
+          "wrap_turns": {
+            "foreArm_joint": 0,
+            "shoulder_joint": 1,
+            "upperArm_joint": 0,
+            "wrist1_joint": -1,
+            "wrist2_joint": 1,
+            "wrist3_joint": -1
+          },
+          "precut_pose_error": {
+            "position_m": 4.1221040532462055e-09,
+            "orientation_rad": 2.729198084838973e-09
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": 1.5335281810846126,
+            "shoulder_joint": 0.5520312518060279,
+            "upperArm_joint": -1.2011667674105637,
+            "wrist1_joint": -2.6308810823522224,
+            "wrist2_joint": 0.5425995617810201,
+            "wrist3_joint": -0.058587880876413936,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "retry_eligible": false,
+          "failure_stage": "transit",
+          "failure": "transit: MoveIt code -2"
+        }
+      ],
+      "stages": null,
+      "phase_seconds": {
+        "joint_representation": 0.0003427079936955124,
+        "pre_ik_validation": 0.0013459570036502555,
+        "screen_insertion": 0.025537171008181758,
+        "screen_withdrawal": 0.033055074003641494,
+        "screen_closure": 0.09682441200129688,
+        "transit": 0.5070185140066314
+      },
+      "trajectory_id": "wrapped_08",
+      "method": "wrapped",
+      "repetition": 8,
+      "source_trajectory_id": "once_08",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": 1.6450649669372954,
+        "shoulder_joint": -5.476406872867239,
+        "upperArm_joint": -1.188902659820684,
+        "wrist1_joint": 4.193671842071549,
+        "wrist2_joint": -5.850423012904092,
+        "wrist3_joint": 5.727135733679677,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": true,
+      "elapsed_s": 1.3488794679869898,
+      "selected_angle_deg": -90,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.0007478579937014729,
+            "pre_ik_validation": 0.002704812999581918,
+            "screen_insertion": 0.03917019900109153,
+            "screen_withdrawal": 0.027823878001072444,
+            "screen_closure": 0.08787456901336554,
+            "transit": 0.9589631519920658,
+            "insertion": 0.026142268005060032,
+            "closure": 0.08394836299703456,
+            "scene_update": 0.05017172599036712,
+            "retreat": 0.07115389598766342
+          },
+          "success": true,
+          "pre_ik_joints": {
+            "foreArm_joint": 1.6450649669372954,
+            "shoulder_joint": -5.476406872867239,
+            "upperArm_joint": -1.188902659820684,
+            "wrist1_joint": 4.193671842071549,
+            "wrist2_joint": -5.850423012904092,
+            "wrist3_joint": 5.727135733679677,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 10.896108350142855,
+          "wrap_turns": {
+            "foreArm_joint": 0,
+            "shoulder_joint": 0,
+            "upperArm_joint": 0,
+            "wrist1_joint": 0,
+            "wrist2_joint": 0,
+            "wrist3_joint": 0
+          },
+          "precut_pose_error": {
+            "position_m": 4.122104192250307e-09,
+            "orientation_rad": 2.7291983586324915e-09
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": 1.5335281810846129,
+            "shoulder_joint": -5.731154055373559,
+            "upperArm_joint": -1.2011667674105637,
+            "wrist1_joint": 3.652304224827364,
+            "wrist2_joint": -5.740585745398566,
+            "wrist3_joint": 6.2245974263031725,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "cut_joints": {
+            "foreArm_joint": 1.5335281810408858,
+            "shoulder_joint": -5.731154055330173,
+            "upperArm_joint": -1.2011667674156827,
+            "wrist1_joint": 3.652304224957009,
+            "wrist2_joint": -5.7405857455732665,
+            "wrist3_joint": 6.2245974261504475,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "scene_update_timing_s": {
+            "trigger_call_s": 0.04819083800248336,
+            "confirmation_query_s": 0.001924987998791039
+          }
+        }
+      ],
+      "stages": {
+        "transit": {
+          "waypoints": 187,
+          "validity_samples": 697,
+          "position_error_mm": 0.09844353669195145,
+          "orientation_error_deg": 0.022858096568290343,
+          "trajectory_duration_s": 18.545269353
+        },
+        "insertion": {
+          "waypoints": 16,
+          "validity_samples": 37,
+          "position_error_mm": 3.5614298964598656e-07,
+          "orientation_error_deg": 9.537249867211812e-08,
+          "trajectory_duration_s": 1.473570234,
+          "fraction": 1.0
+        },
+        "closure": {
+          "samples": 141,
+          "target_contacts": [
+            [
+              "citrus_S07",
+              "scissor_active_blade_link"
+            ],
+            [
+              "citrus_S07",
+              "scissor_mimic_blade_link"
+            ]
+          ],
+          "status": "passed"
+        },
+        "disengagement": {
+          "waypoints": 4,
+          "validity_samples": 37,
+          "position_error_mm": 0.00026092237306877674,
+          "orientation_error_deg": 6.797941894210983e-07,
+          "trajectory_duration_s": 0.263356025,
+          "fraction": 1.0,
+          "lift_mm": 5.0,
+          "start_contact_depth_m": [
+            [
+              "citrus_S07_stump",
+              "scissor_mimic_blade_link",
+              0.00019999997282972026
+            ]
+          ],
+          "sample_trace": [
+            {
+              "travel_mm": 0.0,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00019999997282972026
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.14352518494625416,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  5.647479158771754e-05
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.28708110622387445,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00047558108660933796
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.430667751234204,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0003320115778293309
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.5742851073763314,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.000188411660559733
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.7179331620471542,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  4.478134670484916e-05
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.8616119026409568,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0008194717871154285
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.0053213165502666,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0006757771462273518
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.1490613911637952,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0005320519151329013
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.2928321138698193,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00038829610649095554
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.4366334720528642,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0002445097329553833
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.5783483752539185,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00010280859782648165
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.7200929240122933,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0005101805862361823
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.8618671062129302,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00036854823613485896
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.003670909740166,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00022688558695376483
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.145504322474096,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  8.519265168990582e-05
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.287367332294033,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00014666888734380051
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.4292599270760795,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  6.8773660335718924e-06
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.5711820946949713,
+              "contacts": []
+            },
+            {
+              "travel_mm": 2.7131338230227753,
+              "contacts": []
+            },
+            {
+              "travel_mm": 2.855115099929087,
+              "contacts": []
+            },
+            {
+              "travel_mm": 2.9971259132817485,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.139166250946455,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.2812361007862365,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.423335450662377,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.5654642884331005,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.707622601955997,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.8498103790846643,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.992027607671372,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.134274275566335,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.276550370617535,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.4188558806700575,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.535081750224652,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.6513271831969645,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.767592172948325,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.883876712837775,
+              "contacts": []
+            },
+            {
+              "travel_mm": 5.000180796225365,
+              "contacts": []
+            }
+          ]
+        },
+        "withdrawal": {
+          "waypoints": 16,
+          "validity_samples": 37,
+          "position_error_mm": 9.245048620264735e-07,
+          "orientation_error_deg": 2.3421785858964724e-07,
+          "trajectory_duration_s": 1.480360208,
+          "fraction": 1.0
+        }
+      },
+      "phase_seconds": {
+        "joint_representation": 0.0007478579937014729,
+        "pre_ik_validation": 0.002704812999581918,
+        "screen_insertion": 0.03917019900109153,
+        "screen_withdrawal": 0.027823878001072444,
+        "screen_closure": 0.08787456901336554,
+        "transit": 0.9589631519920658,
+        "insertion": 0.026142268005060032,
+        "closure": 0.08394836299703456,
+        "scene_update": 0.05017172599036712,
+        "retreat": 0.07115389598766342
+      },
+      "trajectory_id": "raw_08",
+      "method": "raw",
+      "repetition": 8,
+      "source_trajectory_id": "once_08",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": 1.6450649669372954,
+        "shoulder_joint": -5.476406872867239,
+        "upperArm_joint": -1.188902659820684,
+        "wrist1_joint": 4.193671842071549,
+        "wrist2_joint": -5.850423012904092,
+        "wrist3_joint": 5.727135733679677,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": false,
+      "elapsed_s": 1.7869116840010975,
+      "selected_angle_deg": null,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.00047452600847464055,
+            "pre_ik_validation": 0.0017363960068905726,
+            "screen_insertion": 0.03248346100735944,
+            "screen_withdrawal": 0.03188605699688196,
+            "screen_closure": 0.08762647700496018,
+            "transit": 1.632641201998922
+          },
+          "success": false,
+          "pre_ik_joints": {
+            "foreArm_joint": -4.638120344778486,
+            "shoulder_joint": 0.8067784238487549,
+            "upperArm_joint": 5.0942826443493425,
+            "wrist1_joint": 4.193671817568831,
+            "wrist2_joint": -5.8504230108795126,
+            "wrist3_joint": -0.5560495457026716,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 10.011907472371616,
+          "wrap_turns": {
+            "foreArm_joint": 0,
+            "shoulder_joint": 0,
+            "upperArm_joint": 0,
+            "wrist1_joint": 0,
+            "wrist2_joint": 0,
+            "wrist3_joint": 0
+          },
+          "precut_pose_error": {
+            "position_m": 4.275609043159299e-10,
+            "orientation_rad": 4.882315737538628e-10
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": -4.7496571261381035,
+            "shoulder_joint": 0.5520312518490891,
+            "upperArm_joint": 5.0820185397652855,
+            "wrist1_joint": 3.652304224961134,
+            "wrist2_joint": -5.740585745570007,
+            "wrist3_joint": -0.0585878810340706,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "retry_eligible": true,
+          "failure_stage": "transit",
+          "failure": "transit: MoveIt code -6"
+        }
+      ],
+      "stages": null,
+      "phase_seconds": {
+        "joint_representation": 0.00047452600847464055,
+        "pre_ik_validation": 0.0017363960068905726,
+        "screen_insertion": 0.03248346100735944,
+        "screen_withdrawal": 0.03188605699688196,
+        "screen_closure": 0.08762647700496018,
+        "transit": 1.632641201998922
+      },
+      "trajectory_id": "raw_09",
+      "method": "raw",
+      "repetition": 9,
+      "source_trajectory_id": "once_09",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": -4.638120344778486,
+        "shoulder_joint": 0.8067784238487549,
+        "upperArm_joint": 5.0942826443493425,
+        "wrist1_joint": 4.193671817568831,
+        "wrist2_joint": -5.8504230108795126,
+        "wrist3_joint": -0.5560495457026716,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": false,
+      "elapsed_s": 0.33673490000364836,
+      "selected_angle_deg": null,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.0003977659944212064,
+            "pre_ik_validation": 0.001150852011051029,
+            "screen_insertion": 0.029254268010845408,
+            "screen_withdrawal": 0.03381587300100364,
+            "screen_closure": 0.08753233599418309,
+            "transit": 0.1845220329996664
+          },
+          "success": false,
+          "pre_ik_joints": {
+            "foreArm_joint": 1.6450649624011007,
+            "shoulder_joint": 0.8067784238487549,
+            "upperArm_joint": -1.1889026628302437,
+            "wrist1_joint": -2.0895134896107557,
+            "wrist2_joint": 0.4327622963000737,
+            "wrist3_joint": -0.5560495457026716,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 3.103733336327855,
+          "wrap_turns": {
+            "foreArm_joint": 1,
+            "shoulder_joint": 0,
+            "upperArm_joint": -1,
+            "wrist1_joint": -1,
+            "wrist2_joint": 1,
+            "wrist3_joint": 0
+          },
+          "precut_pose_error": {
+            "position_m": 4.275609141856136e-10,
+            "orientation_rad": 4.882313858153243e-10
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": 1.5335281810414827,
+            "shoulder_joint": 0.5520312518490887,
+            "upperArm_joint": -1.2011667674143014,
+            "wrist1_joint": -2.6308810822184525,
+            "wrist2_joint": 0.5425995616095795,
+            "wrist3_joint": -0.05858788103407029,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "retry_eligible": false,
+          "failure_stage": "transit",
+          "failure": "transit: MoveIt code -2"
+        }
+      ],
+      "stages": null,
+      "phase_seconds": {
+        "joint_representation": 0.0003977659944212064,
+        "pre_ik_validation": 0.001150852011051029,
+        "screen_insertion": 0.029254268010845408,
+        "screen_withdrawal": 0.03381587300100364,
+        "screen_closure": 0.08753233599418309,
+        "transit": 0.1845220329996664
+      },
+      "trajectory_id": "wrapped_09",
+      "method": "wrapped",
+      "repetition": 9,
+      "source_trajectory_id": "once_09",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": -4.638120344778486,
+        "shoulder_joint": 0.8067784238487549,
+        "upperArm_joint": 5.0942826443493425,
+        "wrist1_joint": 4.193671817568831,
+        "wrist2_joint": -5.8504230108795126,
+        "wrist3_joint": -0.5560495457026716,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": true,
+      "elapsed_s": 0.8486852180067217,
+      "selected_angle_deg": -90,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.00036037999961990863,
+            "pre_ik_validation": 0.0014997459948062897,
+            "screen_insertion": 0.031128041999181733,
+            "screen_withdrawal": 0.029519741001422517,
+            "screen_closure": 0.0773779849987477,
+            "transit": 0.47620179000659846,
+            "insertion": 0.032356590003473684,
+            "closure": 0.08049888099776581,
+            "scene_update": 0.05051314701267984,
+            "retreat": 0.06908484500308987
+          },
+          "success": true,
+          "pre_ik_joints": {
+            "foreArm_joint": 1.6450686008554074,
+            "shoulder_joint": 0.8067779044123897,
+            "upperArm_joint": -1.188899912248527,
+            "wrist1_joint": -2.0895235073835483,
+            "wrist2_joint": 0.43276144567851826,
+            "wrist3_joint": -0.5560389325092618,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 3.1037388004072146,
+          "wrap_turns": {
+            "foreArm_joint": 1,
+            "shoulder_joint": 1,
+            "upperArm_joint": 0,
+            "wrist1_joint": -1,
+            "wrist2_joint": 1,
+            "wrist3_joint": -1
+          },
+          "precut_pose_error": {
+            "position_m": 1.6860465149754251e-06,
+            "orientation_rad": 4.252919321571059e-06
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": 1.5335281810393597,
+            "shoulder_joint": 0.5520312518512765,
+            "upperArm_joint": -1.2011667674151296,
+            "wrist1_joint": -2.6308810822185738,
+            "wrist2_joint": 0.5425995616001328,
+            "wrist3_joint": -0.058587881035296954,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "cut_joints": {
+            "foreArm_joint": 1.533528181084522,
+            "shoulder_joint": 0.5520312518069728,
+            "upperArm_joint": -1.201166767410116,
+            "wrist1_joint": -2.6308810823497257,
+            "wrist2_joint": 0.542599561778137,
+            "wrist3_joint": -0.05858788087916981,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "scene_update_timing_s": {
+            "trigger_call_s": 0.048654810001607984,
+            "confirmation_query_s": 0.0018110329983755946
+          }
+        }
+      ],
+      "stages": {
+        "transit": {
+          "waypoints": 57,
+          "validity_samples": 181,
+          "position_error_mm": 0.11684850201029633,
+          "orientation_error_deg": 0.026381980703953544,
+          "trajectory_duration_s": 5.589332506
+        },
+        "insertion": {
+          "waypoints": 16,
+          "validity_samples": 37,
+          "position_error_mm": 3.2235575051837323e-07,
+          "orientation_error_deg": 8.638959208865019e-08,
+          "trajectory_duration_s": 1.473793986,
+          "fraction": 1.0
+        },
+        "closure": {
+          "samples": 141,
+          "target_contacts": [
+            [
+              "citrus_S07",
+              "scissor_active_blade_link"
+            ],
+            [
+              "citrus_S07",
+              "scissor_mimic_blade_link"
+            ]
+          ],
+          "status": "passed"
+        },
+        "disengagement": {
+          "waypoints": 4,
+          "validity_samples": 37,
+          "position_error_mm": 0.00026092237186404533,
+          "orientation_error_deg": 6.76768456124612e-07,
+          "trajectory_duration_s": 0.263356026,
+          "fraction": 1.0,
+          "lift_mm": 5.0,
+          "start_contact_depth_m": [
+            [
+              "citrus_S07_stump",
+              "scissor_mimic_blade_link",
+              0.0001999999720505484
+            ]
+          ],
+          "sample_trace": [
+            {
+              "travel_mm": 0.0,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0001999999720505484
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.14352518460241054,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  5.647479115267578e-05
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.2870811055358509,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00047558108633703245
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.43066775020235415,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00033201157791108596
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.5742851060004789,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00018841166099590106
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.7179331603272292,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  4.4781347495391305e-05
+                ]
+              ]
+            },
+            {
+              "travel_mm": 0.8616119005772953,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.000819471788412329
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.0053213141422996,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.000675777147871879
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.149061388412187,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0005320519171242326
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.2928321107740481,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00038829610883009467
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.4366334686130873,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00024450973564165535
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.5783483717558555,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00010280860057439957
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.7200929204559132,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0005101805893670176
+                ]
+              ]
+            },
+            {
+              "travel_mm": 1.8618671025988767,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00036854823930409695
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.0036709060679523,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.0002268855901619678
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.1455043187441176,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  8.519265493688506e-05
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.287367328506031,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  0.00014666889261057709
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.429259923230585,
+              "contacts": [
+                [
+                  "citrus_S07_stump",
+                  "scissor_mimic_blade_link",
+                  6.877371210865284e-06
+                ]
+              ]
+            },
+            {
+              "travel_mm": 2.5711820907919876,
+              "contacts": []
+            },
+            {
+              "travel_mm": 2.71313381906237,
+              "contacts": []
+            },
+            {
+              "travel_mm": 2.855115095911372,
+              "contacts": []
+            },
+            {
+              "travel_mm": 2.997125909206935,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.1391662468146015,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.2812360965976306,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.4233354464164867,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.5654642841309965,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.7076225975970916,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.849810374669245,
+              "contacts": []
+            },
+            {
+              "travel_mm": 3.9920276031996567,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.134274271038624,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.276550366033513,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.418855876030139,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.535081746418448,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.651327180225245,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.767592170811021,
+              "contacts": []
+            },
+            {
+              "travel_mm": 4.8838767115357715,
+              "contacts": []
+            },
+            {
+              "travel_mm": 5.000180795758372,
+              "contacts": []
+            }
+          ]
+        },
+        "withdrawal": {
+          "waypoints": 16,
+          "validity_samples": 37,
+          "position_error_mm": 9.245046618110938e-07,
+          "orientation_error_deg": 2.3421786826455717e-07,
+          "trajectory_duration_s": 1.480360209,
+          "fraction": 1.0
+        }
+      },
+      "phase_seconds": {
+        "joint_representation": 0.00036037999961990863,
+        "pre_ik_validation": 0.0014997459948062897,
+        "screen_insertion": 0.031128041999181733,
+        "screen_withdrawal": 0.029519741001422517,
+        "screen_closure": 0.0773779849987477,
+        "transit": 0.47620179000659846,
+        "insertion": 0.032356590003473684,
+        "closure": 0.08049888099776581,
+        "scene_update": 0.05051314701267984,
+        "retreat": 0.06908484500308987
+      },
+      "trajectory_id": "wrapped_10",
+      "method": "wrapped",
+      "repetition": 10,
+      "source_trajectory_id": "once_10",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": -4.638116706324179,
+        "shoulder_joint": -5.4764074027671965,
+        "upperArm_joint": -1.188899912248527,
+        "wrist1_joint": 4.193661799796038,
+        "wrist2_joint": -5.850423861501068,
+        "wrist3_joint": 5.727146374670324,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": false,
+      "elapsed_s": 1.76988170700497,
+      "selected_angle_deg": null,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.000341760998708196,
+            "pre_ik_validation": 0.0011477340012788773,
+            "screen_insertion": 0.026614457005052827,
+            "screen_withdrawal": 0.02607425801397767,
+            "screen_closure": 0.08680859599553514,
+            "transit": 1.6288396529998863
+          },
+          "success": false,
+          "pre_ik_joints": {
+            "foreArm_joint": -4.638116706324179,
+            "shoulder_joint": -5.4764074027671965,
+            "upperArm_joint": -1.188899912248527,
+            "wrist1_joint": 4.193661799796038,
+            "wrist2_joint": -5.850423861501068,
+            "wrist3_joint": 5.727146374670324,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 11.727365939165555,
+          "wrap_turns": {
+            "foreArm_joint": 0,
+            "shoulder_joint": 0,
+            "upperArm_joint": 0,
+            "wrist1_joint": 0,
+            "wrist2_joint": 0,
+            "wrist3_joint": 0
+          },
+          "precut_pose_error": {
+            "position_m": 1.6860465150885743e-06,
+            "orientation_rad": 4.252919322117011e-06
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": -4.749657126140226,
+            "shoulder_joint": -5.73115405532831,
+            "upperArm_joint": -1.2011667674151294,
+            "wrist1_joint": 3.6523042249610125,
+            "wrist2_joint": -5.740585745579454,
+            "wrist3_joint": 6.22459742614429,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "retry_eligible": true,
+          "failure_stage": "transit",
+          "failure": "transit: MoveIt code -6"
+        }
+      ],
+      "stages": null,
+      "phase_seconds": {
+        "joint_representation": 0.000341760998708196,
+        "pre_ik_validation": 0.0011477340012788773,
+        "screen_insertion": 0.026614457005052827,
+        "screen_withdrawal": 0.02607425801397767,
+        "screen_closure": 0.08680859599553514,
+        "transit": 1.6288396529998863
+      },
+      "trajectory_id": "raw_10",
+      "method": "raw",
+      "repetition": 10,
+      "source_trajectory_id": "once_10",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": -4.638116706324179,
+        "shoulder_joint": -5.4764074027671965,
+        "upperArm_joint": -1.188899912248527,
+        "wrist1_joint": 4.193661799796038,
+        "wrist2_joint": -5.850423861501068,
+        "wrist3_joint": 5.727146374670324,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": false,
+      "elapsed_s": 1.778554358999827,
+      "selected_angle_deg": null,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.0003683009999804199,
+            "pre_ik_validation": 0.001033988010021858,
+            "screen_insertion": 0.02755730699573178,
+            "screen_withdrawal": 0.031334470986621454,
+            "screen_closure": 0.08118423300038557,
+            "transit": 1.6369975580018945
+          },
+          "success": false,
+          "pre_ik_joints": {
+            "foreArm_joint": -4.638107543154764,
+            "shoulder_joint": -5.476413904596411,
+            "upperArm_joint": -1.1888971505988999,
+            "wrist1_joint": 4.193660606958709,
+            "wrist2_joint": -5.850423046694183,
+            "wrist3_joint": 5.7271555704462465,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 11.727368729206454,
+          "wrap_turns": {
+            "foreArm_joint": 0,
+            "shoulder_joint": 0,
+            "upperArm_joint": 0,
+            "wrist1_joint": 0,
+            "wrist2_joint": 0,
+            "wrist3_joint": 0
+          },
+          "precut_pose_error": {
+            "position_m": 5.368234288345813e-06,
+            "orientation_rad": 2.149397018583948e-06
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": -4.749657126139932,
+            "shoulder_joint": -5.731154055329421,
+            "upperArm_joint": -1.2011667674145357,
+            "wrist1_joint": 3.65230422496442,
+            "wrist2_joint": -5.7405857455740765,
+            "wrist3_joint": 6.224597426140659,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "retry_eligible": true,
+          "failure_stage": "transit",
+          "failure": "transit: MoveIt code -6"
+        }
+      ],
+      "stages": null,
+      "phase_seconds": {
+        "joint_representation": 0.0003683009999804199,
+        "pre_ik_validation": 0.001033988010021858,
+        "screen_insertion": 0.02755730699573178,
+        "screen_withdrawal": 0.031334470986621454,
+        "screen_closure": 0.08118423300038557,
+        "transit": 1.6369975580018945
+      },
+      "trajectory_id": "raw_11",
+      "method": "raw",
+      "repetition": 11,
+      "source_trajectory_id": "once_11",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": -4.638107543154764,
+        "shoulder_joint": -5.476413904596411,
+        "upperArm_joint": -1.1888971505988999,
+        "wrist1_joint": 4.193660606958709,
+        "wrist2_joint": -5.850423046694183,
+        "wrist3_joint": 5.7271555704462465,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": false,
+      "elapsed_s": 0.25179129200114403,
+      "selected_angle_deg": null,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.0006093870033510029,
+            "pre_ik_validation": 0.0015184030053205788,
+            "screen_insertion": 0.02796144300373271,
+            "screen_withdrawal": 0.0326786549994722,
+            "screen_closure": 0.0870683239918435,
+            "transit": 0.10186622700712178
+          },
+          "success": false,
+          "pre_ik_joints": {
+            "foreArm_joint": 1.6450777640248226,
+            "shoulder_joint": 0.8067714025831751,
+            "upperArm_joint": -1.1888971505988999,
+            "wrist1_joint": -2.0895247002208777,
+            "wrist2_joint": 0.43276226048540334,
+            "wrist3_joint": -0.5560297367333398,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 3.1037401784753906,
+          "wrap_turns": {
+            "foreArm_joint": 1,
+            "shoulder_joint": 1,
+            "upperArm_joint": 0,
+            "wrist1_joint": -1,
+            "wrist2_joint": 1,
+            "wrist3_joint": -1
+          },
+          "precut_pose_error": {
+            "position_m": 5.368234288405722e-06,
+            "orientation_rad": 2.149397018378806e-06
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": 1.5335281810396542,
+            "shoulder_joint": 0.5520312518501653,
+            "upperArm_joint": -1.2011667674145359,
+            "wrist1_joint": -2.630881082215167,
+            "wrist2_joint": 0.54259956160551,
+            "wrist3_joint": -0.05858788103892778,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "retry_eligible": false,
+          "failure_stage": "transit",
+          "failure": "transit: MoveIt code -2"
+        }
+      ],
+      "stages": null,
+      "phase_seconds": {
+        "joint_representation": 0.0006093870033510029,
+        "pre_ik_validation": 0.0015184030053205788,
+        "screen_insertion": 0.02796144300373271,
+        "screen_withdrawal": 0.0326786549994722,
+        "screen_closure": 0.0870683239918435,
+        "transit": 0.10186622700712178
+      },
+      "trajectory_id": "wrapped_11",
+      "method": "wrapped",
+      "repetition": 11,
+      "source_trajectory_id": "once_11",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": -4.638107543154764,
+        "shoulder_joint": -5.476413904596411,
+        "upperArm_joint": -1.1888971505988999,
+        "wrist1_joint": 4.193660606958709,
+        "wrist2_joint": -5.850423046694183,
+        "wrist3_joint": 5.7271555704462465,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": false,
+      "elapsed_s": 1.194798055003048,
+      "selected_angle_deg": null,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.0005104739975649863,
+            "pre_ik_validation": 0.0018586430087452754,
+            "screen_insertion": 0.030739068999537267,
+            "screen_withdrawal": 0.03556890400068369,
+            "screen_closure": 0.08566480400622822,
+            "transit": 1.0403771470009815
+          },
+          "success": false,
+          "pre_ik_joints": {
+            "foreArm_joint": 1.6450649611378072,
+            "shoulder_joint": 0.806778424573359,
+            "upperArm_joint": -1.188902662766031,
+            "wrist1_joint": -2.089513488826946,
+            "wrist2_joint": 0.43276229591737714,
+            "wrist3_joint": -0.5560495477923739,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 3.103733335615369,
+          "wrap_turns": {
+            "foreArm_joint": 1,
+            "shoulder_joint": 0,
+            "upperArm_joint": -1,
+            "wrist1_joint": -1,
+            "wrist2_joint": 1,
+            "wrist3_joint": 0
+          },
+          "precut_pose_error": {
+            "position_m": 1.4295492687351627e-10,
+            "orientation_rad": 3.8582763827468765e-10
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": 1.5335281810846115,
+            "shoulder_joint": 0.5520312518060282,
+            "upperArm_joint": -1.2011667674105637,
+            "wrist1_joint": -2.630881082352221,
+            "wrist2_joint": 0.5425995617810188,
+            "wrist3_joint": -0.05858788087641644,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "failure_stage": "transit",
+          "failure": "transit waypoint 25:3: invalid state, contacts=[('citrus_static', 'camera_screw_frame')]"
+        }
+      ],
+      "stages": null,
+      "phase_seconds": {
+        "joint_representation": 0.0005104739975649863,
+        "pre_ik_validation": 0.0018586430087452754,
+        "screen_insertion": 0.030739068999537267,
+        "screen_withdrawal": 0.03556890400068369,
+        "screen_closure": 0.08566480400622822,
+        "transit": 1.0403771470009815
+      },
+      "trajectory_id": "wrapped_12",
+      "method": "wrapped",
+      "repetition": 12,
+      "source_trajectory_id": "once_12",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": -4.638120346041779,
+        "shoulder_joint": 0.806778424573359,
+        "upperArm_joint": 5.094282644413555,
+        "wrist1_joint": 4.19367181835264,
+        "wrist2_joint": -5.850423011262209,
+        "wrist3_joint": -0.5560495477923739,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    },
+    {
+      "success": false,
+      "elapsed_s": 1.7582606630021473,
+      "selected_angle_deg": null,
+      "attempts": [
+        {
+          "angle_deg": -90,
+          "normal_sign": 1,
+          "retry": false,
+          "phase_seconds": {
+            "joint_representation": 0.0003093029954470694,
+            "pre_ik_validation": 0.0009420510032214224,
+            "screen_insertion": 0.024617479997687042,
+            "screen_withdrawal": 0.023861716006649658,
+            "screen_closure": 0.07939879900368396,
+            "transit": 1.629078722995473
+          },
+          "success": false,
+          "pre_ik_joints": {
+            "foreArm_joint": -4.638120346041779,
+            "shoulder_joint": 0.806778424573359,
+            "upperArm_joint": 5.094282644413555,
+            "wrist1_joint": 4.19367181835264,
+            "wrist2_joint": -5.850423011262209,
+            "wrist3_joint": -0.5560495477923739,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "joint_distance_from_home_rad": 10.011907473715913,
+          "wrap_turns": {
+            "foreArm_joint": 0,
+            "shoulder_joint": 0,
+            "upperArm_joint": 0,
+            "wrist1_joint": 0,
+            "wrist2_joint": 0,
+            "wrist3_joint": 0
+          },
+          "precut_pose_error": {
+            "position_m": 1.429550309412178e-10,
+            "orientation_rad": 3.8582746464718563e-10
+          },
+          "screen_cut_joints": {
+            "foreArm_joint": -4.7496571260949745,
+            "shoulder_joint": 0.5520312518060282,
+            "upperArm_joint": 5.082018539769023,
+            "wrist1_joint": 3.6523042248273656,
+            "wrist2_joint": -5.740585745398568,
+            "wrist3_joint": -0.05858788087641649,
+            "scissor_drive_joint": 0.3009,
+            "scissor_mimic_joint": -0.3009
+          },
+          "screen_closure_check": {
+            "samples": 141,
+            "target_contacts": [
+              [
+                "citrus_S07",
+                "scissor_active_blade_link"
+              ],
+              [
+                "citrus_S07",
+                "scissor_mimic_blade_link"
+              ]
+            ],
+            "status": "passed"
+          },
+          "retry_eligible": true,
+          "failure_stage": "transit",
+          "failure": "transit: MoveIt code -6"
+        }
+      ],
+      "stages": null,
+      "phase_seconds": {
+        "joint_representation": 0.0003093029954470694,
+        "pre_ik_validation": 0.0009420510032214224,
+        "screen_insertion": 0.024617479997687042,
+        "screen_withdrawal": 0.023861716006649658,
+        "screen_closure": 0.07939879900368396,
+        "transit": 1.629078722995473
+      },
+      "trajectory_id": "raw_12",
+      "method": "raw",
+      "repetition": 12,
+      "source_trajectory_id": "once_12",
+      "saved_pre_ik_joints": {
+        "foreArm_joint": -4.638120346041779,
+        "shoulder_joint": 0.806778424573359,
+        "upperArm_joint": 5.094282644413555,
+        "wrist1_joint": 4.19367181835264,
+        "wrist2_joint": -5.850423011262209,
+        "wrist3_joint": -0.5560495477923739,
+        "scissor_drive_joint": 0.3009,
+        "scissor_mimic_joint": -0.3009
+      }
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# S07 verifies these fixtures against recorded SHA-256 values.
+/experiments/s07_fixed_goal/source_results.json -text
+/src/citrus_pruning_sim/data/tree_model.json -text

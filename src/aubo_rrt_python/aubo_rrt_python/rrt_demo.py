@@ -42,7 +42,7 @@ class RRTDemo(Node):
             'collision_step': 0.04, 'max_iterations': 2500,
             'planning_time': 60.0, 'keep_alive': True,
             'replay_step': 0.08,
-            'output_directory': str(Path.home() / 'aubo_ws/rrt_results/python'),
+            'output_directory': str(Path.cwd() / 'results' / 'rrt' / 'python'),
         }
         self.settings = {
             name: self.declare_parameter(name, default).value

@@ -1,43 +1,25 @@
-# Experiments & Archived Runs
+# 仿真实验
 
-This directory holds reference baselines and reproduction notes for the citrus pruning project.
+从项目根目录运行实验，启动前按 [项目首页](../README.md) 构建并加载本项目的安装环境。
 
-## Directory Layout
+## S01 验收
 
-- `s01_baseline/reference/` — Frozen S01 reference outputs copied from the verified runs (`s01_stump_demo_v1/verified_stump_replay` and `s01_closure_demo_v1/check_6`), used by `citrus_pruning_task` unit tests (`test_acceptance.py`).
+`s01_baseline/reference/` 保存自动测试使用的固定参考结果。日常验收脚本会触发两次新规划，检查首次轨迹回放后的剪切场景，复位后验证第二次计划及完整验收记录。
 
-## Reproducing Legacy Experiments (Preserved at Workspace Root)
-
-All historical experiment directories at the workspace root retain their original scripts, data, relative paths, and `COLCON_IGNORE` markers (so `colcon build` in `~/aubo_ws` only builds `src/`):
-
-1. **`s01_stump_demo_v1/`** (S01 verified baseline with 6 mm stump + axial disengagement):
-   - Launch: `ROS_DOMAIN_ID=94 ROS_LOCALHOST_ONLY=1 ros2 launch ./simulation.launch.py rviz:=false s01_cut_offset_m:=0.006`
-   - Run: `python3 cut_s01.py --model citrus_pruning_sim/data/tree_model.json --output <dir> --play`
-   - Note: `source /opt/ros/humble/setup.bash && source ../install/setup.bash && source install/local_setup.bash` inside `s01_stump_demo_v1/`.
-2. **`approach_benchmark_v1/`** (72-trial fixed vs. multi-candidate approach benchmark):
-   - Source: `source /opt/ros/humble/setup.bash && source ../install/setup.bash && source ../src/ros2_critrus/install/setup.bash`
-   - Run `benchmark.py` or `review_approach.py` in `ROS_DOMAIN_ID=92` (S01) / `93` (S07).
-3. **`pruning_retry_v1/`** and **`pruning_closure_screen_v1/`**:
-   - Use `run_formal.sh` / `run_closure_comparison.sh` / `run_s07_wrap.sh` inside each directory (they source `../install/setup.bash` then `install/local_setup.bash`).
-4. **`pruning_seeded_s07_v1/`** (Seeded OMPL RRT S07 comparison):
-   - Uses its own `install/local_setup.bash` (overriding `aubo_ompl_capture` with `CITRUS_OMPL_SEED` support) and `run_batch.py` in `ROS_DOMAIN_ID=98`.
-
-## Ubuntu S01 smoke test
-
-The desktop-source import is the parent of the native-planner change. Build the
-two citrus packages over the existing AUBO installation:
+在已加载本项目安装环境的两个终端中设置相同的 `ROS_DOMAIN_ID` 和 `ROS_LOCALHOST_ONLY=1`。终端一启动：
 
 ```bash
-source /opt/ros/humble/setup.bash
-source ~/aubo_ws/install/local_setup.bash
-colcon build --base-paths src/citrus_pruning_sim src/citrus_pruning_task --symlink-install
-source install/local_setup.bash
+ros2 launch citrus_pruning_task simulation.launch.py rviz:=false
 ```
 
-In two terminals with the same unused local simulation domain in 91–99, start
-`ros2 launch citrus_pruning_task simulation.launch.py rviz:=false`, then run
-`python3 experiments/s01_baseline/probe_s01.py results/s01_smoke_new` from the
-workspace root. The probe plans from scratch twice, checks the first replay's
-scene update, resets the scene, and verifies the second fresh plan without
-replay. It checks the effective planner is native OMPL; use the separate legacy
-launch for capture and seeded comparisons.
+终端二运行，输出目录每次选一个新名称：
+
+```bash
+python3 experiments/s01_baseline/probe_s01.py results/s01_smoke_new
+```
+
+查看输出目录中的 `runtime_audit.json`，`success: true` 表示两次运行均通过。
+
+## S07 固定目标
+
+S07 的目标关节角、树模型和校验所需数据都随项目保存。按 [启动与回放说明](s07_fixed_goal/README.md) 检查两种关节表示的仿真效果。
