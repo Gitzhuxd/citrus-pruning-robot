@@ -13,7 +13,17 @@
 
 ## 构建
 
-在装有 ROS 2 Humble、MoveIt 2、RViz 2 和 colcon 的 Ubuntu 终端中，进入本项目根目录。从 Humble 基础环境构建，项目中的模型与功能包会由 colcon 一起安装。
+在装有 ROS 2 Humble、MoveIt 2、RViz 2 和 colcon 的 Ubuntu 终端中，进入本项目根目录。先打开干净的 Bash 环境，避免继承登录脚本加载的其他 ROS 工作区。
+
+```bash
+env -i HOME="$HOME" USER="$USER" PATH=/usr/local/bin:/usr/bin:/bin LANG=C.UTF-8 \
+  TERM="${TERM:-xterm}" DISPLAY="${DISPLAY:-}" \
+  XAUTHORITY="${XAUTHORITY:-$HOME/.Xauthority}" \
+  XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-}" WAYLAND_DISPLAY="${WAYLAND_DISPLAY:-}" \
+  bash --noprofile --norc
+```
+
+以下命令在这个干净的 Bash 中执行。colcon 会安装本项目中的模型与功能包。
 
 ```bash
 source /opt/ros/humble/setup.bash
@@ -23,7 +33,7 @@ source install/local_setup.bash
 
 ## 运行 S01
 
-在项目根目录打开两个终端，分别加载以下环境。两个终端使用同一个空闲域，仿真允许的域为 91–99。
+在项目根目录打开两个终端，按上面的方式分别进入干净的 Bash，再加载本项目。两个终端使用同一个空闲域，仿真允许的域为 91–99。
 
 ```bash
 source /opt/ros/humble/setup.bash
