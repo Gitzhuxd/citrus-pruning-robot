@@ -4,7 +4,7 @@
 
 ## 运行方式
 
-在本项目根目录打开 Ubuntu 图形终端。构建和加载步骤见项目 README。
+在本项目根目录打开 Ubuntu 图形终端。构建和加载步骤见[仿真构建与启动](../../experiments/setup.md)。
 
 ```bash
 source /opt/ros/humble/setup.bash

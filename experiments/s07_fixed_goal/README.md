@@ -2,7 +2,7 @@
 
 `source_results.json` 是随项目保存的成对实验基线，脚本用它读取 S07 的 `−90°/+1` 固定六关节目标，并校验树的位置、姿态和模型版本。可选的 `--source` 只接受内容完全相同的基线副本。
 
-按 [项目首页](../../README.md) 构建并加载本项目的安装环境。两个终端使用同一个空闲 `ROS_DOMAIN_ID`，并设置 `ROS_LOCALHOST_ONLY=1`。终端一启动 S07 场景：
+按 [构建与启动说明](../setup.md) 构建并加载本项目的安装环境。两个终端使用同一个空闲 `ROS_DOMAIN_ID`，并设置 `ROS_LOCALHOST_ONLY=1`。终端一启动 S07 场景：
 
 ```bash
 ros2 launch citrus_pruning_task simulation.launch.py rviz:=false task:=false \

@@ -1,6 +1,6 @@
 # AUBO i5 Python RRT 仿真演示
 
-使用 ROS 2 Humble 和 MoveIt 仿真服务。先按项目 README 构建。在本项目根目录的 Ubuntu 图形终端运行：
+使用 ROS 2 Humble 和 MoveIt 仿真服务。先按[仿真构建与启动](../../experiments/setup.md)构建。在本项目根目录的 Ubuntu 图形终端运行：
 
 ```bash
 source /opt/ros/humble/setup.bash
